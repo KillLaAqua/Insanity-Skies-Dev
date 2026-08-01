@@ -1,0 +1,43 @@
+{
+
+    "item.projectred_core.screwdriver.tooltip": "Project Red의 레드스톤 부품(redstone components)를 이용하여 회전시킬 수 있습니다.",
+
+    "item.projectred_integration.or_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\n입력 중 최소 하나가 켜져 있어야 출력이 켜집니다.",
+    "item.projectred_integration.nor_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\n입력이 모두 켜져 있어야 출력이 켜집니다.",
+    "item.projectred_integration.not_gate.tooltip": "한 개의 입력과 세 개의 출력이 있습니다.\n입력이 꺼져 있어야 출력이 켜집니다.",
+    "item.projectred_integration.and_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\n입력이 모두 켜져 있어야 출력이 켜집니다.",
+    "item.projectred_integration.nand_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\n최소 하나의 입력이 켜져 있어야 출력이 켜집니다.",
+    "item.projectred_integration.xor_gate.tooltip": "두 개의 입력과 한 개의 출력이 있습니다.\n오직 하나의 입력만이 켜져 있여야만 출력이 켜집니다.",
+    "item.projectred_integration.xnor_gate.tooltip": "두 개의 입력과 한 개의 출력이 있습니다.\n입력이 모두 켜져 있거나 꺼져 있어야 출력이 켜집니다.",
+
+    "item.projectred_integration.buffer_gate.tooltip": "한 개의 입력과 세 개의 출력이 있습니다.\n신호를 1틱간 늦춥니다.\n다이오드와 비슷하게 작동하며, 신호가 오직 한 방향에서만 통과 가능합니다.",
+    "item.projectred_integration.multiplexer_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\nXOR 게이트처럼 작동하지만, 뒤쪽의 입력이 나머지 두 입력의 선택자처럼 작동합니다.\n만약 뒤쪽 입력이 꺼져있다면 왼쪽 입력이 선택되며, 뒤쪽 입력이 켜져 있다면 오른쪽 입력이 선택됩니다.",
+    "item.projectred_integration.pulse_gate.tooltip": "한 개의 입력과 한 개의 출력이 있습니다.\n입력이 켜져 있다면 1틱마다 신호가 방출됩니다.\n무한 반복과 비슷하지만, 켜고 끌 수 있습니다.",
+    "item.projectred_integration.repeater_gate.tooltip": "한 개의 입력과 한 개의 출력이 있습니다.\n틱을 미루지만, 미루는 틱을 설정 가능합니다.\n최소: 1틱, 최대: 256틱.",
+    "item.projectred_integration.randomizer_gate.tooltip": "한 개의 입력과 세 개의 출력이 있습니다.\n신호를 받으면, 랜덤하게 세 출력의 아무 조합을 출력합니다.\n만약 입력이 항상 켜져 있다면, 매 틱마다 랜덤하게 출력합니다. 출력은 신호가 끝나기 전까지 작동합니다.",
+    "item.projectred_integration.sr_latch_gate.tooltip": "두 개의 입력과 두 개의 출력이 있습니다.\n왼쪽 입력은 앞쪽 출력을 위해, 그리고 오른쪽 입력은 뒤쪽 출력을 위해 작동합니다.\n만약 오른쪽 입력이 신호를 받으면, 앞쪽 출력이 왼쪽 입력 신호를 받을 때 까지 켜집니다, 이는 앞쪽 출력을 끄며 뒤쪽 출력을 켭니다. 뒤쪽 입력은 오른쪽 입력이 다시 신호를 받기 전까지 켜집니다. 만약 양쪽 신호가 동시에 들어오면, 모든 출력이 꺼집니다.",
+    "item.projectred_integration.toggle_latch_gate.tooltip": "두 개의 입력과 두 개의 출력이 있으며, 입력이 공유됩니다.\n양쪽 중 하나라도 신호를 받으면, 출력이 상태를 바꿉니다. 만약 양쪽 신호가 동시에 들어오면, 출력이 바뀌지 않습니다.",
+
+    "item.projectred_integration.transparent_latch_gate.tooltip": "두 개의 입력과 두 개의 출력이 있습니다.\n뒤쪽 신호는 \"쓰기\" 신호이며, 왼쪽 신호는 \"유지\" 신호입니다. 1-비트 저장고 셀과 비슷하게 작동합니다.\n뒤쪽으로 부터 신호를 받으면, 왼쪽 신호가 저장되며 방출됩니다. \"유지\" 신호를 받을 경우, 현재 상태가 다음 \"쓰기\" 신호가 오기 전까지 유지됩니다. ",
+    "item.projectred_integration.light_sensor_gate.tooltip": "한 개의 출력이 있습니다.\n출력은 빛 레벨에 따라 결정됩니다.\n스크루드라이버를 들고 Shift-클릭해 모드를 변경할 수 있습니다.\n열림 (양쪽 색): 모든 빛 입력에 작동\n반 열림 (파란색): 자연적인 빛 입력에만 작동\n닫힘 (빨간색): 인공적인 빛 입력에만 작동",
+    "item.projectred_integration.rain_sensor_gate.tooltip": "한 개의 출력이 있습니다.\n비가 내리면 출력이 활성화됩니다.\n하늘을 직접 바라봐야 작동합니다.",
+    "item.projectred_integration.timer_gate.tooltip": "한 개의 입력과 한 개의 출력, 그리고 2개의 공유되는 입출력면이 있습니다.\n클릭해 타이머를 조절 할 수 있습니다.\n타이머가 설정한 시간에 도달할 때 마다 신호를 방출합니다. 만약 아무 입력이나 활성화된다면, 타이머가 리셋된 상태로 멈추며 입력이 비활성화 될 때까지 유지됩니다.",
+    "item.projectred_integration.sequencer_gate.tooltip": "네 개의 출력이 있습니다.\n클릭해 타이머를 조절 가능합니다.\n설정한 시간만큼 신호를 방출한 뒤 시계 방향을 따라 다음 면으로 넘어가면서 작동합니다.",
+    "item.projectred_integration.counter_gate.tooltip": "두 개의 출력과 한 개의 \"양\", 그리고 한 개의 \"음\"의 입력이 있습니다.\n클릭해 \"카운터\"의 조절이 가능합니다.\n양과 음의 입력은 카운터의 값을 더하거나 빼며, 값에 따라 인디케이터가 어느 한 쪽의 출력으로 이동합니다. 인디케이터가 출력에 도달하면 해당 방향으로는 더 이상 움직이지 않게되며 출력 신호를 방출합니다.",
+    "item.projectred_integration.state_cell_gate.tooltip": "두 개의 입력과 두 개의 출력이 있습니다.\n클릭해 타이머를 조절 가능합니다.\n뒤쪽 입력이 신호를 받으면, 왼쪽 출력이 설정한 타이머만큼 유지되는 신호를 방출합니다. 출력 신호가 꺼지면, 앞쪽에서 신호를 방출합니다. 오른쪽 입력은 타이머를 0으로 초기화합니다.",
+
+    "item.projectred_integration.synchronizer_gate.tooltip": "세 개의 입력과 한 개의 출력이 있습니다.\n왼쪽 또는 오른쪽에서 신호를 받을 경우 이를 \"기억\"합니다. 양쪽에서 신호를 받을 경우, 짧은 신호를 방출하면서 초기화됩니다. 뒤쪽 입력은 초기화용 입력으로, 신호 방출 없이 초기화를 합니다.",
+    "item.projectred_integration.bus_transciever_gate.tooltip": "두 개의 입력과 두 개의 공유되는 번들형 입출력면이 있습니다.\n2-방향 데이터 전달을 막습니다. 입력을 이용해 데이터 전달의 방향을 활성화 할 수 있습니다. 또한 1틱의 딜레이를 가지고 있습니다. 만약 양 쪽 모두 신호가 켜져 있다면, \"circular power race condition\"에 기반해 작동합니다.",
+    "item.projectred_integration.null_cell_gate.tooltip": "두 쌍의 공유되는 입출력면이 있습니다.\n교차하는 두 선을 구분하는 용으로 사용됩니다.",
+    "item.projectred_integration.inverter_cell_gate.tooltip": "두 쌍의 공유되는 입출력면이 있습니다.\n아래쪽 쌍을 켜면 위쪽 쌍이 반전됩니다.",
+    "item.projectred_integration.buffer_cell_gate.tooltip": "두 쌍의 공유되는 입출력면이 있습니다.\n아래쪽 쌍이 켜지면 위쪽 쌍도 켜집니다.",
+    "item.projectred_integration.comparator_gate.tooltip": "한 개의 입력과 한 개의 출력, 한 개의 \"양\", 그리고 한 개의 \"음\"의 입력이 있습니다.\n스크루드라이버를 이용해 \"비교\" 모드와 \"빼기\" 모드 중 설정이 가능합니다.\n기본 마인크래프트 비교기(comparator)처럼 작동합니다",
+    "item.projectred_integration.and_cell_gate.tooltip": "한 개의 입력과 한 개의 출력, 한 쌍의 공유되는 입출력이 있습니다.\n입력과 한 쌍의 입출력에 신호를 주면 출력 신호를 방출합니다.",
+    "item.projectred_integration.bus_randomizer_gate.tooltip": "두 개의 공유되는 입력과 번들형 \"의사\" 입력 한 개, 그리고 한 개의 번들형 출력을 가지고 있습니다.\nProject Red의 스크루드라이버를 이용하여 \"싱글\"과 \"멀티\" 모드 간의 변환이 가능합니다.\n싱글 모드에서는, 번들형 출력의 채널 중 하나에만 출력 신호를 전송합니다. 멀티 모드에서는 번들형 출력의 채널 중 임의의 조합으로 출력 신호를 전송합니다. 이는 입력 중 하나가 켜져 있어야 합니다. 입력을 중지할 경우 현재 상태가 저장됩니다. 의사 입력은 랜덤 출력에서 사용될 채널을 선택하는데 사용됩니다.",
+    "item.projectred_integration.bus_converter_gate.tooltip": "한 개의 공유되는 입출력과 두 개의 출력면, 그리고 한 개의 번들형 입출력면을 가지고 있습니다.\nProject Red의 스크루드라이버를 이용하여 \"아날로그-디지털\"과 \"디지털-아날로그\" 모드 간의 변환이 가능합니다.\n아날로그-디지털 모드에서는 공유 입출력쪽에서 신호를 받지 않으면 화이트 채널로 출력되며, 그렇지 않은 경우 입력 레드스톤 신호 레벨에 따라 해당 채널로 출력됩니다.\n디지털-아날로그 모드에서는 채널 중 하나 이상이 활성화되어 있으면 모든 아날로그 출력으로 신호가 전송됩니다.",
+    "item.projectred_integration.bus_input_panel_gate.tooltip": "한 개의 입력과 한 개의 번들형 출력이 있습니다.\n버튼을 클릭하면 해당 색상의 채널로 레드스톤 신호가 방출됩니다. 입력 단자에 펄스를 보내면 패널이 초기화됩니다.",
+    "item.projectred_integration.segment_display_gate.tooltip": "한 개의 번들형 입력이 있습니다.\n묶인 입력 단자의 활성 채널을 기준으로 세그먼트를 표시합니다.",
+    "item.projectred_integration.dec_randomizer_gate.tooltip": "한 개의 입력과 세 개의 출력이 있습니다.\n스크루드라이버로 왼쪽 출력의 비활성화가 가능합니다.\n신호를 수신하면 출력 단자 중 하나를 무작위로 선택하여 활성화합니다.",
+    "item.projectred_integration.stacking_latch_gate.tooltip": "한 개의 입력과 한 개의 출력, 한 쌍의 공유되는 입출력이 있습니다.\n오른쪽이 \"쓰기\" 신호이고, 왼쪽이 \"유지\" 신호입니다. 쓰기 신호에 펄스가 입력되면 입력 상태가 저장되어 출력됩니다. 유지 신호에 펄스가 입력되면 다음 쓰기 펄스가 올 때까지 현재 상태가 유지됩니다. 쓰기 신호가 활성화된 상태에서 입력에 펄스가 입력되면, 다음 쓰기 펄스를 기다리지 않고 저장된 상태가 즉시 변경됩니다."
+
+}

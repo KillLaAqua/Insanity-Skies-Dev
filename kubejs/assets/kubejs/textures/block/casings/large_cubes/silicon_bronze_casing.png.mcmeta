@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/large_cubes/silicon_bronze_casing_ctm"
+    }
+}

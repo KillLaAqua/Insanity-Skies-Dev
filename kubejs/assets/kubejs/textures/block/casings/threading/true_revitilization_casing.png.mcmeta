@@ -1,0 +1,12 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/threading/true_revitilization_casing_ctm"
+    },
+    "animation": {
+        "interpolate": true,
+        "frames": [
+		    { "index": 0, "time": 800 },
+            { "index": 1, "time": 100 }
+        ]
+    }
+}

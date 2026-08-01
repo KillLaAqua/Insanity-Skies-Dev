@@ -1,0 +1,13 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/threading/inoculated_nuclei_seperation_casing_ctm"
+    },
+    "animation": {
+        "interpolate": true,
+        "frames": [
+		    { "index": 0, "time": 400 },
+            { "index": 1, "time": 400 },
+            { "index": 2, "time": 400 }
+        ]
+    }
+}

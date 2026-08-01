@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/nether_multis/subzero_casing_ctm"
+    }
+}

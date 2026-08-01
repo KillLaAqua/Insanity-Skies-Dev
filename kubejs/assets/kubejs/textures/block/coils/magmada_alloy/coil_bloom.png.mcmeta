@@ -1,0 +1,17 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/coils/magmada_alloy/coil_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    },
+    "animation": {
+        "interpolate": true,
+        "frames": [
+		    { "index": 0, "time": 450 },
+            { "index": 2, "time": 100 },
+            { "index": 1, "time": 50 }
+        ]
+    }
+}

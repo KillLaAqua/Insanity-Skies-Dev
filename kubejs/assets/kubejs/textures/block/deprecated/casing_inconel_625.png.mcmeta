@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/deprecated/casing_inconel_625_ctm"
+    }
+}

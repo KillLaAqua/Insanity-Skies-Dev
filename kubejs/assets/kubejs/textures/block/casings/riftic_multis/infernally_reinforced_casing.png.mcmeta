@@ -1,0 +1,14 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/riftic_multis/infernally_reinforced_casing_ctm"
+    },
+    "animation": {
+        "interpolate": true,
+        "frames": [
+		    { "index": 0, "time": 240 },
+            { "index": 1, "time": 60 },
+            { "index": 2, "time": 80 },
+            { "index": 1, "time": 40 }
+        ]
+    }
+}

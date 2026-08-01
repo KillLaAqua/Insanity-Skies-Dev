@@ -1,0 +1,18 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/threading/absolute_annihilators_top_ctm"
+    },
+    "animation": {
+        "frametime": 2,
+        "frames": [
+		    0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+}

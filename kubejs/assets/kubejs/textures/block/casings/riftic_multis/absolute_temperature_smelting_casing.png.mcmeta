@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/riftic_multis/absolute_temperature_smelting_casing_ctm"
+    }
+}

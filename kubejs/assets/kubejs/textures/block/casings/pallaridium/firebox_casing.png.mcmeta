@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/pallaridium/firebox_casing_ctm"
+    }
+}

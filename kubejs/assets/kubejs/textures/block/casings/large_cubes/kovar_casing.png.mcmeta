@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/large_cubes/kovar_casing_ctm"
+    }
+}

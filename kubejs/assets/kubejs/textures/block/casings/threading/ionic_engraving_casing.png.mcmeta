@@ -1,0 +1,12 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/threading/ionic_engraving_casing_ctm"
+    },
+    "animation": {
+        "interpolate": true,
+        "frames": [
+		    { "index": 0, "time": 1050 },
+            { "index": 1, "time": 150 }
+        ]
+    }
+}

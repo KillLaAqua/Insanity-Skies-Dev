@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/deprecated/test_casing_ctm"
+    }
+}

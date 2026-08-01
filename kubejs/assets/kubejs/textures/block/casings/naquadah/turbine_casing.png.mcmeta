@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/naquadah/turbine_casing_ctm"
+    }
+}

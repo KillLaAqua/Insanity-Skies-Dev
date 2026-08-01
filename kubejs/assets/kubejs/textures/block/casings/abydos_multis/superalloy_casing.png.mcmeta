@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/abydos_multis/superalloy_casing_ctm"
+    }
+}

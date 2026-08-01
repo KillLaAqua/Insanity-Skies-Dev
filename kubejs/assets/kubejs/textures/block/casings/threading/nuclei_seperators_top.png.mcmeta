@@ -1,0 +1,12 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/threading/nuclei_seperators_top_ctm"
+    },
+    "animation": {
+        "frametime": 2,
+        "frames": [
+		    0,
+            1
+        ]
+    }
+}

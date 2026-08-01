@@ -1,0 +1,15 @@
+{
+    "block.sgjourney.crystal_interface": "Stargate Interface",
+
+    "block.sgjourney.milky_way_stargate": "Ancient Stargate",
+    "block.sgjourney.milky_way_ring": "Ancient Stargate",
+    "block.sgjourney.milky_way_dhd": "Ancient DHD",
+
+    "block.sgjourney.advanced_crystal_interface": "Ascendant Stargate Interface",
+    "block.sgjourney.pegasus_stargate": "Draconic Stargate",
+    "block.sgjourney.pegasus_ring": "Draconic Stargate",
+    "block.sgjourney.pegasus_dhd": "Draconic DHD",
+
+    "block.sgjourney.universe_stargate": "Worrying !Stargate",
+    "block.sgjourney.universe_ring": "Worrying !Stargate"
+}

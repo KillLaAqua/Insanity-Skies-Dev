@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/pallaridium/turbine_casing_ctm"
+    }
+}
