@@ -1,0 +1,9 @@
+{
+  // See here for information how to configure this:
+  // https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/SimpleDateFormat.html
+  // Examples:
+  // dd.MM.yyyy HH:mm         - 07.12.1997 23:30
+  // yyyy-MM-dd'T'HH:mm:ss    - 1997-12-07T23:30:00
+  // EEE, d MMM yyyy HH:mm:ss - Sun, 7 Dec 1997 23:30:00
+  "date": "dd.MM.yyyy HH:mm"
+}

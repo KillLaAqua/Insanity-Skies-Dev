@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "tags": {"minecraft:block": {
+        "minecraft:mineable/pickaxe": {
+            "solarflux:sp_6": true,
+            "solarflux:sp_8": true,
+            "solarflux:sp_1": true,
+            "solarflux:sp_7": true,
+            "solarflux:sp_5": true,
+            "solarflux:sp_4": true,
+            "solarflux:sp_2": true,
+            "solarflux:sp_3": true
+        },
+        "minecraft:needs_iron_tool": {
+            "solarflux:sp_6": true,
+            "solarflux:sp_8": true,
+            "solarflux:sp_1": true,
+            "solarflux:sp_7": true,
+            "solarflux:sp_5": true,
+            "solarflux:sp_4": true,
+            "solarflux:sp_2": true,
+            "solarflux:sp_3": true
+        }
+    }},
+    "unregistered": {}
+}
