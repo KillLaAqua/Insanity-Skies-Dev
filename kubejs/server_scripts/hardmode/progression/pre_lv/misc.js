@@ -76,12 +76,12 @@ ServerEvents.recipes((event) => {
         .mixing(Fluid.of('thermal:redstone', 1000), [Fluid.of('minecraft:water', 1000), `10x minecraft:redstone`])
         .heatRequirement('superheated')
         .id(`start:create_mixer/destabilized_redstone`);
-    event.recipes.create
-        .filling('xycraft_world:xychorium_gem_red', [
-            Fluid.of('thermal:redstone', 500),
-            'xycraft_world:xychorium_gem_light',
-        ])
-        .id('start:filling/redstone_gem');
+    // event.recipes.create
+    //     .filling('xycraft_world:xychorium_gem_red', [
+    //         Fluid.of('thermal:redstone', 500),
+    //         'xycraft_world:xychorium_gem_light',
+    //     ])
+    //     .id('start:filling/redstone_gem');
 
     event
         .shapeless(Item.of('gtceu:wood_screw'), ['#forge:tools/files', 'gtceu:wood_bolt', 'gtceu:wood_bolt'])
@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
         })
         .id('start:shaped/iron_trapdoor');
 
-    event.remove({ id: 'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking' });
+    // event.remove({ id: 'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking' });
     event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' });
     event.remove('rechiseled:chisel'); // Remove Chisel, replacement recipe later
 
@@ -317,12 +317,12 @@ ServerEvents.recipes((event) => {
         .transitionalItem(itemPipez)
         .loops(1);
 
-    event.remove({ output: 'architects_palette:flint_block' });
-    event
-        .shaped(Item.of('4x architects_palette:flint_block'), ['FFF', 'F F', 'FFF'], {
-            F: 'minecraft:flint',
-        })
-        .id('start:shaped/flint_block');
+    // event.remove({ output: 'architects_palette:flint_block' });
+    // event
+    //     .shaped(Item.of('4x architects_palette:flint_block'), ['FFF', 'F F', 'FFF'], {
+    //         F: 'minecraft:flint',
+    //     })
+    //     .id('start:shaped/flint_block');
 
     event
         .shaped(Item.of('toms_storage:ts.trim', 2), ['CSC', 'SWS', 'CSC'], {

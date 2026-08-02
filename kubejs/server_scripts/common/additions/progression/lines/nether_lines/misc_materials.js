@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
             '173x gtceu:warped_dust',
             '1x gtceu:astatine_dust',
             '5x gtceu:netherite_dust',
-            '3x thermal_extra:soul_sand_dust'
+            // '3x thermal_extra:soul_sand_dust'
         )
         .inputFluids(
             'gtceu:nether_star_concentrate 144',

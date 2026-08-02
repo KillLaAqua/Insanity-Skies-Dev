@@ -295,18 +295,18 @@ ServerEvents.recipes((event) => {
             ['8x exnihilosequentia:crushed_andesite', '2x gtceu:sphalerite_dust'],
             400
         );
-        SolidBlast(
-            'rose_quartz',
-            ['1x create:rose_quartz', 'gtceu:tiny_redstone_dust'],
-            ['xycraft_world:xychorium_gem_red', 'minecraft:redstone'],
-            80
-        );
-        SolidBlast(
-            'blank_gem',
-            ['xycraft_world:xychorium_gem_light', 'gtceu:tiny_glass_dust'],
-            ['minecraft:quartz', 'gtceu:glass_dust'],
-            200
-        );
+        // SolidBlast(
+        //     'rose_quartz',
+        //     ['1x create:rose_quartz', 'gtceu:tiny_redstone_dust'],
+        //     ['xycraft_world:xychorium_gem_red', 'minecraft:redstone'],
+        //     80
+        // );
+        // SolidBlast(
+        //     'blank_gem',
+        //     ['xycraft_world:xychorium_gem_light', 'gtceu:tiny_glass_dust'],
+        //     ['minecraft:quartz', 'gtceu:glass_dust'],
+        //     200
+        // );
     };
     burnable(2, '#minecraft', 'coals', 1, '');
     burnable(1, 'gtceu', 'coke_gem', 0.8, 'dark_');

@@ -685,7 +685,12 @@ ServerEvents.recipes((event) => {
 
     const Energiser = (tier, material, prior) => {
         event.recipes.create
-            .mechanical_crafting(Item.of(`create_new_age:energiser_${tier}`), ['PRP', 'USU', 'PGP', ' N '], {
+            .mechanical_crafting(Item.of(`create_new_age:${tier}_energiser`), [
+                'PRP',
+                'USU',
+                'PGP',
+                ' N '
+                ], {
                 R: 'gtceu:cast_iron_rod',
                 P: 'gtceu:cast_iron_plate',
                 S: prior,
@@ -693,11 +698,11 @@ ServerEvents.recipes((event) => {
                 G: material,
                 N: 'create_new_age:electrical_connector',
             })
-            .id(`start:mechanical_crafter/energiser_${tier}`);
+            .id(`start:mechanical_crafter/${tier}_energiser`);
     };
-    Energiser('t1', 'minecraft:lightning_rod', 'create:shaft');
-    Energiser('t2', 'create_new_age:overcharged_golden_wire', 'create_new_age:energiser_t1');
-    Energiser('t3', 'create_new_age:overcharged_diamond', 'create_new_age:energiser_t2');
+    Energiser('basic', 'minecraft:lightning_rod', 'create:shaft');
+    Energiser('advanced', 'create_new_age:overcharged_golden_wire', 'create_new_age:energiser_t1');
+    Energiser('reinforced', 'create_new_age:overcharged_diamond', 'create_new_age:energiser_t2');
 
     event.recipes.create
         .mechanical_crafting(Item.of('create_new_age:basic_motor'), ['NRN', 'SMP', 'NRN'], {
@@ -788,46 +793,46 @@ ServerEvents.recipes((event) => {
     BetterCasings('brass', 'treated_wood', 'gtceu:brass_plate');
 
     // C:DG
-    event.recipes.create
-        .mechanical_crafting(Item.of(`createdieselgenerators:engine_piston`, 2), [' BD', 'NRB', 'GN '], {
-            D: 'gtceu:double_iron_plate',
-            B: 'gtceu:iron_bolt',
-            N: 'gtceu:iron_ring',
-            R: 'gtceu:iron_rod',
-            G: 'gtceu:small_iron_gear',
-        })
-        .id(`start:mechanical_crafter/engine_piston`);
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of(`createdieselgenerators:engine_piston`, 2), [' BD', 'NRB', 'GN '], {
+    //         D: 'gtceu:double_iron_plate',
+    //         B: 'gtceu:iron_bolt',
+    //         N: 'gtceu:iron_ring',
+    //         R: 'gtceu:iron_rod',
+    //         G: 'gtceu:small_iron_gear',
+    //     })
+    //     .id(`start:mechanical_crafter/engine_piston`);
 
-    event.recipes.create
-        .mechanical_crafting(Item.of(`createdieselgenerators:diesel_engine`), ['CLC', 'PSP', 'TTT'], {
-            C: 'gtceu:brass_screw',
-            L: 'gtceu:brass_plate',
-            P: 'createdieselgenerators:engine_piston',
-            S: 'create:shaft',
-            T: 'gtceu:cast_iron_plate',
-        })
-        .id(`start:mechanical_crafter/diesel_engine`);
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of(`createdieselgenerators:diesel_engine`), ['CLC', 'PSP', 'TTT'], {
+    //         C: 'gtceu:brass_screw',
+    //         L: 'gtceu:brass_plate',
+    //         P: 'createdieselgenerators:engine_piston',
+    //         S: 'create:shaft',
+    //         T: 'gtceu:cast_iron_plate',
+    //     })
+    //     .id(`start:mechanical_crafter/diesel_engine`);
 
-    event.recipes.create
-        .mechanical_crafting(Item.of(`createdieselgenerators:large_diesel_engine`), ['PLP', 'SES'], {
-            E: 'createdieselgenerators:diesel_engine',
-            L: 'gtceu:brass_plate',
-            P: 'createdieselgenerators:engine_piston',
-            S: 'create:shaft',
-        })
-        .id(`start:mechanical_crafter/large_diesel_engine`);
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of(`createdieselgenerators:large_diesel_engine`), ['PLP', 'SES'], {
+    //         E: 'createdieselgenerators:diesel_engine',
+    //         L: 'gtceu:brass_plate',
+    //         P: 'createdieselgenerators:engine_piston',
+    //         S: 'create:shaft',
+    //     })
+    //     .id(`start:mechanical_crafter/large_diesel_engine`);
 
-    event.recipes.create
-        .mechanical_crafting(Item.of(`createdieselgenerators:huge_diesel_engine`), ['PDT R', 'PCOOS', 'PDT R'], {
-            D: 'gtceu:double_brass_plate',
-            P: 'gtceu:brass_plate',
-            T: 'createdieselgenerators:engine_piston',
-            S: 'create:shaft',
-            C: 'create:fluid_pipe',
-            O: 'gtceu:iron_rod',
-            R: 'gtceu:cast_iron_ring',
-        })
-        .id(`start:mechanical_crafter/huge_diesel_engine`);
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of(`createdieselgenerators:huge_diesel_engine`), ['PDT R', 'PCOOS', 'PDT R'], {
+    //         D: 'gtceu:double_brass_plate',
+    //         P: 'gtceu:brass_plate',
+    //         T: 'createdieselgenerators:engine_piston',
+    //         S: 'create:shaft',
+    //         C: 'create:fluid_pipe',
+    //         O: 'gtceu:iron_rod',
+    //         R: 'gtceu:cast_iron_ring',
+    //     })
+    //     .id(`start:mechanical_crafter/huge_diesel_engine`);
 
     event.recipes.create
         .mechanical_crafting(Item.of(`create:chain_conveyor`, 2), ['ACNA', 'CGC ', 'ACNA'], {
@@ -873,7 +878,7 @@ ServerEvents.recipes((event) => {
             A: 'gtceu:ulv_robot_arm',
             F: 'gtceu:pig_iron_frame',
             C: 'gtceu:ulv_conveyor_module',
-            R: 'xycraft_world:xychorium_gem_red',
+            R: 'minecraft:redstone',
             B: 'create:bound_cardboard_block',
             P: 'minecraft:stone_pressure_plate',
         })
@@ -886,7 +891,7 @@ ServerEvents.recipes((event) => {
             A: 'gtceu:ulv_robot_arm',
             F: 'gtceu:pig_iron_frame',
             C: 'gtceu:ulv_conveyor_module',
-            R: 'xycraft_world:xychorium_gem_red',
+            R: 'minecraft:redstone',
             B: 'create:bound_cardboard_block',
             P: '#minecraft:wooden_pressure_plates',
         })
@@ -983,13 +988,13 @@ ServerEvents.recipes((event) => {
         })
         .id(`start:shaped/display_board`);
 
-    event
-        .shaped(Item.of('createdieselgenerators:basin_lid'), [' A ', 'PCP', 'AAA'], {
-            A: 'create:andesite_alloy',
-            P: 'gtceu:iron_plate',
-            C: 'minecraft:clock',
-        })
-        .id(`start:shaped/basin_lid`);
+    // event
+    //     .shaped(Item.of('createdieselgenerators:basin_lid'), [' A ', 'PCP', 'AAA'], {
+    //         A: 'create:andesite_alloy',
+    //         P: 'gtceu:iron_plate',
+    //         C: 'minecraft:clock',
+    //     })
+    //     .id(`start:shaped/basin_lid`);
 
     event
         .shaped(Item.of('create:brown_toolbox'), ['RTR', 'GCG', 'SSS'], {

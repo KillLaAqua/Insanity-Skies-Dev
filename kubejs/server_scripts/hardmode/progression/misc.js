@@ -2,44 +2,44 @@ ServerEvents.recipes((event) => {
     const id = global.id;
 
     // Ethanol => Ethane
-    ['fermented_spider_eye', 'fermentable'].forEach((type) => {
-        event.remove({ id: `createdieselgenerators:basin_fermenting/${type}` });
-    });
+    // ['fermented_spider_eye', 'fermentable'].forEach((type) => {
+    //     event.remove({ id: `createdieselgenerators:basin_fermenting/${type}` });
+    // });
 
-    event
-        .custom({
-            type: 'createdieselgenerators:basin_fermenting',
-            ingredients: [
-                {
-                    item: 'minecraft:sugar',
-                },
-                {
-                    item: 'minecraft:sugar',
-                },
-                {
-                    item: 'minecraft:bone_meal',
-                },
-                {
-                    item: 'minecraft:potato',
-                },
-                {
-                    item: 'minecraft:potato',
-                },
-                {
-                    fluid: 'minecraft:water',
-                    amount: 250,
-                },
-            ],
-            heatRequirement: 'superheated',
-            processingTime: 200,
-            results: [
-                {
-                    fluid: 'createdieselgenerators:ethanol',
-                    amount: 100,
-                },
-            ],
-        })
-        .id('start:basin_fermenting/ethanol');
+    // event
+    //     .custom({
+    //         type: 'createdieselgenerators:basin_fermenting',
+    //         ingredients: [
+    //             {
+    //                 item: 'minecraft:sugar',
+    //             },
+    //             {
+    //                 item: 'minecraft:sugar',
+    //             },
+    //             {
+    //                 item: 'minecraft:bone_meal',
+    //             },
+    //             {
+    //                 item: 'minecraft:potato',
+    //             },
+    //             {
+    //                 item: 'minecraft:potato',
+    //             },
+    //             {
+    //                 fluid: 'minecraft:water',
+    //                 amount: 250,
+    //             },
+    //         ],
+    //         heatRequirement: 'superheated',
+    //         processingTime: 200,
+    //         results: [
+    //             {
+    //                 fluid: 'createdieselgenerators:ethanol',
+    //                 amount: 100,
+    //             },
+    //         ],
+    //     })
+    //     .id('start:basin_fermenting/ethanol');
 
     let ethanol = new JSONObject();
     ethanol.add('amount', 1000);
@@ -56,18 +56,18 @@ ServerEvents.recipes((event) => {
 
     event.replaceInput({ id: 'gtceu:mixer/rose_gold' }, 'gtceu:copper_dust', 'gtceu:annealed_copper_dust');
 
-    event.recipes.gtceu
-        .macerator(id('soul_sand_dust'))
-        .itemInputs('minecraft:soul_sand')
-        .itemOutputs('thermal_extra:soul_sand_dust')
-        .duration(40)
-        .EUt(16);
-    event.recipes.gtceu
-        .mixer(id('soul_infused_dust'))
-        .itemInputs('gtceu:invar_dust', '2x thermal_extra:soul_sand_dust')
-        .itemOutputs('3x gtceu:soul_infused_dust')
-        .duration(300)
-        .EUt(16);
+    // event.recipes.gtceu
+    //     .macerator(id('soul_sand_dust'))
+    //     .itemInputs('minecraft:soul_sand')
+    //     .itemOutputs('thermal_extra:soul_sand_dust')
+    //     .duration(40)
+    //     .EUt(16);
+    // event.recipes.gtceu
+    //     .mixer(id('soul_infused_dust'))
+    //     .itemInputs('gtceu:invar_dust', '2x thermal_extra:soul_sand_dust')
+    //     .itemOutputs('3x gtceu:soul_infused_dust')
+    //     .duration(300)
+    //     .EUt(16);
     event.recipes.gtceu
         .mixer(id('signalum_dust'))
         .itemInputs('gtceu:silver_dust', '3x gtceu:copper_dust', '4x minecraft:redstone')

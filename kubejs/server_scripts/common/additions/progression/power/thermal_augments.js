@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             .assembler(id(`${tier.tier}_kit`))
             .itemInputs(
                 `4x gtceu:${tier.plate}_plate`,
-                `thermal${tier.glass}_glass`,
+                /*`thermal${tier.glass}_glass`,*/
                 `gtceu:${tier.gear}_gear`,
                 `#gtceu:circuits/${tier.tier}`
             )
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
     // ARC augments
     event.recipes.gtceu
         .assembler(id('lv_arc_augment'))
-        .itemInputs('2x gtceu:bronze_plate', '2x gtceu:silver_gear', 'thermal_extra:soul_infused_glass')
+        .itemInputs('2x gtceu:bronze_plate', '2x gtceu:silver_gear'/*, 'thermal_extra:soul_infused_glass'*/)
         .itemOutputs(Item.of('kubejs:lv_arc_kit', '{AugmentData:{Type: Dynamo, DynamoEnergy:.95f, DynamoPower:0.5f}}'))
         .duration(600)
         .EUt(28);
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
     // MCI augments
     event.recipes.gtceu
         .assembler(id('lv_mci_augment'))
-        .itemInputs('2x gtceu:electrum_plate', '2x gtceu:silver_gear', 'thermal_extra:soul_infused_glass')
+        .itemInputs('2x gtceu:electrum_plate', '2x gtceu:silver_gear'/*, 'thermal_extra:soul_infused_glass'*/)
         .itemOutputs(Item.of('kubejs:lv_mci_kit', '{AugmentData:{Type: Dynamo, DynamoEnergy:1.15f}}'))
         .duration(600)
         .EUt(28);
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
     ].forEach((tier) => {
         event.recipes.gtceu
             .assembler(id(`arc_augment_${tier.tier}`))
-            .itemInputs(`kubejs:${tier.last_tier}_arc_kit`, `2x gtceu:${tier.gear}_gear`, `thermal:${tier.glass}_glass`)
+            .itemInputs(`kubejs:${tier.last_tier}_arc_kit`, `2x gtceu:${tier.gear}_gear`/*, `thermal:${tier.glass}_glass`*/)
             .itemOutputs(
                 Item.of(
                     `kubejs:${tier.tier}_arc_kit`,
@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
 
         event.recipes.gtceu
             .assembler(id(`mci_augment_${tier.tier}`))
-            .itemInputs(`kubejs:${tier.last_tier}_mci_kit`, `2x gtceu:${tier.gear}_gear`, `thermal:${tier.glass}_glass`)
+            .itemInputs(`kubejs:${tier.last_tier}_mci_kit`, `2x gtceu:${tier.gear}_gear`/*, `thermal:${tier.glass}_glass`*/)
             .itemOutputs(
                 Item.of(`kubejs:${tier.tier}_mci_kit`, `{AugmentData:{Type: Dynamo, DynamoEnergy:${tier.DynEM}f}}`)
             )

@@ -114,23 +114,23 @@ ServerEvents.tags('item', (event) => {
         /thermal:sulfur.*/,
         /thermal:ender_pearl.*/,
     ];
-    const thermal_extra = [
-        'thermal_extra:obsidian_dust',
-        'thermal_extra:amethyst_dust',
-        'thermal_extra:soul_infused_dust',
-        'thermal_extra:shellite_dust',
-        'thermal_extra:twinite_dust',
-        'thermal_extra:dragonsteel_dust',
-        'thermal_extra:zinc_dust',
-        'thermal:sawdust',
-        /thermal_extra:.*_nugget/,
-        /thermal_extra:.*_ingot/,
-        /thermal_extra:.*_block/,
-        /thermal_extra:.*_plate/,
-        /thermal_extra:.*_rod/,
-        /thermal_extra:.*_gear/,
-        /thermal_extra:.*_hammer/,
-    ];
+    // const thermal_extra = [
+    //     'thermal_extra:obsidian_dust',
+    //     'thermal_extra:amethyst_dust',
+    //     'thermal_extra:soul_infused_dust',
+    //     'thermal_extra:shellite_dust',
+    //     'thermal_extra:twinite_dust',
+    //     'thermal_extra:dragonsteel_dust',
+    //     'thermal_extra:zinc_dust',
+    //     'thermal:sawdust',
+    //     /thermal_extra:.*_nugget/,
+    //     /thermal_extra:.*_ingot/,
+    //     /thermal_extra:.*_block/,
+    //     /thermal_extra:.*_plate/,
+    //     /thermal_extra:.*_rod/,
+    //     /thermal_extra:.*_gear/,
+    //     /thermal_extra:.*_hammer/,
+    // ];
     const Exnihilo = [/exnihilosequentia:.*_ingot/, /exnihilosequentia:.*_nugget/];
     const Create = [
         /create:zinc_.*/,
@@ -146,9 +146,9 @@ ServerEvents.tags('item', (event) => {
     thermal.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
-    thermal_extra.forEach((item) => {
-        event.removeAllTagsFrom(`${item}`);
-    });
+    // thermal_extra.forEach((item) => {
+    //     event.removeAllTagsFrom(`${item}`);
+    // });
     Exnihilo.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
@@ -193,12 +193,12 @@ ServerEvents.tags('block', (event) => {
 
 ServerEvents.tags('fluid', (event) => {
     event.remove('create:bottomless/allow', 'minecraft:lava');
-    ['shellite', 'twinite', 'dragonsteel'].forEach((thermalExtraSC) => {
-        event.remove(`forge:molten_${thermalExtraSC}`, `thermal_extra:${thermalExtraSC}`);
-    });
-    event.remove('forge:sulfuric_acid', 'vintage:sulfuric_acid');
+    // ['shellite', 'twinite', 'dragonsteel'].forEach((thermalExtraSC) => {
+    //     event.remove(`forge:molten_${thermalExtraSC}`, `thermal_extra:${thermalExtraSC}`);
+    // });
+    // event.remove('forge:sulfuric_acid', 'vintage:sulfuric_acid');
 
-    event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
+    // event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
 
     event.add('start_core:komaru/faematter', 'gtceu:faematter');
 });

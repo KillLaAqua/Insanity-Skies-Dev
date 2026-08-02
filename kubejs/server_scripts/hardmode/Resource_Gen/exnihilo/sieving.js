@@ -93,9 +93,9 @@ ServerEvents.recipes((event) => {
     sieve('flint', 0.01, mud, 'minecraft:sugar_cane', false);
 
     // Saplings
-    ['acacia', 'birch', 'cherry', 'dark_oak', 'jungle', 'oak', 'spruce'].forEach((sapling) => {
-        sieve('flint', 0.1, 'architects_palette:twisted_leaves', `minecraft:${sapling}_sapling`, false);
-    });
+    // ['acacia', 'birch', 'cherry', 'dark_oak', 'jungle', 'oak', 'spruce'].forEach((sapling) => {
+    //     sieve('flint', 0.1, 'architects_palette:twisted_leaves', `minecraft:${sapling}_sapling`, false);
+    // });
 
     // Rooted Dirt
     ['carrot', 'potato', 'melon_seeds', 'pumpkin_seeds', 'beetroot_seeds', 'bamboo'].forEach((Crop) => {

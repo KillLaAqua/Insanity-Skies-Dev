@@ -224,16 +224,16 @@ ServerEvents.recipes((event) => {
             .itemInputs('4x exnihilosequentia:andesite_pebble', '4x gtceu:zinc_nugget', `2x #minecraft:${fuel}`)
             .itemOutputs('4x create:andesite_alloy', 'gtceu:tiny_ash_dust')
             .duration(600 * burn);
-        event.recipes.gtceu
-            .rugged_alloyer(id(`blank_gem_${fuel}`))
-            .itemInputs('minecraft:quartz', 'gtceu:glass_dust', `2x #minecraft:${fuel}`)
-            .itemOutputs('xycraft_world:xychorium_gem_light', 'gtceu:tiny_ash_dust')
-            .duration(400 * burn);
-        event.recipes.gtceu
-            .rugged_alloyer(id(`rose_quartz_${fuel}_gem`))
-            .itemInputs('xycraft_world:xychorium_gem_red', 'minecraft:redstone', `2x #minecraft:${fuel}`)
-            .itemOutputs('create:rose_quartz', 'gtceu:tiny_ash_dust')
-            .duration(200 * burn);
+        // event.recipes.gtceu
+        //     .rugged_alloyer(id(`blank_gem_${fuel}`))
+        //     .itemInputs('minecraft:quartz', 'gtceu:glass_dust', `2x #minecraft:${fuel}`)
+        //     .itemOutputs('xycraft_world:xychorium_gem_light', 'gtceu:tiny_ash_dust')
+        //     .duration(400 * burn);
+        // event.recipes.gtceu
+        //     .rugged_alloyer(id(`rose_quartz_${fuel}_gem`))
+        //     .itemInputs('xycraft_world:xychorium_gem_red', 'minecraft:redstone', `2x #minecraft:${fuel}`)
+        //     .itemOutputs('create:rose_quartz', 'gtceu:tiny_ash_dust')
+        //     .duration(200 * burn);
     });
 
     event.recipes.create
