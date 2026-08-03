@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('kaleidoscopic_fractalizer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('kaleidoscopic_fractalizer')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:aberration_casing'))

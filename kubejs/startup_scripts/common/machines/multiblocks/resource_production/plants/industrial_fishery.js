@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('industrial_fishery', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('industrial_fishery')
         .appearanceBlock(() => Block.getBlock('gtceu:clean_machine_casing'))
         .recipeModifiers([

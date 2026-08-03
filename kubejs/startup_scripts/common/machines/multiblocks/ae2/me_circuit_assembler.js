@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('large_me_assembler', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('me_assembler')
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

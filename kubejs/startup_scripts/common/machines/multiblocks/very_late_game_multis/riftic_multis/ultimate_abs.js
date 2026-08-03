@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('ultimate_abs', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeType('alloy_blast_smelter')
         .recipeModifiers([

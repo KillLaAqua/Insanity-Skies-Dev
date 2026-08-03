@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('molten_destabiliser', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('molten_destabilizing')
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

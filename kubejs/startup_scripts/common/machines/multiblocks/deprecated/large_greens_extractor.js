@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('large_greens_extractor', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('large_greens_extractor')
 //         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
 //         .pattern(definition => FactoryBlockPattern.start()

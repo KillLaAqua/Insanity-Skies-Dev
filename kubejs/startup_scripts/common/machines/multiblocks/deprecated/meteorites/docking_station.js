@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('docking_station', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('docking_station')
 //         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
 //         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)

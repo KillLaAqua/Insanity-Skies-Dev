@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('electric_sifter', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('electric_sifter')
         .appearanceBlock(() => Block.getBlock('kubejs:treatedwood_casing'))
         .pattern((definition) =>

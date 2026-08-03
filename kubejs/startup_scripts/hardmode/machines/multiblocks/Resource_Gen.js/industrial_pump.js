@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('industrial_pump', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('industrial_pump')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern((definition) =>

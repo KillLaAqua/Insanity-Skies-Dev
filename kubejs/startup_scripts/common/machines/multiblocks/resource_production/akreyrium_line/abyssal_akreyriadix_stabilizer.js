@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('abyssal_akreyriadix_stabiliser', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeTypes(['abyssal_akreyriadix_stabiliser', 'folding_akreyrium_stabiliser'])
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

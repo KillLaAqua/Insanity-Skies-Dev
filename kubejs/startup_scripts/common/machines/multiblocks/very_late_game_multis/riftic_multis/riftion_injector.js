@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('riftion_injector', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('riftion_injector')
         .recipeModifiers([
             GTRecipeModifiers.OC_NON_PERFECT_SUBTICK,

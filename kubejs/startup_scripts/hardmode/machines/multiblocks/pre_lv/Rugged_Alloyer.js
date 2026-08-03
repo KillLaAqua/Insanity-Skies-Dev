@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('rugged_alloyer', 'primitive')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('rugged_alloyer')
         .appearanceBlock(() => Block.getBlock('kubejs:reinforced_stone_bricks'))
         .pattern((definition) =>

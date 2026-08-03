@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('riftion_slammer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('riftion_slammer')
         .recipeModifiers([
             GTRecipeModifiers.OC_NON_PERFECT_SUBTICK,

@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('rock_sifter', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('rock_filtrator')
         .appearanceBlock(GCYMBlocks.CASING_WATERTIGHT)
         .recipeModifiers([

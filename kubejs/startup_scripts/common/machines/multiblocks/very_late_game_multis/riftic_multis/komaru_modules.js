@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     // === Basic Modules ===
     event
         .create(`magmatic_drilling_module`, 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('magmatic_drill')
         .appearanceBlock(() => Block.getBlock('kubejs:primordial_ware_casing'))
         .recipeModifiers([
@@ -79,7 +79,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 
     event
         .create(`voidic_refinement_module`, 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('voidic_refinement')
         .appearanceBlock(() => Block.getBlock('kubejs:primordial_ware_casing'))
         .recipeModifiers([
@@ -118,7 +118,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 
     event
         .create(`rimula_extraction_module`, 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('rimula_extraction')
         .appearanceBlock(() => Block.getBlock('kubejs:primordial_ware_casing'))
         .recipeModifiers([
@@ -162,7 +162,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     // === Advanced Modules ===
     event
         .create(`riftic_infusion_assembly_module`, 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('riftic_infusion_assembly')
         .appearanceBlock(() => Block.getBlock('kubejs:primordial_ware_casing'))
         .recipeModifiers([
@@ -202,7 +202,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create(`riftic_enhancement_module`, 'multiblock')
         .machine((holder) => new $OpticalComputationMachine(holder))
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('riftic_enhancement')
         .appearanceBlock(() => Block.getBlock('kubejs:primordial_ware_casing'))
         .recipeModifiers([

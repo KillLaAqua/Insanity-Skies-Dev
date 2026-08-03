@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('steam_casting_array', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('fluid_solidifier')
         .machine((holder) => new $StartSteamMulti(holder))
         .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)

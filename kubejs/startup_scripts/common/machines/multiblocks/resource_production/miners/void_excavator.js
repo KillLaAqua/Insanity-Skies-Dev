@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('void_excavator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeTypes(['void_excavation', 'aqueous_void_excavation'])
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

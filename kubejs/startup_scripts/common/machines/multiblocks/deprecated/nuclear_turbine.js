@@ -10,7 +10,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('nuclear_turbine', 'multiblock' /*, (holder) => new LargeTurbineMachine(holder, GTValues.HV)*/)
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('nuclear_turbine')
 //         .recipeModifier((machine, recipe) => LargeTurbineMachine.recipeModifier(machine, recipe), true)
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)

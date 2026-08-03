@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('deep_space_scanner', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('deep_space_scanner')
 //         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)

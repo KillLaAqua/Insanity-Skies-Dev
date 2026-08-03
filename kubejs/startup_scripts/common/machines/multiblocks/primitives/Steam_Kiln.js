@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('gtceu:steam_kiln', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('steam_kiln')
         .machine((holder) => new $SteamMulti(holder, 4))
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)

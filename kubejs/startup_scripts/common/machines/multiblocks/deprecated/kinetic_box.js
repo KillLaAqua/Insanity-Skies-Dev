@@ -8,7 +8,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('kinetic_box', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('kinetic_box')
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
 //         .pattern(definition => FactoryBlockPattern.start()

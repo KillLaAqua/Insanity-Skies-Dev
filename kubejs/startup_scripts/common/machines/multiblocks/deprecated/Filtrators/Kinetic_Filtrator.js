@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('kinetic_filtrator', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('kinetic_filtrator')
 //         .pattern(definition => FactoryBlockPattern.start()
 //             .aisle('BBBBB', 'SSSSS', 'SXXXS', 'SSSSS')

@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('heated_cracking_unit', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('heated_cracking_unit')
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
 //         .recipeModifier(GTRecipeModifiers.OC_PERFECT)

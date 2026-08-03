@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('incomprehensible_chemical_reactor', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeTypes(['large_chemical_reactor'])
         .recipeModifiers([

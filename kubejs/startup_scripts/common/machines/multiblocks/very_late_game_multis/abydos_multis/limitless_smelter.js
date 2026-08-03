@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('limitless_smelter', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeTypes([
             'electric_furnace',

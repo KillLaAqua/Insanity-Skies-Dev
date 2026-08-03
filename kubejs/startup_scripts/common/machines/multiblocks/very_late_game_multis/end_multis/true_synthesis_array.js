@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('true_synthesis_array', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
         .recipeTypes(['ordered_chemistry', 'supreme_chemistry'])
         .recipeModifiers([

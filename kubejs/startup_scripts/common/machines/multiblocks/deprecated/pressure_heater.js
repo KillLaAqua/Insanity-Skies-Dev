@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('pressure_cracker', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('pressure_cracker')
 //         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
 //         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)

@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('large_farm', 'primitive')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('large_farm')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern((definition) =>

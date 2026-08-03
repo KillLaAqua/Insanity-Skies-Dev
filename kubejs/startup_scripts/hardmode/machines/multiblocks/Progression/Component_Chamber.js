@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('component_chamber', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('component_chamber')
         .appearanceBlock(GTBlocks.CASING_ALUMINIUM_FROSTPROOF)
         .pattern((definition) =>

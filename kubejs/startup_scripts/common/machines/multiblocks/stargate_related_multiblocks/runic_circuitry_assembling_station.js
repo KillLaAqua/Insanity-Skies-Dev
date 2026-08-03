@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('runic_circuitry_assembling_station', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('runic_circuitry_assembling_station')
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

@@ -8,7 +8,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('chemical_builder', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('chemical_builder')
 //         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
 //         .pattern(definition => FactoryBlockPattern.start()

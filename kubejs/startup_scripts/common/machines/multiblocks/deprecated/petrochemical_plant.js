@@ -8,7 +8,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('petrochemical_plant', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('petrochemical_plant')
 //         .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH.apply(OverclockingLogic.PERFECT_OVERCLOCK, GTRecipeModifiers.ELECTRIC_OVERCLOCK))
 //         .pattern(definition => FactoryBlockPattern.start()

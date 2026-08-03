@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('solid_blast_furnace', 'primitive')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('solid_blast_furnace')
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
         .pattern((definition) =>

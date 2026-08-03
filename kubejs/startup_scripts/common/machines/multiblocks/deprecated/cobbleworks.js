@@ -12,7 +12,7 @@
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 //     event.create('cobbleworks', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('cobbleworks')
 //         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
 //         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)

@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('reinforced_blast_furnace', 'primitive')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('reinforced_blast_furnace')
         .appearanceBlock(() => Block.getBlock('dustrial_decor:cinder_block'))
         .pattern((definition) =>

@@ -7,7 +7,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('drone_pad', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('drone_pad')
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
 //         .recipeModifier(GTRecipeModifiers.OC_PERFECT)

@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('dimensional_destabiliser', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('dimensional_destabiliser')
         .recipeModifiers([
             $StarTRecipeModifiers.THROUGHPUT_BOOSTING,

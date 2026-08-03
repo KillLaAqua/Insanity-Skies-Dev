@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('exotic_tectonic_formation_apparatus', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('exotic_rock_crushing')
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('steam_ore_factory', 'multiblock')
         .machine((holder) => new $StartSteamMulti(holder))
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('steam_ore_processing')
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
         .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)

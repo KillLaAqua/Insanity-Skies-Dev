@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('chemical_plant', 'multiblock')
         .machine((holder) => new $CoiledMulti(holder))
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeTypes(['chemical_skip'])
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

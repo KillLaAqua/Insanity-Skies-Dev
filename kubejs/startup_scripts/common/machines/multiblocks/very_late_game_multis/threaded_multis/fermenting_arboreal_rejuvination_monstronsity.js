@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('fermenting_arboreal_rejuvenation_monstrosity', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .tooltips([Text.translate('block.start_core.gap'), Text.translate('block.kubejs.threading.tooltip')])
         .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse', 'composting_factory'])
         .recipeModifiers([

@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('exotic_gas_siphon', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,
             GTRecipeModifiers.OC_NON_PERFECT_SUBTICK,

@@ -12,7 +12,7 @@
 
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 //     event.create('primitive_alloy_smelter', 'multiblock')
-//         .rotationState(RotationState.NON_Y_AXIS)
+//         .rotationState(RotationState.ALL)
 //         .recipeType('primitive_alloy_smelter')
 //         // .editableUI(new $EditableMachineUI('primitive_alloy_smelter', 'ldlib/assets/ldlib/primitive_alloy_smelter.ui', () => new $WidgetGroup(), (template, machine) => {
 //         //     if (machine instanceof $PrimitiveWorkableMachine) {

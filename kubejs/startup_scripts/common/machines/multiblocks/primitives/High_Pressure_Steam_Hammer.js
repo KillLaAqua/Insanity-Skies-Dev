@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('high_pressure_steam_hammer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('forge_hammer')
         .machine((holder) => new $StartSteamMulti(holder))
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))

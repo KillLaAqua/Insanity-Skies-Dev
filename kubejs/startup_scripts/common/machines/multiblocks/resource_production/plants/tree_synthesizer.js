@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('tree_synthesizer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeType('tree_greenhouse')
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,

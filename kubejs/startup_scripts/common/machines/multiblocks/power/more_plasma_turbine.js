@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('supreme_plasma_turbine', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .tooltips([
             Text.translate('block.gtceu.supreme_plasma_turbine.top.0'),
             Text.translate('block.gtceu.supreme_plasma_turbine.top.1'),
@@ -60,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 
     event
         .create('nyinsane_plasma_turbine', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .tooltips([
             Text.translate('block.gtceu.supreme_plasma_turbine.top.0'),
             Text.translate('block.gtceu.supreme_plasma_turbine.top.1'),

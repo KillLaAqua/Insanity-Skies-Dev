@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 
     event
         .create('cryostate_quantum_chiller', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
+        .rotationState(RotationState.ALL)
         .recipeTypes(['quantum_cooling', 'vacuum_freezer'])
         .recipeModifiers([
             GTRecipeModifiers.PARALLEL_HATCH,
