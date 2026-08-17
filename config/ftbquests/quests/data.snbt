@@ -11,6 +11,7 @@
 	emergency_items: [{ Count: 1, id: "minecraft:dead_bush" }]
 	emergency_items_cooldown: 150
 	grid_scale: 0.5d
+	hide_excluded_quests: false
 	icon: "gtceu:creative_computation_provider"
 	lock_message: ""
 	loot_crate_no_drop: {

@@ -45,10 +45,16 @@
 	["Stargate Journey Client Config"."DHD Config"]
 
 		["Stargate Journey Client Config"."DHD Config".client]
-			#If true, Milky Way DHD symbol positions won't be ordered and instead be based on the canon
-			milky_way_dhd_canon_symbol_positions = false
-			#If true, Pegasus DHD symbol positions won't be ordered and instead be based on the canon
-			pegasus_dhd_canon_symbol_positions = false
+			#If true, DHD buttons will render symbols by default, otherwise they'll be render numbers by default
+			dhd_symbols_numbers = true
+			#If true, Universe DHD symbol positions won't be ordered and instead be based on their canon positions
+			universe_dhd_canon_button_layout = false
+			#If true, Milky Way DHD symbol positions won't be ordered and instead be based on their canon positions
+			milky_way_dhd_canon_button_layout = false
+			#If true, Pegasus DHD symbol positions won't be ordered and instead be based on their canon positions
+			pegasus_dhd_canon_button_layout = false
+			#If true, Classic DHD symbol positions won't be ordered and instead be based on the canon symbol positions of the Milky Way DHD
+			classic_dhd_canon_button_layout = false
 
 	["Stargate Journey Client Config"."Sky Config"]
 
@@ -67,4 +73,8 @@
 			custom_unitas_sky = true
 			#If true you will render a custom Rima sky
 			custom_rima_sky = true
+			#If true you will render a custom Tollan sky
+			custom_tollan_sky = true
+			#If true you will render a custom Destiny sky
+			custom_destiny_sky = true
 

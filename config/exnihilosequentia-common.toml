@@ -198,7 +198,7 @@
 	flattenSieveRecipes = false
 	#The number of sieve clicks required to sieve a block. (Default: 10)
 	#Range: 1 ~ 10
-	maxSieveClicks = 5
+	maxSieveClicks = 4
 	#Meshes will have durability and can break, but don't stack. (Default: false)
 	enableMeshDurability = false
 	#Should nether sieves sound like nether wood? (Default: true)

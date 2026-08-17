@@ -1,9 +1,8 @@
 # Ignore eveything so repository can be used in game instance
 /*
 
-# Add directories with soure code
-!config/
-!defaultconfigs/
+# Directory Unignores
+# !mods/
 !kubejs/
 !mods/panorama/
 !packmode/
@@ -12,14 +11,30 @@
 !compile_data/
 !.github/
 
-# Add files in main directory
+# File Unignores
 !.gitattributes
 !.gitignore
 !LICENSE
-!packmode_picker.bat
-!packmode_picker.sh
-!packmode_picker.py
 !panorama.dat
 !README.md
 
-config/jei/*
+# Config Unignore - Directories
+!config/fancymenu/*
+!config/ftbquests/*
+!config/gamestages/*
+!config/hammerlib/*
+!config/jade/*
+!config/mysticalcustomization/*
+!config/skyblockbuilder/templates*
+!config/jei/blacklist*
+
+# Config Unignore - File
+!config/badmobs-common.toml
+!config/create_new_age-*
+!config/create-*
+!config/createlowheated-*
+!config/cucumber-tags.json
+!config/exnihilosequentia-common.toml
+!config/gtceu.yaml
+!config/sgjourney-*
+!defaultconfigs/create-*

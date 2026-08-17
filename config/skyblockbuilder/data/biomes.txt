@@ -1,3 +1,13 @@
+ad_astra:glacio_ice_peaks
+ad_astra:glacio_snowy_barrens
+ad_astra:infernal_venus_barrens
+ad_astra:lunar_wastelands
+ad_astra:martian_canyon_creek
+ad_astra:martian_polar_caps
+ad_astra:martian_wastelands
+ad_astra:mercury_deltas
+ad_astra:orbit
+ad_astra:venus_wastelands
 ae2:spatial_storage
 minecraft:badlands
 minecraft:bamboo_jungle
@@ -76,4 +86,7 @@ sgjourney:milky_way_forest
 sgjourney:milky_way_plains
 sgjourney:rima_cracks
 sgjourney:rima_shattered_plains
+sgjourney:tollan_basalt_deltas
+sgjourney:tollan_volcanic_mountains
+sgjourney:tollan_wasteland
 sgjourney:unitas_desert
