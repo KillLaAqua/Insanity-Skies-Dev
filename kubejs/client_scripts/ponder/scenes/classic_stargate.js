@@ -14,7 +14,7 @@
 
     let $BlockStateProperties = Java.loadClass('net.minecraft.world.level.block.state.properties.BlockStateProperties');
     let $Boolean = Java.loadClass('java.lang.Boolean');
-    let $TileFluxPoint = Java.loadClass('sonar.fluxnetworks.common.device.TileFluxPoint');
+    // let $TileFluxPoint = Java.loadClass('sonar.fluxnetworks.common.device.TileFluxPoint');
 
     defineScene('classic_stargate', (scene, util) => {
         resetScene(scene, 9, true);
@@ -204,27 +204,27 @@
 
         scene.idle(20);
 
-        revealBlocks(scene, [
-            {
-                pos: csgInterface.pos.offset(-1, 0, 0),
-                state: block('fluxnetworks:flux_point'),
-            },
-        ]);
+        // revealBlocks(scene, [
+        //     {
+        //         pos: csgInterface.pos.offset(-1, 0, 0),
+        //         state: block('fluxnetworks:flux_point'),
+        //     },
+        // ]);
 
         scene.idle(20);
 
-        scene
-            .world()
-            .setBlock(
-                csgInterface.pos.offset(-1, 0, 0),
-                block('fluxnetworks:flux_point').setValue($BlockStateProperties.EAST, new $Boolean(true)),
-                false
-            );
+        // scene
+        //     .world()
+        //     .setBlock(
+        //         csgInterface.pos.offset(-1, 0, 0),
+        //         block('fluxnetworks:flux_point').setValue($BlockStateProperties.EAST, new $Boolean(true)),
+        //         false
+        //     );
 
-        scene.world().modifyBlockEntity(csgInterface.pos.offset(-1, 0, 0), $TileFluxPoint, (be) => {
-            be.mClientColor = 0xfe019a;
-            be.getTransferHandler().addToBuffer(1000);
-        });
+        // scene.world().modifyBlockEntity(csgInterface.pos.offset(-1, 0, 0), $TileFluxPoint, (be) => {
+        //     be.mClientColor = 0xfe019a;
+        //     be.getTransferHandler().addToBuffer(1000);
+        // });
 
         scene.idle(60);
         scene.addKeyframe();

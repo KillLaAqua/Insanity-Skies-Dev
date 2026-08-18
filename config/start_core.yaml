@@ -1,5 +1,0 @@
-client:
-  # Whether or not to enable the render for the Komau Frame.
-  # Default: true
-  komaruRenderer: true
-

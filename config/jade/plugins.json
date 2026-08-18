@@ -2,9 +2,6 @@
   "framedblocks": {
     "framed_item_frame": true
   },
-  "enderchests": {
-    "hud": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -57,13 +54,8 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "endertanks": {
-    "hud.basic": true,
-    "hud": true,
-    "hud.status": true,
-    "hud.contents": true
-  },
   "gtceu": {
+    "layered_recipe_info": true,
     "primitive_pump": true,
     "auto_output_info": true,
     "workable_provider": true,
@@ -89,11 +81,15 @@
     "data_bank": true
   },
   "start_core": {
+    "min_parallel": true,
     "fusion_reactor_info": true,
     "hellforge_heat_info": true,
     "threading_stat_blocks": true,
     "vacuum_chemical_reaction_chamber_info": true,
     "dream_link_network_info": true,
+    "solar_cells": true,
+    "solar_machine_info": true,
+    "modular_interface_hatch_part_machine": true,
     "variadic_redstone_info": true,
     "threading_recipes": true,
     "abyssal_harvester_info": true
@@ -130,6 +126,9 @@
   },
   "modularrouters": {
     "router": true
+  },
+  "createlowheated": {
+    "basic_burner_info": true
   },
   "hammerlib": {
     "root": true

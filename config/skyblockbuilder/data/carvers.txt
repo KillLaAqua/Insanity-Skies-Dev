@@ -1,3 +1,4 @@
+ad_astra:moon_crater
 minecraft:canyon
 minecraft:cave
 minecraft:cave_extra_underground
