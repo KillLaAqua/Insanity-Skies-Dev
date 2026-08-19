@@ -47,15 +47,15 @@
 	[barrel.fluid_transform]
 		#Number of seconds to transform fluids (Default: 10)
 		#Range: > 1
-		secondsToTransformFluid = 10
+		secondsToTransformFluid = 60
 
 #Pebble Configs
 [pebble]
 	#How much half hearts damage a pebble should do. (Default: 0)
 	#Range: > 0
-	pebbleDamage = 0
+	pebbleDamage = 1
 	#Should pebbles be throwable? (Default: true)
-	enableThrowable = false
+	enableThrowable = true
 
 #Ore Configs
 [ore]
@@ -88,13 +88,13 @@
 [crook]
 	#Maximum additional string that a crook will drop from infested leaves in addition to the minimum string count (Default: 3)
 	#Range: > 0
-	maxBonusStringCount = 3
+	maxBonusStringCount = 0
 	#Minimum string that a crook will drop from infested leaves (Default: 2)
 	#Range: > 1
-	minStringCount = 2
+	minStringCount = 1
 	#Number of times the crook will "break" a leaf block to get drops (Default: 3)
 	#Range: > 1
-	vanillaDropSimulateCount = 3
+	vanillaDropSimulateCount = 1
 
 #Durability Configs
 [durability]
@@ -103,55 +103,55 @@
 	[durability.hammer]
 		#Durability of Wooden Hammer (Default: 128)
 		#Range: > 1
-		hammerWoodValue = 128
+		hammerWoodValue = 1
 		#Durability of Stone Hammer (Default: 256)
 		#Range: > 1
-		hammerStoneValue = 256
+		hammerStoneValue = 1
 		#Durability of Netherite Hammer (Default: 8192)
 		#Range: > 1
-		hammerNetheriteValue = 8192
+		hammerNetheriteValue = 1
 		#Durability of Iron Hammer (Default: 512)
 		#Range: > 1
-		hammerIronValue = 512
+		hammerIronValue = 1
 		#Durability of Diamond Hammer (Default: 4096)
 		#Range: > 1
-		hammerDiamondValue = 4096
+		hammerDiamondValue = 1
 		#Durability of Gold Hammer (Default: 64)
 		#Range: > 1
-		hammerGoldValue = 64
+		hammerGoldValue = 1
 
 	#Durability of Crooks
 	[durability.crook]
 		#Durability of Diamond Crook (Default: 2048)
 		#Range: > 1
-		crookDiamondValue = 2048
+		crookDiamondValue = 1
 		#Durability of Iron Crook (Default: 256)
 		#Range: > 1
-		crookIronValue = 512
+		crookIronValue = 2048
 		#Durability of Bone Crook (Default: 256)
 		#Range: > 1
-		crookBoneValue = 256
+		crookBoneValue = 1
 		#Durability of Stone Crook (Default: 256)
 		#Range: > 1
-		crookStoneValue = 256
+		crookStoneValue = 1
 		#Durability of Gold Crook (Default: 32)
 		#Range: > 1
-		crookGoldValue = 64
+		crookGoldValue = 1
 		#Durability of Granite Crook (Default: 256)
 		#Range: > 1
-		crookGraniteValue = 256
+		crookGraniteValue = 1
 		#Durability of Netherite Crook (Default: 8192)
 		#Range: > 1
-		crookNetheriteValue = 8192
+		crookNetheriteValue = 1
 		#Durability of Andesite Crook (Default: 256)
 		#Range: > 1
-		crookAndesiteValue = 256
+		crookAndesiteValue = 1
 		#Durability of Diorite Crook (Default: 256)
 		#Range: > 1
-		crookDioriteValue = 256
+		crookDioriteValue = 1
 		#Durability of Wooden Crook (Default: 128)
 		#Range: > 1
-		crookWoodValue = 128
+		crookWoodValue = 96
 
 	#Durability of Meshes
 	[durability.mesh]
@@ -178,10 +178,10 @@
 [crucible]
 	#Ticks between melting operations (Default: 20)
 	#Range: > 1
-	ticksBetweenMelts = 20
+	ticksBetweenMelts = 8
 	#Number of buckets the crucible will hold (Default: 4)
 	#Range: > 1
-	crucibleNumberOfBuckets = 4
+	crucibleNumberOfBuckets = 2
 	#Should nether crucibles sound like nether wood? (Default: true)
 	#If set to false, the blocks have same sounds as wooden crucibles
 	netherCrucibleSoundsEnabled = true
