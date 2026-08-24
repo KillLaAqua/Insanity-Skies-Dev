@@ -100,7 +100,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
         .create('flisnt')
         .color(0x888b8c)
         .toolStats(
-            ToolProperty.Builder.of(1, 1, 96, 1, [
+            ToolProperty.Builder.of(1, 1, 128, 1, [
                 GTToolType.SAW,
                 GTToolType.HARD_HAMMER,
                 GTToolType.PICKAXE,

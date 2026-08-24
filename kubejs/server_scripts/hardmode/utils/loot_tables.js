@@ -1,4 +1,5 @@
 LootJS.modifiers((event) => {
+
     event
         .addBlockLootModifier('minecraft:dead_bush')
         .removeLoot(Ingredient.all)
@@ -39,4 +40,5 @@ LootJS.modifiers((event) => {
                 tree == 'jungle' && LootEntry.of('minecraft:cocoa_beans').when((c) => c.randomChance(0.02))
             );
     });
+    
 });
