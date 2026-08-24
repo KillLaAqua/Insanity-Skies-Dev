@@ -1024,73 +1024,14 @@ ServerEvents.recipes((event) => {
 
     // Removals
     const CreateRemoval = [
-        'windmill_bearing',
-        'spout',
-        'fluid_pipe',
-        'chute',
-        'depot',
-        'basin',
-        'mechanical_mixer',
-        'mechanical_press',
-        'hand_crank',
-        'millstone',
-        'crushing_wheel',
-        'smart_chute',
-        'fluid_tank',
-        'steam_engine',
-        'piston_extension_pole',
-        'mechanical_bearing',
-        'clockwork_bearing',
-        'weighted_ejector',
-        'encased_fan',
-        'large_water_wheel',
-        'encased_chain_drive',
-        'gearshift',
-        'gantry_shaft',
-        'gantry_carriage',
-        'mechanical_drill',
-        'sticker',
-        'mechanical_saw',
-        'deployer',
-        'andesite_casing',
-        'brass_casing',
-        'mechanical_crafter',
-        'copper_casing',
-        'sequenced_gearshift',
-        'nozzle',
-        'adjustable_chain_gearshift',
-        'water_wheel',
-        'andesite_funnel',
-        'mechanical_arm',
-        'item_vault',
-        'flywheel',
-        'brass_hand',
-        'whisk',
-        'propeller',
-        'electron_tube',
-        'rotation_speed_controller',
-        'brass_tunnel',
-        'andesite_tunnel',
-        'brass_funnel',
-        'white_sail',
-        'wrench',
-        'hose_pulley',
-        'transmitter',
-        'pulp',
-        'cardboard',
-        'item_hatch',
-        'elevator_pulley',
-        'redstone_contact',
-        'schematicannon',
-        'display_board',
-        'chain_conveyor',
-        'redstone_link',
-        'package_frogport',
-        'display_link',
-        'packager',
-        'repackager',
-        'brown_toolbox',
-    ];
+		'windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
+		'crushing_wheel', 'smart_chute', 'fluid_tank', 'steam_engine', 'piston_extension_pole', 'mechanical_bearing', 'clockwork_bearing', 'weighted_ejector',
+		'encased_fan', 'large_water_wheel', 'encased_chain_drive', 'gearshift', 'gantry_shaft', 'gantry_carriage', 'mechanical_drill', 'sticker', 'mechanical_saw',
+		'deployer', 'andesite_casing', 'brass_casing', 'mechanical_crafter', 'copper_casing', 'sequenced_gearshift', 'nozzle', 'adjustable_chain_gearshift', 'water_wheel',
+		'andesite_funnel', 'mechanical_arm', 'item_vault', 'flywheel', 'brass_hand', 'whisk', 'propeller', 'electron_tube', 'rotation_speed_controller', 'brass_tunnel',
+		'andesite_tunnel', 'brass_funnel', 'white_sail', 'wrench', 'hose_pulley', 'transmitter', 'pulp', 'cardboard', 'item_hatch', 'elevator_pulley', 'redstone_contact',
+		'schematicannon', 'display_board', 'chain_conveyor', 'redstone_link', 'package_frogport', 'display_link', 'packager', 'repackager', 'brown_toolbox'
+	];
     CreateRemoval.forEach((item) => {
         event.remove({ output: `create:${item}` });
     });
@@ -1119,19 +1060,19 @@ ServerEvents.recipes((event) => {
     CNA.forEach((removal) => {
         event.remove({ output: `create_new_age:${removal}` });
     });
-    const CDiesel = [
-        'engine_piston',
-        'engine_silencer',
-        'engine_turbocharger',
-        'diesel_engine',
-        'large_diesel_engine',
-        'huge_diesel_engine',
-        'wood_chip',
-        'basin_lid',
-    ];
-    CDiesel.forEach((removal) => {
-        event.remove({ output: `createdieselgenerators:${removal}` });
-    });
-    event.remove({ id: /^railways:mechanical_crafting\/.*_locometal_boiler/ });
-    event.remove({ mod: 'vintage' });
+    // const CDiesel = [
+    //     'engine_piston',
+    //     'engine_silencer',
+    //     'engine_turbocharger',
+    //     'diesel_engine',
+    //     'large_diesel_engine',
+    //     'huge_diesel_engine',
+    //     'wood_chip',
+    //     'basin_lid',
+    // ];
+    // CDiesel.forEach((removal) => {
+    //     event.remove({ output: `createdieselgenerators:${removal}` });
+    // });
+    // event.remove({ id: /^railways:mechanical_crafting\/.*_locometal_boiler/ });
+    // event.remove({ mod: 'vintage' });
 });

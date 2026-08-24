@@ -302,6 +302,8 @@ ServerEvents.recipes((event) => {
             )
             .EUt(euT);
 
+        if (recId == 'assembly_line') return;
+
         event.recipes.gtceu
             .research_station(`1_x_${researched.replace(':', '_')}`)
             .itemInputs(dataItem)
