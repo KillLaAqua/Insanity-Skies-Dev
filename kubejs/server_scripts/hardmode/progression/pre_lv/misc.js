@@ -172,7 +172,7 @@ ServerEvents.recipes((event) => {
         .mechanical_crafting('2x modularrouters:modular_router', ['PDP', 'DED', 'PDP'], {
             P: 'gtceu:steel_plate',
             D: 'gtceu:double_iron_plate',
-            E: 'kubejs:ulv_emitter',
+            E: 'minecraft:dirt'/*'kubejs:ulv_emitter'*/,
         })
         .id('start:mechanical_crafting/modular_router');
 

@@ -362,14 +362,14 @@ ServerEvents.recipes((event) => {
                 .itemOutputs(`${mod}:ulv_${output}`)
                 .duration(100)
                 .EUt(6);
-        if (output == 'emitter')
-            event.recipes.gtceu
-                .assembler(id(`ulv_${output}`))
-                .itemInputs(inputs[0], inputs[1], inputs[2], inputs[3], inputs[4])
-                .itemOutputs(`${mod}:ulv_${output}`)
-                .duration(100)
-                .circuit(1)
-                .EUt(6);
+        // if (output == 'emitter')
+        //     event.recipes.gtceu
+        //         .assembler(id(`ulv_${output}`))
+        //         .itemInputs(inputs[0], inputs[1], inputs[2], inputs[3], inputs[4])
+        //         .itemOutputs(`${mod}:ulv_${output}`)
+        //         .duration(100)
+        //         .circuit(1)
+        //         .EUt(6);
         if (output == 'conveyor_module')
             event.recipes.gtceu
                 .assembler(id(`${output}_ulv`))
@@ -429,17 +429,17 @@ ServerEvents.recipes((event) => {
         ],
         ''
     );
-    UlvComponent(
-        'emitter',
-        [
-            '1x gtceu:ulv_electric_motor',
-            '4x gtceu:zinc_rod',
-            '2x gtceu:red_alloy_single_cable',
-            '2x #gtceu:circuits/ulv',
-            '1x minecraft:prismarine_crystals',
-        ],
-        ''
-    );
+    // UlvComponent(
+    //     'emitter',
+    //     [
+    //         '1x gtceu:ulv_electric_motor',
+    //         '4x gtceu:zinc_rod',
+    //         '2x gtceu:red_alloy_single_cable',
+    //         '2x #gtceu:circuits/ulv',
+    //         '1x minecraft:prismarine_crystals',
+    //     ],
+    //     ''
+    // );
 
     event.recipes.gtceu
         .assembler(id('ulv_battery'))
@@ -531,11 +531,11 @@ ServerEvents.recipes((event) => {
         .EUt(-8);
 
     // Old ULV to new ULV component recipes
-    ['electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston'].forEach((component) => {
-        event
-            .shapeless(Item.of(`kubejs:ulv_${component}`), [`gtceu:ulv_${component}`])
-            .id(id(`old_to_new_hm_ulv_${component}`));
-    });
+    // ['electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston'].forEach((component) => {
+    //     event
+    //         .shapeless(Item.of(`kubejs:ulv_${component}`), [`gtceu:ulv_${component}`])
+    //         .id(id(`old_to_new_hm_ulv_${component}`));
+    // });
 
     //ulv removals
     [

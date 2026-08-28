@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
             '6x gtceu:ulv_robot_arm',
             '4x #gtceu:circuits/lv',
             '2x gtceu:ulv_conveyor_module',
-            '2x kubejs:ulv_emitter',
+            // '2x kubejs:ulv_emitter',
             '2x gtceu:ulv_electric_pump',
             '2x gtceu:steel_gear',
             '2x gtceu:small_damascus_steel_gear'
@@ -422,11 +422,11 @@ ServerEvents.recipes((event) => {
         );
         AllTierMachine('battery_buffer_8x', [Hull, Chest, `4x gtceu:${cable}_octal_wire`, Circuit], [Solder + ' 144']);
         AllTierMachine('battery_buffer_16x', [Hull, Chest, `4x gtceu:${cable}_hex_wire`, Circuit], [Solder + ' 144']);
-        AllTierMachine(
-            'me_assembler',
-            [Hull, '2x ' + Arm, '2x ' + Circuit, Emitter, Conveyor, Motor, '3x ' + Cable1x],
-            [Solder + ' 144']
-        );
+        // AllTierMachine(
+        //     'me_assembler',
+        //     [Hull, '2x ' + Arm, '2x ' + Circuit, Emitter, Conveyor, Motor, '3x ' + Cable1x],
+        //     [Solder + ' 144']
+        // );
 
         const Transformers = (amps, cableSize) => {
             if (chip !== null) {

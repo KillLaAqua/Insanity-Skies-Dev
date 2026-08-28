@@ -19,13 +19,13 @@
 !README.md
 
 # Config Unignore - Directories
-!config/fancymenu/*
+# !config/fancymenu/*
 !config/ftbquests/*
 !config/gamestages/*
 !config/hammerlib/*
 !config/jade/*
 !config/mysticalcustomization/*
-!config/skyblockbuilder/templates*
+# !config/skyblockbuilder/*
 !config/jei/blacklist*
 
 # Config Unignore - File

@@ -845,7 +845,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .mechanical_crafting(Item.of(`create:transmitter`, 4), [' E ', 'PPP'], {
-            E: 'kubejs:ulv_emitter',
+            E: 'minecraft:dirt'/*'kubejs:ulv_emitter'*/,
             P: 'gtceu:copper_plate',
         })
         .id(`start:mechanical_crafter/transmitter`);
