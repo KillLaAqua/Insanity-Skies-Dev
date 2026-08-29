@@ -14,8 +14,6 @@ StartupEvents.registry('item', (event) => {
 
     event.create('concrete_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/concrete_bowl`);
 
-    event.create('mud_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/mud_bowl`);
-
     event.create('water_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/water_bowl`);
 
     // === Ore Chunks ===
@@ -36,17 +34,9 @@ StartupEvents.registry('item', (event) => {
 
     // === Incomplete parts ===
     [
-        'long_rod',
-        'double_plate',
-        'gear',
-        'small_gear',
-        'rotor',
-        'spring',
-        'small_spring',
-        'single_wire',
-        'fine_wire',
-        'fluid_pipe',
-        'item_pipe',
+        'long_rod','double_plate','gear','small_gear',
+        'rotor','spring','small_spring','single_wire',
+        'fine_wire','fluid_pipe','item_pipe',
     ].forEach((id) => {
         event.create(`incomplete_${id}`).maxStackSize(64).texture(`kubejs:item/hm/incomplete_parts/incomplete_${id}`);
     });

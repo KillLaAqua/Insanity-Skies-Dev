@@ -88,20 +88,20 @@ ServerEvents.recipes((event) => {
         .duration(1000)
         .EUt(1024);
 
-    event.recipes.gtceu
-        .chemical_bath(id('hot_signalum_cooling_distilled_water'))
-        .itemInputs('gtceu:hot_signalum_ingot')
-        .inputFluids('gtceu:distilled_water')
-        .itemOutputs('gtceu:signalum_ingot')
-        .duration(375)
-        .EUt(120);
-    event.recipes.gtceu
-        .chemical_bath(id('hot_signalum_cooling_water'))
-        .itemInputs('gtceu:hot_signalum_ingot')
-        .inputFluids('minecraft:water')
-        .itemOutputs('gtceu:signalum_ingot')
-        .duration(600)
-        .EUt(120);
+    // event.recipes.gtceu
+    //     .chemical_bath(id('hot_signalum_cooling_distilled_water'))
+    //     .itemInputs('gtceu:hot_signalum_ingot')
+    //     .inputFluids('gtceu:distilled_water')
+    //     .itemOutputs('gtceu:signalum_ingot')
+    //     .duration(375)
+    //     .EUt(120);
+    // event.recipes.gtceu
+    //     .chemical_bath(id('hot_signalum_cooling_water'))
+    //     .itemInputs('gtceu:hot_signalum_ingot')
+    //     .inputFluids('minecraft:water')
+    //     .itemOutputs('gtceu:signalum_ingot')
+    //     .duration(600)
+    //     .EUt(120);
 
     event.remove({ id: 'gtceu:laser_engraver/engrave_cpu_silicon' });
     event.recipes.gtceu

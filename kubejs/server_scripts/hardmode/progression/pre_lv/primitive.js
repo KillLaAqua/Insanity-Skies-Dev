@@ -468,20 +468,7 @@ ServerEvents.recipes((event) => {
         let block = `${modBlock}:${type}bricks`;
         let fluid = type == 'mud_' ? 'minecraft:water' : 'gtceu:concrete';
         let buckets = [
-            { type: `${fluid}_bucket`, variant: 'bucket' },
-            {
-                type: {
-                    type: 'forge:partial_nbt',
-                    item: 'woodenbucket:wooden_bucket',
-                    nbt: {
-                        Fluid: {
-                            FluidName: `${fluid}`,
-                            Amount: 1000,
-                        },
-                    },
-                },
-                variant: 'wood_bucket',
-            },
+            { type: `${fluid}_bucket`, variant: 'bucket' }
         ];
 
         buckets.forEach((bucket) => {
@@ -563,33 +550,34 @@ ServerEvents.recipes((event) => {
         .EUt(6);
 
     event
-        .shapeless(Item.of('woodenbucket:wooden_bucket', '{Fluid:{Amount:1000,FluidName:"gtceu:concrete"}}'), [
-            'gtceu:stone_dust',
-            'gtceu:stone_dust',
-            'gtceu:stone_dust',
-            'gtceu:calcite_dust',
-            {
-                type: 'forge:partial_nbt',
-                item: 'woodenbucket:wooden_bucket',
-                nbt: {
-                    Fluid: {
-                        FluidName: 'minecraft:water',
-                        Amount: 1000,
-                    },
-                },
-            },
-            'gtceu:gypsum_dust',
-        ])
-        .modifyResult((grid, result) => {
-            const bucket = grid.find('woodenbucket:wooden_bucket');
-
-            bucket.nbt.Fluid.FluidName = 'gtceu:concrete';
-            bucket.nbt.Damage++;
-
-            return bucket;
+        .shaped('minecraft:stone_bricks', [
+            'CC',
+            'BB',
+            'BB'
+        ], {
+            C: 'kubejs:concrete_bowl',
+            B: 'kubejs:stone_brick'
         })
-        .replaceIngredient('woodenbucket:wooden_bucket', 'minecraft:air')
-        .id('start:shaped/liquid_concrete_wooden_bucket');
+        .replaceIngredient('kubejs:concrete_bowl', 'minecraft:bowl')
+
+    event
+        .shaped('minecraft:mud_bricks', [
+            'CC',
+            'BB',
+            'BB'
+        ], {
+            C: 'kubejs:water_bowl',
+            B: 'kubejs:mud_brick'
+        })
+        .replaceIngredient('kubejs:water_bowl', 'minecraft:bowl')
+
+    event
+        .shapeless('kubejs:concrete_bowl', [
+            'gtceu:small_stone_dust',
+            'gtceu:tiny_gypsum_dust',
+            'gtceu:tiny_calcite_dust',
+            'kubejs:water_bowl'
+        ]);
 
     event
         .shapeless('gtceu:concrete_bucket', [
@@ -703,20 +691,7 @@ ServerEvents.recipes((event) => {
 
     event.remove({ output: '#exnihilosequentia:crucibles' });
     event.remove({ output: '#exnihilosequentia:barrels' });
-    event.remove({ output: 'woodenbucket:wooden_bucket' });
     event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' });
-
-    event
-        .shaped(Item.of('woodenbucket:wooden_bucket'), [
-            'B B', 
-            'BRB', 
-            'TBT'
-        ], {
-            T: 'gtceu:wood_bolt',
-            B: 'farmersdelight:tree_bark',
-            R: 'gtceu:sticky_resin',
-        })
-        .id('start:shaped/wooden_bucket');
 
     event
         .shapeless(Item.of('gtceu:wood_bolt', 2), ['#forge:tools/saws', 'minecraft:stick'])

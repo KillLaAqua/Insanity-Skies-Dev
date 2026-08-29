@@ -26,7 +26,8 @@
 !config/jade/*
 !config/mysticalcustomization/*
 # !config/skyblockbuilder/*
-!config/jei/blacklist*
+# !config/jei/*
+# !config*
 
 # Config Unignore - File
 !config/badmobs-common.toml
