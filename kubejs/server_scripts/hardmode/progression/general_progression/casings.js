@@ -110,12 +110,17 @@ ServerEvents.recipes((event) => {
             .circuit(5)
             .EUt(2 * Math.pow(4, tier));
     };
-    event.recipes.create.mechanical_crafting(Item.of(`gtceu:wood_crate`), ['PRSRP', 'PSWSP', 'PRSRP'], {
-        S: 'gtceu:iron_screw',
-        P: 'gtceu:wood_plate',
-        W: '#forge:tools/saws',
-        R: 'gtceu:long_iron_rod',
-    });
+    event.recipes.create
+        .mechanical_crafting(Item.of(`gtceu:wood_crate`), [
+            'PRSRP', 
+            'PSWSP', 
+            'PRSRP'
+        ], {
+            S: 'gtceu:iron_screw',
+            P: 'gtceu:wood_plate',
+            W: '#forge:tools/saws',
+            R: 'gtceu:long_iron_rod',
+        });
 
     CrateType('wood', 0);
     CrateType('bronze', 1);

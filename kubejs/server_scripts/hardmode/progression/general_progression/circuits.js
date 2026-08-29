@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
             '3x gtceu:ulv_conveyor_module',
             '4x gtceu:steel_gear',
             '2x gtceu:ulv_electric_motor',
-            // '2x kubejs:ulv_emitter',
+            '2x kubejs:ulv_emitter',
             '4x gtceu:tin_single_cable'
         )
         .inputFluids('gtceu:tin 576')

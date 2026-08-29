@@ -35,38 +35,4 @@ ItemEvents.tooltip((event) => {
         text.add(4, Text.of('   §bAbsolute Stabilization'));
     });
 
-    event.addAdvanced('gtceu:large_maceration_tower', (item, advanced, text) => {
-        text.add(Text.translate('block.gtceu.large_maceration_tower.tooltip.1'));
-    });
-
-    //Custom Colossal Chest Tooltips
-    const colossalTypes = [`wood`, `copper`, `iron`, `silver`, `gold`, `diamond`, `obsidian`];
-    colossalTypes.forEach((type) => {
-        event.add(
-            `colossalchests:colossal_chest_${type}`,
-            Text.translate(`item.colossalchests.colossal_chest.tooltip`)
-        );
-    });
-
-    //Theta 2 removals
-    const theta2Removals = [
-        'essence_burner',
-        'mystical_greenhouse',
-        'essence_enchancer',
-        'essence_replicator',
-        'nuclear_reactor',
-    ];
-    theta2Removals.forEach((name) => {
-        if (name == 'essence_burner' || name == 'mystical_greenhouse') {
-            tiers.forEach((tier) => {
-                event.add(`gtceu:${tier}_${name}`, Text.translate(`block.gtceu.theta2Removals.tooltip`));
-            });
-        } else {
-            event.add(`gtceu:${name}`, Text.translate(`block.gtceu.theta2Removals.tooltip`));
-        }
-    });
-
-    for (let x = 1; x <= 8; x++) {
-        event.add(`solarflux:sp_${x}`, Text.translate(`block.solarflux.sp.tooltip`));
-    }
 });

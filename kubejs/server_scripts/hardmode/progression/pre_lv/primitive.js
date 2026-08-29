@@ -8,7 +8,10 @@ ServerEvents.recipes((event) => {
         .id('start:shapeless/stick');
 
     event
-        .shaped(Item.of('gtceu:flisnt_axe'), ['FT', 'ST'], {
+        .shaped(Item.of('gtceu:flisnt_axe'), [
+            'FT', 
+            'ST'
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -16,7 +19,10 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_axe');
 
     event
-        .shaped(Item.of('gtceu:flisnt_saw'), ['FS', 'FT'], {
+        .shaped(Item.of('gtceu:flisnt_saw'), [
+            'FS', 
+            'FT'
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -24,14 +30,21 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_saw');
 
     event
-        .shaped(Item.of('gtceu:flisnt_knife'), ['F', 'T'], {
+        .shaped(Item.of('gtceu:flisnt_knife'), [
+            'F', 
+            'T'
+        ], {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
         .id('start:shaped/flisnt_knife');
 
     event
-        .shaped(Item.of('gtceu:flisnt_shovel'), ['  F', ' TS', 'T  '], {
+        .shaped(Item.of('gtceu:flisnt_shovel'), [
+            '  F', 
+            ' TS', 
+            'T  '
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -39,7 +52,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_shovel');
 
     event
-        .shaped(Item.of('gtceu:flisnt_pickaxe'), ['FFF', 'RTS', ' T '], {
+        .shaped(Item.of('gtceu:flisnt_pickaxe'), [
+            'FFF', 
+            'RTS', 
+            ' T '
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -48,14 +65,22 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_pickaxe');
 
     event
-        .shaped(Item.of('gtceu:flisnt_sword'), [' F ', ' F ', ' T '], {
+        .shaped(Item.of('gtceu:flisnt_sword'), [
+            ' F ', 
+            ' F ', 
+            ' T '
+        ], {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
         .id('start:shaped/flisnt_sword');
 
     event
-        .shaped(Item.of('gtceu:flisnt_hammer'), ['FCF', 'CFC', 'STS'], {
+        .shaped(Item.of('gtceu:flisnt_hammer'), [
+            'FCF', 
+            'CFC', 
+            'STS'
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -64,7 +89,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_hammer');
 
     event
-        .shaped(Item.of('gtceu:flisnt_scythe'), ['FFT', 'RST', '  T'], {
+        .shaped(Item.of('gtceu:flisnt_scythe'), [
+            'FFT', 
+            'RST', 
+            '  T'
+        ], {
             S: '#forge:string',
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
@@ -73,14 +102,22 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/flisnt_scythe');
 
     event
-        .shaped(Item.of('exnihilosequentia:wooden_crook'), ['TT', 'ST', ' T'], {
+        .shaped(Item.of('exnihilosequentia:wooden_crook'), [
+            'TT', 
+            'ST', 
+            ' T'
+        ], {
             S: '#forge:string',
             T: '#forge:rods/wood',
         })
         .id('start:shaped/wooden_crook');
 
     event
-        .shaped(Item.of('gtceu:flisnt_file'), [' FQ', 'FQF', 'TFS'], {
+        .shaped(Item.of('gtceu:flisnt_file'), [
+            ' FQ', 
+            'FQF', 
+            'TFS'
+        ], {
             S: '#forge:string',
             F: 'kubejs:flint_shard',
             T: '#forge:rods/wood',
@@ -93,7 +130,11 @@ ServerEvents.recipes((event) => {
         .id('start:shapeless/long_wood_rod');
 
     event
-        .shaped(Item.of('kubejs:basic_scavenging_rod'), ['SPP', 'RLP', 'TRS'], {
+        .shaped(Item.of('kubejs:basic_scavenging_rod'), [
+            'SPP', 
+            'RLP', 
+            'TRS'
+        ], {
             S: '#forge:string',
             P: 'minecraft:iron_nugget',
             T: 'gtceu:long_wood_rod',
@@ -103,7 +144,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/basic_scavenging_rod');
 
     event
-        .shaped(Item.of('kubejs:scavenging_rod'), ['SPP', 'RLP', 'TRH'], {
+        .shaped(Item.of('kubejs:scavenging_rod'), [
+            'SPP', 
+            'RLP', 
+            'TRH'
+        ], {
             S: '#forge:tools/screwdrivers',
             H: '#forge:tools/hammers',
             P: 'gtceu:iron_bolt',
@@ -257,7 +302,11 @@ ServerEvents.recipes((event) => {
     ].forEach((log) => {
         event.remove({ output: `exnihilosequentia:${log}_sieve` });
         event
-            .shaped(`exnihilosequentia:${log}_sieve`, ['S S', 'SFS', 'NRN'], {
+            .shaped(`exnihilosequentia:${log}_sieve`, [
+                'S S', 
+                'SFS', 
+                'NRN'
+            ], {
                 S: `minecraft:${log}_slab`,
                 F: 'gtceu:wood_frame',
                 N: `minecraft:${log}_fence`,
@@ -266,7 +315,11 @@ ServerEvents.recipes((event) => {
             .id(`start:shaped/ens_${log}_sieve`);
 
         event.remove({ type: 'minecraft:crafting_shaped', output: `minecraft:${log}_fence` });
-        event.shaped(`2x minecraft:${log}_fence`, ['PSP', 'PSP', 'PSP'], {
+        event.shaped(`2x minecraft:${log}_fence`, [
+            'PSP', 
+            'PSP', 
+            'PSP'
+        ], {
             P: `minecraft:${log}_planks`,
             S: 'minecraft:stick',
         });
@@ -288,7 +341,11 @@ ServerEvents.recipes((event) => {
 
         event.remove({ output: `functionalstorage:${log}_1` });
         event
-            .shaped(`functionalstorage:${log}_1`, ['WSW', 'SCS', 'WSW'], {
+            .shaped(`functionalstorage:${log}_1`, [
+                'WSW', 
+                'SCS', 
+                'WSW'
+            ], {
                 W: 'gtceu:iron_screw',
                 S: `minecraft:${log}_slab`,
                 C: 'minecraft:chest',
@@ -302,21 +359,32 @@ ServerEvents.recipes((event) => {
         event.shapeless(`2x functionalstorage:${log}_4`, [`2x functionalstorage:${log}_2`]);
 
         event
-            .shaped(`4x functionalstorage:${log}_4`, ['DD', 'DD'], { D: `functionalstorage:${log}_1` })
+            .shaped(`4x functionalstorage:${log}_4`, [
+                'DD', 
+                'DD'
+            ], { 
+                D: `functionalstorage:${log}_1` })
             .id(`start:shaped/${log}_1_alt`);
     });
 
     event.remove({ id: `minecraft:crafting_table` });
-    event.shaped(Item.of('minecraft:crafting_table'), ['PCP', 'PRP'], {
-        C: 'farmersdelight:canvas',
-        P: 'gtceu:wood_plate',
-        R: 'gtceu:sticky_resin',
-    });
+    event
+        .shaped(Item.of('minecraft:crafting_table'), [
+            'PCP', 
+            'PRP'
+        ], {
+            C: 'farmersdelight:canvas',
+            P: 'gtceu:wood_plate',
+            R: 'gtceu:sticky_resin',
+        });
 
     event.remove({ output: 'gtceu:matchbox' });
     event.remove({ output: 'gtceu:matches' });
     event
-        .shaped(Item.of('2x gtceu:matches'), ['FR', 'S '], {
+        .shaped(Item.of('2x gtceu:matches'), [
+            'FR', 
+            'S '
+        ], {
             R: '#forge:string',
             F: 'gtceu:tiny_flint_dust',
             S: 'gtceu:wood_bolt',
@@ -329,7 +397,11 @@ ServerEvents.recipes((event) => {
         .id('start:shapeless/flint_and_steel');
 
     event
-        .shaped(Item.of('gtceu:rugged_alloyer'), ['BEB', 'AFA', 'BRB'], {
+        .shaped(Item.of('gtceu:rugged_alloyer'), [
+            'BEB', 
+            'AFA', 
+            'BRB'
+        ], {
             A: 'minecraft:iron_ingot',
             B: 'kubejs:reinforced_stone_bricks',
             F: 'minecraft:furnace',
@@ -340,7 +412,10 @@ ServerEvents.recipes((event) => {
 
     event.remove({ output: 'minecraft:bowl' });
     event
-        .shaped(Item.of('minecraft:bowl', 2), ['A', 'B'], {
+        .shaped(Item.of('minecraft:bowl', 2), [
+            'A', 
+            'B'
+        ], {
             A: '#forge:tools/knives',
             B: '#minecraft:planks',
         })
@@ -359,7 +434,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ output: 'exnihilosequentia:string_mesh' });
     event
-        .shaped(Item.of('exnihilosequentia:string_mesh'), ['SSS', 'SCS', 'SSS'], {
+        .shaped(Item.of('exnihilosequentia:string_mesh'), [
+            'SSS', 
+            'SCS', 
+            'SSS'
+        ], {
             S: '#forge:string',
             C: 'farmersdelight:canvas',
         })
@@ -407,7 +486,11 @@ ServerEvents.recipes((event) => {
 
         buckets.forEach((bucket) => {
             event
-                .shaped(Item.of(block, 2), ['BBB', 'BCB', 'BBB'], {
+                .shaped(Item.of(block, 2), [
+                    'BBB', 
+                    'BCB', 
+                    'BBB'
+                ], {
                     B: item,
                     C: bucket.type,
                 })
@@ -429,7 +512,11 @@ ServerEvents.recipes((event) => {
     });
 
     event
-        .shaped(Item.of('kubejs:reinforced_stone_bricks', 2), ['NHN', 'NBN', 'NFN'], {
+        .shaped(Item.of('kubejs:reinforced_stone_bricks', 2), [
+            'NHN', 
+            'NBN', 
+            'NFN'
+        ], {
             N: 'minecraft:iron_nugget',
             B: 'minecraft:stone_bricks',
             H: '#forge:tools/hammers',
@@ -438,7 +525,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/reinforced_stone_bricks');
 
     event
-        .shaped(Item.of('kubejs:mud_brick', 4), ['CCC', 'CMC', 'CCC'], {
+        .shaped(Item.of('kubejs:mud_brick', 4), [
+            'CCC', 
+            'CMC', 
+            'CCC'
+        ], {
             C: 'kubejs:packed_mud_ball',
             M: 'gtceu:brick_wooden_form',
         })
@@ -451,7 +542,10 @@ ServerEvents.recipes((event) => {
     event.recipes.create.cutting(['kubejs:stone_brick'], 'minecraft:stone').id('start:cutting/stone_brick');
 
     event
-        .shaped(Item.of('minecraft:stonecutter'), ['PSP', 'TFT'], {
+        .shaped(Item.of('minecraft:stonecutter'), [
+            'PSP', 
+            'TFT'
+        ], {
             T: 'minecraft:stone_slab',
             P: 'gtceu:wood_plate',
             S: 'gtceu:iron_buzz_saw_blade',
@@ -553,7 +647,11 @@ ServerEvents.recipes((event) => {
         .id('start:cutting_board/packed_mud_ball');
 
     event
-        .shaped(Item.of('minecraft:furnace'), ['SCS', 'CFC', 'MMM'], {
+        .shaped(Item.of('minecraft:furnace'), [
+            'SCS', 
+            'CFC', 
+            'MMM'
+        ], {
             S: 'minecraft:cobblestone_slab',
             C: 'minecraft:cobblestone',
             F: 'minecraft:campfire',
@@ -562,7 +660,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/furnace');
 
     event
-        .shaped(Item.of('minecraft:composter'), ['PMP', 'PRP', 'WSW'], {
+        .shaped(Item.of('minecraft:composter'), [
+            'PMP', 
+            'PRP', 
+            'WSW'
+        ], {
             P: 'gtceu:wood_plate',
             M: '#forge:tools/mallets',
             R: 'gtceu:sticky_resin',
@@ -572,7 +674,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/composter');
 
     event
-        .shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), ['BTB', 'TST', 'LLL'], {
+        .shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
+            'BTB', 
+            'TST', 
+            'LLL'
+        ], {
             T: '#balm:wooden_rods',
             S: 'farmersdelight:straw',
             B: 'farmersdelight:tree_bark',
@@ -581,7 +687,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/campfire');
 
     event.recipes
-        .shaped(Item.of('gtceu:kiln'), ['BBB', 'BFB', 'PSP'], {
+        .shaped(Item.of('gtceu:kiln'), [
+            'BBB', 
+            'BFB', 
+            'PSP'
+        ], {
             B: 'minecraft:mud_bricks',
             F: 'minecraft:furnace',
             P: 'gtceu:iron_plate',
@@ -597,7 +707,11 @@ ServerEvents.recipes((event) => {
     event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' });
 
     event
-        .shaped(Item.of('woodenbucket:wooden_bucket'), ['B B', 'BRB', 'TBT'], {
+        .shaped(Item.of('woodenbucket:wooden_bucket'), [
+            'B B', 
+            'BRB', 
+            'TBT'
+        ], {
             T: 'gtceu:wood_bolt',
             B: 'farmersdelight:tree_bark',
             R: 'gtceu:sticky_resin',
@@ -616,7 +730,11 @@ ServerEvents.recipes((event) => {
         .id('start:create_mixer/clay');
 
     event
-        .shaped(Item.of('gtceu:wood_gear'), ['BBB', 'BSB', 'BBB'], {
+        .shaped(Item.of('gtceu:wood_gear'), [
+            'BBB', 
+            'BSB', 
+            'BBB'
+        ], {
             B: 'gtceu:wood_bolt',
             S: '#minecraft:wooden_slabs',
         })

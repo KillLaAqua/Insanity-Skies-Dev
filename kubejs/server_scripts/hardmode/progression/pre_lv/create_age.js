@@ -11,156 +11,23 @@ ServerEvents.recipes((event) => {
 
     const minecraft_metals = ['iron', 'copper', 'gold'];
 
-    const plates = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'zinc',
-        'bronze',
-        'brass',
-        'nickel',
-        'pig_iron',
-        'tin_alloy',
-        'potin',
-        'cupronickel',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-        'damascus_steel',
-    ];
-    const plates_block = ['iron', 'copper', 'lead'];
-    const rods = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'zinc',
-        'bronze',
-        'brass',
-        'pig_iron',
-        'tin_alloy',
-        'potin',
-        'cupronickel',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-        'damascus_steel',
-    ];
-    const rings = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'zinc',
-        'bronze',
-        'brass',
-        'pig_iron',
-        'tin_alloy',
-        'potin',
-        'cupronickel',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-    ];
-    const foils = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'zinc',
-        'bronze',
-        'brass',
-        'nickel',
-        'pig_iron',
-        'tin_alloy',
-        'potin',
-        'cupronickel',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-    ];
-    const screws_and_bolts = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'bronze',
-        'brass',
-        'pig_iron',
-        'tin_alloy',
-        'potin',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-        'damascus_steel',
-    ];
-    const long_rods = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'bronze',
-        'brass',
-        'pig_iron',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-    ];
-    const double_plates = [
-        'iron',
-        'copper',
-        'gold',
-        'lead',
-        'tin',
-        'bronze',
-        'brass',
-        'pig_iron',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'red_alloy',
-    ];
-    const gears = [
-        'iron',
-        'lead',
-        'bronze',
-        'pig_iron',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'potin',
-        'damascus_steel',
-    ];
-    const small_gears = [
-        'iron',
-        'lead',
-        'bronze',
-        'pig_iron',
-        'wrought_iron',
-        'cast_iron',
-        'steel',
-        'potin',
-        'damascus_steel',
-    ];
-    const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel', 'cast_iron', 'tin_alloy'];
-    const springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
-    const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
-    const wires = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
-    const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc', 'steel', 'red_alloy'];
-    const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
-    const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
+    const plates = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const plates_block = ['iron', 'copper', 'lead'];
+	const rods = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const rings = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel'];
+	const foils = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const screws_and_bolts = ['iron', 'copper', 'gold','lead', 'tin', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
+	const small_gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
+	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel', 'cast_iron','tin_alloy'];
+	const springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
+	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
+	const wires = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
+	const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc', 'steel', 'red_alloy'];
+	const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
+	const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
 
     const seq_assembly = (output, input, inter, sequence, loops) => {
         const steps = sequence.map((step) => {
@@ -193,7 +60,11 @@ ServerEvents.recipes((event) => {
     plates_block.forEach((metal) => {
         let mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
         event
-            .shaped(`1x gtceu:${metal}_plate`, [' I ', 'HI ', ' I '], {
+            .shaped(`1x gtceu:${metal}_plate`, [
+                ' I ', 
+                'HI ', 
+                ' I '
+            ], {
                 I: `${mod}:${metal}_ingot`,
                 H: '#forge:tools/hammers',
             })
@@ -362,7 +233,11 @@ ServerEvents.recipes((event) => {
     //==================================================================//
 
     event.recipes.create
-        .mechanical_crafting('gtceu:primitive_pump', ['TNT', 'SVR', 'CLC'], {
+        .mechanical_crafting('gtceu:primitive_pump', [
+            'TNT', 
+            'SVR', 
+            'CLC'
+        ], {
             N: 'gtceu:wood_normal_fluid_pipe',
             R: 'gtceu:iron_rotor',
             T: 'gtceu:treated_wood_planks',
@@ -381,6 +256,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .mixing('2x gtceu:fireclay_dust', ['1x gtceu:clay_dust', '1x gtceu:brick_dust'])
         .id('start:create_mixer/fireclay_dust');
+
     event.recipes.gtceu
         .mixer(id('fireclay'))
         .itemInputs('1x gtceu:clay_dust', '1x gtceu:brick_dust')
@@ -394,9 +270,11 @@ ServerEvents.recipes((event) => {
         .itemOutputs('8x gtceu:coke_clay_dust')
         .duration(240)
         .EUt(6);
+
     event.recipes.create
         .mixing('8x gtceu:coke_clay_dust', ['4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust'])
         .id('start:create_mixer/coke_clay_dust');
+
     event.recipes.gtceu
         .centrifuge(id('coke_clay'))
         .itemInputs('8x gtceu:coke_clay_dust')
@@ -405,14 +283,17 @@ ServerEvents.recipes((event) => {
         .EUt(30);
 
     event.remove({ id: 'minecraft:charcoal' });
-    event
-        .smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
+
+    event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
         .id('kjs:smelting/charcoal_pellet_manual_only')
         .id('start:smelting/charcoal_pellet');
-    event.recipes.create.crushing(
-        ['2x kubejs:charcoal_pellet', Item.of('kubejs:charcoal_pellet').withChance(0.5)],
+
+    event.recipes.create.crushing([
+        '2x kubejs:charcoal_pellet', 
+        Item.of('kubejs:charcoal_pellet').withChance(0.5)],
         'minecraft:charcoal'
     );
+
     event.recipes.create.milling(['gtceu:charcoal_dust'], 'minecraft:charcoal');
     event.recipes.create.milling(['minecraft:sand'], 'minecraft:gravel');
     event.recipes.create.milling(['exnihilosequentia:dust'], 'minecraft:sand');
@@ -422,13 +303,16 @@ ServerEvents.recipes((event) => {
         .compacting(Fluid.of('thermal:latex', 20), `10x minecraft:jungle_log`)
         .heatRequirement('lowheated')
         .id('start:compacting/latex');
+
     event.recipes.create
         .mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('thermal:latex', 288), '1x gtceu:sulfur_dust'])
         .heatRequirement('superheated')
         .id('start:create_mixer/rubber');
+
     event.recipes.create
         .compacting(`1x thermal:cured_rubber`, Fluid.of('gtceu:rubber', 144))
         .id('start:compacting/rubber');
+
     event.recipes.create
         .compacting(`1x gtceu:rubber_plate`, `2x thermal:cured_rubber`)
         .id('start:compacting/rubber_plate');
@@ -442,6 +326,7 @@ ServerEvents.recipes((event) => {
             '#forge:tools/saws',
         ])
         .id('start:shapeless/wood_plate');
+
     event.recipes.create.cutting(['gtceu:wood_plate'], '#minecraft:planks').id('start:cutting/wood_plate');
 
     event
@@ -453,12 +338,17 @@ ServerEvents.recipes((event) => {
             '#forge:tools/saws',
         ])
         .id('start:shapeless/treated_wood_plate');
+
     event.recipes.create
         .cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood')
         .id('start:cutting/treated_wood_plate');
 
     event
-        .shaped(Item.of('gtceu:iron_buzz_saw_blade'), ['HPM', 'PPP', 'WPF'], {
+        .shaped(Item.of('gtceu:iron_buzz_saw_blade'), [
+            'HPM', 
+            'PPP', 
+            'WPF'
+        ], {
             M: '#forge:tools/mallets',
             W: '#forge:tools/wrenches',
             F: '#forge:tools/files',
@@ -468,7 +358,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/iron_buzz_saw_blade');
 
     event.recipes.create
-        .mechanical_crafting('thermal:redstone_servo', ['TPT', ' F ', 'TPT'], {
+        .mechanical_crafting('thermal:redstone_servo', [
+            'TPT', 
+            ' F ', 
+            'TPT'
+        ], {
             P: 'gtceu:iron_plate',
             T: 'create:electron_tube',
             F: 'gtceu:fine_copper_wire',
@@ -476,7 +370,13 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/redstone_servo');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:ulv_stone_barrel', ['PN NP', 'NSRSN', ' SCS ', 'NSTSN', 'PN NP'], {
+        .mechanical_crafting('gtceu:ulv_stone_barrel', [
+            'PN NP', 
+            'NSRSN', 
+            ' SCS ', 
+            'NSTSN', 
+            'PN NP'
+        ], {
             R: 'gtceu:iron_rotor',
             S: 'minecraft:stone',
             P: 'gtceu:nickel_plate',
@@ -487,7 +387,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/ulv_stone_barrel');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:primitive_ore_factory', ['BPB', 'RSR', 'BFB'], {
+        .mechanical_crafting('gtceu:primitive_ore_factory', [
+            'BPB', 
+            'RSR', 
+            'BFB'
+        ], {
             R: 'gtceu:brass_rod',
             S: 'thermal:redstone_servo',
             P: 'gtceu:brass_plate',
@@ -503,39 +407,54 @@ ServerEvents.recipes((event) => {
         .mixing('2x gtceu:brass_dust', ['1x gtceu:zinc_dust', '3x gtceu:copper_dust'])
         .heatRequirement('lowheated')
         .id('start:create_mixer/brass_dust');
+
     event.recipes.create
         .mixing('2x gtceu:bronze_dust', ['1x gtceu:tin_dust', '3x gtceu:copper_dust'])
         .heatRequirement('lowheated')
         .id('start:create_mixer/bronze_dust');
+
     event.recipes.create
         .mixing(Fluid.of('gtceu:brass', 576), ['1x gtceu:zinc_ingot', '3x minecraft:copper_ingot'])
         .heatRequirement('superheated')
         .id('start:create_mixer/liquid_brass');
+
     event.recipes.create
         .mixing(Fluid.of('gtceu:bronze', 576), ['1x gtceu:tin_ingot', '3x minecraft:copper_ingot'])
         .heatRequirement('superheated')
         .id('start:create_mixer/liquid_bronze');
+
     event.recipes.create
         .compacting(`1x gtceu:brass_ingot`, Fluid.of('gtceu:brass', 192))
         .id('start:compacting/brass_ingot');
+
     event.recipes.create
         .compacting(`1x gtceu:bronze_ingot`, Fluid.of('gtceu:bronze', 192))
         .id('start:compacting/bronze_ingot');
 
     event.recipes.create
-        .mechanical_crafting(
-            'exnihilosequentia:flint_mesh',
-            ['FSFSFSF', 'SRSRSRS', 'FSFSFSF', 'SRSRSRS', 'FSFSFSF', 'SRSRSRS', 'FSFSFSF'],
-            {
-                F: 'minecraft:flint',
-                R: 'gtceu:tin_ring',
-                S: '#forge:string',
-            }
-        )
+        .mechanical_crafting('exnihilosequentia:flint_mesh',[
+            'FSFSFSF', 
+            'SRSRSRS', 
+            'FSFSFSF', 
+            'SRSRSRS', 
+            'FSFSFSF', 
+            'SRSRSRS', 
+            'FSFSFSF'
+        ],{
+            F: 'minecraft:flint',
+            R: 'gtceu:tin_ring',
+            S: '#forge:string',
+        })
         .id('start:mechanical_crafting/flint_mesh');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:ulv_barrel', ['PN NP', 'NLRLN', ' LCL ', 'NLTLN', 'PN NP'], {
+        .mechanical_crafting('gtceu:ulv_barrel', [
+            'PN NP', 
+            'NLRLN', 
+            ' LCL ', 
+            'NLTLN', 
+            'PN NP'
+        ], {
             R: 'gtceu:iron_rotor',
             L: '#forge:stripped_logs',
             P: 'gtceu:treated_wood_plate',
@@ -652,7 +571,11 @@ ServerEvents.recipes((event) => {
         .id('start:shapeless/flint_shard');
 
     event
-        .shaped('gtceu:ulv_auto_scavenger', ['TDT', 'GFG', 'TPT'], {
+        .shaped('gtceu:ulv_auto_scavenger', [
+            'TDT', 
+            'GFG', 
+            'TPT'
+        ], {
             G: 'gtceu:small_bronze_gear',
             P: 'create:precision_mechanism',
             F: 'gtceu:brass_frame',
@@ -662,7 +585,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/ulv_auto_scavenger');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:ulv_advanced_composter', ['PRP', 'PGP', 'ISI'], {
+        .mechanical_crafting('gtceu:ulv_advanced_composter', [
+            'PRP', 
+            'PGP', 
+            'ISI'
+        ], {
             P: 'gtceu:treated_wood_slab',
             G: 'minecraft:glass',
             R: 'gtceu:iron_gear',

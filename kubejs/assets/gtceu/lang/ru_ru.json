@@ -1234,10 +1234,7 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.1": "§7Многофазный термореактивный очистительный завод, разделяющий сложные жидкости, пары и суспензии на чистейшие фазы посредством непрерывных циклов дистилляции и контролируемой ферментации.",
 
     "material.gtceu.galvanized_steel": "Оцинкованная сталь",
-    "gtceu.pulverizer": "Измельчитель",
-    "block.gtceu.t_large_pulverizer": "Большой измельчитель [LPv]",
-    "block.gtceu.t_large_pulverizer.tooltip.0": "§7Увеличенный вариант измельчителя, способный обрабатывать материалы с большей энергоэффективностью.",
-
+    
     "block.gtceu.t_large_arc_furnace": "Большая дуговая печь [LAFn]",
     "block.gtceu.t_large_arc_furnace.tooltip.0": "§7Увеличенный вариант дуговой печи, способный обрабатывать материалы с большей энергоэффективностью.",
 
@@ -1255,8 +1252,6 @@
     "material.gtceu.debrominated_brine": "Дебромированный рассол",
     "material.gtceu.brominated_chlorine_vapor": "Бромированный хлорный пар",
     "material.gtceu.acidic_bromine_exhaust": "Кислый бромистый выхлоп",
-
-    "block.gtceu.large_maceration_tower.tooltip.1": "§aДоступные типы рецептов: Дробилка, Измельчитель",
 
     "block.gtceu.bacteria_synthesizer": "Бактериальный синтезатор [BS]",
     "gtceu.bacteria_synthesizer": "Бактериальный синтезатор",

@@ -1234,9 +1234,6 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.1": "§7다상 열반응 정제 장치로, 복잡한 유체나 증기, 슬러리를 끊임없는 증류와 제어된 발효주기를 통해 순수한 상으로 분별합니다.",
 
     "material.gtceu.galvanized_steel": "아연 도금 강철",
-    "gtceu.pulverizer": "파쇄기",
-    "block.gtceu.t_large_pulverizer": "대형 파쇄기 [LPv]",
-    "block.gtceu.t_large_pulverizer.tooltip.0": "§7파쇄기의 대형 변형으로, 대량의 아이템을 파쇄할 수 있습니다.",
 
     "block.gtceu.t_large_arc_furnace": "대형 아크로 [LAFn]",
     "block.gtceu.t_large_arc_furnace.tooltip.0": "§7아크로의 대형 버전으로, 한 번에 여러 아이템을 태웁니다.",
@@ -1255,8 +1252,6 @@
     "material.gtceu.debrominated_brine": "탈브로민화 염수",
     "material.gtceu.brominated_chlorine_vapor": "브로민화 염소 증기",
     "material.gtceu.acidic_bromine_exhaust": "산성 브로민 배기가스",
-
-    "block.gtceu.large_maceration_tower.tooltip.1": "§a가능한 레시피 타입: 분쇄기, 파쇄기",
 
     "block.gtceu.bacteria_synthesizer": "박테리아 합성기 [BS]",
     "gtceu.bacteria_synthesizer": "박테리아 합성기",

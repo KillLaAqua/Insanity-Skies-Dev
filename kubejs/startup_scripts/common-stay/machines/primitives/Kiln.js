@@ -1,8 +1,15 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
-    event.create('kiln').category('primitive').setMaxIOSize(2, 1, 0, 0).setSound(GTSoundEntries.FURNACE);
+    
+    event
+        .create('kiln')
+        .category('primitive')
+        .setMaxIOSize(2, 1, 0, 0)
+        .setSound(GTSoundEntries.FURNACE);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+    
     event
         .create('gtceu:kiln', 'primitive')
         .rotationState(RotationState.ALL)

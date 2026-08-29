@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
             '6x gtceu:ulv_robot_arm',
             '4x #gtceu:circuits/lv',
             '2x gtceu:ulv_conveyor_module',
-            // '2x kubejs:ulv_emitter',
+            '2x kubejs:ulv_emitter',
             '2x gtceu:ulv_electric_pump',
             '2x gtceu:steel_gear',
             '2x gtceu:small_damascus_steel_gear'

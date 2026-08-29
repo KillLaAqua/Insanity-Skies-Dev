@@ -121,7 +121,11 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:epoxy' }); // Temp for Eta
 
     event
-        .shaped(Item.of('gtceu:cobalt_brass_buzz_saw_blade'), ['HPM', 'PPP', 'WPF'], {
+        .shaped(Item.of('gtceu:cobalt_brass_buzz_saw_blade'), [
+            'HPM', 
+            'PPP', 
+            'WPF'
+        ], {
             M: '#forge:tools/mallets',
             W: '#forge:tools/wrenches',
             F: '#forge:tools/files',

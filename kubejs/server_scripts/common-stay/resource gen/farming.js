@@ -3,7 +3,11 @@ ServerEvents.recipes((event) => {
     const id = global.id;
 
     event
-        .shaped(Item.of('gtceu:hydroponic_garden'), ['ABB', 'CDA', 'CEF'], {
+        .shaped(Item.of('gtceu:hydroponic_garden'), [
+            'ABB', 
+            'CDA', 
+            'CEF'
+        ], {
             A: 'gtceu:tungsten_single_cable',
             B: '#gtceu:circuits/iv',
             C: 'gtceu:iv_electric_pump',
@@ -330,7 +334,11 @@ ServerEvents.recipes((event) => {
     //Phyto Soil
     event.remove({ output: 'thermal:phytosoil' });
     event
-        .shaped('thermal:phytosoil', ['CAC', 'ADA', 'CAC'], {
+        .shaped('thermal:phytosoil', [
+            'CAC', 
+            'ADA', 
+            'CAC'
+        ], {
             C: 'gtceu:charcoal_dust',
             A: 'gtceu:small_apatite_dust',
             D: 'minecraft:dirt',

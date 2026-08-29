@@ -58,7 +58,6 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     largeCube('thermal_centrifuge', 'silicon_bronze');
     largeCube('wiremill', 'sterling_silver');
     largeCube('autoclave', 'silicone_rubber');
-    largeCube('pulverizer', 'galvanized_steel');
     largeCube('arc_furnace', 'black_steel');
     largeCube('electromagnetic_separator', 'manganin');
 

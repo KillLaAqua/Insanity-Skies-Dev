@@ -37,7 +37,10 @@ ServerEvents.recipes((event) => {
 
     const SteamIO = (type, inputs) => {
         event.recipes.create
-            .mechanical_crafting(`gtceu:steam_${type}_bus`, ['C', 'B'], {
+            .mechanical_crafting(`gtceu:steam_${type}_bus`, [
+                'C', 
+                'B'
+            ], {
                 B: inputs[0],
                 C: inputs[1],
             })
@@ -50,7 +53,11 @@ ServerEvents.recipes((event) => {
     const SteamCasing = (id2, type, core, mat) => {
         if (core == false)
             event.recipes.create
-                .mechanical_crafting(Item.of(`${id2}:${type}`, 2), ['PSP', 'DFD', 'PSP'], {
+                .mechanical_crafting(Item.of(`${id2}:${type}`, 2), [
+                    'PSP', 
+                    'DFD', 
+                    'PSP'
+                ], {
                     P: `gtceu:${mat}_plate`,
                     D: `gtceu:double_${mat}_plate`,
                     S: `gtceu:${mat}_screw`,
@@ -72,7 +79,11 @@ ServerEvents.recipes((event) => {
                 .EUt(4);
         if (core !== false)
             event.recipes.create
-                .mechanical_crafting(Item.of(`${id2}:${type}`, 2), ['PSP', 'PCP', 'PSP'], {
+                .mechanical_crafting(Item.of(`${id2}:${type}`, 2), [
+                    'PSP', 
+                    'PCP', 
+                    'PSP'
+                ], {
                     P: `gtceu:${mat}_plate`,
                     C: `${core}`,
                     S: `gtceu:${mat}_screw`,
@@ -96,7 +107,10 @@ ServerEvents.recipes((event) => {
     const BrickedCasing = (block, brick) => {
         const material = block == 'steel' ? 'cast_iron' : `${block}`;
         event.recipes.create
-            .mechanical_crafting(Item.of(`gtceu:${block}_brick_casing`), ['PPP', 'SBS'], {
+            .mechanical_crafting(Item.of(`gtceu:${block}_brick_casing`), [
+                'PPP', 
+                'SBS'
+            ], {
                 P: `gtceu:${material}_plate`,
                 B: `${brick}`,
                 S: `gtceu:${material}_screw`,
@@ -115,7 +129,11 @@ ServerEvents.recipes((event) => {
 
     const SteamMachine = (output, inputs) => {
         event.recipes.create
-            .mechanical_crafting(Item.of(`gtceu:${output}`), ['ABC', 'DEF', 'GHI'], {
+            .mechanical_crafting(Item.of(`gtceu:${output}`), [
+                'ABC', 
+                'DEF', 
+                'GHI'
+            ], {
                 A: inputs[0],
                 B: inputs[1],
                 C: inputs[2],

@@ -4,28 +4,12 @@ ServerEvents.recipes((event) => {
     const transmission = (id) => `projectred_transmission:${id}`;
 
     [
-        'electrotine_generator',
-        'red_ingot',
-        'electrotine_ingot',
-        'sand_coal_comp',
-        'red_iron_comp',
-        'electrotine_iron_comp',
-        'boule',
-        'silicon',
-        'red_silicon_comp',
-        'glow_silicon_comp',
-        'electrotine_silicon_comp',
-        'infused_silicon',
-        'energized_silicon',
-        'electrotine_silicon',
-        'copper_coil',
-        'iron_coil',
-        'gold_coil',
-        'motor',
-        'woven_cloth',
-        'sail',
-        'draw_plate',
-        'multimeter',
+        'electrotine_generator','red_ingot','electrotine_ingot','sand_coal_comp',
+        'red_iron_comp','electrotine_iron_comp','boule','silicon',
+        'red_silicon_comp','glow_silicon_comp','electrotine_silicon_comp',
+        'infused_silicon','energized_silicon','electrotine_silicon',
+        'copper_coil','iron_coil','gold_coil','motor','woven_cloth',
+        'sail','draw_plate','multimeter',
     ].forEach((item) => {
         event.remove({ output: core(item) });
     });
@@ -37,6 +21,7 @@ ServerEvents.recipes((event) => {
         core('electrotine_ingot'),
         'gtceu:blue_alloy_ingot'
     );
+    
 });
 
 ServerEvents.tags('item', (event) => {

@@ -97,7 +97,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: 'minecraft:iron_trapdoor' });
     event
-        .shaped('minecraft:iron_trapdoor', [' P ', 'PTP', ' P '], {
+        .shaped('minecraft:iron_trapdoor', [
+            ' P ', 
+            'PTP', 
+            ' P '
+        ], {
             P: 'gtceu:iron_plate',
             T: '#minecraft:trapdoors',
         })
@@ -134,7 +138,11 @@ ServerEvents.recipes((event) => {
     // ================================ Post Cobble-Gen, Pre-Circuit ================================
 
     event.recipes.create
-        .mechanical_crafting('gtceu:latex_plantation', ['RSR', 'PGP', 'BTB'], {
+        .mechanical_crafting('gtceu:latex_plantation', [
+            'RSR', 
+            'PGP', 
+            'BTB'
+        ], {
             R: 'gtceu:iron_rod',
             S: 'gtceu:lead_spring',
             P: 'gtceu:iron_plate',
@@ -160,7 +168,11 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'thermal:device_composter' });
 
     event.recipes.create
-        .mechanical_crafting('thermal:device_composter', ['PRP', 'GCG', 'PRP'], {
+        .mechanical_crafting('thermal:device_composter', [
+            'PRP', 
+            'GCG', 
+            'PRP'
+        ], {
             P: '#minecraft:planks',
             R: 'gtceu:iron_gear',
             G: 'minecraft:glass',
@@ -169,10 +181,14 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/device_composter');
 
     event.recipes.create
-        .mechanical_crafting('2x modularrouters:modular_router', ['PDP', 'DED', 'PDP'], {
+        .mechanical_crafting('2x modularrouters:modular_router', [
+            'PDP', 
+            'DED', 
+            'PDP'
+        ], {
             P: 'gtceu:steel_plate',
             D: 'gtceu:double_iron_plate',
-            E: 'minecraft:dirt'/*'kubejs:ulv_emitter'*/,
+            E: 'kubejs:ulv_emitter',
         })
         .id('start:mechanical_crafting/modular_router');
 
@@ -210,7 +226,13 @@ ServerEvents.recipes((event) => {
         .EUt(30);
 
     event.recipes.create
-        .mechanical_crafting('gtceu:large_stone_barrel', ['SSUSS', 'SPTPS', 'UTBTU', 'SPTPS', 'SSUSS'], {
+        .mechanical_crafting('gtceu:large_stone_barrel', [
+            'SSUSS', 
+            'SPTPS', 
+            'UTBTU', 
+            'SPTPS', 
+            'SSUSS'
+        ], {
             S: 'minecraft:stone',
             U: '#gtceu:circuits/ulv',
             P: 'gtceu:ulv_electric_pump',
@@ -220,7 +242,13 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/large_stone_barrel');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:large_barrel', ['SSUSS', 'SPTPS', 'UTBTU', 'SPTPS', 'SSUSS'], {
+        .mechanical_crafting('gtceu:large_barrel', [
+            'SSUSS', 
+            'SPTPS', 
+            'UTBTU', 
+            'SPTPS', 
+            'SSUSS'
+        ], {
             S: 'gtceu:treated_wood_planks',
             U: '#gtceu:circuits/ulv',
             P: 'gtceu:ulv_electric_pump',
@@ -230,7 +258,13 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/large_barrel');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:large_farm', ['SSUSS', 'SPTPS', 'UTBTU', 'SPTPS', 'SSUSS'], {
+        .mechanical_crafting('gtceu:large_farm', [
+            'SSUSS', 
+            'SPTPS', 
+            'UTBTU', 
+            'SPTPS', 
+            'SSUSS'
+        ], {
             S: 'gtceu:treated_wood_planks',
             U: '#gtceu:circuits/ulv',
             P: 'gtceu:ulv_conveyor_module',
@@ -240,7 +274,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/large_farm');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:bronze_firebox_casing', ['PRP', 'RFR', 'PRP'], {
+        .mechanical_crafting('gtceu:bronze_firebox_casing', [
+            'PRP', 
+            'RFR', 
+            'PRP'
+        ], {
             P: 'gtceu:bronze_plate',
             R: 'gtceu:bronze_rod',
             F: 'gtceu:bronze_frame',
@@ -248,7 +286,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/bronze_firebox_casing');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:bronze_pipe_casing', ['PIP', 'IFI', 'PIP'], {
+        .mechanical_crafting('gtceu:bronze_pipe_casing', [
+            'PIP', 
+            'IFI', 
+            'PIP'
+        ], {
             P: 'gtceu:bronze_plate',
             I: 'gtceu:bronze_small_fluid_pipe',
             F: 'gtceu:bronze_frame',
@@ -257,7 +299,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_obsidian' });
     event.recipes.create
-        .mechanical_crafting('itemcollectors:basic_collector', [' P ', ' S ', 'OOO'], {
+        .mechanical_crafting('itemcollectors:basic_collector', [
+            ' P ', 
+            ' S ', 
+            'OOO'
+        ], {
             P: 'minecraft:ender_pearl',
             S: 'gtceu:steel_spring',
             O: 'gtceu:obsidian_plate',
@@ -265,7 +311,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/basic_collector');
 
     event.recipes.create
-        .mechanical_crafting('itemcollectors:advanced_collector', [' P ', ' S ', 'OOO'], {
+        .mechanical_crafting('itemcollectors:advanced_collector', [
+            ' P ', 
+            ' S ', 
+            'OOO'
+        ], {
             P: 'minecraft:ender_eye',
             S: 'gtceu:hsla_steel_spring',
             O: 'gtceu:obsidian_plate',
@@ -273,7 +323,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/advanced_collector');
 
     event.recipes.create
-        .mechanical_crafting('2x kubejs:meshblock', ['RSR', 'NFN', 'RSR'], {
+        .mechanical_crafting('2x kubejs:meshblock', [
+            'RSR', 
+            'NFN', 
+            'RSR'
+        ], {
             R: 'gtceu:treated_wood_rod',
             S: 'exnihilosequentia:string_mesh',
             N: 'exnihilosequentia:flint_mesh',
@@ -325,7 +379,11 @@ ServerEvents.recipes((event) => {
     //     .id('start:shaped/flint_block');
 
     event
-        .shaped(Item.of('toms_storage:ts.trim', 2), ['CSC', 'SWS', 'CSC'], {
+        .shaped(Item.of('toms_storage:ts.trim', 2), [
+            'CSC', 
+            'SWS', 
+            'CSC'
+        ], {
             C: 'createdieselgenerators:chip_wood_block',
             W: 'gtceu:wood_crate',
             S: '#minecraft:wooden_slabs',
@@ -333,14 +391,22 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/trim');
 
     event
-        .shaped(Item.of('toms_storage:ts.open_crate'), ['T', 'B', 'T'], {
+        .shaped(Item.of('toms_storage:ts.open_crate'), [
+            'T', 
+            'B', 
+            'T'
+        ], {
             T: 'toms_storage:ts.trim',
             B: 'minecraft:barrel',
         })
         .id('start:shaped/open_crate');
 
     event
-        .shaped(Item.of('toms_storage:ts.inventory_proxy'), ['THT', 'LCL', 'THT'], {
+        .shaped(Item.of('toms_storage:ts.inventory_proxy'), [
+            'THT', 
+            'LCL', 
+            'THT'
+        ], {
             T: '#minecraft:wooden_trapdoors',
             H: 'minecraft:hopper',
             L: 'minecraft:lapis_lazuli',
@@ -350,17 +416,26 @@ ServerEvents.recipes((event) => {
 
     event.replaceInput({ output: 'minecraft:fishing_rod' }, 'gtceu:iron_ring', 'gtceu:steel_ring');
 
-    event.shaped(Item.of('exnihilosequentia:iron_crook'), [' FR', 'GDS', 'DGV'], {
-        R: 'gtceu:iron_ring',
-        F: '#forge:tools/files',
-        G: '#forge:string',
-        D: 'gtceu:iron_rod',
-        S: 'gtceu:iron_screw',
-        V: '#forge:tools/screwdrivers',
+    event
+        .shaped(Item.of('exnihilosequentia:iron_crook'), [
+            ' FR', 
+            'GDS', 
+            'DGV'
+        ], {
+            R: 'gtceu:iron_ring',
+            F: '#forge:tools/files',
+            G: '#forge:string',
+            D: 'gtceu:iron_rod',
+            S: 'gtceu:iron_screw',
+            V: '#forge:tools/screwdrivers',
     });
 
     event.recipes.create
-        .mechanical_crafting(Item.of('gtceu:steam_ore_factory'), ['CIC', 'GOG', 'CIC'], {
+        .mechanical_crafting(Item.of('gtceu:steam_ore_factory'), [
+            'CIC', 
+            'GOG', 
+            'CIC'
+        ], {
             O: 'gtceu:primitive_ore_factory',
             I: 'gtceu:tin_alloy_large_fluid_pipe',
             G: 'gtceu:potin_gear',
@@ -381,7 +456,11 @@ ServerEvents.recipes((event) => {
         .id('start:sequenced_assembly/fluid_cell');
 
     event
-        .shaped(Item.of('thermal:satchel'), ['FWF', 'RCS', 'FWS'], {
+        .shaped(Item.of('thermal:satchel'), [
+            'FWF', 
+            'RCS', 
+            'FWS'
+        ], {
             F: 'minecraft:leather',
             W: '#minecraft:wool',
             R: 'gtceu:tin_ring',
@@ -391,7 +470,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/satchel_leather');
 
     event
-        .shaped(Item.of('thermal:satchel'), ['FWF', 'RCS', 'FWS'], {
+        .shaped(Item.of('thermal:satchel'), [
+            'FWF', 
+            'RCS', 
+            'FWS'
+        ], {
             F: 'thermal:beekeeper_fabric',
             W: '#minecraft:wool',
             R: 'gtceu:tin_ring',

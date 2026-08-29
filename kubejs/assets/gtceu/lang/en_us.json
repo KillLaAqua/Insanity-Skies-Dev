@@ -1233,11 +1233,6 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.0": "§3§lMulti-threaded Vat",
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.1": "§7A multiphase thermal-reactive refinery that fractionates complex fluids, vapors, and slurries into immaculate phases through relentless distillation and controlled fermentation cycles.",
 
-    "material.gtceu.galvanized_steel": "Galvanized Steel",
-    "gtceu.pulverizer": "Pulverizer",
-    "block.gtceu.t_large_pulverizer": "Large Pulverizer [LPv]",
-    "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
-
     "block.gtceu.t_large_arc_furnace": "Large Arc Furnace [LAFn]",
     "block.gtceu.t_large_arc_furnace.tooltip.0": "§7A larger variant of the arc furnace that can process materials with more energy efficiency.",
 
@@ -1255,8 +1250,6 @@
     "material.gtceu.debrominated_brine": "Debrominated Brine",
     "material.gtceu.brominated_chlorine_vapor": "Brominated Chlorine Vapor",
     "material.gtceu.acidic_bromine_exhaust": "Acidic Bromine Exhaust",
-
-    "block.gtceu.large_maceration_tower.tooltip.1": "§aAvailable Recipe Types: Macerator, Pulverizer",
 
     "block.gtceu.bacteria_synthesizer": "Bacteria Synthesizer [BS]",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",

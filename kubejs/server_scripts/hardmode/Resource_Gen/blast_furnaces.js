@@ -58,7 +58,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ output: 'gtceu:primitive_blast_furnace' });
     event.recipes.create
-        .mechanical_crafting('gtceu:primitive_blast_furnace', ['BPB', 'RFR', 'SBS'], {
+        .mechanical_crafting('gtceu:primitive_blast_furnace', [
+            'BPB', 
+            'RFR', 
+            'SBS'
+        ], {
             R: 'gtceu:iron_rod',
             S: 'gtceu:iron_screw',
             P: 'gtceu:iron_plate',
@@ -68,7 +72,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/primitive_blast_furnace');
 
     event.recipes.create
-        .mechanical_crafting('gtceu:steeled_blast_furnace', ['WPW', 'GFG', 'WPW'], {
+        .mechanical_crafting('gtceu:steeled_blast_furnace', [
+            'WPW', 
+            'GFG', 
+            'WPW'
+        ], {
             G: 'gtceu:small_cast_iron_gear',
             W: 'gtceu:wrought_iron_plate',
             P: 'gtceu:potin_screw',

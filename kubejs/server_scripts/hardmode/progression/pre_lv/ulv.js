@@ -21,7 +21,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ output: 'gtceu:vacuum_tube' });
     event.recipes.create
-        .mechanical_crafting(Item.of(`gtceu:vacuum_tube`, 2), ['BEVEB', 'PWRWP', 'BEVEB'], {
+        .mechanical_crafting(Item.of(`gtceu:vacuum_tube`, 2), [
+            'BEVEB', 
+            'PWRWP', 
+            'BEVEB'
+        ], {
             B: 'gtceu:copper_bolt',
             E: 'create:electron_tube',
             V: 'gtceu:glass_tube',
@@ -32,7 +36,11 @@ ServerEvents.recipes((event) => {
         .id('start:mechanical_crafting/vacuum_tube');
 
     event.recipes.create
-        .mechanical_crafting(Item.of('thermal:redstone_servo', 2), ['TPT', ' F ', 'TPT'], {
+        .mechanical_crafting(Item.of('thermal:redstone_servo', 2), [
+            'TPT', 
+            ' F ', 
+            'TPT'
+        ], {
             P: 'gtceu:steel_plate',
             T: 'create:electron_tube',
             F: 'gtceu:fine_red_alloy_wire',
@@ -93,7 +101,11 @@ ServerEvents.recipes((event) => {
 
     const UlvMachine = (output, inputs) => {
         event.recipes.create
-            .mechanical_crafting(Item.of(`gtceu:ulv_${output}`), ['ABC', 'DEF', 'GHI'], {
+            .mechanical_crafting(Item.of(`gtceu:ulv_${output}`), [
+                'ABC', 
+                'DEF', 
+                'GHI'
+            ], {
                 A: inputs[0],
                 B: inputs[1],
                 C: inputs[2],
@@ -450,7 +462,11 @@ ServerEvents.recipes((event) => {
         .EUt(4);
 
     event.recipes.create
-        .mechanical_crafting('2x gtceu:resistor', [' PPP ', 'WRCRW', ' PPP '], {
+        .mechanical_crafting('2x gtceu:resistor', [
+            ' PPP ', 
+            'WRCRW', 
+            ' PPP '
+        ], {
             P: 'minecraft:paper',
             W: 'gtceu:copper_single_wire',
             R: 'gtceu:sticky_resin',

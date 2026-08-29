@@ -154,14 +154,20 @@ BlockEvents.rightClicked('minecraft:grass_block', (event) => {
 ServerEvents.recipes((event) => {
     const id = global.id;
     event
-        .shaped(Item.of('minecraft:flint'), ['SS', 'SS'], {
+        .shaped(Item.of('minecraft:flint'), [
+            'SS', 
+            'SS'
+        ], {
             S: 'kubejs:flint_shard',
         })
         .id('start:shaped/flint');
 
     event.remove({ id: 'minecraft:coarse_dirt' });
     event
-        .shaped(Item.of('minecraft:coarse_dirt', 2), ['DF', 'FD'], {
+        .shaped(Item.of('minecraft:coarse_dirt', 2), [
+            'DF', 
+            'FD'
+        ], {
             F: 'minecraft:flint',
             D: 'minecraft:dirt',
         })
@@ -195,14 +201,20 @@ ServerEvents.recipes((event) => {
 
     stones.forEach((stone) => {
         event
-            .shaped(Item.of(`exnihilosequentia:crushed_${stone}`), ['PP', 'PP'], {
+            .shaped(Item.of(`exnihilosequentia:crushed_${stone}`), [
+                'PP', 
+                'PP'
+            ], {
                 P: `exnihilosequentia:${stone}_pebble`,
             })
             .id(`start:shaped/crushed${stone}`);
     });
 
     event
-        .shaped(Item.of('minecraft:cobblestone'), ['PP', 'PP'], {
+        .shaped(Item.of('minecraft:cobblestone'), [
+            'PP', 
+            'PP'
+        ], {
             P: 'exnihilosequentia:stone_pebble',
         })
         .id('start:shaped/cobblestone');

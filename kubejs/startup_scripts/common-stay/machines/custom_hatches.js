@@ -1,4 +1,5 @@
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+
     event
         .create('fluid_input', 'custom')
         .machine((holder, tier) => new $FluidHatchPartMachine(holder, tier, 'in', 2000, 1))
@@ -14,9 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 
     event
         .create('stabilization_module', 'custom')
-        .machine(
-            (holder, tier) => new $CleaningMaintenanceHatchPartMachine(holder, CleanroomType.getByName('stabilized'))
-        )
+        .machine((holder, tier) => new $CleaningMaintenanceHatchPartMachine(holder, CleanroomType.getByName('stabilized')))
         .tiers(GTValues.UHV)
         .definition((tier, builder) => {
             builder

@@ -65,11 +65,11 @@ StartupEvents.registry('item', (event) => {
         .texture(`kubejs:item/hm/pre-lv/scavenging_rod`);
 
     // === ULV Parts ===
-    // ['electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston', 'emitter'].forEach(
-    //     (type) => {
-    //         event.create(`ulv_${type}`).texture(`kubejs:item/hm/pre-lv/ulv_${type}`);
-    //     }
-    // );
+    [/*'electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston', */'emitter'].forEach(
+        (type) => {
+            event.create(`ulv_${type}`).texture(`kubejs:item/hm/pre-lv/ulv_${type}`);
+        }
+    );
 
     // === Ceramic Molds
     ['ingot', 'ball', 'raw'].forEach(
