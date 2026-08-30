@@ -104,8 +104,8 @@ BlockEvents.rightClicked('minecraft:grass_block', (event) => {
 // In-world recipes for Crucible and Crafting Table
 
 [
-    { hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
-    { hit: 'kubejs:crucible_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crucible_stage_2' },
+    { hit: 'kubejs:crucible_stage_0', tool: 'forge:tools/axes', get: 'kubejs:crucible_stage_1' },
+    { hit: 'kubejs:crucible_stage_1', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_2' },
     { hit: 'kubejs:crucible_stage_2', tool: 'forge:tools/saws', get: 'kubejs:crucible_stage_3' },
     { hit: 'kubejs:crucible_stage_3', tool: 'forge:tools/knives', get: 'exnihilosequentia:jungle_crucible' },
 ].forEach((crucible) => {

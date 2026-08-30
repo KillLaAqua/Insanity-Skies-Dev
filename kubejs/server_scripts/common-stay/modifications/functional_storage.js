@@ -86,38 +86,38 @@ ServerEvents.recipes((event) => {
         })
         .id('start:shaped/ender_drawer');
 
-    global.with_framedblocks(
-        () => {
-            ['1', '2', '4'].forEach((size) => {
-                event.remove({ output: `functionalstorage:framed_${size}` });
-                event
-                    .shapeless(`1x functionalstorage:framed_${size}`, [
-                        `1x #functionalstorage:drawer_size_${size}`,
-                        'framedblocks:framed_hammer',
-                    ])
-                    .id(`start:shapeless/framed_drawer_${size}`);
-            });
-            event.shapeless('1x functionalstorage:framed_storage_controller', [
-                'functionalstorage:storage_controller',
-                'framedblocks:framed_hammer',
-            ]);
-        },
-        () => {
-            ['1', '2', '4'].forEach((size) => {
-                event.remove({ output: `functionalstorage:framed_${size}` });
-                event
-                    .shapeless(`1x functionalstorage:framed_${size}`, [
-                        `1x #functionalstorage:drawer_size_${size}`,
-                        '#forge:tools/hammers',
-                    ])
-                    .id(`start:shapeless/framed_drawer_${size}`);
-            });
-            event.shapeless('1x functionalstorage:framed_storage_controller', [
-                'functionalstorage:storage_controller',
-                '#forge:tools/hammers',
-            ]);
-        }
-    );
+    // global.with_framedblocks(
+    //     () => {
+    //         ['1', '2', '4'].forEach((size) => {
+    //             event.remove({ output: `functionalstorage:framed_${size}` });
+    //             event
+    //                 .shapeless(`1x functionalstorage:framed_${size}`, [
+    //                     `1x #functionalstorage:drawer_size_${size}`,
+    //                     'framedblocks:framed_hammer',
+    //                 ])
+    //                 .id(`start:shapeless/framed_drawer_${size}`);
+    //         });
+    //         event.shapeless('1x functionalstorage:framed_storage_controller', [
+    //             'functionalstorage:storage_controller',
+    //             'framedblocks:framed_hammer',
+    //         ]);
+    //     },
+    //     () => {
+    //         ['1', '2', '4'].forEach((size) => {
+    //             event.remove({ output: `functionalstorage:framed_${size}` });
+    //             event
+    //                 .shapeless(`1x functionalstorage:framed_${size}`, [
+    //                     `1x #functionalstorage:drawer_size_${size}`,
+    //                     '#forge:tools/hammers',
+    //                 ])
+    //                 .id(`start:shapeless/framed_drawer_${size}`);
+    //         });
+    //         event.shapeless('1x functionalstorage:framed_storage_controller', [
+    //             'functionalstorage:storage_controller',
+    //             '#forge:tools/hammers',
+    //         ]);
+    //     }
+    // );
 
     event
         .shaped('1x functionalstorage:redstone_upgrade', [

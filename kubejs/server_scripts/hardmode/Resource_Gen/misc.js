@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
         .chancedOutput('gtceu:stone_dust', 1200, 50)
         .chancedOutput('gtceu:pyrolusite_dust', 800, 35)
         .chancedOutput('minecraft:gold_nugget', 350, 25)
-        .outputFluids('gtceu:molten_waste 20')
+        // .outputFluids('gtceu:molten_waste 20')
         .duration(400)
         .EUt(30);
 

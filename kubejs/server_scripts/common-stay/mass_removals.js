@@ -74,11 +74,10 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
     event.remove({ output: /exnihilosequentia:.*doll/});
   
-    event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
-    event.remove({ mod: 'mysticalagriculture'});
-    event.remove({ mod: 'mysticalagradditions'});
-    event.remove({ mod: 'mysticaladaptations'});
+    // event.remove({ mod: 'mysticalagriculture'});
+    // event.remove({ mod: 'mysticalagradditions'});
+    // event.remove({ mod: 'mysticaladaptations'});
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
 
@@ -101,7 +100,5 @@ ServerEvents.recipes(event => {
     event.remove({ input: /thermal:.*_nugget/});
     event.remove({ output: /exnihilosequentia:.*_nugget/});
     event.remove({ input: /exnihilosequentia:.*_nugget/});
-    event.remove({ input: Item.of('createdieselgenerators:mold')});
-    event.remove({ output: 'createdieselgenerators:mold'});
     event.remove({ id: /create:crushing\/.*horse_armor/});
 });

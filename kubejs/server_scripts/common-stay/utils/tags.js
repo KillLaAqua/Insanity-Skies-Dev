@@ -1,64 +1,64 @@
 // priority: 1
 
 ServerEvents.tags('item', (event) => {
-    event.add('gtceu:circuits/uv', 'kubejs:runic_processor_assembly');
-    event.add('gtceu:circuits/zpm', 'kubejs:runic_processor');
-    event.add('gtceu:circuits/uhv', 'kubejs:runic_processor_computer');
-    event.add('gtceu:circuits/uev', 'kubejs:runic_processor_mainframe');
-    event.add('gtceu:circuits/zpm', 'kubejs:draconic_microchip_processor');
-    event.add('gtceu:circuits/uv', 'kubejs:draconic_processor');
-    event.add('gtceu:circuits/uhv', 'kubejs:draconic_processor_assembly');
-    event.add('gtceu:circuits/uev', 'kubejs:draconic_processor_computer');
-    event.add('gtceu:circuits/uiv', 'kubejs:draconic_processor_mainframe');
-    event.add('gtceu:circuits/uhv', 'kubejs:abyssal_processor');
-    event.add('gtceu:circuits/uev', 'kubejs:abyssal_processor_assembly');
-    event.add('gtceu:circuits/uiv', 'kubejs:abyssal_processor_computer');
-    event.add('gtceu:circuits/uxv', 'kubejs:abyssal_processor_mainframe');
+    // event.add('gtceu:circuits/uv', 'kubejs:runic_processor_assembly');
+    // event.add('gtceu:circuits/zpm', 'kubejs:runic_processor');
+    // event.add('gtceu:circuits/uhv', 'kubejs:runic_processor_computer');
+    // event.add('gtceu:circuits/uev', 'kubejs:runic_processor_mainframe');
+    // event.add('gtceu:circuits/zpm', 'kubejs:draconic_microchip_processor');
+    // event.add('gtceu:circuits/uv', 'kubejs:draconic_processor');
+    // event.add('gtceu:circuits/uhv', 'kubejs:draconic_processor_assembly');
+    // event.add('gtceu:circuits/uev', 'kubejs:draconic_processor_computer');
+    // event.add('gtceu:circuits/uiv', 'kubejs:draconic_processor_mainframe');
+    // event.add('gtceu:circuits/uhv', 'kubejs:abyssal_processor');
+    // event.add('gtceu:circuits/uev', 'kubejs:abyssal_processor_assembly');
+    // event.add('gtceu:circuits/uiv', 'kubejs:abyssal_processor_computer');
+    // event.add('gtceu:circuits/uxv', 'kubejs:abyssal_processor_mainframe');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
     event.remove('minecraft:wooden_slabs', 'gtceu:treated_wood_slab');
 
-    event.add('start_core:komaru/filaments/tier_1', 'kubejs:komaru_filament_t1');
-    event.add('start_core:komaru/filaments/tier_2', 'kubejs:komaru_filament_t2');
+    // event.add('start_core:komaru/filaments/tier_1', 'kubejs:komaru_filament_t1');
+    // event.add('start_core:komaru/filaments/tier_2', 'kubejs:komaru_filament_t2');
 
-    const knifeTagRemove = ['netherite', 'flint', 'iron', 'diamond', 'golden'];
-    knifeTagRemove.forEach((item) => {
-        event.remove('forge:tools/knives', `farmersdelight:${item}_knife`);
-    });
+    // const knifeTagRemove = ['netherite', 'flint', 'iron', 'diamond', 'golden'];
+    // knifeTagRemove.forEach((item) => {
+    //     event.remove('forge:tools/knives', `farmersdelight:${item}_knife`);
+    // });
 
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:string_mesh');
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:flint_mesh');
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:iron_mesh');
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:diamond_mesh');
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
-    event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:string_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:flint_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:iron_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:diamond_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
+    // event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
 
-    [
-        'diamond',
-        'emerald',
-        'ruby',
-        'sapphire',
-        'quartzite',
-        'topaz',
-        'spessartine',
-        'certus_quartz',
-        'green_sapphire',
-        'blue_topaz',
-        'apatite',
-        'monazite',
-        'realgar',
-    ].forEach((type) => {
-        event.add('gtceu:geode', `kubejs:${type}_geode`);
+    // [
+    //     'diamond',
+    //     'emerald',
+    //     'ruby',
+    //     'sapphire',
+    //     'quartzite',
+    //     'topaz',
+    //     'spessartine',
+    //     'certus_quartz',
+    //     'green_sapphire',
+    //     'blue_topaz',
+    //     'apatite',
+    //     'monazite',
+    //     'realgar',
+    // ].forEach((type) => {
+    //     event.add('gtceu:geode', `kubejs:${type}_geode`);
         // event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
-    });
+    // });
 
     event.add('gtceu:coal_dusts', 'gtceu:charcoal_dust');
     event.add('gtceu:coal_dusts', 'gtceu:coal_dust');
     event.add('gtceu:coal_blocks', 'minecraft:coal_block');
     event.add('gtceu:coal_blocks', 'gtceu:charcoal_block');
 
-    event.add('curios:charm', 'kubejs:abydos_talisman');
-    event.add('curios:head', 'kubejs:nether_talisman');
-    event.add('curios:back', 'kubejs:end_talisman');
+    // event.add('curios:charm', 'kubejs:abydos_talisman');
+    // event.add('curios:head', 'kubejs:nether_talisman');
+    // event.add('curios:back', 'kubejs:end_talisman');
 
     ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped', 'mangrove', 'cherry'].forEach(
         (type) => {
@@ -68,27 +68,6 @@ ServerEvents.tags('item', (event) => {
         }
     ); //for framed drawers
 
-    //Vintage Tag Removals
-    //Materials
-    ['vanadium', 'sulfur'].forEach((type) => {
-        const nuggetSuffix = type == 'sulfur' ? 'chunk' : 'nugget';
-        event.remove(`forge:storage_blocks/${type}`, `vintage:${type}_block`);
-        event.remove('forge:storage_blocks', `vintage:${type}_block`);
-        event.remove(`forge:nuggets/${type}`, `vintage:${type}_${nuggetSuffix}`);
-        event.remove('forge:nuggets', `vintage:${type}_${nuggetSuffix}`);
-        event.remove('balm:nuggets', `vintage:${type}_${nuggetSuffix}`);
-    });
-    event.remove('balm:gems', 'vintage:sulfur');
-    event.remove('forge:gems', 'vintage:sulfur');
-    event.remove('forge:gems/sulfur', 'vintage:sulfur');
-    event.remove('balm:ingots', 'vintage:vanadium_ingot');
-    event.remove('forge:ingots', 'vintage:vanadium_ingot');
-    event.remove('forge:ingots/vanadium', 'vintage:vanadium_ingot');
-    event.remove('minecraft:beacon_payment_items', 'vintage:vanadium_ingot');
-    event.remove('minecraft:trim_materials', 'vintage:vanadium_ingot');
-});
-
-ServerEvents.tags('item', (event) => {
     const thermal = [
         /thermal:signalum.*/,
         /thermal:lumium.*/,
@@ -141,7 +120,6 @@ ServerEvents.tags('item', (event) => {
         'create:powdered_obsidian',
     ];
     const Megacells = [/megacells:sky_steel.*/];
-    const Vintage = [/vintage:.*_sheet/, /vintage:.*_rod/, /vintage:.*_wire/];
 
     thermal.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
@@ -158,22 +136,19 @@ ServerEvents.tags('item', (event) => {
     Megacells.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
-    Vintage.forEach((item) => {
-        event.removeAllTagsFrom(`${item}`);
-    });
+
 });
 
 ServerEvents.tags('block', (event) => {
+
     event.add('minecraft:mineable/pickaxe', /xtonesreworked:glaxx_block_.*/);
 
     const targets = [
         /^laserio:.*/,
         /^create:.*/,
-        /^solarflux:.*/,
         /^pipez:.*/,
         /^kubejs:.*/,
         /^thermal:.*/,
-        /^fluxnetworks:.*/,
         /^modularrouters:.*/,
         /^trashcans:.*/,
     ];
@@ -185,10 +160,6 @@ ServerEvents.tags('block', (event) => {
 
     event.add('mineable/pickaxe', ['travelanchors:travel_anchor']);
 
-    ['vanadium', 'sulfur'].forEach((type) => {
-        event.remove(`forge:storage_blocks/${type}`, `vintage:${type}_block`);
-    });
-    event.remove('minecraft:beacon_base_blocks', 'vintage:vanadium_block');
 });
 
 ServerEvents.tags('fluid', (event) => {
@@ -200,5 +171,5 @@ ServerEvents.tags('fluid', (event) => {
 
     // event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
 
-    event.add('start_core:komaru/faematter', 'gtceu:faematter');
+    // event.add('start_core:komaru/faematter', 'gtceu:faematter');
 });

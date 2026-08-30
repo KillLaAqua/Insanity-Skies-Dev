@@ -1,6 +1,6 @@
 StartupEvents.registry('block', (event) => {
     // === Staged Blocks ===
-    ['1', '2', '3'].forEach((num) => {
+    ['0', '1', '2', '3'].forEach((num) => {
         event
             .create(`crucible_stage_${num}`)
             .hardness(1)
@@ -8,7 +8,7 @@ StartupEvents.registry('block', (event) => {
             .requiresTool(true)
             .tagBlock('minecraft:mineable/axe')
             .tagBlock('minecraft:needs_stone_tool');
-
+        if(num == '0') return
         event
             .create(`crafting_stage_${num}`)
             .hardness(1)

@@ -68,25 +68,25 @@ ServerEvents.recipes((event) => {
     //     .itemOutputs('3x gtceu:soul_infused_dust')
     //     .duration(300)
     //     .EUt(16);
-    event.recipes.gtceu
-        .mixer(id('signalum_dust'))
-        .itemInputs('gtceu:silver_dust', '3x gtceu:copper_dust', '4x minecraft:redstone')
-        .itemOutputs('8x gtceu:signalum_dust')
-        .duration(800)
-        .EUt(64)
-        .circuit(3);
-    event.recipes.gtceu
-        .mixer(id('lumium_dust'))
-        .itemInputs('gtceu:silver_dust', '3x gtceu:tin_dust', '2x minecraft:glowstone_dust')
-        .itemOutputs('6x gtceu:lumium_dust')
-        .duration(600)
-        .EUt(256);
-    event.recipes.gtceu
-        .mixer(id('enderium_dust'))
-        .itemInputs('3x gtceu:lead_dust', '1x gtceu:diamond_dust', '3x gtceu:ender_pearl_dust')
-        .itemOutputs('6x gtceu:enderium_dust')
-        .duration(1000)
-        .EUt(1024);
+    // event.recipes.gtceu
+    //     .mixer(id('signalum_dust'))
+    //     .itemInputs('gtceu:silver_dust', '3x gtceu:copper_dust', '4x minecraft:redstone')
+    //     .itemOutputs('8x gtceu:signalum_dust')
+    //     .duration(800)
+    //     .EUt(64)
+    //     .circuit(3);
+    // event.recipes.gtceu
+    //     .mixer(id('lumium_dust'))
+    //     .itemInputs('gtceu:silver_dust', '3x gtceu:tin_dust', '2x minecraft:glowstone_dust')
+    //     .itemOutputs('6x gtceu:lumium_dust')
+    //     .duration(600)
+    //     .EUt(256);
+    // event.recipes.gtceu
+    //     .mixer(id('enderium_dust'))
+    //     .itemInputs('3x gtceu:lead_dust', '1x gtceu:diamond_dust', '3x gtceu:ender_pearl_dust')
+    //     .itemOutputs('6x gtceu:enderium_dust')
+    //     .duration(1000)
+    //     .EUt(1024);
 
     // event.recipes.gtceu
     //     .chemical_bath(id('hot_signalum_cooling_distilled_water'))

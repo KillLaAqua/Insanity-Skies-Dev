@@ -158,59 +158,59 @@ ServerEvents.recipes((event) => {
 
     // Standard Casing
 
-    const Hulls = (tier, material, wire, bindant, scaler) => {
-        let FluidQuant = tier === 'lv' ? 576 : 288;
+    // const Hulls = (tier, material, wire, bindant, scaler) => {
+    //     let FluidQuant = tier === 'lv' ? 576 : 288;
 
-        event.recipes.gtceu
-            .assembler(id(`${tier}_machine_casing`))
-            .itemInputs(`8x gtceu:${material}_plate`)
-            .itemOutputs(`gtceu:${tier}_machine_casing`)
-            .circuit(8)
-            .duration(100)
-            .EUt(2 * Math.pow(4, scaler));
+    //     event.recipes.gtceu
+    //         .assembler(id(`${tier}_machine_casing`))
+    //         .itemInputs(`8x gtceu:${material}_plate`)
+    //         .itemOutputs(`gtceu:${tier}_machine_casing`)
+    //         .circuit(8)
+    //         .duration(100)
+    //         .EUt(2 * Math.pow(4, scaler));
 
-        event.recipes.gtceu
-            .assembler(id(`${tier}_machine_hull`))
-            .itemInputs(`gtceu:${tier}_machine_casing`, `4x gtceu:${wire}_single_cable`)
-            .inputFluids(`gtceu:${bindant} ${FluidQuant}`)
-            .itemOutputs(`gtceu:${tier}_machine_hull`)
-            .duration(100)
-            .EUt(2 * Math.pow(4, scaler));
-    };
+    //     event.recipes.gtceu
+    //         .assembler(id(`${tier}_machine_hull`))
+    //         .itemInputs(`gtceu:${tier}_machine_casing`, `4x gtceu:${wire}_single_cable`)
+    //         .inputFluids(`gtceu:${bindant} ${FluidQuant}`)
+    //         .itemOutputs(`gtceu:${tier}_machine_hull`)
+    //         .duration(100)
+    //         .EUt(2 * Math.pow(4, scaler));
+    // };
 
-    Hulls('ulv', 'wrought_iron', 'red_alloy', 'glue', 0);
-    Hulls('lv', 'steel', 'tin', 'glue', 1);
-    Hulls('mv', 'aluminium', 'copper', 'polyethylene', 2);
-    Hulls('hv', 'stainless_steel', 'gold', 'polyethylene', 3);
-    Hulls('ev', 'titanium', 'aluminium', 'polytetrafluoroethylene', 4);
-    Hulls('iv', 'tungsten_steel', 'platinum', 'polytetrafluoroethylene', 5);
-    Hulls('luv', 'rhodium_plated_palladium', 'niobium_titanium', 'polybenzimidazole', 6);
-    Hulls('zpm', 'naquadah_alloy', 'vanadium_gallium', 'polybenzimidazole', 7);
-    Hulls('uv', 'darmstadtium', 'yttrium_barium_cuprate', 'polyether_ether_ketone', 8);
+    // Hulls('ulv', 'wrought_iron', 'red_alloy', 'glue', 0);
+    // Hulls('lv', 'steel', 'tin', 'glue', 1);
+    // Hulls('mv', 'aluminium', 'copper', 'polyethylene', 2);
+    // Hulls('hv', 'stainless_steel', 'gold', 'polyethylene', 3);
+    // Hulls('ev', 'titanium', 'aluminium', 'polytetrafluoroethylene', 4);
+    // Hulls('iv', 'tungsten_steel', 'platinum', 'polytetrafluoroethylene', 5);
+    // Hulls('luv', 'rhodium_plated_palladium', 'niobium_titanium', 'polybenzimidazole', 6);
+    // Hulls('zpm', 'naquadah_alloy', 'vanadium_gallium', 'polybenzimidazole', 7);
+    // Hulls('uv', 'darmstadtium', 'yttrium_barium_cuprate', 'polyether_ether_ketone', 8);
     // Hulls('uhv','neutronium','europium','polyether_ether_ketone',9);
     // Hulls('uev','mythrolic_alloy','cerium_tritelluride','poly_34_ethylenedioxythiophene_polystyrene_sulfate',10);
     // Hulls('uiv','chaotixic_alloy','polonium_bismide','poly_34_ethylenedioxythiophene_polystyrene_sulfate',11);
 
     // Hermetic Casings
-    const HermeticCasings = (tier, material, pipe, scaler) => {
-        event.recipes.gtceu
-            .assembler(id(`${tier}_hermetic_casing`))
-            .itemInputs(
-                `gtceu:${material}_frame`,
-                `gtceu:${pipe}_large_fluid_pipe`,
-                `2x gtceu:${tier}_electric_pump`,
-                `12x gtceu:${material}_foil`,
-                `2x gtceu:double_${material}_plate`
-            )
-            .itemOutputs(`gtceu:${tier}_hermetic_casing`)
-            .duration(200)
-            .EUt(7.5 * Math.pow(4, scaler));
-    };
-    HermeticCasings('lv', 'steel', 'steel', 1);
-    HermeticCasings('mv', 'aluminium', 'polyethylene', 2);
-    HermeticCasings('hv', 'stainless_steel', 'polytetrafluoroethylene', 3);
-    HermeticCasings('ev', 'titanium', 'titanium', 4);
-    HermeticCasings('iv', 'tungsten_steel', 'niobium_titanium', 5);
+    // const HermeticCasings = (tier, material, pipe, scaler) => {
+    //     event.recipes.gtceu
+    //         .assembler(id(`${tier}_hermetic_casing`))
+    //         .itemInputs(
+    //             `gtceu:${material}_frame`,
+    //             `gtceu:${pipe}_large_fluid_pipe`,
+    //             `2x gtceu:${tier}_electric_pump`,
+    //             `12x gtceu:${material}_foil`,
+    //             `2x gtceu:double_${material}_plate`
+    //         )
+    //         .itemOutputs(`gtceu:${tier}_hermetic_casing`)
+    //         .duration(200)
+    //         .EUt(7.5 * Math.pow(4, scaler));
+    // };
+    // HermeticCasings('lv', 'steel', 'steel', 1);
+    // HermeticCasings('mv', 'aluminium', 'polyethylene', 2);
+    // HermeticCasings('hv', 'stainless_steel', 'polytetrafluoroethylene', 3);
+    // HermeticCasings('ev', 'titanium', 'titanium', 4);
+    // HermeticCasings('iv', 'tungsten_steel', 'niobium_titanium', 5);
     // HermeticCasings('luv','rhodium_plated_palladium','iridium',6);
     // HermeticCasings('zpm','naquadah_alloy','europium',7);
     // HermeticCasings('uv','darmstadtium','enriched_naquadah',8);

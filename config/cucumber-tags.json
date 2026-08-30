@@ -12,8 +12,8 @@
   "forge:ingots/steel": "gtceu:steel_ingot",
   "forge:rubber": "gtceu:rubber_ingot",
   "forge:ingots/titanium": "gtceu:titanium_ingot",
-  "forge:ingots/signalum": "gtceu:signalum_ingot",
-  "forge:ingots/lumium": "gtceu:lumium_ingot",
+  "forge:ingots/signalum": "null",
+  "forge:ingots/lumium": "null",
   "forge:gems/ruby": "gtceu:ruby_gem",
   "forge:gems/sapphire": "gtceu:sapphire_gem",
   "forge:ingots/lead": "gtceu:lead_ingot",
@@ -30,5 +30,5 @@
   "forge:ingots/nickel": "gtceu:nickel_ingot",
   "forge:ingots/graphite": "null",
   "forge:gems/peridot": "projectred_core:peridot",
-  "forge:ingots/enderium": "gtceu:enderium_ingot"
+  "forge:ingots/enderium": "null"
 }
