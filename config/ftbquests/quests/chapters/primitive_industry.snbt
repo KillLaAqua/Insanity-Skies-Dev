@@ -850,8 +850,8 @@
 			]
 			id: "127C2112998C1271"
 			tasks: [{
-				id: "37F5508D1FFE4C0F"
-				item: "create_new_age:energiser_t1"
+				id: "41236335D7F47B4F"
+				item: "create_new_age:basic_energiser"
 				type: "item"
 			}]
 			x: -6.5d
@@ -880,8 +880,8 @@
 			]
 			id: "564F7A288EB2721A"
 			tasks: [{
-				id: "00323583EC448A4E"
-				item: "kubejs:ulv_electric_motor"
+				id: "38BC4EA451C41CE0"
+				item: "gtceu:ulv_electric_motor"
 				type: "item"
 			}]
 			x: -4.5d
@@ -891,8 +891,8 @@
 			dependencies: ["564F7A288EB2721A"]
 			id: "5440E2ACE3CF6074"
 			tasks: [{
-				id: "7600D2B3BC3B216E"
-				item: "kubejs:ulv_electric_piston"
+				id: "091BD84104A998E1"
+				item: "gtceu:ulv_electric_piston"
 				type: "item"
 			}]
 			x: -6.5d
@@ -905,8 +905,8 @@
 			]
 			id: "6B9955C330297628"
 			tasks: [{
-				id: "1B60C98AA9EB9B01"
-				item: "kubejs:ulv_robot_arm"
+				id: "393D0A487F91C248"
+				item: "gtceu:ulv_robot_arm"
 				type: "item"
 			}]
 			x: -8.5d
@@ -917,8 +917,8 @@
 			hide_dependent_lines: true
 			id: "5C764F939DCEA2B4"
 			tasks: [{
-				id: "6BAA88580229B170"
-				item: "kubejs:ulv_conveyor_module"
+				id: "435E57CA9311CA45"
+				item: "gtceu:ulv_conveyor_module"
 				type: "item"
 			}]
 			x: -2.5d
@@ -928,8 +928,8 @@
 			dependencies: ["564F7A288EB2721A"]
 			id: "3A1AE7329B090F5C"
 			tasks: [{
-				id: "4DCA860D9469D3D1"
-				item: "kubejs:ulv_electric_pump"
+				id: "7775EE48F15EDE56"
+				item: "gtceu:ulv_electric_pump"
 				type: "item"
 			}]
 			x: -2.5d
@@ -1024,7 +1024,6 @@
 			dependencies: [
 				"6DE87A8D59525AF8"
 				"19EFB33C0B250C49"
-				"00323583EC448A4E"
 			]
 			id: "105C5A7E95B3E6D4"
 			tasks: [{

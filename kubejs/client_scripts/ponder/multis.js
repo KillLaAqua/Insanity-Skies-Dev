@@ -85,7 +85,9 @@ let ponderMultis = (() => {
          */
         classic_stargate: () => {
             return {
-                pattern: [[' RCBCR ', 'CR   RC', 'R     R', 'R     R', 'C     C', 'RR   RR', ' CRCRC ']],
+                pattern: [
+                    [' RCBCR ', 'CR   RC', 'R     R', 'R     R', 'C     C', 'RR   RR', ' CRCRC ']
+                ],
                 controller: 'B',
                 defs: {
                     R: block('sgjourney:classic_stargate_ring_block'),

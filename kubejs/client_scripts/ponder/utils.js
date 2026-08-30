@@ -15,15 +15,9 @@ let ponderUtils = (() => {
     let $IPipeNode = Java.loadClass('com.gregtechceu.gtceu.api.pipenet.IPipeNode');
     let $InputWindowElement = Java.loadClass('net.createmod.ponder.foundation.element.InputWindowElement');
     let $ShowInputInstruction = Java.loadClass('net.createmod.ponder.foundation.instruction.ShowInputInstruction');
-    let $ReplaceBlocksInstruction = Java.loadClass(
-        'net.createmod.ponder.foundation.instruction.ReplaceBlocksInstruction'
-    );
-    let $FadeOutOfSceneInstruction = Java.loadClass(
-        'net.createmod.ponder.foundation.instruction.FadeOutOfSceneInstruction'
-    );
-    let $DisplayWorldSectionInstruction = Java.loadClass(
-        'net.createmod.ponder.foundation.instruction.DisplayWorldSectionInstruction'
-    );
+    let $ReplaceBlocksInstruction = Java.loadClass('net.createmod.ponder.foundation.instruction.ReplaceBlocksInstruction');
+    let $FadeOutOfSceneInstruction = Java.loadClass('net.createmod.ponder.foundation.instruction.FadeOutOfSceneInstruction');
+    let $DisplayWorldSectionInstruction = Java.loadClass('net.createmod.ponder.foundation.instruction.DisplayWorldSectionInstruction');
     let $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 
     let P = {

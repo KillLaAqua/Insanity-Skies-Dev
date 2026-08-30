@@ -1,5 +1,3 @@
-// const $RockBreakerCondition = Java.loadClass('com.gregtechceu.gtceu.common.recipe.RockBreakerCondition')
-
 ServerEvents.recipes((event) => {
     const id = global.id;
 
