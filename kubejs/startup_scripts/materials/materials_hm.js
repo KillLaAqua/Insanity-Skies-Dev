@@ -146,6 +146,9 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
             no_smelt
         );
 
+    event.create('latex').liquid().color(0xe3e1cc);
+
+
     // // === Resource Gen Extension ===
     // compDustIcon('metallic_ore_sludge', ['8x pentlandite', '5x gold', '2x silver'], 0xa4ac72, METALLIC, no_decomp);
     // LiquidNoComp('raw_ore_concentrate', 0x7c8478, no_decomp);
