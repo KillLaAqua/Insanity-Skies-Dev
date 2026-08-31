@@ -1350,11 +1350,7 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.3": "§7使用可能なレシピの種類: §f蒸留塔§7、§f蒸留機§7、§f醸造機§7、§f発酵槽§7、§f液体加熱機",
 
     "material.gtceu.galvanized_steel": "亜鉛メッキ鋼",
-    "gtceu.pulverizer": "微粉砕",
-    "block.gtceu.t_large_pulverizer": "大型微粉砕機",
-    "block.gtceu.t_large_pulverizer.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の微粉砕機。",
-    "block.gtceu.t_large_pulverizer.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
-
+    
     "block.gtceu.t_large_arc_furnace": "大型アーク炉",
     "block.gtceu.t_large_arc_furnace.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型のアーク炉。",
     "block.gtceu.t_large_arc_furnace.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
@@ -1374,8 +1370,6 @@
     "material.gtceu.debrominated_brine": "脱臭素化塩水",
     "material.gtceu.brominated_chlorine_vapor": "臭素化塩素蒸気",
     "material.gtceu.acidic_bromine_exhaust": "酸性臭素排気",
-
-    "block.gtceu.large_maceration_tower.tooltip.1": "使用可能なレシピの種類: 粉砕機、微粉砕機",
 
     "block.gtceu.bacteria_synthesizer": "細菌合成機",
     "block.gtceu.bacteria_synthesizer.tooltip.0": "§3並列制御§rユニットを使用可能",

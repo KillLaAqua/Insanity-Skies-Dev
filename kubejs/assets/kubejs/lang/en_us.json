@@ -649,10 +649,10 @@
     "block.kubejs.refined_sand": "Refined Sand",
     "block.kubejs.refined_dust": "Refined Dust",
 
-
-    "block.kubejs.crucible_stage_1": "Slightly Hollowed Log",
-    "block.kubejs.crucible_stage_2": "Fairly Hollowed Log",
-    "block.kubejs.crucible_stage_3": "Mostly Hollowed Log",
+    "block.kubejs.crucible_stage_0": "Crucible Log",
+    "block.kubejs.crucible_stage_1": "Stripped Crucible Log",
+    "block.kubejs.crucible_stage_2": "Hollowed Crucible Log",
+    "block.kubejs.crucible_stage_3": "Almost a Crucible",
 
     "block.kubejs.crafting_stage_1": "Shaped Stripped Log",
     "block.kubejs.crafting_stage_2": "Partially Carved Crafting Table",
@@ -889,6 +889,8 @@
     "item.kubejs.wild_riftion": "Wild Riftion",
     "item.kubejs.coordinate_crystal": "Coordinate Crystal",
     "item.kubejs.worries_about_it": "§cDON'T§r Worry About It :)",
-    "item.kubejs.runic_wave_generator": "Runic Wave Generator"
+    "item.kubejs.runic_wave_generator": "Runic Wave Generator",
+
+    "item.kubejs.concrete_bowl": "Concrete Bowl"
 
 }

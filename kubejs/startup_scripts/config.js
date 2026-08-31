@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'Star Technology';
+Platform.mods.kubejs.name = 'Insanity Skies';

@@ -1,3 +1,3 @@
 // priority: 1000000
 
-global.id = (id) => `start:${id.toLowerCase()}`;
+global.id = (id) => `insanity_skies:${id.toLowerCase()}`;

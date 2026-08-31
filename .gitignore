@@ -19,14 +19,15 @@
 !README.md
 
 # Config Unignore - Directories
-!config/fancymenu/*
+# !config/fancymenu/*
 !config/ftbquests/*
 !config/gamestages/*
 !config/hammerlib/*
 !config/jade/*
 !config/mysticalcustomization/*
-!config/skyblockbuilder/templates*
-!config/jei/blacklist*
+# !config/skyblockbuilder/*
+# !config/jei/*
+# !config*
 
 # Config Unignore - File
 !config/badmobs-common.toml

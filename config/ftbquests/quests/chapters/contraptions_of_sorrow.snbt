@@ -87,6 +87,7 @@
 			dependencies: [
 				"4F89E871129D842B"
 				"4F550705B0576891"
+				"41EEEE63FF53A037"
 			]
 			hide_dependency_lines: true
 			id: "1585BE531365AF58"
@@ -597,29 +598,6 @@
 			}]
 			x: 0.0d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"049DA0A4C3E5EFFF"
-				"0C9556853FE97352"
-				"6DF4BE5FE29D9ED7"
-			]
-			id: "558C992C49591167"
-			tasks: [
-				{
-					id: "2FAA2F2CA1CFC312"
-					item: "xycraft_world:xychorium_gem_red"
-					type: "item"
-				}
-				{
-					id: "24A5E3EE7C2E79FF"
-					item: "xycraft_world:xychorium_gem_light"
-					type: "item"
-				}
-			]
-			title: "Cheaper Rose Quartz"
-			x: -10.0d
-			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1191,6 +1169,42 @@
 			}]
 			x: -4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: [
+				"08B170E72119FDD4"
+				"1EE07BE5F12EBCDB"
+			]
+			dependency_requirement: "one_completed"
+			id: "41EEEE63FF53A037"
+			tasks: [{
+				id: "413FE2574EC05D26"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"1810B4921EB6640E"
+				"55D72686B7A434CD"
+			]
+			description: ["Soaking Dust with a Water Bowl might do something...."]
+			id: "08B170E72119FDD4"
+			optional: true
+			tasks: [{
+				icon: "minecraft:clay"
+				id: "08FC85C10B6D55A6"
+				observe_type: 0
+				timer: 0L
+				title: "Look at Clay"
+				to_observe: "minecraft:clay"
+				type: "observation"
+			}]
+			title: "Clay"
+			x: -2.0d
+			y: -12.5d
 		}
 	]
 	title: "Contraptions of Sorrow"
