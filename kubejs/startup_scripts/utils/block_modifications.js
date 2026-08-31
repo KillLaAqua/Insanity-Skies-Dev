@@ -1,5 +1,6 @@
-// Keep so doesnt bork non-HM
 BlockEvents.modification((event) => {
+
+    // === Log Tool Requirement ===
     const no_punch = (log) => {
         event.modify(log, (block) => {
             block.requiresTool = true;
@@ -12,4 +13,14 @@ BlockEvents.modification((event) => {
         no_punch(`minecraft:${log}_wood`);
         no_punch(`minecraft:stripped_${log}_wood`);
     });
+
+    // === MISC Changes ===
+    event.modify('gtceu:nether_star_block', (block) => {
+        block.lightEmission = 15;
+    });
+
+    event.modify(/xtonesreworked:*/, (block) => {
+        block.destroySpeed = 0.5;
+    });
+
 });
