@@ -942,8 +942,8 @@ ServerEvents.recipes((event) => {
             .id(`start:mechanical_crafter/${tier}_energiser`);
     };
     Energiser('basic', 'minecraft:lightning_rod', 'create:shaft');
-    Energiser('advanced', 'create_new_age:overcharged_golden_wire', 'create_new_age:energiser_t1');
-    Energiser('reinforced', 'create_new_age:overcharged_diamond', 'create_new_age:energiser_t2');
+    Energiser('advanced', 'create_new_age:overcharged_golden_wire', 'create_new_age:basic_energiser');
+    Energiser('reinforced', 'create_new_age:overcharged_diamond', 'create_new_age:advanced_energiser');
 
     event.recipes.create
         .mechanical_crafting(Item.of('create_new_age:basic_motor'), [
@@ -1374,16 +1374,8 @@ ServerEvents.recipes((event) => {
         event.remove({ id: `create:${item}` });
     });
     const CNA = [
-        'layered_magnet',
-        'fluxuated_magnetite',
-        'energiser_t1',
-        'energiser_t2',
-        'energiser_t3',
-        'electrical_connector',
-        'generator_coil',
-        'basic_motor',
-        'advanced_motor',
-        'reinforced_motor',
+        'layered_magnet','fluxuated_magnetite','basic_energiser','advanced_energiser','reinforced_energiser',
+        'electrical_connector','generator_coil','basic_motor','advanced_motor','reinforced_motor',
     ];
     CNA.forEach((removal) => {
         event.remove({ output: `create_new_age:${removal}` });

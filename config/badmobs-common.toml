@@ -1539,39 +1539,6 @@
 #Options for the ad_astra mod.
 [ad_astra]
 
-	#Spawning options for ad_astra:tier_5_rocket
-	[ad_astra.tier_5_rocket]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
-	#Spawning options for ad_astra:tier_6_rocket
-	[ad_astra.tier_6_rocket]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
-	#Spawning options for ad_astra:tier_7_rocket
-	[ad_astra.tier_7_rocket]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
 	#Spawning options for ad_astra:air_vortex
 	[ad_astra.air_vortex]
 		#Should the entity be allowed to spawn normally?

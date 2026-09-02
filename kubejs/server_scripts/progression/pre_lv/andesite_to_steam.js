@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
-    
+    const id = global.id;
+
     event.recipes.create
         .mechanical_crafting('gtceu:primitive_pump', [
             'TNT', 
