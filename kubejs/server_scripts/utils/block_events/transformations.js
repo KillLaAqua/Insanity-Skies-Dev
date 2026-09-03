@@ -29,16 +29,16 @@
     { hit: 'minecraft:jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
     { hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
     { hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
-    { hit: 'kubejs:crafting_stage_3', tool: 'farmersdelight:canvas', get: 'minecraft:crafting_table' },
+    { hit: 'kubejs:crafting_stage_3', tool: 'kubejs:canvas', get: 'minecraft:crafting_table' },
 ].forEach((table) => {
     const { hit, tool, get } = table;
 
     BlockEvents.rightClicked(hit, (event) => {
         const { player, block, level, item } = event;
 
-        if (!item.hasTag(tool) && item.id !== 'farmersdelight:canvas') return;
+        if (!item.hasTag(tool) && item.id !== 'kubejs:canvas') return;
 
-        if (item.id == 'farmersdelight:canvas') item.count--;
+        if (item.id == 'kubejs:canvas') item.count--;
         if (item.hasTag(tool)) damage_tool(event);
 
         block.set(get);

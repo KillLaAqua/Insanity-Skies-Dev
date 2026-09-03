@@ -220,22 +220,15 @@
 		}
 		{
 			dependencies: ["469CAF0D80978B00"]
-			description: ["I guess we will be stripping a LOT of logs"]
+			description: [""]
 			id: "2938B6A5159F3BE8"
 			size: 1.0d
-			tasks: [
-				{
-					id: "4D4156F622D3CF0D"
-					item: "farmersdelight:tree_bark"
-					type: "item"
-				}
-				{
-					id: "20050F92584F88C9"
-					item: "gtceu:sticky_resin"
-					type: "item"
-				}
-			]
-			title: "Bark 'n Sap"
+			tasks: [{
+				id: "20050F92584F88C9"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			title: "Sap"
 			x: -9.0d
 			y: -10.5d
 		}

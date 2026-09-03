@@ -8,7 +8,7 @@
   "forge:dusts/saltpeter": "gtceu:saltpeter_dust",
   "forge:silicon": "gtceu:silicon_ingot",
   "forge:ingots/aluminum": "gtceu:aluminium_ingot",
-  "forge:dusts/niter": "thermal:niter_dust",
+  "forge:dusts/niter": "null",
   "forge:ingots/steel": "gtceu:steel_ingot",
   "forge:rubber": "gtceu:rubber_ingot",
   "forge:ingots/titanium": "gtceu:titanium_ingot",

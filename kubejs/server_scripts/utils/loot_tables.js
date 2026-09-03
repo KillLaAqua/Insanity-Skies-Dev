@@ -9,7 +9,7 @@ LootJS.modifiers((event) => {
         .addBlockLootModifier('minecraft:dead_bush')
         .matchMainHand(Item.of('gtceu:flisnt_knife'))
         .removeLoot(Ingredient.all)
-        .addLoot('farmersdelight:straw')
+        .addLoot('kubejs:straw')
         .limitCount([2, 3]);
     event
         .addBlockLootModifier('minecraft:campfire')
@@ -29,7 +29,7 @@ LootJS.modifiers((event) => {
             .addBlockLootModifier(`minecraft:${tree}_leaves`)
             .matchMainHand(Item.of('gtceu:flisnt_scythe'))
             .addLoot(
-                LootEntry.of(`farmersdelight:straw`).when((c) => c.randomChance(0.1)),
+                LootEntry.of(`kubejs:straw`).when((c) => c.randomChance(0.1)),
                 LootEntry.of(`kubejs:plant_fibers`).when((c) => c.randomChance(0.05))
             );
         event

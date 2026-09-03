@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
     // Compat fixes
-    event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
+    // event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
 
-    event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
+    // event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
 
     ['tiled', 'framed', 'horizontal_framed', 'vertical_framed'].forEach((type) => {
         event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane` });
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
     };
 
     nuggetFixMod('create');
-    nuggetFixMod('thermal');
+    // nuggetFixMod('thermal');
     nuggetFixMod('exnihilosequentia');
 
     // Create

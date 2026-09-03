@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
                         .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2))
                     )
                 .where('#', Predicates.any())
-                .where('C', Predicates.blocks('farmersdelight:stove'))
+                .where('C', Predicates.blocks('minecraft:campfire'))
                 .where('D', Predicates.controller(Predicates.blocks(definition.get())))
                 .build()
         )

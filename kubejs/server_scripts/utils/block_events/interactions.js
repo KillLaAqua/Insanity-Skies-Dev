@@ -5,7 +5,7 @@ BlockEvents.rightClicked('minecraft:jungle_log', (event) => {
 
     if (!item.hasTag('minecraft:axes')) return;
 
-    player.addItem(Item.of('farmersdelight:tree_bark'));
+    // player.addItem(Item.of('farmersdelight:tree_bark'));
     if (Math.random() < 0.1) player.addItem(Item.of('gtceu:sticky_resin'));
 });
 

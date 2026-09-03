@@ -3,10 +3,10 @@ JEIEvents.information((event) => {
     event.addItem('minecraft:stick', [
         'Obtained by breaking Dead Bushes.\n'
     ]);
-    event.addItem('farmersdelight:tree_bark', [
-        'Obtained by stripping Logs.\n'
-    ]);
-    event.addItem('farmersdelight:straw', [
+    // event.addItem('farmersdelight:tree_bark', [
+    //     'Obtained by stripping Logs.\n'
+    // ]);
+    event.addItem('kubejs:straw', [
         'Obtained by breaking leaves with a Flint Scythe or breaking down bark.'
     ]);
     event.addItem('gtceu:sticky_resin', [

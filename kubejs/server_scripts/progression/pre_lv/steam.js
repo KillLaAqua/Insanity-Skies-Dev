@@ -352,10 +352,10 @@ ServerEvents.recipes((event) => {
         'create:basin',
         'gtceu:bronze_huge_fluid_pipe',
         'gtceu:industrial_steam_casing',
-        'thermal:redstone_servo',
+        'kubejs:servo_temp',
         'gtceu:industrial_steam_casing',
     ]);
-    // SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','thermal:redstone_servo','gtceu:industrial_steam_casing']);
+    // SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','kubejs:servo_temp','gtceu:industrial_steam_casing']);
     // SteamMachine('steam_ore_factory',['kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:primitive_ore_factory','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','createlowheated:basic_burner','kubejs:high_steam_machine_casing']);  //Disabled Until Core Fix
     SteamMachine('high_pressure_steam_hammer', [
         'kubejs:high_steam_machine_casing',
@@ -376,7 +376,7 @@ ServerEvents.recipes((event) => {
         'create:basin',
         'gtceu:tin_alloy_normal_fluid_pipe',
         'kubejs:high_steam_machine_casing',
-        'thermal:redstone_servo',
+        'kubejs:servo_temp',
         'kubejs:high_steam_machine_casing',
     ]);
     SteamMachine('charcoal_pile_igniter', [

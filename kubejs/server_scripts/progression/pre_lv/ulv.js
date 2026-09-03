@@ -31,12 +31,12 @@ ServerEvents.recipes((event) => {
             V: 'gtceu:glass_tube',
             W: 'gtceu:copper_double_wire',
             P: 'gtceu:double_wrought_iron_plate',
-            R: 'thermal:redstone_servo',
+            R: 'kubejs:servo_temp',
         })
         .id('start:mechanical_crafting/vacuum_tube');
 
     event.recipes.create
-        .mechanical_crafting(Item.of('thermal:redstone_servo', 2), [
+        .mechanical_crafting(Item.of('kubejs:servo_temp', 2), [
             'TPT', 
             ' F ', 
             'TPT'

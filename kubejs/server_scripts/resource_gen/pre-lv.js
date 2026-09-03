@@ -128,9 +128,9 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .barrel(id('slitake'))
-        .notConsumable('thermal:slime_mushroom_spores')
+        .notConsumable('kubejs:ripened_spores')
         .inputFluids('exnihilosequentia:witch_water 200')
-        .chancedOutput('thermal:slime_mushroom_spores', 7000, 0)
+        .chancedOutput('kubejs:ripened_spores', 7000, 0)
         .duration(240);
 
     event.recipes.gtceu
@@ -157,11 +157,11 @@ ServerEvents.recipes((event) => {
         .latex_plantation(id(`latex`))
         .chancedInput(`minecraft:bone_meal`, 2500, 0)
         .notConsumable('gtceu:wood_screw')
-        .outputFluids(`thermal:latex 25`)
+        .outputFluids(`gtceu:latex 25`)
         .duration(400);
     const latexType = [
         { fuel: 'minecraft:bone_meal', circ: '1' },
-        { fuel: 'thermal:compost', circ: '2' },
+        // { fuel: 'thermal:compost', circ: '2' },
         { fuel: 'gtceu:fertilizer', circ: '3' },
     ];
     latexType.forEach((latex) => {
@@ -170,7 +170,7 @@ ServerEvents.recipes((event) => {
             .chancedInput(`${latex.fuel}`, 2500, 0)
             .notConsumable('gtceu:iron_screw')
             .circuit(latex.circ)
-            .outputFluids(`thermal:latex ${25 + 25 * latex.circ}`)
+            .outputFluids(`gtceu:latex ${25 + 25 * latex.circ}`)
             .duration(400);
     });
 

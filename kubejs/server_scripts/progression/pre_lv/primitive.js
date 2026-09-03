@@ -327,7 +327,7 @@ ServerEvents.recipes((event) => {
         event.remove({ id: `create:cutting/${log}_log` });
         const log_type = log == 'bamboo' ? 'block' : log == 'crimson' || log == 'warped' ? 'stem' : 'log';
         event.recipes.create
-            .cutting([`minecraft:stripped_${log}_${log_type}`, 'farmersdelight:tree_bark'], `minecraft:${log}_log`)
+            .cutting([`minecraft:stripped_${log}_${log_type}`/*, 'farmersdelight:tree_bark'*/], `minecraft:${log}_log`)
             .id(`start:cutting/stripped_${log}_${log_type}`);
         event.recipes.create
             .cutting(`4x minecraft:${log}_planks`, `minecraft:stripped_${log}_${log_type}`)
@@ -373,7 +373,7 @@ ServerEvents.recipes((event) => {
             'PCP', 
             'PRP'
         ], {
-            C: 'farmersdelight:canvas',
+            C: 'kubejs:canvas',
             P: 'gtceu:wood_plate',
             R: 'gtceu:sticky_resin',
         });
@@ -422,15 +422,15 @@ ServerEvents.recipes((event) => {
         .id(`start:shaped/bowls`);
 
     event
-        .shapeless(Item.of('kubejs:plant_fibers'), ['#forge:tools/knives', 'farmersdelight:straw'])
+        .shapeless(Item.of('kubejs:plant_fibers'), ['#forge:tools/knives', 'kubejs:straw'])
         .id('start:shapeless/plant_fibers');
 
     event
-        .shapeless(Item.of('farmersdelight:straw'), ['#forge:tools/knives', 'farmersdelight:tree_bark'])
-        .id('start:shapeless/straw');
+        // .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'farmersdelight:tree_bark'])
+        // .id('start:shapeless/straw');
 
-    event.recipes.create.cutting(['kubejs:plant_fibers'], 'farmersdelight:straw').id('start:cutting/plant_fibers');
-    event.recipes.create.cutting(['farmersdelight:straw'], 'farmersdelight:tree_bark').id('start:cutting/straw');
+    event.recipes.create.cutting(['kubejs:plant_fibers'], 'kubejs:straw').id('start:cutting/plant_fibers');
+    // event.recipes.create.cutting(['kubejs:straw'], 'farmersdelight:tree_bark').id('start:cutting/straw');
 
     event.remove({ output: 'exnihilosequentia:string_mesh' });
     event
@@ -440,7 +440,7 @@ ServerEvents.recipes((event) => {
             'SSS'
         ], {
             S: '#forge:string',
-            C: 'farmersdelight:canvas',
+            C: 'kubejs:canvas',
         })
         .id(`start:shaped/ens_string_mesh`);
 
@@ -535,7 +535,7 @@ ServerEvents.recipes((event) => {
         ], {
             T: 'minecraft:stone_slab',
             P: 'gtceu:wood_plate',
-            S: 'gtceu:iron_buzz_saw_blade',
+            S: 'kubejs:saw_blade',
             F: 'gtceu:wood_frame',
         })
         .id('start:shaped/stonecutter');
@@ -570,6 +570,12 @@ ServerEvents.recipes((event) => {
             B: 'kubejs:mud_brick'
         })
         .replaceIngredient('kubejs:water_bowl', 'minecraft:bowl')
+
+    event
+        .shapeless('4x kubejs:packed_mud_ball',
+            ['minecraft:packed_mud','minecraft:bowl']
+        )
+        .replaceIngredient('minecraft:bowl', 'minecraft:bowl')
 
     event
         .shapeless('kubejs:concrete_bowl', [
@@ -614,25 +620,25 @@ ServerEvents.recipes((event) => {
         ])
         .id('start:create_mixer/liquid_concrete');
 
-    event
-        .custom({
-            type: 'farmersdelight:cutting',
-            ingredients: [
-                {
-                    item: 'minecraft:packed_mud',
-                },
-            ],
-            result: [
-                {
-                    count: 4,
-                    item: 'kubejs:packed_mud_ball',
-                },
-            ],
-            tool: {
-                item: 'minecraft:bowl',
-            },
-        })
-        .id('start:cutting_board/packed_mud_ball');
+    // event
+    //     .custom({
+    //         type: 'farmersdelight:cutting',
+    //         ingredients: [
+    //             {
+    //                 item: 'minecraft:packed_mud',
+    //             },
+    //         ],
+    //         result: [
+    //             {
+    //                 count: 4,
+    //                 item: 'kubejs:packed_mud_ball',
+    //             },
+    //         ],
+    //         tool: {
+    //             item: 'minecraft:bowl',
+    //         },
+    //     })
+    //     .id('start:cutting_board/packed_mud_ball');
 
     event
         .shaped(Item.of('minecraft:furnace'), [
@@ -663,13 +669,12 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
-            'BTB', 
+            'STS', 
             'TST', 
             'LLL'
         ], {
             T: '#balm:wooden_rods',
-            S: 'farmersdelight:straw',
-            B: 'farmersdelight:tree_bark',
+            S: 'kubejs:straw',
             L: '#minecraft:logs',
         })
         .id('start:shaped/campfire');

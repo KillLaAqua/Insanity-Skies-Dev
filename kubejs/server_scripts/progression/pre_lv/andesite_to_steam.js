@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             L: 'gtceu:wood_large_fluid_pipe',
             C: 'minecraft:cobblestone_slab',
             S: 'gtceu:iron_screw',
-            V: 'thermal:redstone_servo',
+            V: 'kubejs:servo_temp',
         })
         .id('start:mechanical_crafting/primitive_pump');
 
@@ -67,23 +67,23 @@ ServerEvents.recipes((event) => {
     event.recipes.create.milling(['minecraft:sand'], 'minecraft:gravel');
     event.recipes.create.milling(['exnihilosequentia:dust'], 'minecraft:sand');
 
-    event.remove({ id: 'thermal:rubber_3' });
+    // event.remove({ id: 'thermal:rubber_3' });
     event.recipes.create
-        .compacting(Fluid.of('thermal:latex', 20), `10x minecraft:jungle_log`)
+        .compacting(Fluid.of('gtceu:latex', 20), `10x minecraft:jungle_log`)
         .heatRequirement('lowheated')
         .id('start:compacting/latex');
 
     event.recipes.create
-        .mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('thermal:latex', 288), '1x gtceu:sulfur_dust'])
+        .mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('gtceu:latex', 288), '1x gtceu:sulfur_dust'])
         .heatRequirement('superheated')
         .id('start:create_mixer/rubber');
 
     event.recipes.create
-        .compacting(`1x thermal:cured_rubber`, Fluid.of('gtceu:rubber', 144))
+        .compacting(`1x gtceu:rubber_ingot`, Fluid.of('gtceu:rubber', 144))
         .id('start:compacting/rubber');
 
     event.recipes.create
-        .compacting(`1x gtceu:rubber_plate`, `2x thermal:cured_rubber`)
+        .compacting(`1x gtceu:rubber_plate`, `2x gtceu:rubber_ingot`)
         .id('start:compacting/rubber_plate');
 
     event
@@ -113,9 +113,9 @@ ServerEvents.recipes((event) => {
         .id('start:cutting/treated_wood_plate');
 
     event
-        .shaped(Item.of('gtceu:iron_buzz_saw_blade'), [
+        .shaped(Item.of('kubejs:saw_blade'), [
             'HPM', 
-            'PPP', 
+            'PRP', 
             'WPF'
         ], {
             M: '#forge:tools/mallets',
@@ -123,11 +123,12 @@ ServerEvents.recipes((event) => {
             F: '#forge:tools/files',
             H: '#forge:tools/hammers',
             P: 'gtceu:iron_plate',
+            R: 'gtceu:iron_ring'
         })
-        .id('start:shaped/iron_buzz_saw_blade');
+        .id('start:shaped/saw_blade');
 
     event.recipes.create
-        .mechanical_crafting('thermal:redstone_servo', [
+        .mechanical_crafting('kubejs:servo_temp', [
             'TPT', 
             ' F ', 
             'TPT'
@@ -149,7 +150,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:iron_rotor',
             S: 'minecraft:stone',
             P: 'gtceu:nickel_plate',
-            T: 'thermal:redstone_servo',
+            T: 'kubejs:servo_temp',
             C: 'minecraft:cauldron',
             N: 'gtceu:iron_plate',
         })
@@ -162,7 +163,7 @@ ServerEvents.recipes((event) => {
             'BFB'
         ], {
             R: 'gtceu:brass_rod',
-            S: 'thermal:redstone_servo',
+            S: 'kubejs:servo_temp',
             P: 'gtceu:brass_plate',
             B: 'gtceu:firebricks',
             F: 'minecraft:furnace',
@@ -227,7 +228,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:iron_rotor',
             L: '#forge:stripped_logs',
             P: 'gtceu:treated_wood_plate',
-            T: 'thermal:redstone_servo',
+            T: 'kubejs:servo_temp',
             C: 'minecraft:cauldron',
             N: 'gtceu:wood_plate',
         })
@@ -363,7 +364,7 @@ ServerEvents.recipes((event) => {
             G: 'minecraft:glass',
             R: 'gtceu:iron_gear',
             I: 'gtceu:iron_plate',
-            S: 'thermal:redstone_servo',
+            S: 'kubejs:servo_temp',
         })
         .id('start:mechanical_crafting/ulv_advanced_composter');
 

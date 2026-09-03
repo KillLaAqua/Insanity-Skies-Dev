@@ -16,6 +16,18 @@ StartupEvents.registry('item', (event) => {
 
     event.create('water_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/water_bowl`);
 
+    event.create('ripened_spores');
+
+    event.create('servo_temp');
+
+    event.create('drill_head');
+
+    event.create('saw_blade');
+
+    event.create('canvas');
+
+    event.create('straw');
+
     // === Ore Chunks ===
     [
         { type: 'hematite', composition: 'Fe₂O₃' },

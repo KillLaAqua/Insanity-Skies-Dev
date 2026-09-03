@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
         ], {
             M: '#forge:tools/mallets',
             W: '#forge:tools/wrenches',
-            S: 'gtceu:iron_buzz_saw_blade',
+            S: 'kubejs:saw_blade',
             C: 'create:andesite_casing',
             A: 'create:andesite_alloy',
         })
@@ -320,7 +320,7 @@ ServerEvents.recipes((event) => {
 
     let drill = 'gtceu:double_iron_plate';
     event.recipes.create
-        .sequenced_assembly([Item.of('thermal:drill_head').withChance(1)], drill, [
+        .sequenced_assembly([Item.of('kubejs:drill_head').withChance(1)], drill, [
             event.recipes.createDeploying(drill, [drill, 'create:andesite_alloy']),
             event.recipes.createDeploying(drill, [drill, 'gtceu:cast_iron_plate']),
             event.recipes.createPressing(drill, drill),
@@ -341,7 +341,7 @@ ServerEvents.recipes((event) => {
             H: '#forge:tools/hammers',
             S: 'create:shaft',
             C: 'create:andesite_casing',
-            D: 'thermal:drill_head',
+            D: 'kubejs:drill_head',
             A: 'create:andesite_alloy',
         })
         .id('start:shaped/mechanical_drill');
@@ -574,7 +574,7 @@ ServerEvents.recipes((event) => {
     sandType.forEach((sand) => {
         event.recipes.create
             .mixing(Item.of(`1x create:${sand}_paper`).withChance(0.9), [
-                '1x farmersdelight:canvas',
+                '1x kubejs:canvas',
                 `1x minecraft:${sand}`,
                 'gtceu:sticky_resin',
             ])
@@ -681,7 +681,7 @@ ServerEvents.recipes((event) => {
         ], {
             A: 'create:andesite_alloy',
             S: '#forge:rods/wooden',
-            C: 'farmersdelight:canvas',
+            C: 'kubejs:canvas',
         })
         .id('start:shaped/white_sail');
 

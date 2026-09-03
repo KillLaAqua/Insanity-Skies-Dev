@@ -87,8 +87,8 @@ ServerEvents.recipes((event) => {
     sieve('flint', 0.12, dust, 'minecraft:quartz', false);
 
     // Mud (temp)
-    sieve('flint', 0.1, mud, 'thermal:slime_mushroom_spores', false);
-    sieve('flint', 0.08, mud, 'exnihilosequentia:mycelium_spores', false);
+    sieve('flint', 0.5, mud, 'kubejs:ripened_spores', false);
+    sieve('flint', 0.12, mud, 'exnihilosequentia:mycelium_spores', false);
     sieve('flint', 0.04, mud, 'minecraft:mangrove_propagule', false);
     sieve('flint', 0.01, mud, 'minecraft:sugar_cane', false);
 
