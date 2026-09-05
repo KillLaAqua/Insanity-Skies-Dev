@@ -1400,23 +1400,13 @@
 			y: 9.0d
 		}
 		{
-			id: "261FB0E7C40CE907"
-			tasks: [{
-				id: "48324B8EC227AD15"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -3.0d
-		}
-		{
 			id: "01FA401E48C3B4A6"
 			tasks: [{
 				id: "663FB41CADE5326E"
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
@@ -1430,10 +1420,11 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["694B337E0678FFD5"]
 			id: "79DF0AB509C22C74"
 			tasks: [{
 				id: "23E4636302A4D14C"
@@ -1441,6 +1432,16 @@
 				type: "item"
 			}]
 			x: 4.5d
+			y: -5.0d
+		}
+		{
+			id: "694B337E0678FFD5"
+			tasks: [{
+				id: "3C387DB8E54A1013"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 2.5d
 			y: -5.0d
 		}
 	]
