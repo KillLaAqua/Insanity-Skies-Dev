@@ -327,8 +327,8 @@
 			id: "1EA467441DE65C0D"
 			size: 1.0d
 			tasks: [{
-				id: "2A0BC44BA5E8FAE9"
-				item: "farmersdelight:straw"
+				id: "7A38DE55016FE196"
+				item: "kubejs:straw"
 				type: "item"
 			}]
 			x: -13.0d
@@ -339,8 +339,8 @@
 			id: "54CFAAE3EA5F56D0"
 			size: 1.0d
 			tasks: [{
-				id: "52653090E4BAA766"
-				item: "farmersdelight:canvas"
+				id: "369BA93C99891009"
+				item: "kubejs:canvas"
 				type: "item"
 			}]
 			x: -11.0d

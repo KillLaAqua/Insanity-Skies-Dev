@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
 
     event.remove({ input: /^exnihilosequentia:.*_pebble/ });
     event.remove({ output: 'exnihilosequentia:unfired_crucible' });
-    event.remove({ mod: 'colossalchests' });
+    // event.remove({ mod: 'colossalchests' });
     event.remove({ mod: 'pipez' });
 
     event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');

@@ -8,20 +8,20 @@ ServerEvents.recipes(event => {
         'exnihilosequentia:netherite_mesh', /*'thermal:obsidian_glass', 'thermal:signalum_glass', 'thermal:lumium_glass', 'thermal:enderium_glass', 'thermal_extra:soul_infused_glass',*/
         /*'thermal_extra:shellite_glass', 'thermal_extra:twinite_glass', 'thermal_extra:dragonsteel_glass', 'thermal:machine_frame', 'thermal:fluid_cell_frame',*/
         /*'thermal:energy_cell_frame', 'thermal:earth_charge', 'thermal:ice_charge', 'thermal:lightning_charge', 'thermal:fluid_cell', 'thermal:energy_cell',*/
-        'fluxnetworks:flux_dust', 'exnihilosequentia:end_cake', 'systeams:steam_dynamo', 'systeams:stirling_boiler',
+        /*'fluxnetworks:flux_dust',*/ 'exnihilosequentia:end_cake', /*'systeams:steam_dynamo', 'systeams:stirling_boiler',
         'systeams:lapidary_boiler', 'systeams:magmatic_boiler', 'systeams:numismatic_boiler', 'systeams:compression_boiler', 'systeams:disenchantment_boiler',
-        'systeams:gourmand_boiler', 'systeams:boiler_pipe', /*'thermal:energy_duct',*/ 'itemcollectors:basic_collector', 'itemcollectors:advanced_collector', 'create_new_age:heat_pipe',
+        'systeams:gourmand_boiler', 'systeams:boiler_pipe', 'thermal:energy_duct',*/ 'itemcollectors:basic_collector', 'itemcollectors:advanced_collector', 'create_new_age:heat_pipe',
         'create_new_age:heat_pump', 'create_new_age:heater', 'create_new_age:stirling_engine', 'create_new_age:reactor_casing', 'create_new_age:reactor_rod',
         'create_new_age:reactor_glass', 'create_new_age:reactor_fuel_acceptor', 'create_new_age:reactor_heat_vent', 'create_new_age:basic_solar_heating_plate',
         'create_new_age:advanced_solar_heating_plate', 'create_new_age:nuclear_fuel', 'create_new_age:blank_circuit', 'create_new_age:copper_circuit', 'create_new_age:thorium',
-        'create_new_age:radioactive_thorium', 'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:',
+        'create_new_age:radioactive_thorium', /*'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:',
         'createdieselgenerators:lighter', 'createdieselgenerators:chemical_sprayer', 'createdieselgenerators:oil_detector', 'createdieselgenerators:pumpjack_bearing',
         'createdieselgenerators:pumpjack_head', 'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel',
         'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab', 'createdieselgenerators:asphalt_stairs', 'createdieselgenerators:diesel',
-        'createdieselgenerators:gasoline', 'createdieselgenerators:pumpjack_hole', 'exmachinis:item_buffer', 'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer',
+        'createdieselgenerators:gasoline', 'createdieselgenerators:pumpjack_hole',*/ 'exmachinis:item_buffer', 'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer',
         'systeams:frost_boiler', 'exnihilosequentia:golden_mesh', 'minecraft:mycelium', /*'thermal:gunpowder_4', 'thermal:dirt_crafting', '#thermal:rockwool',*/ 'create:brass_block', 'create:zinc_block',
-        'createdieselgenerators:wire_cutters', 'createdieselgenerators:hammer', 'createdieselgenerators:pumpjack_hole', 'createdieselgenerators:bulk_fermenter',
-        'createdieselgenerators:chemical_turret', 'create:andesite_alloy', /*'thermal:device_xp_condenser',*/ 'vintage:vanadium_block'
+        /*'createdieselgenerators:wire_cutters', 'createdieselgenerators:hammer', 'createdieselgenerators:pumpjack_hole', 'createdieselgenerators:bulk_fermenter',
+        'createdieselgenerators:chemical_turret',*/ 'create:andesite_alloy', /*'thermal:device_xp_condenser', 'vintage:vanadium_block'*/
         // Following 2 to be removed for Zeta/Eta due to exploits and bugs
         // 'gtceu:me_pattern_buffer_proxy', 'gtceu:me_pattern_buffer',
     ];

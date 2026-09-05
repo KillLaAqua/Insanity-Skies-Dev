@@ -383,14 +383,13 @@
 			dependencies: ["5819AF3E6CCDB826"]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
-			icon: "thermal:latex_bucket"
+			icon: "gtceu:latex_bucket"
 			id: "6A9AED442BB9370C"
 			size: 1.0d
 			tasks: [
 				{
-					id: "6E58C21CA4DFAA71"
-					item: "thermal:latex_bucket"
-					optional_task: true
+					id: "3BD2C9EEACDD8EEA"
+					item: "gtceu:latex_bucket"
 					type: "item"
 				}
 				{
@@ -558,8 +557,8 @@
 			id: "21151CF254434CA3"
 			size: 1.0d
 			tasks: [{
-				id: "4318DAECED24A907"
-				item: "thermal:cured_rubber"
+				id: "6107C4D62F2B4138"
+				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
 			x: 0.0d
@@ -1012,7 +1011,7 @@
 			tasks: [
 				{
 					id: "79876562DF61E38E"
-					item: "thermal:slime_mushroom_spores"
+					item: "kubejs:ripened_spores"
 					type: "item"
 				}
 				{
@@ -1115,8 +1114,8 @@
 			id: "61799E4BE93F6A52"
 			size: 1.0d
 			tasks: [{
-				id: "386AAB1CE57E178C"
-				item: "thermal:saw_blade"
+				id: "4D1B2E9BD07FC510"
+				item: "kubejs:saw_blade"
 				type: "item"
 			}]
 			x: -14.0d
@@ -1224,8 +1223,8 @@
 			id: "0B6C67757BB838D3"
 			size: 1.0d
 			tasks: [{
-				id: "2240134D7AA1A2C1"
-				item: "thermal:redstone_servo"
+				id: "251E0C0B58131785"
+				item: "kubejs:servo_temp"
 				type: "item"
 			}]
 			x: 2.0d

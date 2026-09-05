@@ -28,6 +28,8 @@ StartupEvents.registry('item', (event) => {
 
     event.create('straw');
 
+    event.create('igneous_construct');
+
     // === Ore Chunks ===
     [
         { type: 'hematite', composition: 'Fe₂O₃' },

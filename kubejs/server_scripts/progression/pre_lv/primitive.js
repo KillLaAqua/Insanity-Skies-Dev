@@ -158,6 +158,28 @@ ServerEvents.recipes((event) => {
         })
         .id('start:shaped/scavenging_rod');
 
+    event
+        .shaped(Item.of('kubejs:canvas'), [
+            'SS', 
+            'SS'
+        ], {
+            S: 'kubejs:straw'
+        })
+        .id('start:shaped/canvas');
+
+    event
+        .shaped('exnihilosequentia:jungle_crucible', [
+            'SWS', 
+            'SKS',
+            'PSP'
+        ], {
+            S: 'minecraft:jungle_slab',
+            P: 'gtceu:wood_plate',
+            W: '#forge:tools/saws',
+            K: '#forge:tools/knives'
+        })
+        .id('start:shaped/jungle_crucible');
+
     // Kiln
 
     event.remove({ id: 'minecraft:brick' });
@@ -541,12 +563,11 @@ ServerEvents.recipes((event) => {
         .id('start:shaped/stonecutter');
 
     event.remove({ id: /^gtceu:mixer\/concrete.*/ });
-    event.recipes.gtceu
-        .mixer(id('concrete'))
-        .itemInputs('3x gtceu:stone_dust', 'gtceu:calcite_dust', 'gtceu:gypsum_dust')
-        .inputFluids('minecraft:water 1200')
-        .outputFluids('gtceu:concrete 1500')
-        .duration(50)
+    event.recipes.gtceu.mixer(id('concrete'))
+        .itemInputs('12x gtceu:stone_dust', 'gtceu:calcite_dust', 'gtceu:gypsum_dust')
+        .inputFluids('minecraft:water 4800')
+        .outputFluids('gtceu:concrete 6000')
+        .duration(240)
         .EUt(6);
 
     event
@@ -590,9 +611,9 @@ ServerEvents.recipes((event) => {
             'gtceu:stone_dust',
             'gtceu:stone_dust',
             'gtceu:stone_dust',
-            'gtceu:calcite_dust',
+            'gtceu:small_calcite_dust',
             'minecraft:water_bucket',
-            'gtceu:gypsum_dust',
+            'gtceu:small_gypsum_dust',
         ])
         .replaceIngredient('minecraft:water_bucket', 'minecraft:air')
         .id('start:shaped/liquid_concrete_iron_bucket');
@@ -615,8 +636,8 @@ ServerEvents.recipes((event) => {
         .mixing(Fluid.of('gtceu:concrete', 1200), [
             Fluid.of('minecraft:water', 1000),
             '3x gtceu:stone_dust',
-            'gtceu:calcite_dust',
-            'gtceu:gypsum_dust',
+            'gtceu:small_calcite_dust',
+            'gtceu:small_gypsum_dust',
         ])
         .id('start:create_mixer/liquid_concrete');
 
