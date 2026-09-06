@@ -16,7 +16,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     });
 
     // // === Abydos Veins ===
-    // event.add('start:abydos_refractory_dense_magma_deposit', (vein) => {
+    // event.add('insanity_skies:abydos_refractory_dense_magma_deposit', (vein) => {
     //     vein.dimensions('sgjourney:abydos');
     //     vein.fluid(() => Fluid.of('gtceu:abydos_refractory_dense_magma').fluid);
     //     vein.weight(28);
@@ -27,7 +27,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(380);
     // });
 
-    // event.add('start:abydos_reactive_dense_magma_deposit', (vein) => {
+    // event.add('insanity_skies:abydos_reactive_dense_magma_deposit', (vein) => {
     //     vein.dimensions('sgjourney:abydos');
     //     vein.fluid(() => Fluid.of('gtceu:abydos_reactive_dense_magma').fluid);
     //     vein.weight(25);
@@ -38,7 +38,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(380);
     // });
 
-    // event.add('start:gritty_akreyrium', (vein) => {
+    // event.add('insanity_skies:gritty_akreyrium', (vein) => {
     //     vein.dimensions('sgjourney:abydos');
     //     vein.fluid(() => Fluid.of('gtceu:gritty_akreyrium').fluid);
     //     vein.weight(19);
@@ -49,7 +49,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(320);
     // });
 
-    // event.add('start:abydos_naquadite_dense_magma', (vein) => {
+    // event.add('insanity_skies:abydos_naquadite_dense_magma', (vein) => {
     //     vein.dimensions('sgjourney:abydos');
     //     vein.fluid(() => Fluid.of('gtceu:abydos_naquadite_dense_magma').fluid);
     //     vein.weight(28);
@@ -61,7 +61,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     // });
 
     // // === Nether Veins ===
-    // event.add('start:highly_unstable_nether_magma_deposit', (vein) => {
+    // event.add('insanity_skies:highly_unstable_nether_magma_deposit', (vein) => {
     //     vein.dimensions('minecraft:the_nether');
     //     vein.fluid(() => Fluid.of('gtceu:highly_unstable_nether_magma').fluid);
     //     vein.weight(15);
@@ -72,7 +72,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(720);
     // });
 
-    // event.add('start:debris_rich_nether_magma_deposit', (vein) => {
+    // event.add('insanity_skies:debris_rich_nether_magma_deposit', (vein) => {
     //     vein.dimensions('minecraft:the_nether');
     //     vein.fluid(() => Fluid.of('gtceu:debris_rich_nether_magma').fluid);
     //     vein.weight(25);
@@ -83,7 +83,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(180);
     // });
 
-    // event.add('start:lava_dense', (vein) => {
+    // event.add('insanity_skies:lava_dense', (vein) => {
     //     vein.dimensions('minecraft:the_nether');
     //     vein.fluid(() => Fluid.of('minecraft:lava').fluid);
     //     vein.weight(50);
@@ -94,7 +94,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     //     vein.depletedYield(12000);
     // });
 
-    // event.add('start:crude_infernal_concentrate', (vein) => {
+    // event.add('insanity_skies:crude_infernal_concentrate', (vein) => {
     //     vein.dimensions('minecraft:the_nether');
     //     vein.fluid(() => Fluid.of('gtceu:crude_infernal_concentrate').fluid);
     //     vein.weight(10);

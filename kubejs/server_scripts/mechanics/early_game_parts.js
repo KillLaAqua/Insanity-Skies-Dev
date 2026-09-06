@@ -49,12 +49,12 @@ ServerEvents.recipes((event) => {
             .sequenced_assembly(output, input, steps)
             .transitionalItem(inter)
             .loops(loops)
-            .id(`start:sequenced_assembly/${output.split(':')[1]}`);
+            .id(`insanity_skies:sequenced_assembly/${output.split(':')[1]}`);
     };
 
     plates.forEach((metal) => {
         let mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
-        event.recipes.create.compacting(plate(metal), `2x ${mod}:${metal}_ingot`).id(`start:compacting/${metal}_plate`);
+        event.recipes.create.compacting(plate(metal), `2x ${mod}:${metal}_ingot`).id(`insanity_skies:compacting/${metal}_plate`);
     });
 
     plates_block.forEach((metal) => {
@@ -68,26 +68,26 @@ ServerEvents.recipes((event) => {
                 I: `${mod}:${metal}_ingot`,
                 H: '#forge:tools/hammers',
             })
-            .id(`start:shaped/${metal}_plate`);
+            .id(`insanity_skies:shaped/${metal}_plate`);
     });
 
     rods.forEach((metal) => {
-        event.recipes.create.cutting([`2x gtceu:${metal}_rod`], plate(metal)).id(`start:cutting/${metal}_rod`);
+        event.recipes.create.cutting([`2x gtceu:${metal}_rod`], plate(metal)).id(`insanity_skies:cutting/${metal}_rod`);
     });
 
     rings.forEach((metal) => {
-        event.recipes.create.pressing([`gtceu:${metal}_ring`], rod(metal)).id(`start:pressing/${metal}_ring`);
+        event.recipes.create.pressing([`gtceu:${metal}_ring`], rod(metal)).id(`insanity_skies:pressing/${metal}_ring`);
     });
 
     foils.forEach((metal) => {
-        event.recipes.create.pressing([`gtceu:${metal}_foil`], plate(metal)).id(`start:pressing/${metal}_foil`);
+        event.recipes.create.pressing([`gtceu:${metal}_foil`], plate(metal)).id(`insanity_skies:pressing/${metal}_foil`);
     });
 
     screws_and_bolts.forEach((metal) => {
-        event.recipes.create.cutting([`2x gtceu:${metal}_bolt`], rod(metal)).id(`start:cutting/${metal}_bolt`);
+        event.recipes.create.cutting([`2x gtceu:${metal}_bolt`], rod(metal)).id(`insanity_skies:cutting/${metal}_bolt`);
         event.recipes.create
             .compacting([`gtceu:${metal}_screw`], `2x gtceu:${metal}_bolt`)
-            .id(`start:compacting/${metal}_screw`);
+            .id(`insanity_skies:compacting/${metal}_screw`);
     });
 
     long_rods.forEach((metal) =>
@@ -213,7 +213,7 @@ ServerEvents.recipes((event) => {
         seq_assembly(large, normal, inter, sequence, 3);
         seq_assembly(huge, large, inter, sequence, 6);
 
-        event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:cutting/${metal}_tiny_fluid_pipe`);
+        event.recipes.create.cutting(Item.of(tiny, 2), small).id(`insanity_skies:cutting/${metal}_tiny_fluid_pipe`);
     });
 
     const WoodPipe = (size, loops, start) => {

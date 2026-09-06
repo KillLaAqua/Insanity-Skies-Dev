@@ -51,6 +51,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'exnihilosequentia:unfired_crucible' });
     // event.remove({ mod: 'colossalchests' });
     event.remove({ mod: 'pipez' });
+    event.remove({ mod: 'ad_astra' });
 
     event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');
 

@@ -15,16 +15,16 @@ ServerEvents.recipes((event) => {
             S: 'gtceu:iron_screw',
             V: 'kubejs:servo_temp',
         })
-        .id('start:mechanical_crafting/primitive_pump');
+        .id('insanity_skies:mechanical_crafting/primitive_pump');
 
     event.remove({ id: /gtceu:.*glass.*_dust_flint.*/ });
     event.recipes.create
         .mixing('2x gtceu:glass_dust', ['2x gtceu:quartz_sand_dust', '1x gtceu:flint_dust'])
-        .id('start:create_mixer/glass_dust');
+        .id('insanity_skies:create_mixer/glass_dust');
 
     event.recipes.create
         .mixing('2x gtceu:fireclay_dust', ['1x gtceu:clay_dust', '1x gtceu:brick_dust'])
-        .id('start:create_mixer/fireclay_dust');
+        .id('insanity_skies:create_mixer/fireclay_dust');
 
     event.recipes.gtceu
         .mixer(id('fireclay'))
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .mixing('8x gtceu:coke_clay_dust', ['4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust'])
-        .id('start:create_mixer/coke_clay_dust');
+        .id('insanity_skies:create_mixer/coke_clay_dust');
 
     event.recipes.gtceu
         .centrifuge(id('coke_clay'))
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
 
     event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
         .id('kjs:smelting/charcoal_pellet_manual_only')
-        .id('start:smelting/charcoal_pellet');
+        .id('insanity_skies:smelting/charcoal_pellet');
 
     event.recipes.create.crushing([
         '2x kubejs:charcoal_pellet', 
@@ -71,20 +71,20 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .compacting(Fluid.of('gtceu:latex', 20), `10x minecraft:jungle_log`)
         .heatRequirement('lowheated')
-        .id('start:compacting/latex');
+        .id('insanity_skies:compacting/latex');
 
     event.recipes.create
         .mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('gtceu:latex', 288), '1x gtceu:sulfur_dust'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/rubber');
+        .id('insanity_skies:create_mixer/rubber');
 
     event.recipes.create
         .compacting(`1x gtceu:rubber_ingot`, Fluid.of('gtceu:rubber', 144))
-        .id('start:compacting/rubber');
+        .id('insanity_skies:compacting/rubber');
 
     event.recipes.create
         .compacting(`1x gtceu:rubber_plate`, `2x gtceu:rubber_ingot`)
-        .id('start:compacting/rubber_plate');
+        .id('insanity_skies:compacting/rubber_plate');
 
     event
         .shapeless(Item.of('gtceu:wood_plate', 2), [
@@ -94,9 +94,9 @@ ServerEvents.recipes((event) => {
             '#minecraft:planks',
             '#forge:tools/saws',
         ])
-        .id('start:shapeless/wood_plate');
+        .id('insanity_skies:shapeless/wood_plate');
 
-    event.recipes.create.cutting(['gtceu:wood_plate'], '#minecraft:planks').id('start:cutting/wood_plate');
+    event.recipes.create.cutting(['gtceu:wood_plate'], '#minecraft:planks').id('insanity_skies:cutting/wood_plate');
 
     event
         .shapeless(Item.of('gtceu:treated_wood_plate', 2), [
@@ -106,11 +106,11 @@ ServerEvents.recipes((event) => {
             '#forge:treated_wood',
             '#forge:tools/saws',
         ])
-        .id('start:shapeless/treated_wood_plate');
+        .id('insanity_skies:shapeless/treated_wood_plate');
 
     event.recipes.create
         .cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood')
-        .id('start:cutting/treated_wood_plate');
+        .id('insanity_skies:cutting/treated_wood_plate');
 
     event
         .shaped(Item.of('kubejs:saw_blade'), [
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:iron_plate',
             R: 'gtceu:iron_ring'
         })
-        .id('start:shaped/saw_blade');
+        .id('insanity_skies:shaped/saw_blade');
 
     event.recipes.create
         .mechanical_crafting('kubejs:servo_temp', [
@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
             T: 'create:electron_tube',
             F: 'gtceu:fine_copper_wire',
         })
-        .id('start:mechanical_crafting/redstone_servo');
+        .id('insanity_skies:mechanical_crafting/redstone_servo');
 
     event.recipes.create
         .mechanical_crafting('gtceu:ulv_stone_barrel', [
@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
             C: 'minecraft:cauldron',
             N: 'gtceu:iron_plate',
         })
-        .id('start:mechanical_crafting/ulv_stone_barrel');
+        .id('insanity_skies:mechanical_crafting/ulv_stone_barrel');
 
     event.recipes.create
         .mechanical_crafting('gtceu:primitive_ore_factory', [
@@ -168,7 +168,7 @@ ServerEvents.recipes((event) => {
             B: 'gtceu:firebricks',
             F: 'minecraft:furnace',
         })
-        .id('start:mechanical_crafting/primitive_ore_factory');
+        .id('insanity_skies:mechanical_crafting/primitive_ore_factory');
 
     event.remove({ id: 'gtceu:smelting/smelt_dust_bronze_to_ingot' });
     event.remove({ id: 'gtceu:smelting/smelt_dust_brass_to_ingot' });
@@ -176,30 +176,30 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .mixing('2x gtceu:brass_dust', ['1x gtceu:zinc_dust', '3x gtceu:copper_dust'])
         .heatRequirement('lowheated')
-        .id('start:create_mixer/brass_dust');
+        .id('insanity_skies:create_mixer/brass_dust');
 
     event.recipes.create
         .mixing('2x gtceu:bronze_dust', ['1x gtceu:tin_dust', '3x gtceu:copper_dust'])
         .heatRequirement('lowheated')
-        .id('start:create_mixer/bronze_dust');
+        .id('insanity_skies:create_mixer/bronze_dust');
 
     event.recipes.create
         .mixing(Fluid.of('gtceu:brass', 576), ['1x gtceu:zinc_ingot', '3x minecraft:copper_ingot'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/liquid_brass');
+        .id('insanity_skies:create_mixer/liquid_brass');
 
     event.recipes.create
         .mixing(Fluid.of('gtceu:bronze', 576), ['1x gtceu:tin_ingot', '3x minecraft:copper_ingot'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/liquid_bronze');
+        .id('insanity_skies:create_mixer/liquid_bronze');
 
     event.recipes.create
         .compacting(`1x gtceu:brass_ingot`, Fluid.of('gtceu:brass', 192))
-        .id('start:compacting/brass_ingot');
+        .id('insanity_skies:compacting/brass_ingot');
 
     event.recipes.create
         .compacting(`1x gtceu:bronze_ingot`, Fluid.of('gtceu:bronze', 192))
-        .id('start:compacting/bronze_ingot');
+        .id('insanity_skies:compacting/bronze_ingot');
 
     event.recipes.create
         .mechanical_crafting('exnihilosequentia:flint_mesh',[
@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:tin_ring',
             S: '#forge:string',
         })
-        .id('start:mechanical_crafting/flint_mesh');
+        .id('insanity_skies:mechanical_crafting/flint_mesh');
 
     event.recipes.create
         .mechanical_crafting('gtceu:ulv_barrel', [
@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
             C: 'minecraft:cauldron',
             N: 'gtceu:wood_plate',
         })
-        .id('start:mechanical_crafting/ulv_barrel');
+        .id('insanity_skies:mechanical_crafting/ulv_barrel');
 
     event.replaceInput({ id: 'gtceu:shaped/coke_oven' }, '#forge:tools/wrenches', 'minecraft:furnace');
 
@@ -243,23 +243,23 @@ ServerEvents.recipes((event) => {
             'minecraft:bone_meal',
             '1x gtceu:small_ash_dust',
         ])
-        .id('start:create_mixer/porcelain_clay');
+        .id('insanity_skies:create_mixer/porcelain_clay');
 
     event.recipes.create
         .compacting('kubejs:unfired_raw_ceramic_casting_mold', '4x exnihilosequentia:porcelain_clay')
-        .id('start:compacting/unfired_raw_ceramic_casting_mold');
+        .id('insanity_skies:compacting/unfired_raw_ceramic_casting_mold');
     event.recipes.create
         .compacting(
             ['kubejs:unfired_ball_ceramic_casting_mold', 'minecraft:bowl'],
             ['kubejs:unfired_raw_ceramic_casting_mold', 'minecraft:bowl']
         )
-        .id('start:compacting/unfired_ball_ceramic_casting_mold');
+        .id('insanity_skies:compacting/unfired_ball_ceramic_casting_mold');
     event.recipes.create
         .compacting(
             ['kubejs:unfired_ingot_ceramic_casting_mold', 'gtceu:wood_plate'],
             ['kubejs:unfired_raw_ceramic_casting_mold', 'gtceu:wood_plate']
         )
-        .id('start:compacting/unfired_ingot_ceramic_casting_mold');
+        .id('insanity_skies:compacting/unfired_ingot_ceramic_casting_mold');
 
     ['coals', 'poor_coals'].forEach((fuelType) => {
         let boost = fuelType == 'coals' ? 0.6 : 1;
@@ -338,7 +338,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shapeless(Item.of('3x kubejs:flint_shard'), ['minecraft:flint', '#forge:tools/hammers'])
-        .id('start:shapeless/flint_shard');
+        .id('insanity_skies:shapeless/flint_shard');
 
     event
         .shaped('gtceu:ulv_auto_scavenger', [
@@ -352,7 +352,7 @@ ServerEvents.recipes((event) => {
             T: 'gtceu:treated_wood_plate',
             D: 'create:deployer',
         })
-        .id('start:shaped/ulv_auto_scavenger');
+        .id('insanity_skies:shaped/ulv_auto_scavenger');
 
     event.recipes.create
         .mechanical_crafting('gtceu:ulv_advanced_composter', [
@@ -366,10 +366,10 @@ ServerEvents.recipes((event) => {
             I: 'gtceu:iron_plate',
             S: 'kubejs:servo_temp',
         })
-        .id('start:mechanical_crafting/ulv_advanced_composter');
+        .id('insanity_skies:mechanical_crafting/ulv_advanced_composter');
 
     event.recipes.create
         .mixing('8x minecraft:tuff', ['8x minecraft:gravel', Fluid.of('minecraft:lava', 10)])
         .heatRequirement('superheated')
-        .id('start:create_mixer/tuff');
+        .id('insanity_skies:create_mixer/tuff');
 });

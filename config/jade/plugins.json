@@ -54,6 +54,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "fluidlogistics": {
+    "blaze_cooler_icon": true
+  },
   "gtceu": {
     "layered_recipe_info": true,
     "primitive_pump": true,
@@ -144,18 +147,10 @@
     "sieve": true,
     "infesting_leaves": true
   },
-  "mysticalagradditions": {
-    "infused_farmland": true
-  },
   "pipez": {
     "pipe": true
   },
   "gravestone": {
     "grave": true
-  },
-  "mysticalagriculture": {
-    "infused_farmland": true,
-    "crop": true,
-    "inferium_crop": true
   }
 }

@@ -17,25 +17,18 @@ ServerEvents.recipes((event) => {
         event.recipes.create
             .mixing(output, inputs)
             .heatRequirement(`${heat}`)
-            .id(`start:create_mixer/${idConst.split(',')[0]}`);
+            .id(`insanity_skies:create_mixer/${idConst.split(',')[0]}`);
     };
     CreateMixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust'], 'lowheated');
-    CreateMixing(
-        Fluid.of('gtceu:cast_iron', 288),
-        ['2x gtceu:crude_cast_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'],
-        'superheated'
-    );
+    CreateMixing(Fluid.of('gtceu:cast_iron', 288),['2x gtceu:crude_cast_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'],'superheated');
     CreateMixing('9x gtceu:potin_dust', ['6x gtceu:copper_dust', '2x gtceu:tin_dust', 'gtceu:lead_dust'], 'lowheated');
     CreateMixing('2x gtceu:tin_alloy_dust', ['gtceu:iron_dust', 'gtceu:tin_dust'], 'lowheated');
-    CreateMixing(
-        Fluid.of('gtceu:crude_wrought_iron', 288),
-        ['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'],
-        'superheated'
-    );
+    CreateMixing(Fluid.of('gtceu:crude_wrought_iron', 288),['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'],'superheated');
     CreateMixing(Fluid.of('gtceu:red_alloy', 144), ['gtceu:copper_dust', '4x minecraft:redstone'], 'superheated');
+    CreateMixing(Fluid.of('gtceu:gold', 144), ['9x minecraft:gold_nugget'], 'superheated');
 
     ['brass', 'bronze', 'pig_iron', 'tin_alloy'].forEach((dust) => {
-        event.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`).id(`start:blasting/${dust}_dust_manual_only`);
+        event.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`).id(`insanity_skies:blasting/${dust}_dust_manual_only`);
         // event.recipes.gtceu
         // 	.electric_vanilla_blast_furnace(id(`${dust}_from_dust`))
         //     .itemInputs(`gtceu:${dust}_dust`)
@@ -69,7 +62,7 @@ ServerEvents.recipes((event) => {
             B: 'gtceu:firebricks',
             F: 'minecraft:blast_furnace',
         })
-        .id('start:shaped/primitive_blast_furnace');
+        .id('insanity_skies:shaped/primitive_blast_furnace');
 
     event.recipes.create
         .mechanical_crafting('gtceu:steeled_blast_furnace', [
@@ -82,7 +75,7 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:potin_screw',
             F: 'gtceu:primitive_blast_furnace',
         })
-        .id('start:shaped/steeled_blast_furnace');
+        .id('insanity_skies:shaped/steeled_blast_furnace');
 
     event.recipes.gtceu
         .assembler(id('reinforced_blast_furnace'))

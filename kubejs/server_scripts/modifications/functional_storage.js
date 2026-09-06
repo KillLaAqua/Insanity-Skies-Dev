@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             C: 'gtceu:double_copper_plate',
             T: 'gtceu:tin_plate',
         })
-        .id('start:shaped/copper_upgrade');
+        .id('insanity_skies:shaped/copper_upgrade');
 
     event
         .shaped(Item.of('functionalstorage:iron_downgrade'), [
@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
             C: 'gtceu:iron_plate',
             T: 'gtceu:tin_plate',
         })
-        .id('start:shaped/iron_downgrade');
+        .id('insanity_skies:shaped/iron_downgrade');
 
     event
         .shaped(Item.of('functionalstorage:void_upgrade'), [
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
             O: 'minecraft:obsidian',
             S: 'gtceu:soul_infused_plate',
         })
-        .id('start:shaped/void_upgrade');
+        .id('insanity_skies:shaped/void_upgrade');
 
     event
         .shaped(Item.of('functionalstorage:puller_upgrade'), [
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
             T: 'gtceu:tin_plate',
             R: 'minecraft:redstone',
         })
-        .id('start:shaped/puller_upgrade');
+        .id('insanity_skies:shaped/puller_upgrade');
 
     event
         .shaped(Item.of('functionalstorage:pusher_upgrade'), [
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             T: 'gtceu:tin_plate',
             R: 'minecraft:redstone',
         })
-        .id('start:shaped/pusher_upgrade');
+        .id('insanity_skies:shaped/pusher_upgrade');
 
     event
         .shaped(Item.of('functionalstorage:storage_controller'), [
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             G: '#forge:glass',
             C: '#gtceu:circuits/lv',
         })
-        .id('start:shaped/storage_controller');
+        .id('insanity_skies:shaped/storage_controller');
 
     event
         .shaped(Item.of('2x functionalstorage:ender_drawer'), [
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
             P: 'minecraft:ender_pearl',
             C: '#gtceu:circuits/lv',
         })
-        .id('start:shaped/ender_drawer');
+        .id('insanity_skies:shaped/ender_drawer');
 
     // global.with_framedblocks(
     //     () => {
@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
     //                     `1x #functionalstorage:drawer_size_${size}`,
     //                     'framedblocks:framed_hammer',
     //                 ])
-    //                 .id(`start:shapeless/framed_drawer_${size}`);
+    //                 .id(`insanity_skies:shapeless/framed_drawer_${size}`);
     //         });
     //         event.shapeless('1x functionalstorage:framed_storage_controller', [
     //             'functionalstorage:storage_controller',
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
     //                     `1x #functionalstorage:drawer_size_${size}`,
     //                     '#forge:tools/hammers',
     //                 ])
-    //                 .id(`start:shapeless/framed_drawer_${size}`);
+    //                 .id(`insanity_skies:shapeless/framed_drawer_${size}`);
     //         });
     //         event.shapeless('1x functionalstorage:framed_storage_controller', [
     //             'functionalstorage:storage_controller',
@@ -129,20 +129,20 @@ ServerEvents.recipes((event) => {
             C: 'minecraft:comparator',
             P: '#forge:plates/iron',
         })
-        .id('start:shaped/redstone_upgrade');
+        .id('insanity_skies:shaped/redstone_upgrade');
 
     event
         .shapeless('functionalstorage:pusher_upgrade', [
             Item.of('functionalstorage:puller_upgrade'),
             '#forge:tools/screwdrivers',
         ])
-        .id('start:shapeless/pusher_flip');
+        .id('insanity_skies:shapeless/pusher_flip');
 
     event
         .shapeless('functionalstorage:puller_upgrade', [
             Item.of('functionalstorage:pusher_upgrade'),
             '#forge:tools/screwdrivers',
         ])
-        .id('start:shapeless/puller_flip');
+        .id('insanity_skies:shapeless/puller_flip');
         
 });

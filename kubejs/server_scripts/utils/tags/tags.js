@@ -121,6 +121,8 @@ ServerEvents.tags('item', (event) => {
     ];
     const Megacells = [/megacells:sky_steel.*/];
 
+    const AdAstra = [/ad_astra:.*/];
+
     // thermal.forEach((item) => {
     //     event.removeAllTagsFrom(`${item}`);
     // });
@@ -134,6 +136,9 @@ ServerEvents.tags('item', (event) => {
         event.removeAllTagsFrom(`${item}`);
     });
     Megacells.forEach((item) => {
+        event.removeAllTagsFrom(`${item}`);
+    });
+    AdAstra.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
 

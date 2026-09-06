@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
         ], {
             S: 'kubejs:flint_shard',
         })
-        .id('start:shaped/flint');
+        .id('insanity_skies:shaped/flint');
 
     event.remove({ id: 'minecraft:coarse_dirt' });
     event
@@ -21,11 +21,11 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             D: 'minecraft:dirt',
         })
-        .id('start:shaped/coarse_dirt');
+        .id('insanity_skies:shaped/coarse_dirt');
 
     event.recipes.create
         .mixing('2x minecraft:rooted_dirt', ['2x minecraft:dirt', '1x minecraft:mangrove_roots'])
-        .id('start:create_mixer/rooted_dirt');
+        .id('insanity_skies:create_mixer/rooted_dirt');
         
     event.recipes.gtceu
         .mixer(id('rooted_dirt_hm'))
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint'])
-        .id('start:create_mixer/coarse_dirt_flint');
+        .id('insanity_skies:create_mixer/coarse_dirt_flint');
 
     const stones = [
         'andesite',
@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             ], {
                 P: `exnihilosequentia:${stone}_pebble`,
             })
-            .id(`start:shaped/crushed${stone}`);
+            .id(`insanity_skies:shaped/crushed${stone}`);
     });
 
     event
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
         ], {
             P: 'exnihilosequentia:stone_pebble',
         })
-        .id('start:shaped/cobblestone');
+        .id('insanity_skies:shaped/cobblestone');
 
     event.recipes.gtceu
         .stone_barrel(id('stone_pebble'))

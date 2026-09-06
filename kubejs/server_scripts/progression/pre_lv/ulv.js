@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
                 },
             ],
         })
-        .id('start:energising/magnetic_iron_rod');
+        .id('insanity_skies:energising/magnetic_iron_rod');
 
     event.remove({ output: 'gtceu:vacuum_tube' });
     event.recipes.create
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:double_wrought_iron_plate',
             R: 'kubejs:servo_temp',
         })
-        .id('start:mechanical_crafting/vacuum_tube');
+        .id('insanity_skies:mechanical_crafting/vacuum_tube');
 
     event.recipes.create
         .mechanical_crafting(Item.of('kubejs:servo_temp', 2), [
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
             T: 'create:electron_tube',
             F: 'gtceu:fine_red_alloy_wire',
         })
-        .id('start:mechanical_crafting/redstone_servo_better');
+        .id('insanity_skies:mechanical_crafting/redstone_servo_better');
 
     let inter = 'gtceu:glass_tube';
     event.recipes.create
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(inter)
         .loops(1)
-        .id('start:sequenced_assembly/electron_tube');
+        .id('insanity_skies:sequenced_assembly/electron_tube');
 
     ['cinder_block', 'polished_cinder_block', 'cinder_bricks'].forEach((t) => {
         event.remove({ id: `dustrial_decor:${t}` });
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .splashing('dustrial_decor:polished_cinder_block', 'dustrial_decor:cinder_block')
-        .id('start:splashing/polished_cinder_block');
+        .id('insanity_skies:splashing/polished_cinder_block');
 
     event.recipes.gtceu
         .assembler(id('cinder_bricks'))
@@ -116,7 +116,7 @@ ServerEvents.recipes((event) => {
                 H: inputs[7],
                 I: inputs[8],
             })
-            .id(`start:mechanical_crafting/ulv_${output}`);
+            .id(`insanity_skies:mechanical_crafting/ulv_${output}`);
     };
     UlvMachine('assembler', [
         'gtceu:ulv_robot_arm',
@@ -281,7 +281,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(cable)
         .loops(3)
-        .id('start:sequenced_assembly/red_alloy_single_cable');
+        .id('insanity_skies:sequenced_assembly/red_alloy_single_cable');
 
     let motor = 'gtceu:magnetic_iron_rod';
     event.recipes.create
@@ -294,7 +294,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(motor)
         .loops(2)
-        .id('start:sequenced_assembly/ulv_electric_motor');
+        .id('insanity_skies:sequenced_assembly/ulv_electric_motor');
 
     let conv = 'gtceu:red_alloy_single_cable';
     event.recipes.create
@@ -307,7 +307,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(conv)
         .loops(2)
-        .id('start:sequenced_assembly/ulv_conveyor_module');
+        .id('insanity_skies:sequenced_assembly/ulv_conveyor_module');
 
     let arm = 'gtceu:ulv_electric_piston';
     event.recipes.create
@@ -320,7 +320,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(arm)
         .loops(2)
-        .id('start:sequenced_assembly/ulv_robot_arm');
+        .id('insanity_skies:sequenced_assembly/ulv_robot_arm');
 
     let pist = 'gtceu:ulv_electric_motor';
     event.recipes.create
@@ -334,7 +334,7 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(pist)
         .loops(2)
-        .id('start:sequenced_assembly/ulv_electric_piston');
+        .id('insanity_skies:sequenced_assembly/ulv_electric_piston');
 
     // remove default ulv component recipes and add new ones that require the new components and machines
     event.remove({ output: /gtceu:ulv_(electric_(motor|piston|pump)|conveyor_module|robot_arm)/ });
@@ -472,7 +472,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:sticky_resin',
             C: 'gtceu:coke_dust',
         })
-        .id('start:mechanical_crafter/resistor');
+        .id('insanity_skies:mechanical_crafter/resistor');
 
     ['input', 'output'].forEach((hatchType) => {
         let SpringCable = hatchType == 'input' ? 'single_cable' : 'spring';
@@ -492,22 +492,22 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .mixing(Fluid.of('gtceu:glass', 216), ['1x minecraft:glass', '1x gtceu:glass_dust'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/glass');
+        .id('insanity_skies:create_mixer/glass');
     event.recipes.create
         .mixing(Fluid.of('gtceu:tin_alloy', 216), ['1x gtceu:tin_alloy_ingot', '1x gtceu:tin_alloy_dust'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/tin_alloy');
+        .id('insanity_skies:create_mixer/tin_alloy');
     event.recipes.create
         .mixing(Fluid.of('gtceu:tin', 216), ['1x gtceu:tin_ingot', '1x gtceu:tin_dust'])
         .heatRequirement('superheated')
-        .id('start:create_mixer/tin');
+        .id('insanity_skies:create_mixer/tin');
     event.recipes.create
         .mixing(Fluid.of('gtceu:soldering_alloy', 216), [
             '1x gtceu:soldering_alloy_ingot',
             '1x gtceu:soldering_alloy_dust',
         ])
         .heatRequirement('superheated')
-        .id('start:create_mixer/soldering_alloy');
+        .id('insanity_skies:create_mixer/soldering_alloy');
 
     // === Power ===
     event.recipes.gtceu

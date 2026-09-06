@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
         //         D: 'gtceu:adamantine_ingot',
         //     }
         // )
-        // .id('start:mechanical_crafting/hell_crown');
+        // .id('insanity_skies:mechanical_crafting/hell_crown');
 
     // event.recipes.gtceu
     //     .draco_infusion(id('elder_dragon_wings'))

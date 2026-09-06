@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 B: inputs[0],
                 C: inputs[1],
             })
-            .id(`start:mechanical_crafter/steam${type}_bus`);
+            .id(`insanity_skies:mechanical_crafter/steam${type}_bus`);
         event.remove({ id: `gtceu:shaped/steam_${type}_bus` });
     };
     SteamIO('input', ['gtceu:bronze_machine_casing', 'minecraft:chest']);
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
                     S: `gtceu:${mat}_screw`,
                     F: `gtceu:${mat}_frame`,
                 })
-                .id(`start:shaped/${type}`);
+                .id(`insanity_skies:shaped/${type}`);
         if (core == false)
             event.recipes.gtceu
                 .assembler(id(`${type}`))
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
                     C: `${core}`,
                     S: `gtceu:${mat}_screw`,
                 })
-                .id(`start:mechanical_crafter/${type}`);
+                .id(`insanity_skies:mechanical_crafter/${type}`);
         if (core !== false)
             event.recipes.gtceu
                 .assembler(id(`${type}`))
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
                 B: `${brick}`,
                 S: `gtceu:${material}_screw`,
             })
-            .id(`start:mechanical_crafter/${block}_brick_casing`);
+            .id(`insanity_skies:mechanical_crafter/${block}_brick_casing`);
         event.recipes.gtceu
             .assembler(id(`${block}_brick_casing`))
             .itemInputs(`${brick}`, `3x gtceu:${material}_plate`, `2x gtceu:${material}_screw`)
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
                 H: inputs[7],
                 I: inputs[8],
             })
-            .id(`start:mechanical_crafter/${output}`);
+            .id(`insanity_skies:mechanical_crafter/${output}`);
     };
     SteamMachine('lp_steam_solid_boiler', [
         'gtceu:bronze_plate',
@@ -413,5 +413,5 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(inter)
         .loops(1)
-        .id('start:sequenced_assembly/ulv_fluid_input');
+        .id('insanity_skies:sequenced_assembly/ulv_fluid_input');
 });

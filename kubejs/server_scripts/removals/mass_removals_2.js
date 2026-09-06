@@ -102,4 +102,7 @@ ServerEvents.recipes(event => {
     event.remove({ input: /exnihilosequentia:.*_nugget/});
     event.remove({ id: /create:crushing\/.*horse_armor/});
 
+    event.remove({ id: 'minecraft:minecart' });
+
+
 });

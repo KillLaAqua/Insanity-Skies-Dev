@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shapeless(Item.of('minecraft:stick'), ['#forge:tools/saws', '#minecraft:wooden_slabs'])
-        .id('start:shapeless/stick');
+        .id('insanity_skies:shapeless/stick');
 
     event
         .shaped(Item.of('gtceu:flisnt_axe'), [
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/flisnt_axe');
+        .id('insanity_skies:shaped/flisnt_axe');
 
     event
         .shaped(Item.of('gtceu:flisnt_saw'), [
@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/flisnt_saw');
+        .id('insanity_skies:shaped/flisnt_saw');
 
     event
         .shaped(Item.of('gtceu:flisnt_knife'), [
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/flisnt_knife');
+        .id('insanity_skies:shaped/flisnt_knife');
 
     event
         .shaped(Item.of('gtceu:flisnt_shovel'), [
@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/flisnt_shovel');
+        .id('insanity_skies:shaped/flisnt_shovel');
 
     event
         .shaped(Item.of('gtceu:flisnt_pickaxe'), [
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
             T: '#forge:rods/wood',
             R: 'kubejs:flint_shard',
         })
-        .id('start:shaped/flisnt_pickaxe');
+        .id('insanity_skies:shaped/flisnt_pickaxe');
 
     event
         .shaped(Item.of('gtceu:flisnt_sword'), [
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/flisnt_sword');
+        .id('insanity_skies:shaped/flisnt_sword');
 
     event
         .shaped(Item.of('gtceu:flisnt_hammer'), [
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
             T: '#forge:rods/wood',
             C: '#forge:cobblestone',
         })
-        .id('start:shaped/flisnt_hammer');
+        .id('insanity_skies:shaped/flisnt_hammer');
 
     event
         .shaped(Item.of('gtceu:flisnt_scythe'), [
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
             T: '#forge:rods/wood',
             R: 'kubejs:flint_shard',
         })
-        .id('start:shaped/flisnt_scythe');
+        .id('insanity_skies:shaped/flisnt_scythe');
 
     event
         .shaped(Item.of('exnihilosequentia:wooden_crook'), [
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
             S: '#forge:string',
             T: '#forge:rods/wood',
         })
-        .id('start:shaped/wooden_crook');
+        .id('insanity_skies:shaped/wooden_crook');
 
     event
         .shaped(Item.of('gtceu:flisnt_file'), [
@@ -123,11 +123,11 @@ ServerEvents.recipes((event) => {
             T: '#forge:rods/wood',
             Q: 'minecraft:quartz',
         })
-        .id('start:shaped/flisnt_file');
+        .id('insanity_skies:shaped/flisnt_file');
 
     event
         .shapeless(Item.of('gtceu:long_wood_rod'), ['#forge:tools/files', 'minecraft:stick', 'minecraft:stick'])
-        .id('start:shapeless/long_wood_rod');
+        .id('insanity_skies:shapeless/long_wood_rod');
 
     event
         .shaped(Item.of('kubejs:basic_scavenging_rod'), [
@@ -141,7 +141,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:sticky_resin',
             L: 'gtceu:wood_plate',
         })
-        .id('start:shaped/basic_scavenging_rod');
+        .id('insanity_skies:shaped/basic_scavenging_rod');
 
     event
         .shaped(Item.of('kubejs:scavenging_rod'), [
@@ -156,7 +156,11 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:iron_screw',
             L: 'gtceu:iron_plate',
         })
-        .id('start:shaped/scavenging_rod');
+        .id('insanity_skies:shaped/scavenging_rod');
+
+    event
+        .shapeless(Item.of('2x minecraft:packed_mud'), ['minecraft:mud','kubejs:straw','kubejs:straw','kubejs:straw','minecraft:mud'])
+        .id('insanity_skies:shapeless/straw_mud_packing');
 
     event
         .shaped(Item.of('kubejs:canvas'), [
@@ -165,7 +169,7 @@ ServerEvents.recipes((event) => {
         ], {
             S: 'kubejs:straw'
         })
-        .id('start:shaped/canvas');
+        .id('insanity_skies:shaped/canvas');
 
     event
         .shaped('exnihilosequentia:jungle_crucible', [
@@ -178,7 +182,7 @@ ServerEvents.recipes((event) => {
             W: '#forge:tools/saws',
             K: '#forge:tools/knives'
         })
-        .id('start:shaped/jungle_crucible');
+        .id('insanity_skies:shaped/jungle_crucible');
 
     // Kiln
 
@@ -305,9 +309,9 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .cutting(`2x gtceu:treated_wood_slab`, `gtceu:treated_wood_planks`)
-        .id(`start:cutting/treated_slab`);
-    event.recipes.create.cutting(`gtceu:treated_wood_rod`, `gtceu:treated_wood_slab`).id(`start:cutting/treated_stick`);
-    event.recipes.create.cutting(`3x create:shaft`, `create:andesite_alloy`).id(`start:cutting/shaft`);
+        .id(`insanity_skies:cutting/treated_slab`);
+    event.recipes.create.cutting(`gtceu:treated_wood_rod`, `gtceu:treated_wood_slab`).id(`insanity_skies:cutting/treated_stick`);
+    event.recipes.create.cutting(`3x create:shaft`, `create:andesite_alloy`).id(`insanity_skies:cutting/shaft`);
 
     [
         'oak',
@@ -334,7 +338,7 @@ ServerEvents.recipes((event) => {
                 N: `minecraft:${log}_fence`,
                 R: '#forge:string',
             })
-            .id(`start:shaped/ens_${log}_sieve`);
+            .id(`insanity_skies:shaped/ens_${log}_sieve`);
 
         event.remove({ type: 'minecraft:crafting_shaped', output: `minecraft:${log}_fence` });
         event.shaped(`2x minecraft:${log}_fence`, [
@@ -350,14 +354,14 @@ ServerEvents.recipes((event) => {
         const log_type = log == 'bamboo' ? 'block' : log == 'crimson' || log == 'warped' ? 'stem' : 'log';
         event.recipes.create
             .cutting([`minecraft:stripped_${log}_${log_type}`/*, 'farmersdelight:tree_bark'*/], `minecraft:${log}_log`)
-            .id(`start:cutting/stripped_${log}_${log_type}`);
+            .id(`insanity_skies:cutting/stripped_${log}_${log_type}`);
         event.recipes.create
             .cutting(`4x minecraft:${log}_planks`, `minecraft:stripped_${log}_${log_type}`)
-            .id(`start:cutting/${log}_plank`);
+            .id(`insanity_skies:cutting/${log}_plank`);
         event.recipes.create
             .cutting(`2x minecraft:${log}_slab`, `minecraft:${log}_planks`)
-            .id(`start:cutting/${log}_slab`);
-        event.recipes.create.cutting(`minecraft:stick`, `minecraft:${log}_slab`).id(`start:cutting/stick_${log}`);
+            .id(`insanity_skies:cutting/${log}_slab`);
+        event.recipes.create.cutting(`minecraft:stick`, `minecraft:${log}_slab`).id(`insanity_skies:cutting/stick_${log}`);
 
         if (log == 'bamboo') return;
 
@@ -372,7 +376,7 @@ ServerEvents.recipes((event) => {
                 S: `minecraft:${log}_slab`,
                 C: 'minecraft:chest',
             })
-            .id(`start:shaped/funcstor_${log}_drawer_1x`);
+            .id(`insanity_skies:shaped/funcstor_${log}_drawer_1x`);
 
         event.remove({ output: `functionalstorage:${log}_2` });
         event.shapeless(`2x functionalstorage:${log}_2`, [`2x functionalstorage:${log}_1`]);
@@ -386,7 +390,7 @@ ServerEvents.recipes((event) => {
                 'DD'
             ], { 
                 D: `functionalstorage:${log}_1` })
-            .id(`start:shaped/${log}_1_alt`);
+            .id(`insanity_skies:shaped/${log}_1_alt`);
     });
 
     event.remove({ id: `minecraft:crafting_table` });
@@ -411,12 +415,12 @@ ServerEvents.recipes((event) => {
             F: 'gtceu:tiny_flint_dust',
             S: 'gtceu:wood_bolt',
         })
-        .id(`start:shaped/fire_starter`);
+        .id(`insanity_skies:shaped/fire_starter`);
 
     event.remove({ id: 'minecraft:flint_and_steel' });
     event
         .shapeless(Item.of('minecraft:flint_and_steel'), ['gtceu:steel_ring', 'minecraft:flint'])
-        .id('start:shapeless/flint_and_steel');
+        .id('insanity_skies:shapeless/flint_and_steel');
 
     event
         .shaped(Item.of('gtceu:rugged_alloyer'), [
@@ -430,7 +434,7 @@ ServerEvents.recipes((event) => {
             E: 'minecraft:copper_ingot',
             R: 'minecraft:redstone',
         })
-        .id('start:shaped/rugged_alloyer');
+        .id('insanity_skies:shaped/rugged_alloyer');
 
     event.remove({ output: 'minecraft:bowl' });
     event
@@ -441,18 +445,18 @@ ServerEvents.recipes((event) => {
             A: '#forge:tools/knives',
             B: '#minecraft:planks',
         })
-        .id(`start:shaped/bowls`);
+        .id(`insanity_skies:shaped/bowls`);
 
     event
         .shapeless(Item.of('kubejs:plant_fibers'), ['#forge:tools/knives', 'kubejs:straw'])
-        .id('start:shapeless/plant_fibers');
+        .id('insanity_skies:shapeless/plant_fibers');
 
     event
         // .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'farmersdelight:tree_bark'])
-        // .id('start:shapeless/straw');
+        // .id('insanity_skies:shapeless/straw');
 
-    event.recipes.create.cutting(['kubejs:plant_fibers'], 'kubejs:straw').id('start:cutting/plant_fibers');
-    // event.recipes.create.cutting(['kubejs:straw'], 'farmersdelight:tree_bark').id('start:cutting/straw');
+    event.recipes.create.cutting(['kubejs:plant_fibers'], 'kubejs:straw').id('insanity_skies:cutting/plant_fibers');
+    // event.recipes.create.cutting(['kubejs:straw'], 'farmersdelight:tree_bark').id('insanity_skies:cutting/straw');
 
     event.remove({ output: 'exnihilosequentia:string_mesh' });
     event
@@ -464,7 +468,7 @@ ServerEvents.recipes((event) => {
             S: '#forge:string',
             C: 'kubejs:canvas',
         })
-        .id(`start:shaped/ens_string_mesh`);
+        .id(`insanity_skies:shaped/ens_string_mesh`);
 
     event.remove({ id: 'minecraft:kjs/gtceu_wood_plate' });
 
@@ -503,12 +507,12 @@ ServerEvents.recipes((event) => {
                     B: item,
                     C: bucket.type,
                 })
-                .id(`start:shaped/${bucket.variant}_${type}bricks`);
+                .id(`insanity_skies:shaped/${bucket.variant}_${type}bricks`);
         });
 
         event.recipes.create
             .compacting(block, [`4x ${item}`, Fluid.of(`${fluid}`, 300)])
-            .id(`start:compacting/${type}bricks`);
+            .id(`insanity_skies:compacting/${type}bricks`);
 
         event.recipes.gtceu
             .assembler(id(`${block.split(':')[1]}`))
@@ -531,7 +535,7 @@ ServerEvents.recipes((event) => {
             H: '#forge:tools/hammers',
             F: '#forge:tools/files',
         })
-        .id('start:shaped/reinforced_stone_bricks');
+        .id('insanity_skies:shaped/reinforced_stone_bricks');
 
     event
         .shaped(Item.of('kubejs:mud_brick', 4), [
@@ -543,12 +547,12 @@ ServerEvents.recipes((event) => {
             M: 'gtceu:brick_wooden_form',
         })
         .keepIngredient('gtceu:brick_wooden_form')
-        .id('start:shaped/mud_brick');
+        .id('insanity_skies:shaped/mud_brick');
 
     event
         .shapeless(Item.of('kubejs:stone_brick'), ['#forge:tools/files', 'minecraft:stone'])
-        .id('start:shapeless/stone_brick');
-    event.recipes.create.cutting(['kubejs:stone_brick'], 'minecraft:stone').id('start:cutting/stone_brick');
+        .id('insanity_skies:shapeless/stone_brick');
+    event.recipes.create.cutting(['kubejs:stone_brick'], 'minecraft:stone').id('insanity_skies:cutting/stone_brick');
 
     event
         .shaped(Item.of('minecraft:stonecutter'), [
@@ -560,7 +564,7 @@ ServerEvents.recipes((event) => {
             S: 'kubejs:saw_blade',
             F: 'gtceu:wood_frame',
         })
-        .id('start:shaped/stonecutter');
+        .id('insanity_skies:shaped/stonecutter');
 
     event.remove({ id: /^gtceu:mixer\/concrete.*/ });
     event.recipes.gtceu.mixer(id('concrete'))
@@ -616,14 +620,14 @@ ServerEvents.recipes((event) => {
             'gtceu:small_gypsum_dust',
         ])
         .replaceIngredient('minecraft:water_bucket', 'minecraft:air')
-        .id('start:shaped/liquid_concrete_iron_bucket');
+        .id('insanity_skies:shaped/liquid_concrete_iron_bucket');
 
     ['stone', 'gypsum', 'calcite'].forEach((dust) => {
         const pebble = dust == 'gypsum' ? 'dripstone' : dust;
 
         event
             .shapeless(`gtceu:tiny_${dust}_dust`, ['#forge:tools/mortars', `exnihilosequentia:${pebble}_pebble`])
-            .id(`start:shapeless/tiny_${dust}_dust`);
+            .id(`insanity_skies:shapeless/tiny_${dust}_dust`);
         event.recipes.gtceu
             .macerator(id(`small_${dust}_dust`))
             .itemInputs(`exnihilosequentia:${pebble}_pebble`)
@@ -639,7 +643,7 @@ ServerEvents.recipes((event) => {
             'gtceu:small_calcite_dust',
             'gtceu:small_gypsum_dust',
         ])
-        .id('start:create_mixer/liquid_concrete');
+        .id('insanity_skies:create_mixer/liquid_concrete');
 
     // event
     //     .custom({
@@ -659,7 +663,7 @@ ServerEvents.recipes((event) => {
     //             item: 'minecraft:bowl',
     //         },
     //     })
-    //     .id('start:cutting_board/packed_mud_ball');
+    //     .id('insanity_skies:cutting_board/packed_mud_ball');
 
     event
         .shaped(Item.of('minecraft:furnace'), [
@@ -672,7 +676,7 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:campfire',
             M: 'minecraft:mud_bricks',
         })
-        .id('start:shaped/furnace');
+        .id('insanity_skies:shaped/furnace');
 
     event
         .shaped(Item.of('minecraft:composter'), [
@@ -686,7 +690,7 @@ ServerEvents.recipes((event) => {
             W: 'gtceu:wood_screw',
             S: '#minecraft:wooden_slabs',
         })
-        .id('start:shaped/composter');
+        .id('insanity_skies:shaped/composter');
 
     event
         .shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
@@ -698,7 +702,7 @@ ServerEvents.recipes((event) => {
             S: 'kubejs:straw',
             L: '#minecraft:logs',
         })
-        .id('start:shaped/campfire');
+        .id('insanity_skies:shaped/campfire');
 
     event.recipes
         .shaped(Item.of('gtceu:kiln'), [
@@ -711,7 +715,7 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:iron_plate',
             S: 'gtceu:iron_screw',
         })
-        .id('start:shaped/kiln');
+        .id('insanity_skies:shaped/kiln');
 
     // Adjusted Recipes
 
@@ -721,14 +725,14 @@ ServerEvents.recipes((event) => {
 
     event
         .shapeless(Item.of('gtceu:wood_bolt', 2), ['#forge:tools/saws', 'minecraft:stick'])
-        .id('start:shapeless/wood_bolt');
+        .id('insanity_skies:shapeless/wood_bolt');
 
     event.remove({ id: 'minecraft:clay' });
-    event.recipes.create.compacting('minecraft:clay', '4x minecraft:clay_ball').id('start:compacting/clay');
+    event.recipes.create.compacting('minecraft:clay', '4x minecraft:clay_ball').id('insanity_skies:compacting/clay');
 
     event.recipes.create
         .mixing('minecraft:clay', ['exnihilosequentia:dust', Fluid.of('minecraft:water', 250)])
-        .id('start:create_mixer/clay');
+        .id('insanity_skies:create_mixer/clay');
 
     event
         .shaped(Item.of('gtceu:wood_gear'), [
@@ -739,5 +743,5 @@ ServerEvents.recipes((event) => {
             B: 'gtceu:wood_bolt',
             S: '#minecraft:wooden_slabs',
         })
-        .id('start:shaped/wood_gear');
+        .id('insanity_skies:shaped/wood_gear');
 });

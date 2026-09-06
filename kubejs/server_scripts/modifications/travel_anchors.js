@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
             S: 'gtceu:steel_plate',
             P: 'minecraft:ender_pearl',
         })
-        .id('start:shaped/travel_anchor');
+        .id('insanity_skies:shaped/travel_anchor');
 
     event
         .shaped(Item.of('travelanchors:travel_staff'), [
@@ -26,5 +26,5 @@ ServerEvents.recipes((event) => {
             P: 'minecraft:ender_pearl',
             R: 'gtceu:iron_rod',
         })
-        .id('start:shaped/travel_staff');
+        .id('insanity_skies:shaped/travel_staff');
 });
