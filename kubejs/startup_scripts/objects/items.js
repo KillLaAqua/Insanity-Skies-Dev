@@ -16,19 +16,21 @@ StartupEvents.registry('item', (event) => {
 
     event.create('water_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/water_bowl`);
 
-    event.create('ripened_spores');
+    event.create('ripened_spores').texture(`kubejs:item/hm/pre-lv/ripened_spores`);
 
-    event.create('servo_temp');
+    event.create('servo_temp').texture(`kubejs:item/hm/pre-lv/servo_temp`);
 
-    event.create('drill_head');
+    event.create('drill_head').texture(`kubejs:item/hm/pre-lv/drill_head`);
 
-    event.create('saw_blade');
+    event.create('saw_blade').texture(`kubejs:item/hm/pre-lv/saw_blade`);
 
-    event.create('canvas');
+    event.create('canvas').texture(`kubejs:item/hm/pre-lv/canvas`);
 
-    event.create('straw');
+    event.create('straw').texture(`kubejs:item/hm/pre-lv/straw`);
 
-    event.create('igneous_construct');
+    event.create('jungle_bark').texture(`kubejs:item/hm/pre-lv/jungle_bark`);
+
+    event.create('igneous_construct').texture(`kubejs:item/hm/pre-lv/igneous_construct`);
 
     // === Ore Chunks ===
     [

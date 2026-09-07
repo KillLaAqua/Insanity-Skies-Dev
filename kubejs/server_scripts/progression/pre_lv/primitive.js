@@ -353,7 +353,7 @@ ServerEvents.recipes((event) => {
         event.remove({ id: `create:cutting/${log}_log` });
         const log_type = log == 'bamboo' ? 'block' : log == 'crimson' || log == 'warped' ? 'stem' : 'log';
         event.recipes.create
-            .cutting([`minecraft:stripped_${log}_${log_type}`/*, 'farmersdelight:tree_bark'*/], `minecraft:${log}_log`)
+            .cutting([`minecraft:stripped_${log}_${log_type}`, 'kubejs:bark'], `minecraft:${log}_log`)
             .id(`insanity_skies:cutting/stripped_${log}_${log_type}`);
         event.recipes.create
             .cutting(`4x minecraft:${log}_planks`, `minecraft:stripped_${log}_${log_type}`)
@@ -452,11 +452,11 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shapeless/plant_fibers');
 
     event
-        // .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'farmersdelight:tree_bark'])
-        // .id('insanity_skies:shapeless/straw');
+        .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'kubejs:jungle_bark'])
+        .id('insanity_skies:shapeless/straw');
 
     event.recipes.create.cutting(['kubejs:plant_fibers'], 'kubejs:straw').id('insanity_skies:cutting/plant_fibers');
-    // event.recipes.create.cutting(['kubejs:straw'], 'farmersdelight:tree_bark').id('insanity_skies:cutting/straw');
+    event.recipes.create.cutting(['kubejs:straw'], 'kubejs:jungle_bark').id('insanity_skies:cutting/straw');
 
     event.remove({ output: 'exnihilosequentia:string_mesh' });
     event

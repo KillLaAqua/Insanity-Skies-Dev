@@ -210,9 +210,13 @@
 			id: "218CF08B9647CA00"
 			size: 1.0d
 			tasks: [{
-				id: "4927550A96E000D5"
-				item: "exnihilosequentia:jungle_crucible"
-				type: "item"
+				icon: "exnihilosequentia:jungle_crucible"
+				id: "23995F033197FD73"
+				observe_type: 0
+				timer: 0L
+				title: "First Crucible"
+				to_observe: "exnihilosequentia:jungle_crucible"
+				type: "observation"
 			}]
 			title: "Man's First Hydration"
 			x: -5.0d
@@ -223,12 +227,19 @@
 			description: [""]
 			id: "2938B6A5159F3BE8"
 			size: 1.0d
-			tasks: [{
-				id: "20050F92584F88C9"
-				item: "gtceu:sticky_resin"
-				type: "item"
-			}]
-			title: "Sap"
+			tasks: [
+				{
+					id: "20050F92584F88C9"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
+				{
+					id: "705E5736305A94CA"
+					item: "kubejs:jungle_bark"
+					type: "item"
+				}
+			]
+			title: "Bark 'n Sap"
 			x: -9.0d
 			y: -10.5d
 		}
