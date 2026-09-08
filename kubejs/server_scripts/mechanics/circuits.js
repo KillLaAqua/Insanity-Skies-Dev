@@ -61,7 +61,7 @@ ServerEvents.recipes(event => { // to be revamped post-theta
 
     // // Electronic Circuits Line
     // CircuitFacilityRecipe('3x gtceu:vacuum_tube', 'ulv_electronic_circuit', 
-    //     ['thermal:redstone_servo', '6x gtceu:wrought_iron_foil', '3x create:electron_tube', '2x gtceu:fine_red_alloy_wire', 
+    //     ['kubejs:servo_temp', '6x gtceu:wrought_iron_foil', '3x create:electron_tube', '2x gtceu:fine_red_alloy_wire', 
     //         '2x gtceu:copper_bolt'], ['gtceu:tin 216'], 400, 7);
     // CircuitFacilityRecipe('2x gtceu:basic_electronic_circuit', 'lv_electronic_circuit', 
     //     ['gtceu:resin_printed_circuit_board','3x gtceu:steel_plate','6x gtceu:resistor','4x gtceu:vacuum_tube',
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => { // to be revamped post-theta
     //     .EUt(EUt);
     // };
     //     // Pre-Machine Assembly
-    //     PartsAssemblerFluids('2x thermal:redstone_servo', 'redstone_servo',['4x create:electron_tube', '2x gtceu:steel_plate', '2x gtceu:red_alloy_bolt'],'gtceu:tin 72', 400, 6);
+    //     PartsAssemblerFluids('2x kubejs:servo_temp', 'redstone_servo',['4x create:electron_tube', '2x gtceu:steel_plate', '2x gtceu:red_alloy_bolt'],'gtceu:tin 72', 400, 6);
     //     PartsAssemblerFluids('3x create:electron_tube', 'electron_tube',['gtceu:glass_tube', 'create:polished_rose_quartz', 'gtceu:red_alloy_bolt', 'gtceu:steel_ring'],'gtceu:tin 72', 400, 4);
     //     // Pre-SMD
     //     PartsAssemblerFluids('2x gtceu:resistor', 'resistor_coke',['4x minecraft:paper', 'gtceu:coke_dust', '4x gtceu:fine_copper_wire'],'gtceu:glue 100', 400, 7);

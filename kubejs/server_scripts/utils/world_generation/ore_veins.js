@@ -2,7 +2,7 @@ GTCEuServerEvents.oreVeins((event) => {
     event.removeAll();
 
     // === Abydos Veins ===
-    // event.add('start:abydos_refractory_metals_vein', (vein) => {
+    // event.add('insanity_skies:abydos_refractory_metals_vein', (vein) => {
     //     vein.weight(98);
     //     vein.clusterSize(18);
     //     vein.density(0.15);
@@ -23,7 +23,7 @@ GTCEuServerEvents.oreVeins((event) => {
     //     );
     // });
 
-    // event.add('start:abydos_activation_metals_vein', (vein) => {
+    // event.add('insanity_skies:abydos_activation_metals_vein', (vein) => {
     //     vein.weight(68);
     //     vein.clusterSize(21);
     //     vein.density(0.15);
@@ -44,7 +44,7 @@ GTCEuServerEvents.oreVeins((event) => {
     //     );
     // });
 
-    // event.add('start:abydos_alkaline_sediment_vein', (vein) => {
+    // event.add('insanity_skies:abydos_alkaline_sediment_vein', (vein) => {
     //     vein.weight(51);
     //     vein.clusterSize(15);
     //     vein.density(0.15);
@@ -65,7 +65,7 @@ GTCEuServerEvents.oreVeins((event) => {
     //     );
     // });
 
-    // event.add('start:naquadite_vein', (vein) => {
+    // event.add('insanity_skies:naquadite_vein', (vein) => {
     //     vein.weight(68);
     //     vein.clusterSize(21);
     //     vein.density(0.15);
@@ -87,7 +87,7 @@ GTCEuServerEvents.oreVeins((event) => {
     // });
 
     // // === Nether Veins ===
-    // event.add('start:brimstone_patch', (vein) => {
+    // event.add('insanity_skies:brimstone_patch', (vein) => {
     //     vein.weight(100);
     //     vein.clusterSize(20);
     //     vein.density(0.15);
@@ -111,7 +111,7 @@ GTCEuServerEvents.oreVeins((event) => {
     //         indicator.surfaceRock(GTMaterials.get('plutonium')).placement('above').density(0.4).radius(5)
     //     );
     // });
-    // event.add('start:cryostone_patch', (vein) => {
+    // event.add('insanity_skies:cryostone_patch', (vein) => {
     //     vein.weight(100);
     //     vein.clusterSize(20);
     //     vein.density(0.15);

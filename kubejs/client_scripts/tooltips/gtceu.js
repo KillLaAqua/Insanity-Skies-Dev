@@ -1,7 +1,7 @@
 // priority -100
 
 ItemEvents.tooltip((event) => {
-    const addedByStarT = global.addedByStarT;
+    // const addedByStarT = global.addedByStarT;
     const tiers = ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'];
     const addedByStarTSingles = ['electric_blaster', 'electric_smoker', 'me_assembler'];
 
@@ -11,13 +11,13 @@ ItemEvents.tooltip((event) => {
         });
     });
 
-    let prefix;
+    // let prefix;
 
-    addedByStarT.machines.forEach((machine) => {
-        prefix = addedByStarT.isCore.includes(machine) ? 'start_core:' : 'gtceu:';
+    // addedByStarT.machines.forEach((machine) => {
+    //     prefix = addedByStarT.isCore.includes(machine) ? 'start_core:' : 'gtceu:';
 
-        event.add(prefix + machine, Text.translate(`block.kubejs.added_by_StarT.tooltip`));
-    });
+    //     event.add(prefix + machine, Text.translate(`block.kubejs.added_by_StarT.tooltip`));
+    // });
 
     event.addAdvanced(/gtceu:.*_macerator/, (item, advanced, text) => {
         text.add(1, Text.translate('block.gtceu.macerators.tooltip.1'));

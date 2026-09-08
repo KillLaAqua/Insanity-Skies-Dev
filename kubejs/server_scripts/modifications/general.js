@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
     // Compat fixes
-    event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
+    // event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
 
-    event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
+    // event.replaceInput({ input: 'farmersdelight:onion' }, 'farmersdelight:onion', '#forge:crops/onion');
 
     ['tiled', 'framed', 'horizontal_framed', 'vertical_framed'].forEach((type) => {
         event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane` });
@@ -22,13 +22,13 @@ ServerEvents.recipes((event) => {
     };
 
     nuggetFixMod('create');
-    nuggetFixMod('thermal');
+    // nuggetFixMod('thermal');
     nuggetFixMod('exnihilosequentia');
 
     // Create
     event
         .shapeless('9x create:andesite_alloy', ['create:andesite_alloy_block'])
-        .id('start:shapeless/andesite_alloy_block_decomp');
+        .id('insanity_skies:shapeless/andesite_alloy_block_decomp');
 
     // Drawers
     [1, 2, 4].forEach((size) => {
@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:steel_plate',
             T: 'toms_storage:ts.wireless_terminal',
         })
-        .id('start:shaped/advanced_wireless_terminal');
+        .id('insanity_skies:shaped/advanced_wireless_terminal');
 
     // Effortless Building Upgrade Accessibility
     // global.with_effortlessbuilding(() => {
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
                     M: `${mat}`,
                     C: `${core}`,
                 })
-                .id(`start:shaped/reach_upgrade${type}`);
+                .id(`insanity_skies:shaped/reach_upgrade${type}`);
         };
 
         reachUpgrade('1', 'minecraft:slime_ball', 'minecraft:lime_dye', `minecraft:ender_pearl`);

@@ -54,6 +54,6 @@ ServerEvents.recipes((event) => {
         event.recipes.create
             .mixing(`1x minecraft:${stoneType}`, [`exnihilosequentia:crushed_${stoneType}`, 'gtceu:stone_dust'])
             .heatRequirement('superheated')
-            .id(`start:create_mixer/${stoneType}`);
+            .id(`insanity_skies:create_mixer/${stoneType}`);
     });
 });

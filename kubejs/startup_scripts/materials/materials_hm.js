@@ -87,6 +87,8 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
     };
 
     // === Early Game ===
+    event.create('latex').liquid().color(0xe3e1cc);
+
     compIngot('pig_iron','1x iron',0x8e8385,DULL,[],
         [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt]
     );

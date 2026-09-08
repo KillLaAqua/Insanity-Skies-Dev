@@ -6,6 +6,9 @@ ServerEvents.tags('block', (event) => {
         event.add('minecraft:needs_iron_tool', `minecraft:${log}_log`);
     });
     event.remove('create_new_age:magnets/strength_4', 'minecraft:respawn_anchor');
+
+    event.add('minecraft:needs_stone_tool', 'exnihilosequentia:jungle_crucible');
+
 });
 
 ServerEvents.tags('item', (event) => {
@@ -24,5 +27,5 @@ ServerEvents.tags('item', (event) => {
 ServerEvents.tags('fluid', (event) => {
     event.remove('create:bottomless/allow', 'minecraft:lava');
     event.remove('create:bottomless/allow', 'minecraft:water');
-    event.remove('forge:redstone', 'thermal:redstone');
+    // event.remove('forge:redstone', 'thermal:redstone');
 });

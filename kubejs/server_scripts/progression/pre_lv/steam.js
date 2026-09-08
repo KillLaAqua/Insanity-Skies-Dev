@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 B: inputs[0],
                 C: inputs[1],
             })
-            .id(`start:mechanical_crafter/steam${type}_bus`);
+            .id(`insanity_skies:mechanical_crafter/steam${type}_bus`);
         event.remove({ id: `gtceu:shaped/steam_${type}_bus` });
     };
     SteamIO('input', ['gtceu:bronze_machine_casing', 'minecraft:chest']);
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
                     S: `gtceu:${mat}_screw`,
                     F: `gtceu:${mat}_frame`,
                 })
-                .id(`start:shaped/${type}`);
+                .id(`insanity_skies:shaped/${type}`);
         if (core == false)
             event.recipes.gtceu
                 .assembler(id(`${type}`))
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
                     C: `${core}`,
                     S: `gtceu:${mat}_screw`,
                 })
-                .id(`start:mechanical_crafter/${type}`);
+                .id(`insanity_skies:mechanical_crafter/${type}`);
         if (core !== false)
             event.recipes.gtceu
                 .assembler(id(`${type}`))
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
                 B: `${brick}`,
                 S: `gtceu:${material}_screw`,
             })
-            .id(`start:mechanical_crafter/${block}_brick_casing`);
+            .id(`insanity_skies:mechanical_crafter/${block}_brick_casing`);
         event.recipes.gtceu
             .assembler(id(`${block}_brick_casing`))
             .itemInputs(`${brick}`, `3x gtceu:${material}_plate`, `2x gtceu:${material}_screw`)
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
                 H: inputs[7],
                 I: inputs[8],
             })
-            .id(`start:mechanical_crafter/${output}`);
+            .id(`insanity_skies:mechanical_crafter/${output}`);
     };
     SteamMachine('lp_steam_solid_boiler', [
         'gtceu:bronze_plate',
@@ -352,10 +352,10 @@ ServerEvents.recipes((event) => {
         'create:basin',
         'gtceu:bronze_huge_fluid_pipe',
         'gtceu:industrial_steam_casing',
-        'thermal:redstone_servo',
+        'kubejs:servo_temp',
         'gtceu:industrial_steam_casing',
     ]);
-    // SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','thermal:redstone_servo','gtceu:industrial_steam_casing']);
+    // SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','kubejs:servo_temp','gtceu:industrial_steam_casing']);
     // SteamMachine('steam_ore_factory',['kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:primitive_ore_factory','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','createlowheated:basic_burner','kubejs:high_steam_machine_casing']);  //Disabled Until Core Fix
     SteamMachine('high_pressure_steam_hammer', [
         'kubejs:high_steam_machine_casing',
@@ -376,7 +376,7 @@ ServerEvents.recipes((event) => {
         'create:basin',
         'gtceu:tin_alloy_normal_fluid_pipe',
         'kubejs:high_steam_machine_casing',
-        'thermal:redstone_servo',
+        'kubejs:servo_temp',
         'kubejs:high_steam_machine_casing',
     ]);
     SteamMachine('charcoal_pile_igniter', [
@@ -413,5 +413,5 @@ ServerEvents.recipes((event) => {
         ])
         .transitionalItem(inter)
         .loops(1)
-        .id('start:sequenced_assembly/ulv_fluid_input');
+        .id('insanity_skies:sequenced_assembly/ulv_fluid_input');
 });

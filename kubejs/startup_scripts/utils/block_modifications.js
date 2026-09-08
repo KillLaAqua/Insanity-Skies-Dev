@@ -14,6 +14,8 @@ BlockEvents.modification((event) => {
         no_punch(`minecraft:stripped_${log}_wood`);
     });
 
+    no_punch('exnihilosequentia:jungle_crucible')
+
     // === MISC Changes ===
     event.modify('gtceu:nether_star_block', (block) => {
         block.lightEmission = 15;

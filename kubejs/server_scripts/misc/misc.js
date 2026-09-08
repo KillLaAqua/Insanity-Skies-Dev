@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
     //             },
     //         ],
     //     })
-    //     .id('start:basin_fermenting/ethanol');
+    //     .id('insanity_skies:basin_fermenting/ethanol');
 
     let ethanol = new JSONObject();
     ethanol.add('amount', 1000);
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .chemical_reactor(id('ethane_from_ethanol'))
         .notConsumable('gtceu:nickel_dust')
-        .inputFluids(FluidIngredientJS.of(ethanol), 'gtceu:hydrogen 2000')
+        .inputFluids('gtceu:ethanol', 'gtceu:hydrogen 2000')
         .outputFluids('gtceu:ethane 1000', 'minecraft:water 1000')
         .circuit(3)
         .duration(3650)
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
             H: '#forge:tools/hammers',
             P: 'gtceu:cobalt_brass_plate',
         })
-        .id('start:shaped/cobalt_brass_buzz_saw_blade');
+        .id('insanity_skies:shaped/cobalt_brass_buzz_saw_blade');
 
     event.remove({ id: /gtceu:shaped\/shape.*/ });
     event.remove({ id: /gtceu:forming_press\/copy_shape.*/ });

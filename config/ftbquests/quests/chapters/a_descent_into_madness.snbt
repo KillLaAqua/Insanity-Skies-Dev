@@ -210,9 +210,13 @@
 			id: "218CF08B9647CA00"
 			size: 1.0d
 			tasks: [{
-				id: "4927550A96E000D5"
-				item: "exnihilosequentia:jungle_crucible"
-				type: "item"
+				icon: "exnihilosequentia:jungle_crucible"
+				id: "23995F033197FD73"
+				observe_type: 0
+				timer: 0L
+				title: "First Crucible"
+				to_observe: "exnihilosequentia:jungle_crucible"
+				type: "observation"
 			}]
 			title: "Man's First Hydration"
 			x: -5.0d
@@ -220,18 +224,18 @@
 		}
 		{
 			dependencies: ["469CAF0D80978B00"]
-			description: ["I guess we will be stripping a LOT of logs"]
+			description: [""]
 			id: "2938B6A5159F3BE8"
 			size: 1.0d
 			tasks: [
 				{
-					id: "4D4156F622D3CF0D"
-					item: "farmersdelight:tree_bark"
+					id: "20050F92584F88C9"
+					item: "gtceu:sticky_resin"
 					type: "item"
 				}
 				{
-					id: "20050F92584F88C9"
-					item: "gtceu:sticky_resin"
+					id: "705E5736305A94CA"
+					item: "kubejs:jungle_bark"
 					type: "item"
 				}
 			]
@@ -334,8 +338,8 @@
 			id: "1EA467441DE65C0D"
 			size: 1.0d
 			tasks: [{
-				id: "2A0BC44BA5E8FAE9"
-				item: "farmersdelight:straw"
+				id: "7A38DE55016FE196"
+				item: "kubejs:straw"
 				type: "item"
 			}]
 			x: -13.0d
@@ -346,8 +350,8 @@
 			id: "54CFAAE3EA5F56D0"
 			size: 1.0d
 			tasks: [{
-				id: "52653090E4BAA766"
-				item: "farmersdelight:canvas"
+				id: "369BA93C99891009"
+				item: "kubejs:canvas"
 				type: "item"
 			}]
 			x: -11.0d
@@ -1031,13 +1035,12 @@
 		}
 		{
 			dependencies: ["70B01D7A03E73691"]
-			hide_dependent_lines: true
 			id: "1ABF4784F033D41A"
 			size: 1.0d
 			tasks: [
 				{
 					id: "6C6F7E831213A517"
-					item: "gtceu:calcite_dust"
+					item: "gtceu:small_calcite_dust"
 					type: "item"
 				}
 				{
@@ -1047,7 +1050,7 @@
 				}
 				{
 					id: "3C6BA2B2D58D1D81"
-					item: "gtceu:gypsum_dust"
+					item: "gtceu:small_gypsum_dust"
 					type: "item"
 				}
 				{

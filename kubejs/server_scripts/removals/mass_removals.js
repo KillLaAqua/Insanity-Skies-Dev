@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
         /^gtceu:shaped.buzzsaw.*/,
         /^gtceu:shaped.round.*/,
         // plates -> single and double, stick -> long and short rod, gear -> both small and normal, pipe -> exclusion of quad and non dont work, all pipes + constricting, cable-> just a sweep on all cable crafting table recipie
-        /^farmersdelight:.*knife/,
+        // /^farmersdelight:.*knife/,
         /^create:crafting.*cogwheel.*/,
         'create:crafting/kinetics/shaft',
         'create:crafting/kinetics/belt_connector',
@@ -49,8 +49,9 @@ ServerEvents.recipes((event) => {
 
     event.remove({ input: /^exnihilosequentia:.*_pebble/ });
     event.remove({ output: 'exnihilosequentia:unfired_crucible' });
-    event.remove({ mod: 'colossalchests' });
+    // event.remove({ mod: 'colossalchests' });
     event.remove({ mod: 'pipez' });
+    event.remove({ mod: 'ad_astra' });
 
     event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');
 

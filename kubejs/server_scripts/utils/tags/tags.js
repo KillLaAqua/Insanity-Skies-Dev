@@ -68,31 +68,31 @@ ServerEvents.tags('item', (event) => {
         }
     ); //for framed drawers
 
-    const thermal = [
-        /thermal:signalum.*/,
-        /thermal:lumium.*/,
-        /thermal:enderium.*/,
-        /thermal:apatite.*/,
-        /thermal:cinnabar.*/,
-        /thermal:tin.*/,
-        /thermal:lead.*/,
-        /thermal:silver.*/,
-        /thermal:nickel.*/,
-        /thermal:bronze.*/,
-        /thermal:electrum.*/,
-        /thermal:invar.*/,
-        /thermal:ruby.*/,
-        /thermal:sapphire.*/,
-        /thermal:iron.*/,
-        /thermal:gold.*/,
-        /thermal:copper.*/,
-        /thermal:netherite.*/,
-        /thermal:diamond.*/,
-        /thermal:emerald.*/,
-        /thermal:quartz.*/,
-        /thermal:sulfur.*/,
-        /thermal:ender_pearl.*/,
-    ];
+    // const thermal = [
+    //     /thermal:signalum.*/,
+    //     /thermal:lumium.*/,
+    //     /thermal:enderium.*/,
+    //     /thermal:apatite.*/,
+    //     /thermal:cinnabar.*/,
+    //     /thermal:tin.*/,
+    //     /thermal:lead.*/,
+    //     /thermal:silver.*/,
+    //     /thermal:nickel.*/,
+    //     /thermal:bronze.*/,
+    //     /thermal:electrum.*/,
+    //     /thermal:invar.*/,
+    //     /thermal:ruby.*/,
+    //     /thermal:sapphire.*/,
+    //     /thermal:iron.*/,
+    //     /thermal:gold.*/,
+    //     /thermal:copper.*/,
+    //     /thermal:netherite.*/,
+    //     /thermal:diamond.*/,
+    //     /thermal:emerald.*/,
+    //     /thermal:quartz.*/,
+    //     /thermal:sulfur.*/,
+    //     /thermal:ender_pearl.*/,
+    // ];
     // const thermal_extra = [
     //     'thermal_extra:obsidian_dust',
     //     'thermal_extra:amethyst_dust',
@@ -121,9 +121,11 @@ ServerEvents.tags('item', (event) => {
     ];
     const Megacells = [/megacells:sky_steel.*/];
 
-    thermal.forEach((item) => {
-        event.removeAllTagsFrom(`${item}`);
-    });
+    const AdAstra = [/ad_astra:.*/];
+
+    // thermal.forEach((item) => {
+    //     event.removeAllTagsFrom(`${item}`);
+    // });
     // thermal_extra.forEach((item) => {
     //     event.removeAllTagsFrom(`${item}`);
     // });
@@ -134,6 +136,9 @@ ServerEvents.tags('item', (event) => {
         event.removeAllTagsFrom(`${item}`);
     });
     Megacells.forEach((item) => {
+        event.removeAllTagsFrom(`${item}`);
+    });
+    AdAstra.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
 

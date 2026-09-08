@@ -266,14 +266,6 @@ machines:
   # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
   # Default: none
   worldAcceleratorBlacklist:
-    - org.zeith.solarflux.block.SolarPanelTile
-    - chiefarug.mods.systeams.block_entities.CompressionBoilerBlockEntity
-    - chiefarug.mods.systeams.block_entities.LapidaryBoilerBlockEntity
-    - chiefarug.mods.systeams.block_entities.StirlingBoilerBlockEntity
-    - chiefarug.mods.systeams.block_entities.SteamDynamoBlockEntity
-    - cofh.thermal.expansion.common.block.entity.dynamo.DynamoCompressionBlockEntity
-    - cofh.thermal.expansion.common.block.entity.dynamo.DynamoLapidaryBlockEntity
-    - cofh.thermal.expansion.common.block.entity.dynamo.DynamoStirlingBlockEntity
 
   # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
   # Default: true

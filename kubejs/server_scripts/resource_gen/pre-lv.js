@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
         ], {
             S: 'kubejs:flint_shard',
         })
-        .id('start:shaped/flint');
+        .id('insanity_skies:shaped/flint');
 
     event.remove({ id: 'minecraft:coarse_dirt' });
     event
@@ -21,11 +21,11 @@ ServerEvents.recipes((event) => {
             F: 'minecraft:flint',
             D: 'minecraft:dirt',
         })
-        .id('start:shaped/coarse_dirt');
+        .id('insanity_skies:shaped/coarse_dirt');
 
     event.recipes.create
         .mixing('2x minecraft:rooted_dirt', ['2x minecraft:dirt', '1x minecraft:mangrove_roots'])
-        .id('start:create_mixer/rooted_dirt');
+        .id('insanity_skies:create_mixer/rooted_dirt');
         
     event.recipes.gtceu
         .mixer(id('rooted_dirt_hm'))
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create
         .mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint'])
-        .id('start:create_mixer/coarse_dirt_flint');
+        .id('insanity_skies:create_mixer/coarse_dirt_flint');
 
     const stones = [
         'andesite',
@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             ], {
                 P: `exnihilosequentia:${stone}_pebble`,
             })
-            .id(`start:shaped/crushed${stone}`);
+            .id(`insanity_skies:shaped/crushed${stone}`);
     });
 
     event
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
         ], {
             P: 'exnihilosequentia:stone_pebble',
         })
-        .id('start:shaped/cobblestone');
+        .id('insanity_skies:shaped/cobblestone');
 
     event.recipes.gtceu
         .stone_barrel(id('stone_pebble'))
@@ -128,9 +128,9 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .barrel(id('slitake'))
-        .notConsumable('thermal:slime_mushroom_spores')
+        .notConsumable('kubejs:ripened_spores')
         .inputFluids('exnihilosequentia:witch_water 200')
-        .chancedOutput('thermal:slime_mushroom_spores', 7000, 0)
+        .chancedOutput('kubejs:ripened_spores', 7000, 0)
         .duration(240);
 
     event.recipes.gtceu
@@ -157,11 +157,11 @@ ServerEvents.recipes((event) => {
         .latex_plantation(id(`latex`))
         .chancedInput(`minecraft:bone_meal`, 2500, 0)
         .notConsumable('gtceu:wood_screw')
-        .outputFluids(`thermal:latex 25`)
+        .outputFluids(`gtceu:latex 25`)
         .duration(400);
     const latexType = [
         { fuel: 'minecraft:bone_meal', circ: '1' },
-        { fuel: 'thermal:compost', circ: '2' },
+        // { fuel: 'thermal:compost', circ: '2' },
         { fuel: 'gtceu:fertilizer', circ: '3' },
     ];
     latexType.forEach((latex) => {
@@ -170,7 +170,7 @@ ServerEvents.recipes((event) => {
             .chancedInput(`${latex.fuel}`, 2500, 0)
             .notConsumable('gtceu:iron_screw')
             .circuit(latex.circ)
-            .outputFluids(`thermal:latex ${25 + 25 * latex.circ}`)
+            .outputFluids(`gtceu:latex ${25 + 25 * latex.circ}`)
             .duration(400);
     });
 

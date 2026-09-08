@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
         .EUt(2);
     event.recipes.create
         .filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks'])
-        .id('start:filling/treated_wood_planks');
+        .id('insanity_skies:filling/treated_wood_planks');
 
     //certus fixes
     [
