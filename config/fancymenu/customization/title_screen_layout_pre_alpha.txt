@@ -49,78 +49,6 @@ layout_action_executable_blocks {
 }
 
 element {
-  copy_client_player = true
-  playername = KillLaAqua
-  auto_skin = false
-  auto_cape = false
-  slim = false
-  skin_source = KillLaAqua
-  cape_source = KillLaAqua
-  scale = 80
-  parrot = false
-  parrot_left_shoulder = false
-  is_baby = false
-  crouching = false
-  showname = true
-  head_follows_mouse = true
-  body_follows_mouse = true
-  body_x_rot_advanced_mode = false
-  body_y_rot_advanced_mode = false
-  head_x_rot_advanced_mode = false
-  head_y_rot_advanced_mode = false
-  head_z_rot_advanced_mode = false
-  left_arm_x_rot_advanced_mode = false
-  left_arm_y_rot_advanced_mode = false
-  left_arm_z_rot_advanced_mode = false
-  right_arm_x_rot_advanced_mode = false
-  right_arm_y_rot_advanced_mode = false
-  right_arm_z_rot_advanced_mode = false
-  left_leg_x_rot_advanced_mode = false
-  left_leg_y_rot_advanced_mode = false
-  left_leg_z_rot_advanced_mode = false
-  right_leg_x_rot_advanced_mode = false
-  right_leg_y_rot_advanced_mode = false
-  right_leg_z_rot_advanced_mode = false
-  element_type = fancymenu_customization_player_entity
-  instance_identifier = f4206871-eb69-4598-9a4d-657d2ba745f7-1759684124279
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1058
-  sticky_anchor = false
-  anchor_point = mid-right
-  x = -125
-  y = -83
-  width = 48
-  height = 144
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 3398da72-02fb-45c7-8273-b95aeaab53cb-1759684124279
-  [loading_requirement_container_meta:3398da72-02fb-45c7-8273-b95aeaab53cb-1759684124279] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
-}
-
-element {
   source = [source:local]/config/fancymenu/assets/main_menu_pre_alpha_1_release.png
   repeat_texture = false
   nine_slice_texture = false
@@ -172,8 +100,8 @@ element {
   button_element_executable_block_identifier = 0e0825ea-4348-4f48-a563-808805721f15-1759742627608
   [executable_action_instance:95cb418f-eac6-4b06-9937-af0f30328b48-1759742711975][action_type:openlink] = https://discord.com/invite/TdjsdeQKMG
   [executable_block:0e0825ea-4348-4f48-a563-808805721f15-1759742627608][type:generic] = [executables:95cb418f-eac6-4b06-9937-af0f30328b48-1759742711975;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/discord_normal_orange_100x20.png 
-  backgroundhovered = [source:local]/config/fancymenu/assets/discord_hover_orange_100x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/discord_normal_red_100x20.png 
+  backgroundhovered = [source:local]/config/fancymenu/assets/discord_hover_red_100x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -210,7 +138,7 @@ element {
   sticky_anchor = false
   anchor_point = mid-centered
   x = 297
-  y = 76
+  y = 109
   width = 150
   height = 30
   stretch_x = false
@@ -238,8 +166,8 @@ element {
   button_element_executable_block_identifier = 33993fc5-c496-4bb0-9100-38e76355e53f-1759743417582
   [executable_action_instance:039ef348-8d2a-4dd5-899d-b95cd5a7070b-1759743461918][action_type:openlink] = https://github.com/KillLaAqua/Insanity-Skies-Dev
   [executable_block:33993fc5-c496-4bb0-9100-38e76355e53f-1759743417582][type:generic] = [executables:039ef348-8d2a-4dd5-899d-b95cd5a7070b-1759743461918;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/github_normal_orange_100x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/github_hover_orange_100x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/github_normal_red_100x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/github_hover_red_100x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -487,8 +415,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 0c59cfab-1327-46f4-b99f-d8f57754b1ce-1759683520533
   [executable_block:0c59cfab-1327-46f4-b99f-d8f57754b1ce-1759683520533][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_orange_200x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/hover_orange_200x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normal_red_200x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/hover_red_200x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -741,8 +669,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = c45ae799-2d86-4a9a-b192-a0a9626b1994-1759683520533
   [executable_block:c45ae799-2d86-4a9a-b192-a0a9626b1994-1759683520533][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_orange_100x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/hover_orange_100x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normal_red_100x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/hover_red_100x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -806,8 +734,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 701f7673-206f-41bf-a7d0-9443fbf6b6f4-1759683520533
   [executable_block:701f7673-206f-41bf-a7d0-9443fbf6b6f4-1759683520533][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_orange_200x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/hover_orange_200x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normal_red_200x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/hover_red_200x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -997,8 +925,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 4ca5592f-ac28-4b52-862b-4694e613035b-1759683520533
   [executable_block:4ca5592f-ac28-4b52-862b-4694e613035b-1759683520533][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_orange_200x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/hover_orange_200x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normal_red_200x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/hover_red_200x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -1062,8 +990,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 21899844-371e-48c9-9365-7b5ff32eaa8d-1759683520533
   [executable_block:21899844-371e-48c9-9365-7b5ff32eaa8d-1759683520533][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_orange_200x20.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/hover_orange_200x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normal_red_200x20.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/hover_red_200x20.png
   background_texture_inactive = [source:local]/config/fancymenu/assets/200x20_inactive_template.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
