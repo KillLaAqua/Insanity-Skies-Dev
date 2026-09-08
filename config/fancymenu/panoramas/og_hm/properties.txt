@@ -1,7 +1,7 @@
 type = panorama
 
 panorama-meta {
-  name = zeta_hardmode_by_dev_team
+  name = og_hm
   speed = 1.0
   fov = 85.0
   angle = 25.0
