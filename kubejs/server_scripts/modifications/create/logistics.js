@@ -158,4 +158,7 @@ ServerEvents.recipes((event) => {
         })
         .id(`insanity_skies:shaped/item_hatch`);
 
+    // Temp for Pre-Alpha 1
+    event.remove({mod: 'extra_gauges'})
+
 });

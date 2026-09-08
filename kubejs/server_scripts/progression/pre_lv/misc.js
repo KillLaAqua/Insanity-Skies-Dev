@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
 
     // event.remove({ id: 'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking' });
     event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' });
-    event.remove('rechiseled:chisel'); // Remove Chisel, replacement recipe later
+    // event.remove('rechiseled:chisel'); // Remove Chisel, replacement recipe later
 
     replace_shaped('gtceu:treated_wood_rod', ['SP'], {
         S: '#forge:tools/saws',

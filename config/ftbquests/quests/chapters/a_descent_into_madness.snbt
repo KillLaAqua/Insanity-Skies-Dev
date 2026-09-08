@@ -1035,13 +1035,12 @@
 		}
 		{
 			dependencies: ["70B01D7A03E73691"]
-			hide_dependent_lines: true
 			id: "1ABF4784F033D41A"
 			size: 1.0d
 			tasks: [
 				{
 					id: "6C6F7E831213A517"
-					item: "gtceu:calcite_dust"
+					item: "gtceu:small_calcite_dust"
 					type: "item"
 				}
 				{
@@ -1051,7 +1050,7 @@
 				}
 				{
 					id: "3C6BA2B2D58D1D81"
-					item: "gtceu:gypsum_dust"
+					item: "gtceu:small_gypsum_dust"
 					type: "item"
 				}
 				{
