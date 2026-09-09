@@ -365,7 +365,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Interact with a barked jungle log in the following:"
+				"Interact with a stripped jungle log in the following:"
 				""
 				"Saw"
 				""
