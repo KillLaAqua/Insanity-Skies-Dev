@@ -28,7 +28,7 @@ JEIEvents.information((event) => {
         'Hollow out a crucible log using the following order: Axe, Knife, Saw, and Finally Knife.\n',
     ]);
     event.addItem('minecraft:crafting_table', [
-        'Interact with a barked jungle log using the following order: Saw, Axe, Knife, and Finally Canvas.\n',
+        'Interact with a stripped jungle log using the following order: Saw, Axe, Knife, and Finally Canvas.\n',
     ]);
     event.addItem('minecraft:jungle_sapling', [
         'Rehydrate that dead bush you saved with your water bowl. You saved a sapling right? [Emergency Item go brr]\n',

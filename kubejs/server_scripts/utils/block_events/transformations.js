@@ -26,7 +26,7 @@
 
 // === Crafting Table Chain ===
 [
-    { hit: 'minecraft:jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
+    { hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
     { hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
     { hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
     { hit: 'kubejs:crafting_stage_3', tool: 'kubejs:canvas', get: 'minecraft:crafting_table' },
