@@ -205,6 +205,8 @@
 				""
 				"Strip it, then hollow it out using: "
 				"Knife => Saw => Knife"
+				""
+				"&l&4LOOK AT THE TOP OF THE TREE"
 			]
 			hide_dependency_lines: true
 			id: "218CF08B9647CA00"
@@ -235,7 +237,7 @@
 				}
 				{
 					id: "705E5736305A94CA"
-					item: "kubejs:jungle_bark"
+					item: "kubejs:bark"
 					type: "item"
 				}
 			]

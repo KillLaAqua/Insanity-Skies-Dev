@@ -12,7 +12,7 @@
 	emergency_items_cooldown: 150
 	grid_scale: 0.5d
 	hide_excluded_quests: false
-	icon: "gtceu:creative_computation_provider"
+	icon: "minecraft:crafting_table"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -22,6 +22,6 @@
 	pause_game: false
 	progression_mode: "flexible"
 	show_lock_icons: true
-	title: "Star Technology"
+	title: "Insanity Skies"
 	version: 13
 }

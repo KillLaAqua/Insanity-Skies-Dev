@@ -1,0 +1,253 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_high_logistics"
+	group: "09BCC84318EF0F4A"
+	icon: "create:stock_ticker"
+	id: "5B9688A365AAFEBC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7881FEFBD52C8408"]
+			description: ["Create's Storage and Autocrafting System."]
+			hide_until_deps_complete: true
+			icon: "create:stock_ticker"
+			id: "39499B2832B6499E"
+			size: 1.5d
+			tasks: [{
+				id: "62F540DEE117B8E9"
+				title: "Create: High Logistics"
+				type: "checkmark"
+			}]
+			title: "Create: High Logistics"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: ["The Item Vault and Fluid Tank hold items and fluids respectively and can take input from any face of the structure, commonly indicated by connecting textures. They can come in dimensions of 3x3, 2x2, and 1x1. This will likely be your primary source of fluid and item storage from the Create mod."]
+			id: "5997B1D395D87DB6"
+			tasks: [
+				{
+					id: "1D4274AA6B6A32D4"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "0259E93ADAF1B058"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Storage"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["39499B2832B6499E"]
+			icon: "create:chain_conveyor"
+			id: "18BAF1CF134CAC95"
+			size: 1.5d
+			tasks: [{
+				id: "1EB5D87F4A55A0DB"
+				title: "The Basics"
+				type: "checkmark"
+			}]
+			title: "The Basics"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			icon: "create:factory_gauge"
+			id: "4155BBBAD6D1BBD7"
+			size: 1.5d
+			tasks: [{
+				id: "1079EC567887A7C6"
+				title: "Basic Autocrafting"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4155BBBAD6D1BBD7"]
+			icon: "extra_gauges:passive_gauge"
+			id: "5C59E1B1F75EEF08"
+			size: 1.5d
+			tasks: [{
+				id: "06C94CD596CEA861"
+				title: "Advanced Autocrafting"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C59E1B1F75EEF08"]
+			description: ["The Smart Crafter is a better Mechanical Crafter, a single block that stores up to 9 set recipes and crafts them automatically. When Keep Mode is enabled ingredient slots always keep at least one item. Set each recipe's output to Ext (all products go to output slots), Secondary Int (byproducts go to ingredients) (Usefull for recipies with GT tools), or Int (all products go to output slots)."]
+			id: "33BC0BD5C3AB449F"
+			tasks: [{
+				id: "2BB40E84E8D218BB"
+				item: "smartcrafter:smart_crafter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C59E1B1F75EEF08"]
+			description: [
+				"A Repackager collects incoming packages in an adjacent inventory and merges them into one package once the full order has arrived. The Unpackager unpacks item and fluid packages back into their contents after they've been combined. "
+				""
+				"These are essential for automating machines such as Mechanical Crafters, since if a recipe's ingredients don't all arrive in the same package, the recipe breaks."
+			]
+			id: "0BA65A93D2146309"
+			tasks: [
+				{
+					id: "45B63F507734071D"
+					item: "create:repackager"
+					type: "item"
+				}
+				{
+					id: "1C0E62EEEFDDB835"
+					item: "fluidlogistics:fluid_repackager"
+					type: "item"
+				}
+			]
+			title: "Re-Packaging"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: [
+				"When the Packager and Fluid Packager are connected to their respective storages and given a redstone signal, they will take the contents of the storage and put them inside of a package."
+				""
+				"&lGiving packages addresses:"
+				""
+				"When a sign is placed &lON&r the Packager, any packages coming from the Packager will have that address attached to them. When sent onto a chain via a Frogport, the package will go into Frogport on the network with a matching address."
+			]
+			id: "68216F611CE3DD28"
+			tasks: [
+				{
+					id: "54C401D149ABE49F"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "6B40E3C2250D3A4B"
+					item: "fluidlogistics:fluid_packager"
+					type: "item"
+				}
+			]
+			title: "Packagers"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: [
+				"When a Frogport is linked to a Chain Conveyor, done by right clicking, and given an address name, it has the ability to send packages onto the chain. "
+				""
+				"When a package with a different address name from the Frogport on it enters the Frogport (from any side), it will be sent to the chain. "
+				""
+				"If the package has no valid address, or more simply, the given address on the package doesn't sucessfully match any other Frogport on the network, it will loop on a Conveyor until provided a valid address."
+			]
+			id: "74DA13F7FC41FF49"
+			tasks: [
+				{
+					id: "373F1AA5556B1A9B"
+					item: "create:package_frogport"
+					type: "item"
+				}
+				{
+					id: "0022154BD8963248"
+					item: "fluidlogistics:copper_frogport"
+					type: "item"
+				}
+			]
+			title: "Frogports"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4155BBBAD6D1BBD7"]
+			description: ["Link a Factory Gauge to your network by clicking it with a Stock Ticker, then set a monitored item by clicking the Gauge with the desired item. It requests more when stock drops below a set target. To autocraft, set a recipe on the gauge with its output item, then connect other Factory Gauges as ingredients by pressing &6&l[Add Connections]&r. When the network processes the request, it holds a Promise on the incoming items to prevent oversending, then delivers them to the gauge's set address. The Fluid Factory Gauge does the same for a monitored fluid."]
+			id: "1D9B4001BAB1F856"
+			tasks: [
+				{
+					id: "4ACAA0D0E85AD1B8"
+					item: "create:factory_gauge"
+					type: "item"
+				}
+				{
+					id: "38A0B56C60663018"
+					item: "fluidlogistics:fluid_factory_gauge"
+					type: "item"
+				}
+			]
+			title: "Factory Gauges"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C59E1B1F75EEF08"]
+			description: ["Functionally the same as a standard Factory Gauge, but instead of requesting a manually set amount, it pulls from other gauges further down the line to determine how much it needs to request."]
+			id: "586A4AB484AC4E9B"
+			tasks: [{
+				id: "3846FBA34FE9360E"
+				item: "extra_gauges:passive_gauge"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: [
+				"The Stock Link gives packaging variants network access. "
+				""
+				"Right click on any other network connected block then place the Stock Link on the packager."
+			]
+			id: "050B95B74917DF87"
+			tasks: [{
+				id: "1C73352F50FF6CED"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: ["When connected to another Chain Conveyor with a chain and provided rotational power, things such as the packages (and the player) can be transported using these chains. This will be your primary source of moving items for upcoming quests."]
+			id: "7313C128C5C3B950"
+			tasks: [{
+				id: "41DC92CB3FCD9CC2"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18BAF1CF134CAC95"]
+			description: [
+				"The Stock Ticker is the network manager of the High Logistics system. It is able to read the contents of all storages in its network that are connected by Stock Links. "
+				""
+				"Placing a Blaze Burner next to the Stock Ticker transforms the Blaze Burner into a Stock Keeper that can keep track of Items \\& Fluids in the network and request them, delivering them to a specified address."
+			]
+			id: "263484D66D00A442"
+			tasks: [{
+				id: "5049AA5CFE3AA9DA"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+	]
+	title: "Create: High Logistics"
+}

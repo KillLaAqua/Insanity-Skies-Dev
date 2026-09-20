@@ -452,11 +452,11 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shapeless/plant_fibers');
 
     event
-        .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'kubejs:jungle_bark'])
+        .shapeless(Item.of('kubejs:straw'), ['#forge:tools/knives', 'kubejs:bark'])
         .id('insanity_skies:shapeless/straw');
 
     event.recipes.create.cutting(['kubejs:plant_fibers'], 'kubejs:straw').id('insanity_skies:cutting/plant_fibers');
-    event.recipes.create.cutting(['kubejs:straw'], 'kubejs:jungle_bark').id('insanity_skies:cutting/straw');
+    event.recipes.create.cutting(['kubejs:straw'], 'kubejs:bark').id('insanity_skies:cutting/straw');
 
     event.remove({ output: 'exnihilosequentia:string_mesh' });
     event
@@ -693,12 +693,13 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shaped/composter');
 
     event
-        .shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
+        .shaped('minecraft:campfire', [
             'STS', 
-            'TST', 
+            'TBT', 
             'LLL'
         ], {
             T: '#balm:wooden_rods',
+            B: 'kubejs:bark',
             S: 'kubejs:straw',
             L: '#minecraft:logs',
         })

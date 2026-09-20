@@ -3,7 +3,7 @@ JEIEvents.information((event) => {
     event.addItem('minecraft:stick', [
         'Obtained by breaking Dead Bushes.\n'
     ]);
-    event.addItem('kubejs:jungle_bark', [
+    event.addItem('kubejs:bark', [
         'Obtained by stripping Logs.\n'
     ]);
     event.addItem('kubejs:straw', [

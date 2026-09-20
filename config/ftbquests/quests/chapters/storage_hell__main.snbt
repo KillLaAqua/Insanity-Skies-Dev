@@ -1,0 +1,446 @@
+{
+	autofocus_id: "13324BF3CEF0913F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_hell__main"
+	group: ""
+	icon: "create:builders_tea"
+	id: "56E841EE12CF74C0"
+	order_index: 0
+	quest_links: [
+		{
+			id: "2C387989A266C948"
+			linked_quest: "2C7CE8FB665CD9D9"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "65F16EF366BCA197"
+			linked_quest: "4AAF919793BA49F1"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "6737E2739E982EAD"
+			linked_quest: "0EB7B1893BDE32A3"
+			x: -1.5d
+			y: -3.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["278AB32EECE9FA5F"]
+			icon: "minecraft:trapped_chest"
+			id: "1339079FEC976B91"
+			size: 2.0d
+			subtitle: "Because NO, the chest monster will not last till AE2"
+			tasks: [{
+				id: "08D5BD48FEC77B4C"
+				title: "Start"
+				type: "checkmark"
+			}]
+			title: "Storage Hell"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0EB7B1893BDE32A3"
+				"1339079FEC976B91"
+			]
+			id: "32A6A15F7910A3CC"
+			subtitle: "If you don't want to do GT routing, use this!"
+			tasks: [{
+				id: "6C205BEA1519D97B"
+				title: "Modular Routers"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4AAF919793BA49F1"
+				"1339079FEC976B91"
+			]
+			id: "0DAFCB5AF948547D"
+			subtitle: "We have high logistics at home! The high logistics at home..."
+			tasks: [{
+				id: "3579433386D0632F"
+				title: "Tom's Simple Storage"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1339079FEC976B91"
+				"7C21159970CD17F6"
+			]
+			id: "3771C48961324176"
+			subtitle: "Modular routers but more expensive, later in progression, and worse overall"
+			tasks: [{
+				id: "103871433C5CEB96"
+				title: "Laser IO"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2C7CE8FB665CD9D9"
+				"1339079FEC976B91"
+			]
+			id: "7881FEFBD52C8408"
+			subtitle: "We have AE2 at home! The AE2 at home..."
+			tasks: [{
+				id: "17EA3F7F8A983D1E"
+				title: "Create: High Logistics"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1339079FEC976B91"
+				"5C1C551A7C14CC4B"
+			]
+			id: "5548721F19D0F6BC"
+			subtitle: "The ULTIMATE Storage Solution"
+			tasks: [{
+				id: "6D457EBA01E5CAC5"
+				title: "Applied Energistics 2"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1339079FEC976B91"
+				"75B0D3216867C68C"
+			]
+			id: "495EC5EA240159A9"
+			subtitle: "GT item and fluid routing is for the strong"
+			tasks: [{
+				id: "31A2D5F3F214BBE4"
+				title: "Pipes"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0E860293F503DA2E"]
+			id: "5C1C551A7C14CC4B"
+			size: 1.0d
+			tasks: [{
+				id: "6B8F43BB73965A29"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E860293F503DA2E"]
+			id: "7C21159970CD17F6"
+			size: 1.0d
+			tasks: [{
+				id: "0D3AB0E36BA7DBF4"
+				item: "laserio:laser_node"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"278AB32EECE9FA5F"
+				"0E860293F503DA2E"
+			]
+			hide_until_deps_complete: true
+			id: "265025566B480345"
+			subtitle: "Smallest backpack in the pack"
+			tasks: [{
+				id: "7F7E3F49D7BB4EFD"
+				item: "simplybackpacks:commonbackpack"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"278AB32EECE9FA5F"
+				"0E860293F503DA2E"
+			]
+			hide_until_deps_complete: true
+			icon: "projectred_transmission:red_alloy_wire"
+			id: "0F44AF3EB49C55BD"
+			subtitle: "Redstone with actual logic components"
+			tasks: [{
+				id: "6867548203C70C25"
+				item: "projectred_core:plate"
+				type: "item"
+			}]
+			title: "Project Red"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["278AB32EECE9FA5F"]
+			id: "109FC1579CF55248"
+			subtitle: "Instant Travel!"
+			tasks: [{
+				id: "7F76F7B5453CC644"
+				item: "travelanchors:travel_anchor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["278AB32EECE9FA5F"]
+			id: "48EC507E7CE94E14"
+			subtitle: "Not only is this unrealistic, it's also crazy useful!"
+			tasks: [
+				{
+					id: "7A3D4308E6D88B1B"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+				{
+					id: "048D44046253C3F2"
+					item: "trashcans:liquid_trash_can"
+					type: "item"
+				}
+			]
+			title: "Trash Cans"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"278AB32EECE9FA5F"
+				"0E860293F503DA2E"
+			]
+			hide_until_deps_complete: true
+			id: "25CDEFF7D3E8D86B"
+			subtitle: "God, are these helpful"
+			tasks: [
+				{
+					id: "076614147A3CF8BA"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "022EBB663B4E88F5"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "2CC776A564B09CA8"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "42570AC7E2F2D542"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43B8CB0577EF2472"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Building Gadgets"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: "create:builders_tea"
+			id: "278AB32EECE9FA5F"
+			size: 2.0d
+			tasks: [{
+				id: "78A556A994B804E1"
+				title: "QOL"
+				type: "checkmark"
+			}]
+			title: "QOL"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["265025566B480345"]
+			id: "4BC73A2B3A795355"
+			subtitle: "Common backpack but it's uncommon"
+			tasks: [{
+				id: "137DD4F4D8A1CD3F"
+				item: "simplybackpacks:uncommonbackpack"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4BC73A2B3A795355"]
+			id: "05D99A120BBE1639"
+			subtitle: "Rare mean it's the rarest right?!"
+			tasks: [{
+				id: "01EDF03C5CA56773"
+				item: "simplybackpacks:rarebackpack"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["109FC1579CF55248"]
+			description: ["Travel Staffs let you teleport to pre-existing Travel Anchors."]
+			id: "4ED7CB5C41CAFD5E"
+			subtitle: "Twavel shtick"
+			tasks: [{
+				id: "1E84DA5294C8D3AD"
+				item: "travelanchors:travel_staff"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["05D99A120BBE1639"]
+			description: [""]
+			id: "56022D2F92B10DA9"
+			subtitle: "&l&b&kA&r&l&dEPIC&r&l&b&kA&r"
+			tasks: [{
+				id: "49DCED4978F3DF55"
+				item: "simplybackpacks:epicbackpack"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["56022D2F92B10DA9"]
+			id: "03C1B04C93E7A177"
+			subtitle: "Biggest backpack in the pack :D"
+			tasks: [{
+				id: "05BDDAEBB92317A5"
+				item: "simplybackpacks:ultimatebackpack"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["278AB32EECE9FA5F"]
+			id: "5DAA6731947B2A67"
+			subtitle: "Handy"
+			tasks: [{
+				id: "4940806B656F8E10"
+				item: "effortlessbuilding:reach_upgrade1"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5DAA6731947B2A67"]
+			id: "071C2473253E5335"
+			subtitle: "Footy"
+			tasks: [{
+				id: "7E28377607133864"
+				item: "effortlessbuilding:reach_upgrade2"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["071C2473253E5335"]
+			id: "713E387D919ABABF"
+			subtitle: "Army"
+			tasks: [{
+				id: "33F120BEAF6C12FD"
+				item: "effortlessbuilding:reach_upgrade3"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"278AB32EECE9FA5F"
+				"0E860293F503DA2E"
+			]
+			hide_until_deps_complete: true
+			id: "21AF718D707D245A"
+			subtitle: "You believe you can fly"
+			tasks: [{
+				id: "45CAA2AAE8CFD4DD"
+				item: {
+					Count: 1
+					id: "jetboots:jetboots"
+					tag: {
+						energy: 0
+						max_energy: 1000000
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48EC507E7CE94E14"]
+			id: "372933951AB7BE00"
+			subtitle: "Even MORE unrealistic, and about the same level of useful"
+			tasks: [{
+				id: "62C802EE105AD2A0"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["224916FFC857C099"]
+			id: "75B0D3216867C68C"
+			tasks: [{
+				id: "1D92A789CCC1ED0C"
+				item: "gtceu:tin_normal_item_pipe"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "0E860293F503DA2E"
+			invisible: true
+			tasks: [{
+				id: "7FA411F07E8B42CE"
+				title: "Locked"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "QoL"
+}

@@ -79,6 +79,8 @@ ServerEvents.recipes(event => {
     // event.remove({ mod: 'mysticalagradditions'});
     // event.remove({ mod: 'mysticaladaptations'});
     event.remove({ mod: 'sgjourney'});
+    event.remove({ mod: 'simplybackpacks'});
+    event.remove({ mod: /projectred.*/});
     event.remove({ mod: 'jetboots'});
 
     event.remove({ input: 'minecraft:netherite_scrap'});

@@ -39,18 +39,6 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: 'modularrouters:speed_upgrade' }, 'minecraft:gold_ingot', 'gtceu:electrum_plate');
     event.replaceInput({ id: 'modularrouters:speed_upgrade' }, 'minecraft:blaze_rod', 'minecraft:sugar');
 
-    //Tom's
-    event
-        .shaped('toms_storage:ts.adv_wireless_terminal', [
-            ' P ', 
-            'PTP', 
-            ' P '
-        ], {
-            P: 'gtceu:steel_plate',
-            T: 'toms_storage:ts.wireless_terminal',
-        })
-        .id('insanity_skies:shaped/advanced_wireless_terminal');
-
     // Effortless Building Upgrade Accessibility
     // global.with_effortlessbuilding(() => {
         const reachUpgrade = (type, mat, dye, core) => {

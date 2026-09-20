@@ -1,0 +1,419 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modular_routers"
+	group: "09BCC84318EF0F4A"
+	icon: "modularrouters:modular_router"
+	id: "5F79E956904E330E"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["32A6A15F7910A3CC"]
+			hide_until_deps_complete: true
+			id: "6AE4AF1DD0002698"
+			size: 1.5d
+			tasks: [{
+				id: "67C6FA73FA0857B8"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["A Mk1 Sender module will by default send 1 item at a time from a selected adjacent block."]
+			id: "176B707C55C4D697"
+			tasks: [{
+				id: "7D2B657EC33D5C7E"
+				item: "modularrouters:sender_module_1"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["A Mk1 Puller module will by default pull 1 item at a time from a selected adjacent block."]
+			id: "17F1212BF61BAAD7"
+			tasks: [{
+				id: "790B8C16A5DE9D37"
+				item: "modularrouters:puller_module_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17F1212BF61BAAD7"]
+			description: ["A Mk2 puller module works simuilar to its Mk1 counterpart except now any inventory in a 12 block radius is now a valid locaiton."]
+			id: "54FA8F3F90C4842A"
+			tasks: [{
+				id: "55D420DD2B7C0136"
+				item: "modularrouters:puller_module_2"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["176B707C55C4D697"]
+			description: ["A Mk2 sender module works simuilar to its Mk1 counterpart except now any inventory in a 24 block radius is now a valid locaiton."]
+			id: "2BBEC7DB2B640333"
+			tasks: [{
+				id: "5DF5CF81D9C57155"
+				item: "modularrouters:sender_module_2"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2BBEC7DB2B640333"
+				"54FA8F3F90C4842A"
+			]
+			description: [
+				"A distributor module acts as a Many to 1 or a 1 to Many, depending on if it is pulling or sending, variant of a Mk2 Sender/Puller module."
+				""
+				"Up to 8 valid locations within a base of 24 blocks can be selected."
+			]
+			id: "7B41095CC24D8213"
+			tasks: [{
+				id: "103393323FE214DC"
+				item: "modularrouters:distributor_module"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BBEC7DB2B640333"]
+			description: ["A Mk3 sender module acts like its Mk2 variant, but without a range limit."]
+			id: "1F66BCDA800EC45D"
+			tasks: [{
+				id: "76CC856EF0A4E4CC"
+				item: "modularrouters:sender_module_3"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6AE4AF1DD0002698"]
+			description: [
+				"A Modular Router [MR] is enabled by the modules that they hold."
+				""
+				"Each MR can hold a total of 9 modules which are acted on Left to Right each cycle (20t)."
+			]
+			id: "77E19589278F3347"
+			size: 1.5d
+			tasks: [{
+				id: "02418D2194F53BC9"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Whereas Upgrades act upon the Router as a whole, Attributes act upon a single Module."]
+			id: "0E3CADDCEEEB2232"
+			size: 1.5d
+			tasks: [{
+				id: "49518C8AAF038B3B"
+				item: "modularrouters:augment_core"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["Upgrades will upgrade the Modular Router as a whole. This means all Modules will benefit from the placed cards."]
+			id: "3412DDC2874DAAC7"
+			size: 1.5d
+			tasks: [{
+				id: "1C598AF23F6F81B1"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: [
+				"A Mk1 Fluid Module, likes item item variants, acts upon adjacent inventories. Fluid Modules can both push and pull fluids."
+				""
+				"&l&oThe modular router will require a fluid storage item in the item slot to function.&r"
+			]
+			id: "73D5DB37C077E5B3"
+			tasks: [{
+				id: "506939F91A4D45C4"
+				item: "modularrouters:fluid_module"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73D5DB37C077E5B3"]
+			description: ["A Mk2 Fluid Module, like the item variant of Mk2 modules, acts like a Mk1 module except now any inventory in a 12 block radius is now a valid locaiton."]
+			id: "2F54F55B00FD24C7"
+			tasks: [{
+				id: "2EE156B7D4C76012"
+				item: "modularrouters:fluid_module_2"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["Allows the Modular Router to place and break blocks respectively."]
+			id: "78FC49FC55588796"
+			tasks: [
+				{
+					id: "4D9FE2F8E48C552B"
+					item: "modularrouters:placer_module"
+					type: "item"
+				}
+				{
+					id: "660AF1E0D4F41BD8"
+					item: "modularrouters:breaker_module"
+					type: "item"
+				}
+			]
+			title: "In-World Actions"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"762FC518E8A76D48"
+				"38385936251851ED"
+			]
+			description: ["Allows the Modular Router to fully act as a player allowing it to interact with storage systems, and armor."]
+			id: "3ACF89F7B79E1367"
+			tasks: [{
+				id: "562171BD945B8653"
+				item: "modularrouters:player_module"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78FC49FC55588796"]
+			description: ["Acts as a Breaker Module in a area."]
+			id: "38385936251851ED"
+			tasks: [
+				{
+					id: "36A9BF45A12F011B"
+					item: "modularrouters:extruder_module_1"
+					type: "item"
+				}
+				{
+					id: "5F0D137948873226"
+					item: "modularrouters:extruder_module_2"
+					type: "item"
+				}
+			]
+			title: "Extruder Modules"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["566D628451250B08"]
+			description: ["Acts like a Dropper Module but allows you to determine the arc path of an item allowing the Modular Router to drop items away from itself."]
+			id: "3AA55D4B5D997BAF"
+			tasks: [{
+				id: "72D8AA4A808E2F61"
+				item: "modularrouters:flinger_module"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["Allows the Modular Router to act as a dropper."]
+			id: "566D628451250B08"
+			tasks: [{
+				id: "1FCF3E3DED3B014D"
+				item: "modularrouters:dropper_module"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AA838DD3DA6EE56"]
+			description: ["The Activator Module allows you to immitate player interactions with blocks around the router. This is most notable for auto sieving or even pasting memory cards onto AE components."]
+			id: "762FC518E8A76D48"
+			tasks: [{
+				id: "7CCD40EE24934DF1"
+				item: "modularrouters:activator_module"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77E19589278F3347"]
+			description: ["Allows the Modular Router to output a redstone signal based on the filter set within it."]
+			id: "4AA838DD3DA6EE56"
+			tasks: [{
+				id: "572C1D7DB87508AF"
+				item: "modularrouters:detector_module"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Increases the throughput capacity of Fluid Transport Modules"]
+			id: "7C9D4C3D1019F3CB"
+			tasks: [{
+				id: "66B264B22EE46FCF"
+				item: "modularrouters:fluid_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Reduces the interval between each cycle by 1t. Capping out at 9 this reduces the cycle time to 11t."]
+			id: "7AAB099A374DD18F"
+			tasks: [{
+				id: "021D0515035E8576"
+				item: "modularrouters:speed_upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Each Stack Upgrade doubles the amount of items transfer per cycle. This caps at 6 upgrades for a total of 64 items per cycle."]
+			id: "1D4B6952090F32CD"
+			tasks: [{
+				id: "4A023A1B457C6E2E"
+				item: "modularrouters:stack_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Allows you to disable the sounds and visuals of Modular Routers."]
+			id: "61FB5665BF5E9588"
+			tasks: [{
+				id: "23B399B1085B9A2A"
+				item: "modularrouters:muffler_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["This allows you to control who can access the applied Modular Router."]
+			id: "50FB3B34259F05FE"
+			tasks: [{
+				id: "25091DC7F486B77E"
+				item: "modularrouters:security_upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3412DDC2874DAAC7"]
+			description: ["Allows you to change the facade of the block."]
+			id: "68001C4C0F5C3D0E"
+			tasks: [{
+				id: "73AD678A23FCFDD0"
+				item: "modularrouters:camouflage_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E3CADDCEEEB2232"]
+			description: ["Allows you to modify the range of any Module with a range attribute."]
+			id: "35308F7FD33F5A45"
+			tasks: [
+				{
+					id: "5638C9D706AB3FC1"
+					item: "modularrouters:range_down_augment"
+					type: "item"
+				}
+				{
+					id: "6A678DEAB64DEE5F"
+					item: "modularrouters:range_up_augment"
+					type: "item"
+				}
+			]
+			title: "Range Augments"
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E3CADDCEEEB2232"]
+			description: ["Allows you to add more depth to the round robin behavior of modules such as Distribution Modules."]
+			id: "7B3F5A85BAE0634A"
+			tasks: [{
+				id: "54A28C44E49C426B"
+				item: "modularrouters:filter_round_robin_augment"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E3CADDCEEEB2232"]
+			description: ["Allows you to apply redstone activation conditions to individual Modules rather than the entire Router."]
+			id: "5589B02A67EB5CFB"
+			tasks: [{
+				id: "5E1B9C30C587FE6D"
+				item: "modularrouters:redstone_augment"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0E3CADDCEEEB2232"]
+			description: ["Acts like a Security Upgrade for a Singular Module rather than the entire router."]
+			id: "0A0EC0EA5D023C76"
+			tasks: [{
+				id: "3CA1B77DAF84F2A6"
+				item: "modularrouters:regulator_augment"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E3CADDCEEEB2232"]
+			description: ["Acts like a Stack Upgrade for a singular Module rather than the entire router allowing more specific combinations."]
+			id: "6EE1FF81C5FC4E1E"
+			tasks: [{
+				id: "3B0547CF8FB85E7E"
+				item: "modularrouters:stack_augment"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+	]
+	title: "Modular Routers"
+}

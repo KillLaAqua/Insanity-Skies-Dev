@@ -1,0 +1,36 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics_2"
+	group: "09BCC84318EF0F4A"
+	icon: "ae2:controller"
+	id: "68D584E6019E96FB"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5548721F19D0F6BC"]
+			hide_until_deps_complete: true
+			id: "4E8326DB9179A55D"
+			tasks: [{
+				id: "07479F87D45458D8"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E8326DB9179A55D"]
+			id: "0AF713282D954EF4"
+			tasks: [{
+				id: "74AAF09F6F1B7DC1"
+				title: "TBD"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "Applied Energistics 2"
+}

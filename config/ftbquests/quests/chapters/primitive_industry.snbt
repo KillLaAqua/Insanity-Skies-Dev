@@ -61,21 +61,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
-			description: [""]
-			hide_dependency_lines: true
-			id: "4AAF919793BA49F1"
-			size: 1.0d
-			tasks: [{
-				id: "39B770A79FC07059"
-				item: "toms_storage:ts.trim"
-				type: "item"
-			}]
-			title: "Tom's Storage"
-			x: 8.5d
-			y: -3.0d
-		}
-		{
 			dependencies: [
 				"3A3BD0ECA7FC8D38"
 				"0D18A28F0FF10EEA"
@@ -1010,7 +995,7 @@
 			]
 			hide_dependency_lines: true
 			id: "0EB7B1893BDE32A3"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "074734D6F4DC9465"
 				item: "modularrouters:modular_router"
@@ -1208,6 +1193,7 @@
 				"3AE5C6DB766D52B9"
 			]
 			id: "2C7CE8FB665CD9D9"
+			size: 1.5d
 			tasks: [{
 				id: "56DE831B7D00B30C"
 				item: "create:stock_link"
@@ -1215,21 +1201,6 @@
 			}]
 			x: 8.5d
 			y: 7.0d
-		}
-		{
-			dependencies: [
-				"19EFB33C0B250C49"
-				"4AAF919793BA49F1"
-			]
-			id: "3ED631E50781A07F"
-			size: 1.0d
-			tasks: [{
-				id: "12D3CDDDB1B18DF8"
-				item: "toms_storage:ts.storage_terminal"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["301FF7F900A30DC7"]
@@ -1261,8 +1232,8 @@
 		}
 		{
 			dependencies: [
-				"3ED631E50781A07F"
 				"373CB1CBF01D4B84"
+				"1D087F498E0ADEA3"
 			]
 			id: "55D3937DAE01FDFC"
 			size: 1.0d
@@ -1271,8 +1242,8 @@
 				item: "toms_storage:ts.crafting_terminal"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.0d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1444,6 +1415,22 @@
 			}]
 			x: 2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5344AAAA782FE971"
+				"684FAA520167CC51"
+			]
+			id: "50F2743FA699173A"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "72C63392D81ADC2F"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.5d
 		}
 	]
 	title: "Primitive Industry - WIP"

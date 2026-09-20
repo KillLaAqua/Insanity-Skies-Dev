@@ -1,0 +1,500 @@
+{
+	autofocus_id: "6D05E6DC441E77C2"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pipez"
+	group: "09BCC84318EF0F4A"
+	icon: "gtceu:tin_normal_item_pipe"
+	id: "5CB5377EEF519CFA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["495EC5EA240159A9"]
+			hide_until_deps_complete: true
+			id: "6D05E6DC441E77C2"
+			size: 2.0d
+			tasks: [{
+				id: "7710CBBE10417117"
+				type: "checkmark"
+			}]
+			title: "Pipes"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D05E6DC441E77C2"]
+			description: [
+				"The item pipe allows you to transfer items from one container to another at a rate of 1 item every 5 ticks."
+				""
+				"The pipe automatically connects to containers that can store items. By shift right-clicking with any wrench, you can switch it to import mode. Import mode lets the pipe pull from the conneced container. The items will then be exported to the nearest container connected to the pipe."
+				""
+				"Can be upgraded and filtered."
+			]
+			id: "29B0C15EAD1C0094"
+			tasks: [{
+				id: "6196B1EB8B856259"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D05E6DC441E77C2"]
+			description: [
+				"The Fluid pipe allows you to transfer items from one tank to another at a rate of 50mb every 1 tick."
+				""
+				"The pipe automatically connects to blocks that can store fluids. By shift right-clicking with any wrench, you can switch it to import mode. Import mode lets the pipe pull from the conneced tank. The fluid will then be exported to the nearest tank connected to the pipe."
+				""
+				"Can be upgraded and filtered."
+			]
+			id: "57BEC1F7084B3D0A"
+			tasks: [{
+				id: "298D83F592BD7AA9"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"29B0C15EAD1C0094"
+				"57BEC1F7084B3D0A"
+			]
+			id: "6D5A403D519C4669"
+			tasks: [{
+				id: "0EDFF63025A80658"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6D05E6DC441E77C2"]
+			description: [
+				"GT pipes are unique in the way that they do &lNOT&r have their own normal means of pulling from a block. In order to use a pipe, one end must have items (or fluids) &lPUSHED&r into the open end of the pipe. Pushed items will immediatly be brought to the storage at the end of the pipe."
+				""
+				"Fluid pipes are special in the way that they have an internal buffer"
+			]
+			id: "523451BD76E68610"
+			size: 1.5d
+			tasks: [{
+				id: "46F415BF55B893CC"
+				item: "gtceu:copper_small_fluid_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D05E6DC441E77C2"]
+			description: [
+				"GT pipes are unique in the way that they do NOT have their own normal means of pulling from a block. In order to use a pipe, one end must have items (or fluids) PUSHED into the open end of the pipe. Pushed items will immediatly be brought to the storage at the end of the pipe."
+				""
+				"Item pipes are unique in the fact that they do NOT have an interal buffer, and that items are taken to the storage immediatly based on the pipes throughput."
+			]
+			id: "67472CF5F3FB1B1A"
+			size: 1.5d
+			tasks: [{
+				id: "706968951FC2BB85"
+				item: "gtceu:tin_small_item_pipe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67472CF5F3FB1B1A"]
+			description: [
+				"Covers are things you can place on the side of GT blocks to change the way the block pushes and pulls with the items around it."
+				""
+				"The purpose of the conveyors is to push items from GT blocks, whether it be into a storage medium, or a pipe."
+			]
+			id: "12B1E934CE76EE13"
+			tasks: [{
+				id: "24DCD58D694F5F73"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:conveyor_modules"
+					}
+				}
+				title: "Any Conveyor Module"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67472CF5F3FB1B1A"]
+			description: [
+				"Covers are things you can place on the side of GT blocks to change the way the block pushes and pulls with the things around it."
+				""
+				"The Robot Arms purpose is to give GT blocks the ability to pull from an adjacent storage, such as pipes. Each tier of arm has a better throughput, and alongside that throughput, a filter for each arm is there as well"
+			]
+			id: "2AB1AC9754F34F11"
+			tasks: [{
+				id: "6ED58834DEB872AE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:robot_arms"
+					}
+				}
+				title: "Any Robot Arm"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["523451BD76E68610"]
+			description: [
+				"Covers are things you can place on the side of GT blocks to change the way the block pushes and pulls with the fluids around it."
+				""
+				"The purpose of the pumps is to push fluids from GT blocks, whether it be into a storage medium, or a pipe."
+			]
+			id: "25FE66F15AB911D7"
+			tasks: [{
+				id: "28A2EAE6784AEB50"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:electric_pumps"
+					}
+				}
+				title: "Any Electric Pump"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["523451BD76E68610"]
+			description: ["Limits the throughput of the pipe."]
+			id: "0749D3403226158A"
+			tasks: [{
+				id: "3188AFB1B46886A1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:fluid_regulators"
+					}
+				}
+				title: "Any Fluid Regulator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67472CF5F3FB1B1A"]
+			description: ["Restrictive item pipes have ten times more priority than an item pipe of the same material and size."]
+			id: "18CFA0EA917D5784"
+			tasks: [{
+				id: "0C0392AD584285E0"
+				item: "gtceu:tin_small_restrictive_item_pipe"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["523451BD76E68610"]
+			description: ["Small pipe with 4 seperate channels meaning you can have 4 unique fluids moving through the same block."]
+			id: "1796317A4FEFC77A"
+			tasks: [
+				{
+					id: "568E6BD696D70360"
+					item: "gtceu:copper_quadruple_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "1F18EA539247DFD0"
+					item: "gtceu:copper_nonuple_fluid_pipe"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["435EAC86F742B19C"]
+			description: ["Large fluid pipes are a size bigger than a normal fluid pipe and have six times the throughput of a small fluid pipe."]
+			id: "457BE3BA3F006D49"
+			tasks: [{
+				id: "312622B9D6C7E5BD"
+				item: "gtceu:copper_large_fluid_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["457BE3BA3F006D49"]
+			description: ["Huge fluid pipes are the biggest fluid pipes available and have twelve times the throughput of a small fluid pipe."]
+			id: "672C242CE82DBED2"
+			tasks: [{
+				id: "2A2F61DC163643DC"
+				item: "gtceu:copper_huge_fluid_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["523451BD76E68610"]
+			description: ["Normal Fluid pipes are a size bigger than small Fluid pipes and come with triple the throughput."]
+			id: "435EAC86F742B19C"
+			tasks: [{
+				id: "40008B02C79993ED"
+				item: "gtceu:copper_normal_fluid_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67472CF5F3FB1B1A"]
+			description: ["Normal item pipes are a size bigger than small item pipes and come with double the throughput."]
+			id: "554643C72611743B"
+			tasks: [{
+				id: "51C6A42B71035A90"
+				item: "gtceu:tin_normal_item_pipe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["554643C72611743B"]
+			description: ["Large item pipes are a size bigger than a normal item pipe and have four times the throughput of a small item pipe."]
+			id: "1DB78B0016569AF0"
+			tasks: [{
+				id: "52F327EB2BFE1A6A"
+				item: "gtceu:tin_large_item_pipe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DB78B0016569AF0"]
+			description: ["Huge item pipes are the biggest item pipes available and have eight times the throughput of a small item pipe."]
+			id: "12B0E970A39CBE16"
+			tasks: [{
+				id: "7811057CE145690B"
+				item: "gtceu:tin_huge_item_pipe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"12B1E934CE76EE13"
+				"2AB1AC9754F34F11"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&lItem Filter:&r A versatile Filter that lets you filter Item, NBT, and Durability."
+				""
+				"&lItem Tag Filter:&r A filter that lets you use tags and logic to filter specific items or item groups."
+				""
+				"&lSmart Item Filter:&r A filter that lets you sort by machine."
+			]
+			id: "46114895458ECCEC"
+			tasks: [
+				{
+					id: "1BA69A42915C975F"
+					item: "gtceu:item_filter"
+					type: "item"
+				}
+				{
+					id: "441A1B2D7D9DE831"
+					item: "gtceu:item_tag_filter"
+					type: "item"
+				}
+				{
+					id: "1661EE209C2E7EFA"
+					item: "gtceu:item_smart_filter"
+					type: "item"
+				}
+			]
+			title: "Item Filters"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"25FE66F15AB911D7"
+				"0749D3403226158A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&lItem Filter:&r A versatile Filter that lets you filter by Fluid and or NBT."
+				""
+				"&lItem Tag Filter:&r A filter that lets you use tags and logic to filter specific fluids or fluid groups."
+			]
+			id: "7265512CB6CEBA2A"
+			tasks: [
+				{
+					id: "3C79B477AD920442"
+					item: "gtceu:fluid_filter"
+					type: "item"
+				}
+				{
+					id: "741E3F2D15E8FAF8"
+					item: "gtceu:fluid_tag_filter"
+					type: "item"
+				}
+			]
+			title: "Fluid Filters"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"29B0C15EAD1C0094"
+				"57BEC1F7084B3D0A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The upgrades are your Pipez best friend. They allow you to move both items and fluids at faster rates."
+				""
+				"The basic upgrade moves:"
+				"Items at the rate of 8 items every 15 ticks"
+				"Fluids at the rate of 100mb every tick"
+				""
+				"The improved upgrade moves:"
+				"Items at the rate of 16 items every 10 ticks"
+				"Fluids at the rate of 500mb every tick"
+				""
+				"The advanced upgrade moves:"
+				"Items at the rate of 32 items every 5 ticks"
+				"Fluids at the rate of 2000mb every 1 tick"
+				""
+				"The ultimate upgrade moves:"
+				"Items at the rate of 64 items every 1 tick"
+				"Fluids at the rate of 10000mb every tick"
+				""
+				"&lNote:&r"
+				"The ultimate upgrade is known for lowering TPS significantly and for voiding items and fluids."
+			]
+			id: "7A0C7DC4CADBB6E7"
+			tasks: [
+				{
+					id: "416D5E7B88C8D69D"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+				{
+					id: "66F3FCC402F0DD1A"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+				{
+					id: "5D947314E3E68557"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+				{
+					id: "1A65B5414CEC8695"
+					item: "pipez:ultimate_upgrade"
+					type: "item"
+				}
+			]
+			title: "Pipez Upgrades"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"67472CF5F3FB1B1A"
+				"523451BD76E68610"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Screwdrivers allow you to edit the properties of covers for GregTech pipes."]
+			hide_dependency_lines: true
+			id: "72876F48A3677533"
+			tasks: [{
+				id: "6C27525AC4E60C03"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/screwdrivers"
+					}
+				}
+				title: "Any Screwdriver"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"67472CF5F3FB1B1A"
+				"523451BD76E68610"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The unique thing about wrenches is that they have the ability to manipulate pipe configurations, when r-clicking any face of the block, that face will extend and allow input and output."
+				""
+				"When shift+r-clicking, it will mark the face with an arrow, restricting the flow of items or fluids in that direction"
+			]
+			hide_dependency_lines: true
+			id: "34059C0B0BF9BA94"
+			tasks: [{
+				id: "0B7B61433E7A11A5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/wrenches"
+					}
+				}
+				title: "Any Wrench"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["523451BD76E68610"]
+			description: ["Tiny fluid pipes are cheaper alternatives to small fluid pipes though they come with half the throughput."]
+			id: "5711D7F57A4339B8"
+			tasks: [{
+				id: "79075A0C09330E55"
+				item: "gtceu:copper_tiny_fluid_pipe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67472CF5F3FB1B1A"]
+			description: [
+				"When moving from point to point, priority determines which pipe the item attempts to go into first."
+				""
+				"Item pipes that have a lower priority rating are the preferred option that items go into."
+			]
+			id: "615B60CCAB38F6DC"
+			tasks: [{
+				id: "6501523982D6C5DD"
+				title: "Priority"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+	]
+	title: "Pipes"
+}

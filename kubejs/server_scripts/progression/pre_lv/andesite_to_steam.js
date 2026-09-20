@@ -111,6 +111,12 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood')
         .id('insanity_skies:cutting/treated_wood_plate');
+    event
+        .shapeless(Item.of('gtceu:iron_rod'), [
+            '#forge:tools/saws',
+            'gtceu:iron_plate',
+        ])
+        .id('insanity_skies:shapeless_iron_rod');
 
     event
         .shaped(Item.of('kubejs:saw_blade'), [

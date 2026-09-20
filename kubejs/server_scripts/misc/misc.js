@@ -103,6 +103,19 @@ ServerEvents.recipes((event) => {
     //     .duration(600)
     //     .EUt(120);
 
+    event.recipes.create.haunting(
+        [
+            Item.of('minecraft:spruce_sapling').withChance(0.3),
+            Item.of('minecraft:dark_oak_sapling').withChance(0.3),
+            Item.of('minecraft:acacia_sapling').withChance(0.3),
+            Item.of('minecraft:oak_sapling').withChance(0.3),
+            Item.of('minecraft:birch_sapling').withChance(0.3),
+            Item.of('minecraft:cherry_sapling').withChance(0.3),
+            Item.of('minecraft:jungle_sapling').withChance(0.3)
+        ], 
+        'minecraft:jungle_leaves'
+    ).id('insanity_skies:haunting/saplings')
+
     event.remove({ id: 'gtceu:laser_engraver/engrave_cpu_silicon' });
     event.recipes.gtceu
         .laser_engraver(id('engrave_cpu_silicon'))

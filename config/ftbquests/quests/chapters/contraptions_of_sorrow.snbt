@@ -7,11 +7,11 @@
 	id: "30D09BF878B9032F"
 	order_index: 1
 	quest_links: [{
-		id: "5AAADDE502063B33"
+		id: "14CE04831D5EFED0"
 		linked_quest: "1472BFF306FEA342"
-		shape: "gear"
+		shape: "circle"
 		x: -14.0d
-		y: -12.5d
+		y: -8.5d
 	}]
 	quests: [
 		{
@@ -45,11 +45,11 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -12.5d
+			x: -14.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["61D6A36F7BCAC6E1"]
+			dependencies: ["1B660E1DA8714AC5"]
 			description: ["Finally Plates"]
 			id: "280AD7F16F6654B4"
 			size: 1.0d
@@ -83,8 +83,8 @@
 				}
 			]
 			title: "Coke Clay"
-			x: -8.0d
-			y: 1.5d
+			x: -6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -108,7 +108,7 @@
 				}
 			]
 			x: -6.0d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -128,7 +128,6 @@
 		}
 		{
 			dependencies: [
-				"1B660E1DA8714AC5"
 				"67D37BA6B5424768"
 				"61799E4BE93F6A52"
 			]
@@ -179,7 +178,7 @@
 				}
 			]
 			x: -8.0d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -194,7 +193,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1472BFF306FEA342"]
@@ -206,8 +205,8 @@
 				type: "item"
 			}]
 			title: "First SU"
-			x: -13.0d
-			y: -13.5d
+			x: -15.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["61D6A36F7BCAC6E1"]
@@ -229,7 +228,7 @@
 			]
 			title: "Wind"
 			x: -14.0d
-			y: -6.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["280AD7F16F6654B4"]
@@ -349,7 +348,7 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.0d
 			y: -8.5d
 		}
 		{
@@ -361,23 +360,27 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.0d
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"19A0099F62CB5FF1"
-				"1910DC983A58D044"
-			]
+			dependencies: ["19A0099F62CB5FF1"]
 			id: "4002DDFC6025B01D"
 			size: 1.0d
-			tasks: [{
-				id: "23DEFD8004470931"
-				item: "minecraft:glass"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "23DEFD8004470931"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "49BBBBDABD9BD488"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+			]
 			x: -8.0d
-			y: -4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5819AF3E6CCDB826"]
@@ -398,8 +401,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: -10.5d
+			x: -1.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["21151CF254434CA3"]
@@ -426,7 +429,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -456,7 +459,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -10.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -496,19 +499,6 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["4F89E871129D842B"]
-			hide_dependency_lines: true
-			id: "1910DC983A58D044"
-			size: 1.0d
-			tasks: [{
-				id: "0C9556853FE97352"
-				item: "gtceu:glass_dust"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["3D9B291441B63F78"]
 			id: "774543EADD91A140"
 			shape: "circle"
@@ -518,7 +508,7 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -8.5d
 		}
 		{
@@ -534,7 +524,7 @@
 				item: "gtceu:pig_iron_dust"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.0d
 			y: -8.5d
 		}
 		{
@@ -613,8 +603,8 @@
 				}
 			]
 			title: "All the Trees"
-			x: 8.0d
-			y: -10.5d
+			x: 6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1B5EA867C67903E4"]
@@ -655,7 +645,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -12.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["22D524C023C9EF6E"]
@@ -712,22 +702,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: [
-				"5344AAAA782FE971"
-				"684FAA520167CC51"
-			]
-			id: "50F2743FA699173A"
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "72C63392D81ADC2F"
-				item: "gtceu:bronze_brick_casing"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["684FAA520167CC51"]
 			description: [""]
 			hide_dependent_lines: true
@@ -753,7 +727,7 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
@@ -765,7 +739,7 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -6.5d
 		}
 		{
@@ -778,7 +752,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
@@ -789,7 +763,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -2.5d
 		}
 		{
@@ -802,12 +776,11 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
-			hide_dependent_lines: true
 			id: "70AF86B4A0D6A158"
 			size: 1.0d
 			tasks: [{
@@ -816,10 +789,11 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
+			hide_dependency_lines: true
 			icon: "gtceu:creosote_bucket"
 			id: "29DBC6F4A10C5667"
 			size: 1.0d
@@ -900,8 +874,8 @@
 				type: "item"
 			}]
 			title: "You Can Finally Touch Grass"
-			x: -2.0d
-			y: -8.5d
+			x: 0.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["3DCE9199510A9223"]
@@ -926,7 +900,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -10.0d
 			y: -12.5d
 		}
 		{
@@ -939,7 +913,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 8.0d
 			y: -6.5d
 		}
 		{
@@ -1107,10 +1081,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"492C6E73D0CAC383"
-				"3DCE9199510A9223"
-			]
+			dependencies: ["280AD7F16F6654B4"]
 			id: "61799E4BE93F6A52"
 			size: 1.0d
 			tasks: [{
@@ -1118,11 +1089,11 @@
 				item: "kubejs:saw_blade"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -10.5d
+			x: -12.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["6C4B325AEF8A5B7D"]
+			dependencies: ["1472BFF306FEA342"]
 			id: "61D6A36F7BCAC6E1"
 			size: 1.0d
 			tasks: [{
@@ -1130,8 +1101,8 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -8.5d
+			x: -14.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["61D6A36F7BCAC6E1"]
@@ -1144,11 +1115,12 @@
 				type: "item"
 			}]
 			title: "Water"
-			x: -14.0d
-			y: -8.5d
+			x: -12.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["4002DDFC6025B01D"]
+			hide_dependency_lines: true
 			id: "7A78D44724FA26EF"
 			size: 1.0d
 			tasks: [{
@@ -1156,7 +1128,7 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.0d
 			y: -6.5d
 		}
 		{
@@ -1192,7 +1164,7 @@
 				}
 			]
 			x: -8.0d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1220,6 +1192,7 @@
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
+			description: ["Use the Iron/Copper Variant for now."]
 			id: "0B6C67757BB838D3"
 			size: 1.0d
 			tasks: [{
@@ -1227,7 +1200,7 @@
 				item: "kubejs:servo_temp"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: -6.5d
 		}
 		{
@@ -1244,7 +1217,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1266,7 +1239,42 @@
 			}]
 			title: "Clay"
 			x: -14.0d
-			y: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0B6C67757BB838D3"
+				"4AAF919793BA49F1"
+			]
+			id: "1D087F498E0ADEA3"
+			tasks: [{
+				id: "222EFAAB9CEA1234"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			description: [""]
+			id: "4AAF919793BA49F1"
+			size: 1.0d
+			tasks: [
+				{
+					id: "39B770A79FC07059"
+					item: "toms_storage:ts.trim"
+					type: "item"
+				}
+				{
+					id: "3D729DD62218D3B9"
+					item: "toms_storage:ts.inventory_proxy"
+					type: "item"
+				}
+			]
+			title: "Tom's Storage"
+			x: 2.0d
+			y: -4.5d
 		}
 	]
 	title: "Contraptions of Sorrow"

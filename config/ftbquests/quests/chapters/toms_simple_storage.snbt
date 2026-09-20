@@ -1,0 +1,196 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "toms_simple_storage"
+	group: "09BCC84318EF0F4A"
+	icon: "toms_storage:ts.inventory_connector"
+	id: "2B7D8DDD09E09349"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0DAFCB5AF948547D"]
+			description: ["This block connects all adjacent inventories into one, acting as a proxy for all."]
+			hide_until_deps_complete: true
+			icon: "toms_storage:ts.inventory_connector"
+			id: "7131DFB3AF238586"
+			tasks: [{
+				id: "7CAA153D2D5963D7"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			title: "Tom's Simple Storage"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7131DFB3AF238586"]
+			description: ["Can read and organize all items in connecting containers."]
+			id: "03F8EBD059396F2D"
+			tasks: [{
+				id: "1AF6756EF81751BC"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03F8EBD059396F2D"]
+			description: ["Same as a Storage Terminal but has built in crafting."]
+			id: "300E605B7B10CB68"
+			tasks: [{
+				id: "71575BE44BB2A678"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A9872D3E6B7F41F"]
+			description: ["Extends the face of the block its connected to."]
+			id: "4669802AF7789CEF"
+			tasks: [{
+				id: "3F08E987DF05FF1B"
+				item: "toms_storage:ts.inventory_proxy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03F8EBD059396F2D"]
+			description: [
+				"When linked to a terminal, it extends your reach for the terminal. "
+				""
+				"&lNOTE:&r"
+				"It only EXTENDS reach, you still have to look at the terminal to open it."
+			]
+			id: "6D89E4F32EF57453"
+			tasks: [{
+				id: "33D5DE2A9995D3D7"
+				item: "toms_storage:ts.wireless_terminal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D89E4F32EF57453"]
+			description: ["Wireless terminal but activatable from any distance regardless if you're looking at the terminal block."]
+			id: "23F1F7CE55654018"
+			tasks: [{
+				id: "0359871CCF5E1E83"
+				item: "toms_storage:ts.adv_wireless_terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7131DFB3AF238586"]
+			description: ["Acts like a storage block without the storage, allowing you to connect more inventories together by using the Inventory Connector."]
+			id: "4A9872D3E6B7F41F"
+			tasks: [{
+				id: "13D6801A1F263F88"
+				item: "toms_storage:ts.trim"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7131DFB3AF238586"]
+			description: ["Connects inventories over long distances."]
+			id: "707A87A984D45D35"
+			tasks: [{
+				id: "6ABBD9883D89DB79"
+				item: "toms_storage:ts.inventory_cable"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["707A87A984D45D35"]
+			description: ["Allows you to see connected inventories and modify them."]
+			id: "16E9A75C26A35DC2"
+			tasks: [{
+				id: "62BFEDA16B2E47E7"
+				item: "toms_storage:ts.inventory_cable_connector"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["16E9A75C26A35DC2"]
+			description: ["Functionally the same as standard Inventory Cable Connector but can be filtered."]
+			id: "09F1DD5E2EC09F11"
+			tasks: [{
+				id: "629F4B367E065298"
+				item: "toms_storage:ts.inventory_cable_connector_filtered"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09F1DD5E2EC09F11"]
+			description: [
+				"&lItem Filter:&r A versatile Filter that lets you filter Item, NBT, and Durability."
+				""
+				"&lItem Tag Filter:&r A filter that lets you use tags to filter specific items or item groups."
+				""
+				"&lPolymorphic Item Filter:&r Only allows items that are already in the storage medium."
+			]
+			id: "16DE96EFBCF58701"
+			tasks: [
+				{
+					id: "7A7AF25CF5282F0E"
+					item: "toms_storage:ts.item_filter"
+					type: "item"
+				}
+				{
+					id: "1CD353E808885C0A"
+					item: "toms_storage:ts.tag_item_filter"
+					type: "item"
+				}
+				{
+					id: "7549F165796DA600"
+					item: "toms_storage:ts.polymorphic_item_filter"
+					type: "item"
+				}
+			]
+			title: "Filters"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["707A87A984D45D35"]
+			description: ["Import or Export from your network."]
+			id: "3CFCB7A2930A90EA"
+			tasks: [{
+				id: "621B92D8E6D3C5CA"
+				item: "toms_storage:ts.inventory_hopper_basic"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["707A87A984D45D35"]
+			description: ["Emits a restone signal based on inventory contents."]
+			id: "5C8C545BEB4B1966"
+			tasks: [{
+				id: "67C339EC2CB8DC24"
+				item: "toms_storage:ts.level_emitter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+	]
+	title: "Tom's Simple Storage"
+}

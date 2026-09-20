@@ -1,0 +1,493 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "project_red"
+	group: "09BCC84318EF0F4A"
+	hide_quest_until_deps_visible: true
+	icon: "projectred_transmission:red_alloy_wire"
+	id: "18EFA509AAB542F4"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0F44AF3EB49C55BD"]
+			hide_until_deps_complete: true
+			icon: "projectred_transmission:red_alloy_wire"
+			id: "60738B8569A4A3F4"
+			invisible: true
+			size: 1.5d
+			subtitle: "Redstone on steroids"
+			tasks: [{
+				id: "4E764093AB450A63"
+				title: "Project RED"
+				type: "checkmark"
+			}]
+			title: "Project Red"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60738B8569A4A3F4"]
+			id: "6CF3A8A1F5CD04A0"
+			tasks: [{
+				id: "04A2C342340A5EB2"
+				title: "Basic logic"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CF3A8A1F5CD04A0"]
+			id: "14ECDB644DBB77CB"
+			tasks: [{
+				id: "6534416227535896"
+				title: "Intermediate logic"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14ECDB644DBB77CB"]
+			id: "04E57BEA914801DA"
+			tasks: [{
+				id: "2B7B78A962E1190D"
+				title: "Expert logic"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60738B8569A4A3F4"]
+			id: "10CD1F4AC3BA151A"
+			tasks: [{
+				id: "0E1DF1CF1D163072"
+				title: "Cables"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60738B8569A4A3F4"]
+			id: "6F06277A8B7BA4E4"
+			tasks: [{
+				id: "49B7CE3659699117"
+				title: "Microblocks"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60738B8569A4A3F4"]
+			id: "17B567C886423026"
+			tasks: [{
+				id: "032066026ED7904F"
+				title: "Wire"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CF3A8A1F5CD04A0"]
+			id: "60FDBB2FA2D31D3A"
+			tasks: [{
+				id: "0B298DF96FC71384"
+				title: "Logic"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["14ECDB644DBB77CB"]
+			id: "223316551B1B6123"
+			tasks: [{
+				id: "719325B438686CA6"
+				title: "Sensors"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "3021487A1A68D09A"
+			tasks: [{
+				id: "00C8FEBE43B81E63"
+				item: "projectred_integration:nor_gate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "04F58A2D2F539F5A"
+			tasks: [{
+				id: "2734F4BEA8E82A6A"
+				item: "projectred_integration:or_gate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "12898966D0226923"
+			tasks: [{
+				id: "3A02BD6320F171B7"
+				item: "projectred_integration:nand_gate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "3CE50954294CEB8E"
+			tasks: [{
+				id: "1758B3F99E9BAC3A"
+				item: "projectred_integration:and_gate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "2E5FD27F99BB58FF"
+			tasks: [{
+				id: "2F6717103B4F71B6"
+				item: "projectred_integration:xnor_gate"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "6AC59463B52611A6"
+			tasks: [{
+				id: "1C5EE0F1D77AECA6"
+				item: "projectred_integration:xor_gate"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "08527C31EBC5ECF0"
+			tasks: [{
+				id: "4C251A4ACC799BB0"
+				item: "projectred_integration:not_gate"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "45E40C2E5BC4D9C1"
+			tasks: [{
+				id: "03A8954D74EA4783"
+				item: "projectred_integration:repeater_gate"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "1097CD2700A9E0DC"
+			tasks: [{
+				id: "2D272CBEBE143D6C"
+				item: "projectred_integration:comparator_gate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "08ABA26A5B7988D4"
+			tasks: [{
+				id: "18EE4786A3E28A03"
+				item: "projectred_integration:null_cell_gate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "77184DC7717B0921"
+			tasks: [{
+				id: "64EBC8FE884F44CD"
+				item: "projectred_integration:buffer_gate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["60FDBB2FA2D31D3A"]
+			id: "39C921ACAA72FDF3"
+			tasks: [{
+				id: "70C6A9B20CFF4E9C"
+				item: "projectred_integration:timer_gate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "15E3BCC383706D10"
+			tasks: [{
+				id: "56EB52A1665FABDF"
+				item: "projectred_integration:segment_display_gate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "62426699569AA251"
+			tasks: [{
+				id: "49B69202B0E9EB1A"
+				item: "projectred_integration:randomizer_gate"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "24A0138F7234316D"
+			tasks: [{
+				id: "2D240A67C992A883"
+				item: "projectred_integration:rain_sensor_gate"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "7E00F5DF5B1A4CB2"
+			tasks: [{
+				id: "386424AC4F71F8E3"
+				item: "projectred_integration:pulse_gate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "74249AE00B5652F1"
+			tasks: [{
+				id: "27361A426D839C07"
+				item: "projectred_integration:light_sensor_gate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "4EA61887EF65C8B9"
+			tasks: [{
+				id: "7063D5A505DA8298"
+				item: "projectred_integration:dec_randomizer_gate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "1A4CF0CD9193CF38"
+			tasks: [{
+				id: "760721A01925BEF4"
+				item: "projectred_integration:counter_gate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["223316551B1B6123"]
+			id: "2F8A839F94C577BE"
+			tasks: [{
+				id: "51EF4696F448AC54"
+				item: "projectred_integration:bus_input_panel_gate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "0D80D543ECA6E714"
+			tasks: [{
+				id: "05260B95576B162B"
+				item: "projectred_integration:sequencer_gate"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "515654BAC8E7D34B"
+			tasks: [{
+				id: "1345F9EEE5A3C86A"
+				item: "projectred_integration:stacking_latch_gate"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "74823E98D1EA7968"
+			tasks: [{
+				id: "13CE2FE9A01B619B"
+				item: "projectred_integration:invert_cell_gate"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "3313E19538CF4061"
+			tasks: [{
+				id: "6A841DE743351933"
+				item: "projectred_integration:buffer_cell_gate"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "46562206A75032B3"
+			tasks: [{
+				id: "6E57464999349EA6"
+				item: "projectred_integration:and_cell_gate"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "5EF904CB24B0AE2B"
+			tasks: [{
+				id: "32E9C8A3656709BE"
+				item: "projectred_integration:bus_transceiver_gate"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "18F21411D6C48B40"
+			tasks: [{
+				id: "1CBFEF0753C68C2A"
+				item: "projectred_integration:sr_latch_gate"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "4A4416091A126FE9"
+			tasks: [{
+				id: "1D9B8EBC8CCF9C56"
+				item: "projectred_integration:multiplexer_gate"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "545A44B8740CB74E"
+			tasks: [{
+				id: "3BE1385306CC8B17"
+				item: "projectred_integration:state_cell_gate"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "1AD5AA90A8E798BE"
+			tasks: [{
+				id: "27EA02400268C701"
+				item: "projectred_integration:synchronizer_gate"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "316EC2671A232C79"
+			tasks: [{
+				id: "3F0F093800CFB30D"
+				item: "projectred_integration:bus_converter_gate"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "14CB95C25EFC2FD3"
+			tasks: [{
+				id: "45D627A40C7ABFFB"
+				item: "projectred_integration:bus_randomizer_gate"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "1D1C97BA2D8E8B98"
+			tasks: [{
+				id: "1339521F0CFC2DA7"
+				item: "projectred_integration:transparent_latch_gate"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04E57BEA914801DA"]
+			id: "40940FD892398A58"
+			tasks: [{
+				id: "5B2C5787E2ACBDDC"
+				item: "projectred_integration:toggle_latch_gate"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Project Red"
+}

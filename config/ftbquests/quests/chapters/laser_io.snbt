@@ -1,0 +1,36 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "laser_io"
+	group: "09BCC84318EF0F4A"
+	icon: "laserio:laser_node"
+	id: "07EF1EDC4E3252C5"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3771C48961324176"]
+			hide_until_deps_complete: true
+			id: "241C60FE35932245"
+			tasks: [{
+				id: "2A222012C9D9DD06"
+				item: "laserio:laser_node"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["241C60FE35932245"]
+			id: "59257A937A7C0518"
+			tasks: [{
+				id: "5AC4F50FA1084042"
+				title: "TBD"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "Laser IO"
+}

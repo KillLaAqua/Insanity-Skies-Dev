@@ -28,7 +28,7 @@ StartupEvents.registry('item', (event) => {
 
     event.create('straw').texture(`kubejs:item/hm/pre-lv/straw`);
 
-    event.create('jungle_bark').texture(`kubejs:item/hm/pre-lv/jungle_bark`);
+    event.create('bark').texture(`kubejs:item/hm/pre-lv/bark`);
 
     event.create('igneous_construct').texture(`kubejs:item/hm/pre-lv/igneous_construct`);
 

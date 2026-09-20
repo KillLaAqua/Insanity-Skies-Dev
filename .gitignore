@@ -1,34 +1,36 @@
 # Ignore eveything so repository can be used in game instance
 /*
 
+# File Unignores
+!.gitignore
+!.gitattributes
+!LICENSE
+!panorama.dat
+!README.md
+
 # Directory Unignores
 # !mods/
 !kubejs/
-!mods/panorama/
-!packmode/
 !panoramas/
 !scripts/
 !compile_data/
 !.github/
 
-# File Unignores
-!.gitattributes
-!.gitignore
-!LICENSE
-!panorama.dat
-!README.md
+# Directory Visibility
+!config/
+config/*
+!defaultconfigs/
+defaultconfigs/*
 
 # Config Unignore - Directories
-!config\fancymenu/*
-!config/ftbquests/*
-!config/gamestages/*
-!config/hammerlib/*
-!config/jade/*
-# !config/skyblockbuilder/*
-# !config/jei/*
-# !config*
+!config/fancymenu/
+!config/ftbquests/
+!config/gamestages/
+!config/hammerlib/
+!config/jade/
 
 # Config Unignore - File
+!config/jei/blacklist.json
 !config/badmobs-common.toml
 !config/create_new_age-*
 !config/create-*
@@ -38,3 +40,6 @@
 !config/gtceu.yaml
 !config/sgjourney-*
 !defaultconfigs/create-*
+
+# Subdirectory Rehide
+config/fancymenu/ui_themes*

@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "5829B93DCAFAD4B8", title: "Through the Ages HM" }]
+	chapter_groups: [
+		{ id: "5829B93DCAFAD4B8", title: "Through the Ages" }
+		{ id: "09BCC84318EF0F4A", title: "Logistics Hell" }
+	]
 }

@@ -158,27 +158,10 @@ ServerEvents.recipes((event) => {
 
     event.smelting('minecraft:slime_ball', 'kubejs:ripened_spores').id('insanity_skies:smelting/slime_ball');
 
-    event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, 'minecraft:glowstone', '#gtceu:circuits/ulv');
-    event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, '#forge:chests/wooden', 'toms_storage:ts.trim');
-    event.replaceInput({ output: 'toms_storage:ts.wireless_terminal' }, 'minecraft:glowstone', '#gtceu:circuits/ulv');
     event.remove({ output: 'modularrouters:modular_router' });
     event.replaceInput({ output: 'functionalstorage:configuration_tool' }, 'minecraft:emerald', '#forge:dyes/lime');
     event.remove({ id: 'gtceu:shaped/casing_steel_solid' });
     event.remove({ id: 'gtceu:assembler/casing_steel_solid' });
-    // event.remove({ output: 'thermal:device_composter' });
-
-    // event.recipes.create
-    //     .mechanical_crafting('thermal:device_composter', [
-    //         'PRP', 
-    //         'GCG', 
-    //         'PRP'
-    //     ], {
-    //         P: '#minecraft:planks',
-    //         R: 'gtceu:iron_gear',
-    //         G: 'minecraft:glass',
-    //         C: 'gtceu:ulv_advanced_composter',
-    //     })
-    //     .id('insanity_skies:mechanical_crafting/device_composter');
 
     event.recipes.create
         .mechanical_crafting('2x modularrouters:modular_router', [
@@ -377,42 +360,6 @@ ServerEvents.recipes((event) => {
     //         F: 'minecraft:flint',
     //     })
     //     .id('insanity_skies:shaped/flint_block');
-
-    event
-        .shaped(Item.of('toms_storage:ts.trim', 2), [
-            'CSC', 
-            'SWS', 
-            'CSC'
-        ], {
-            C: 'createdieselgenerators:chip_wood_block',
-            W: 'gtceu:wood_crate',
-            S: '#minecraft:wooden_slabs',
-        })
-        .id('insanity_skies:shaped/trim');
-
-    event
-        .shaped(Item.of('toms_storage:ts.open_crate'), [
-            'T', 
-            'B', 
-            'T'
-        ], {
-            T: 'toms_storage:ts.trim',
-            B: 'minecraft:barrel',
-        })
-        .id('insanity_skies:shaped/open_crate');
-
-    event
-        .shaped(Item.of('toms_storage:ts.inventory_proxy'), [
-            'THT', 
-            'LCL', 
-            'THT'
-        ], {
-            T: '#minecraft:wooden_trapdoors',
-            H: 'minecraft:hopper',
-            L: 'minecraft:lapis_lazuli',
-            C: 'toms_storage:ts.open_crate',
-        })
-        .id('insanity_skies:shaped/inventory_proxy');
 
     event.replaceInput({ output: 'minecraft:fishing_rod' }, 'gtceu:iron_ring', 'gtceu:steel_ring');
 
