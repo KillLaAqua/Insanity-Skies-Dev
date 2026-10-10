@@ -732,6 +732,11 @@
 		}
 		{
 			dependencies: ["0B6C67757BB838D3"]
+			description: [
+				"When the primitive pump is placed in different biomes, the amount of water it produces varies"
+				""
+				"It makes the most water when in wet biomes, so try finding a lake or sea nearby."
+			]
 			id: "1AD7CB6C61196D5C"
 			size: 1.0d
 			tasks: [{
