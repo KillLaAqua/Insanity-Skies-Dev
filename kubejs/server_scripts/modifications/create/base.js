@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
             'ACA'
         ], {
             M: '#forge:tools/mallets',
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             S: 'kubejs:saw_blade',
             C: 'create:andesite_casing',
             A: 'create:andesite_alloy',
@@ -245,7 +245,7 @@ ServerEvents.recipes((event) => {
             'GAG', 
             'SSS'
         ], {
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             M: '#forge:tools/mallets',
             C: 'create:chute',
             G: 'create:cogwheel',
@@ -462,7 +462,7 @@ ServerEvents.recipes((event) => {
             'RAR', 
             'RPR'
         ], {
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             R: 'gtceu:iron_rod',
             P: 'gtceu:iron_plate',
             A: 'create:andesite_alloy',
@@ -504,7 +504,7 @@ ServerEvents.recipes((event) => {
         ], {
             L: 'create:piston_extension_pole',
             M: '#forge:tools/mallets',
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             G: 'create:cogwheel',
             C: 'create:andesite_casing',
             A: 'create:andesite_alloy',
@@ -707,7 +707,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:sticky_resin',
             X: '#forge:tools/screwdrivers',
             B: 'create:mechanical_bearing',
-            W: '#forge:tools/wrench',
+            W: '#gtceu:tools/crafting_wrenches',
             S: 'create:shaft',
         })
         .id('insanity_skies:shaped/windmill_bearing');
@@ -784,7 +784,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:rubber_plate',
             H: '#forge:tools/hammers',
             S: '#forge:tools/screwdrivers',
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
         })
         .id('insanity_skies:shaped/belt_connector');
 
@@ -857,7 +857,7 @@ ServerEvents.recipes((event) => {
             F: '#forge:tools/files',
             D: 'gtceu:double_gold_plate',
             T: 'minecraft:stick',
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             S: 'create:shaft',
             G: 'create:cogwheel',
             P: 'gtceu:gold_plate',

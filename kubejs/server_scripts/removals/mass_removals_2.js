@@ -82,7 +82,8 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'simplybackpacks'});
     event.remove({ mod: /projectred.*/});
     event.remove({ mod: 'jetboots'});
-
+    event.remove({ mod: 'ae2'});
+    
     event.remove({ input: 'minecraft:netherite_scrap'});
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
@@ -105,6 +106,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: /create:crushing\/.*horse_armor/});
 
     event.remove({ id: 'minecraft:minecart' });
-
+    
 
 });
