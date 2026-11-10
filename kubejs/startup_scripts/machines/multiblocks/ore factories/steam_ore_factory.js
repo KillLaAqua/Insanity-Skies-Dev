@@ -10,11 +10,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     event
         .create('steam_ore_factory', 'multiblock')
-        .machine((holder) => new $StartSteamMulti(holder))
+        .machine((holder) => new $SteamMulti(holder, 4)) //to fix scaler as a config in multi in addition to fluid compat
         .rotationState(RotationState.ALL)
         .recipeType('steam_ore_processing')
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
-        .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
+        .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .pattern((definition) =>
             FactoryBlockPattern.start()
                 .aisle(' FFF ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

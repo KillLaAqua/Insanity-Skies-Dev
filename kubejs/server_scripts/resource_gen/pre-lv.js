@@ -86,10 +86,10 @@ ServerEvents.recipes((event) => {
 
     const primitive_processing = [
         { primary: 'hematite', secondary: 'magnetite', tertiary: 'nickel' },
-        { primary: 'chalcopyrite', secondary: 'pyrite', tertiary: 'gold' },
-        { primary: 'sphalerite', secondary: 'copper', tertiary: 'gallium' },
+        { primary: 'chalcopyrite', secondary: 'pyrite', tertiary: 'lead' },
+        { primary: 'sphalerite', secondary: 'zinc', tertiary: 'gallium' },
         { primary: 'cassiterite', secondary: 'tin', tertiary: 'bismuth' },
-        { primary: 'galena', secondary: 'sulfur', tertiary: 'silver' },
+        { primary: 'chalcocite', secondary: 'sulfur', tertiary: 'silver' },
         { primary: 'magnetite', secondary: 'gold', tertiary: 'iron' },
         { primary: 'pyrite', secondary: 'sulfur', tertiary: 'antimony' },
     ];

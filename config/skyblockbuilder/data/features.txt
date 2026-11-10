@@ -1,8 +1,6 @@
 create:striated_ores_nether
 create:striated_ores_overworld
 create:zinc_ore
-create_new_age:magnetite_block
-create_new_age:thorium_ore
 gtceu:marble_blob
 gtceu:raw_oil_sprout
 gtceu:red_granite_blob

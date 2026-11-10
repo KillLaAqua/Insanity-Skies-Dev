@@ -266,7 +266,7 @@ ServerEvents.recipes((event) => {
             { ore: 'cassiterite', metal: 'tin' },
             { ore: 'sphalerite', metal: 'zinc' },
             { ore: 'chalcopyrite', metal: 'copper' },
-            { ore: 'galena', metal: 'lead' },
+            { ore: 'chalcocite', metal: 'copper' },
         ].forEach((chunk) => {
             const { ore, metal } = chunk;
             const mod = metal == 'iron' ? 'minecraft' : 'gtceu';

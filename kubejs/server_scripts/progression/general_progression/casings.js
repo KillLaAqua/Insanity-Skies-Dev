@@ -153,8 +153,8 @@ ServerEvents.recipes((event) => {
     DrumType('stainless_steel', 4, 'gtceu');
     DrumType('titanium', 5, 'gtceu');
     DrumType('tungsten_steel', 6, 'gtceu');
-    DrumType('enriched_naquadah', 7, 'start_core');
-    DrumType('neutronium', 8, 'start_core');
+    // DrumType('enriched_naquadah', 7, 'start_core');
+    // DrumType('neutronium', 8, 'start_core');
 
     // Standard Casing
 

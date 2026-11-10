@@ -2,22 +2,22 @@ ServerEvents.recipes((event) => {
     const id = global.id;
 
     event.remove({ id: 'gtceu:shapeless/iron_magnetic_stick' });
-    event
-        .custom({
-            type: 'create_new_age:energising',
-            energy_needed: 7500,
-            ingredients: [
-                {
-                    item: 'gtceu:iron_rod',
-                },
-            ],
-            results: [
-                {
-                    item: 'gtceu:magnetic_iron_rod',
-                },
-            ],
-        })
-        .id('insanity_skies:energising/magnetic_iron_rod');
+    // event
+    //     .custom({
+    //         type: 'create_new_age:energising',
+    //         energy_needed: 7500,
+    //         ingredients: [
+    //             {
+    //                 item: 'gtceu:iron_rod',
+    //             },
+    //         ],
+    //         results: [
+    //             {
+    //                 item: 'gtceu:magnetic_iron_rod',
+    //             },
+    //         ],
+    //     })
+    //     .id('insanity_skies:energising/magnetic_iron_rod');
 
     event.remove({ output: 'gtceu:vacuum_tube' });
     event.recipes.create

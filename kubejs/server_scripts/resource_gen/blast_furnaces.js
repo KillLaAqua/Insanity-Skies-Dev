@@ -107,22 +107,22 @@ ServerEvents.recipes((event) => {
         .duration(300)
         .EUt(7);
 
-    event.recipes.gtceu
-        .assembler(id('bessemer_forgery'))
-        .itemInputs(
-            'gtceu:lv_machine_hull',
-            '4x gtceu:long_steel_rod',
-            '4x #gtceu:circuits/lv',
-            'create:basin',
-            '2x gtceu:potin_gear',
-            '4x gtceu:small_steel_gear',
-            '4x gtceu:ulv_robot_arm',
-            '3x gtceu:ulv_electric_pump'
-        )
-        .inputFluids('gtceu:tin_alloy 1152')
-        .itemOutputs('gtceu:bessemer_forgery')
-        .duration(400)
-        .EUt(8);
+    // event.recipes.gtceu
+    //     .assembler(id('bessemer_forgery'))
+    //     .itemInputs(
+    //         'gtceu:lv_machine_hull',
+    //         '4x gtceu:long_steel_rod',
+    //         '4x #gtceu:circuits/lv',
+    //         'create:basin',
+    //         '2x gtceu:potin_gear',
+    //         '4x gtceu:small_steel_gear',
+    //         '4x gtceu:ulv_robot_arm',
+    //         '3x gtceu:ulv_electric_pump'
+    //     )
+    //     .inputFluids('gtceu:tin_alloy 1152')
+    //     .itemOutputs('gtceu:bessemer_forgery')
+    //     .duration(400)
+    //     .EUt(8);
 
     event.remove({ type: 'gtceu:primitive_blast_furnace' });
 
@@ -221,24 +221,24 @@ ServerEvents.recipes((event) => {
         .EUt(100);
 
     event.remove({ type: 'gtceu:electric_blast_furnace', output: 'gtceu:steel_ingot' });
-    [
-        { ferriteMulti: 0.6, type: 'iron', eut: 100, id: 'minecraft' },
-        { ferriteMulti: 1, type: 'wrought_iron', eut: 30, id: 'gtceu' },
-    ].forEach((ferrite) => {
-        event.recipes.gtceu
-            .bessemer_forge(id(`bulk_steel_from_${ferrite.type}_boosted`))
-            .itemInputs(`${ferrite.id}:${ferrite.type}_block`)
-            .outputFluids('gtceu:steel 1296')
-            .duration(8.5 * 800 * ferrite.ferriteMulti)
-            .EUt(ferrite.eut);
+    // [
+    //     { ferriteMulti: 0.6, type: 'iron', eut: 100, id: 'minecraft' },
+    //     { ferriteMulti: 1, type: 'wrought_iron', eut: 30, id: 'gtceu' },
+    // ].forEach((ferrite) => {
+    //     event.recipes.gtceu
+    //         .bessemer_forge(id(`bulk_steel_from_${ferrite.type}_boosted`))
+    //         .itemInputs(`${ferrite.id}:${ferrite.type}_block`)
+    //         .outputFluids('gtceu:steel 1296')
+    //         .duration(8.5 * 800 * ferrite.ferriteMulti)
+    //         .EUt(ferrite.eut);
 
-        event.recipes.gtceu
-            .bessemer_forge(id(`steel_from_${ferrite.type}_boosted`))
-            .itemInputs(`#forge:ingots/${ferrite.type}`)
-            .outputFluids('gtceu:steel 144')
-            .duration(800 * ferrite.ferriteMulti)
-            .EUt(ferrite.eut);
-    });
+    //     event.recipes.gtceu
+    //         .bessemer_forge(id(`steel_from_${ferrite.type}_boosted`))
+    //         .itemInputs(`#forge:ingots/${ferrite.type}`)
+    //         .outputFluids('gtceu:steel 144')
+    //         .duration(800 * ferrite.ferriteMulti)
+    //         .EUt(ferrite.eut);
+    // });
 
     // Damascus Steel
 
@@ -268,19 +268,19 @@ ServerEvents.recipes((event) => {
         .itemOutputs('gtceu:damascus_steel_block', `1x gtceu:dark_ash_dust`)
         .duration(1800 * 9);
 
-    event.recipes.gtceu
-        .bessemer_forge(id(`damascus_steel`))
-        .itemInputs(`1x gtceu:carbon_dust`, `gtceu:steel_ingot`)
-        .outputFluids(`gtceu:damascus_steel 144`)
-        .duration(1080)
-        .EUt(GTValues.VHA[GTValues.MV]);
+    // event.recipes.gtceu
+    //     .bessemer_forge(id(`damascus_steel`))
+    //     .itemInputs(`1x gtceu:carbon_dust`, `gtceu:steel_ingot`)
+    //     .outputFluids(`gtceu:damascus_steel 144`)
+    //     .duration(1080)
+    //     .EUt(GTValues.VHA[GTValues.MV]);
 
-    event.recipes.gtceu
-        .bessemer_forge(id(`damascus_steel_block`))
-        .itemInputs(`9x gtceu:carbon_dust`, `gtceu:steel_block`)
-        .outputFluids(`gtceu:damascus_steel 1296`)
-        .duration(9120)
-        .EUt(GTValues.VHA[GTValues.MV]);
+    // event.recipes.gtceu
+    //     .bessemer_forge(id(`damascus_steel_block`))
+    //     .itemInputs(`9x gtceu:carbon_dust`, `gtceu:steel_block`)
+    //     .outputFluids(`gtceu:damascus_steel 1296`)
+    //     .duration(9120)
+    //     .EUt(GTValues.VHA[GTValues.MV]);
 
     const burnable = (amount, BurnID, typeBurnable, duraChange, ash) => {
         const SolidBlast = (mainOutput, outputSolid, inputSolid, dura) => {

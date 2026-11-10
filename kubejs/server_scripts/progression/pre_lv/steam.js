@@ -368,28 +368,28 @@ ServerEvents.recipes((event) => {
         'gtceu:potin_gear',
         'kubejs:high_steam_machine_casing',
     ]);
-    SteamMachine('high_pressure_steam_sifter', [
-        'kubejs:high_steam_machine_casing',
-        'exnihilosequentia:flint_mesh',
-        'kubejs:high_steam_machine_casing',
-        'gtceu:tin_alloy_normal_fluid_pipe',
-        'create:basin',
-        'gtceu:tin_alloy_normal_fluid_pipe',
-        'kubejs:high_steam_machine_casing',
-        'kubejs:servo_temp',
-        'kubejs:high_steam_machine_casing',
-    ]);
-    SteamMachine('charcoal_pile_igniter', [
-        'gtceu:bronze_plate',
-        'gtceu:steel_rotor',
-        'gtceu:bronze_plate',
-        'gtceu:bronze_plate',
-        'gtceu:steam_machine_casing',
-        'gtceu:bronze_plate',
-        'minecraft:flint_and_steel',
-        'minecraft:flint_and_steel',
-        'minecraft:flint_and_steel',
-    ]);
+    // SteamMachine('high_pressure_steam_sifter', [
+    //     'kubejs:high_steam_machine_casing',
+    //     'exnihilosequentia:flint_mesh',
+    //     'kubejs:high_steam_machine_casing',
+    //     'gtceu:tin_alloy_normal_fluid_pipe',
+    //     'create:basin',
+    //     'gtceu:tin_alloy_normal_fluid_pipe',
+    //     'kubejs:high_steam_machine_casing',
+    //     'kubejs:servo_temp',
+    //     'kubejs:high_steam_machine_casing',
+    // ]);
+    // SteamMachine('charcoal_pile_igniter', [
+    //     'gtceu:bronze_plate',
+    //     'gtceu:steel_rotor',
+    //     'gtceu:bronze_plate',
+    //     'gtceu:bronze_plate',
+    //     'gtceu:steam_machine_casing',
+    //     'gtceu:bronze_plate',
+    //     'minecraft:flint_and_steel',
+    //     'minecraft:flint_and_steel',
+    //     'minecraft:flint_and_steel',
+    // ]);
 
     SteamMachine('steam_input_hatch', [
         'gtceu:bronze_plate',

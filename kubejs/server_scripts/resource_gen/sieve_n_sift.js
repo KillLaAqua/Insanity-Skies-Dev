@@ -5,21 +5,21 @@ ServerEvents.recipes((event) => {
 
     // Primitive
 
-    const PrimSifter = (input, mesh, output, scaler) => {
-        event.recipes.gtceu
-            .primitive_sifter(id(`${output.split(':')[1]}`))
-            .itemInputs(`64x ${input}`)
-            .chancedInput(`exnihilosequentia:${mesh}_mesh`, 10, 0)
-            .itemOutputs(`${scaler}x ${output}`)
-            .duration(1600)
-            .EUt(30);
-    };
-    PrimSifter('minecraft:sand', 'string', 'minecraft:lapis_lazuli', 10);
-    PrimSifter('minecraft:sand', 'flint', 'minecraft:amethyst_shard', 5);
-    PrimSifter('minecraft:sand', 'iron', 'minecraft:diamond', 3);
-    PrimSifter('exnihilosequentia:dust', 'string', 'minecraft:coal', 10);
-    PrimSifter('exnihilosequentia:dust', 'flint', 'minecraft:redstone', 5);
-    PrimSifter('exnihilosequentia:dust', 'iron', 'minecraft:ender_pearl', 3);
+    // const PrimSifter = (input, mesh, output, scaler) => {
+    //     event.recipes.gtceu
+    //         .primitive_sifter(id(`${output.split(':')[1]}`))
+    //         .itemInputs(`64x ${input}`)
+    //         .chancedInput(`exnihilosequentia:${mesh}_mesh`, 10, 0)
+    //         .itemOutputs(`${scaler}x ${output}`)
+    //         .duration(1600)
+    //         .EUt(30);
+    // };
+    // PrimSifter('minecraft:sand', 'string', 'minecraft:lapis_lazuli', 10);
+    // PrimSifter('minecraft:sand', 'flint', 'minecraft:amethyst_shard', 5);
+    // PrimSifter('minecraft:sand', 'iron', 'minecraft:diamond', 3);
+    // PrimSifter('exnihilosequentia:dust', 'string', 'minecraft:coal', 10);
+    // PrimSifter('exnihilosequentia:dust', 'flint', 'minecraft:redstone', 5);
+    // PrimSifter('exnihilosequentia:dust', 'iron', 'minecraft:ender_pearl', 3);
 
     // // Refined Sediment Refinement
 

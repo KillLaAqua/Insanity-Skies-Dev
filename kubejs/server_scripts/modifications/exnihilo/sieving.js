@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
         { Crushed: 'exnihilosequentia:crushed_andesite', OreType: 'sphalerite' },
         { Crushed: 'exnihilosequentia:crushed_basalt', OreType: 'pyrite' },
         { Crushed: 'exnihilosequentia:crushed_blackstone', OreType: 'magnetite' },
-        { Crushed: 'exnihilosequentia:crushed_deepslate', OreType: 'galena' },
+        { Crushed: 'exnihilosequentia:crushed_deepslate', OreType: 'chalcocite' },
         { Crushed: 'exnihilosequentia:crushed_tuff', OreType: 'hematite' },
         { Crushed: 'exnihilosequentia:crushed_granite', OreType: 'cassiterite' },
         { Crushed: 'exnihilosequentia:crushed_diorite', OreType: 'chalcopyrite' },
