@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
     const id = global.id;
 
-    event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:iron_ingot', 'gtceu:iron_plate');
+    event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:iron_ingot', 'gtceu:double_iron_plate');
     event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:smooth_stone', 'kubejs:reinforced_stone_bricks');
     event.remove({ id: 'gtceu:shapeless/potin_dust' });
     const noSmeltDustToIngot = (output) => {

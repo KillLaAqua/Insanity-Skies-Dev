@@ -412,186 +412,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"410385DA7FBBD2FA"
-				"40B1212619EC3444"
-			]
-			id: "02C057D90BC7F0E1"
-			size: 1.0d
-			tasks: [{
-				id: "5C9C04486D129616"
-				item: "gtceu:high_pressure_steam_sifter"
-				type: "item"
-			}]
-			x: -11.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"7839BE7F2FB6C2A5"
-				"37340815DAE2C133"
-			]
-			id: "63F20D173C5A431F"
-			size: 1.0d
-			tasks: [{
-				id: "62C243B5C7735754"
-				item: "minecraft:lapis_lazuli"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"02C057D90BC7F0E1"
-				"0A4DFA22DC756FA7"
-			]
-			hide_dependency_lines: true
-			id: "7839BE7F2FB6C2A5"
-			size: 1.0d
-			tasks: [{
-				id: "13A464D3EBB1F0BF"
-				item: "exnihilosequentia:string_mesh"
-				type: "item"
-			}]
-			x: -11.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"02C057D90BC7F0E1"
-				"26B8FCAD39A84649"
-			]
-			hide_dependency_lines: true
-			id: "2D4A9BB82757960C"
-			size: 1.0d
-			tasks: [{
-				id: "25EEDE58C6B75FEB"
-				item: "exnihilosequentia:flint_mesh"
-				type: "item"
-			}]
-			x: -11.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"02C057D90BC7F0E1"
-				"0A9C280C7FDC2675"
-			]
-			hide_dependency_lines: true
-			id: "04BD3D58B329F731"
-			size: 1.0d
-			tasks: [{
-				id: "0A8EFF8D4114C6FD"
-				item: "exnihilosequentia:iron_mesh"
-				type: "item"
-			}]
-			x: -11.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["02C057D90BC7F0E1"]
-			id: "37340815DAE2C133"
-			size: 1.0d
-			tasks: [{
-				id: "2A88814BFB5F85C9"
-				item: "minecraft:sand"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["02C057D90BC7F0E1"]
-			id: "7FD94FACD142A18F"
-			size: 1.0d
-			tasks: [{
-				id: "1A33EBF74672E539"
-				item: "exnihilosequentia:dust"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"2D4A9BB82757960C"
-				"7FD94FACD142A18F"
-			]
-			id: "0E97F4FA38F681BD"
-			size: 1.0d
-			tasks: [{
-				id: "477F3E79C19236C8"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"7839BE7F2FB6C2A5"
-				"7FD94FACD142A18F"
-			]
-			hide_dependent_lines: true
-			id: "69EEE1EA928D3A75"
-			size: 1.0d
-			tasks: [{
-				id: "78CE7226B832EDCA"
-				item: "minecraft:coal"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"04BD3D58B329F731"
-				"7FD94FACD142A18F"
-			]
-			id: "625E52F19FD14376"
-			size: 1.0d
-			tasks: [{
-				id: "587DBA32B3D62848"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"04BD3D58B329F731"
-				"37340815DAE2C133"
-			]
-			hide_dependent_lines: true
-			id: "373CB1CBF01D4B84"
-			size: 1.0d
-			tasks: [{
-				id: "44F254A3D2CAD5C0"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"2D4A9BB82757960C"
-				"37340815DAE2C133"
-			]
-			id: "5FCECF8863271771"
-			size: 1.0d
-			tasks: [{
-				id: "3007E65811272056"
-				item: "minecraft:amethyst_shard"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["69EEE1EA928D3A75"]
 			id: "55B15054D3B78F2E"
 			size: 1.0d
 			tasks: [{
@@ -837,63 +657,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"684FAA520167CC51"
-				"410385DA7FBBD2FA"
-			]
-			id: "71A523823C7ED594"
-			size: 1.0d
-			tasks: [
-				{
-					id: "306B0F891D2176CA"
-					item: "create_new_age:magnetite_block"
-					type: "item"
-				}
-				{
-					id: "281980C33CD11ACF"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"19EFB33C0B250C49"
-				"410385DA7FBBD2FA"
-			]
-			id: "7B924B1A6E62E17E"
-			size: 1.0d
-			tasks: [{
-				id: "5BE1478EA295EC1B"
-				item: "create_new_age:carbon_brushes"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"19EFB33C0B250C49"
-				"410385DA7FBBD2FA"
-			]
-			id: "127C2112998C1271"
-			size: 1.0d
-			tasks: [{
-				id: "41236335D7F47B4F"
-				item: "create_new_age:basic_energiser"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"127C2112998C1271"
-				"7B924B1A6E62E17E"
-				"71A523823C7ED594"
-			]
 			id: "3554A7293C94B319"
 			size: 1.0d
 			tasks: [{
@@ -1005,10 +768,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"29C78EFA4596B27E"
-				"63F20D173C5A431F"
-			]
+			dependencies: ["29C78EFA4596B27E"]
 			hide_dependency_lines: true
 			id: "6BF9BA9DD881787D"
 			size: 1.0d
@@ -1077,17 +837,6 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["53BA24466D74ADE2"]
-			id: "3E3F6706B4BF5005"
-			tasks: [{
-				id: "7D942D364B7A4459"
-				item: "gtceu:bessemer_forgery"
-				type: "item"
-			}]
-			x: 6.5d
 			y: 5.0d
 		}
 		{
@@ -1215,26 +964,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"3A1AE7329B090F5C"
-				"19EFB33C0B250C49"
-				"301FF7F900A30DC7"
-			]
-			id: "649C63B39BF01323"
-			size: 1.0d
-			tasks: [{
-				id: "18EFE66C2F4EF2DD"
-				item: "gtceu:industrial_pump"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"373CB1CBF01D4B84"
-				"1D087F498E0ADEA3"
-			]
+			dependencies: ["1D087F498E0ADEA3"]
 			id: "55D3937DAE01FDFC"
 			size: 1.0d
 			tasks: [{

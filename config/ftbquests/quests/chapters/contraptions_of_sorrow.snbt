@@ -15,28 +15,6 @@
 	}]
 	quests: [
 		{
-			dependencies: [
-				"19A0099F62CB5FF1"
-				"0D24BB28465CF80B"
-			]
-			id: "4F550705B0576891"
-			size: 1.0d
-			tasks: [
-				{
-					id: "22E9245155A65068"
-					item: "minecraft:brick"
-					type: "item"
-				}
-				{
-					id: "159EE43DF60487C7"
-					item: "minecraft:bricks"
-					type: "item"
-				}
-			]
-			x: -10.0d
-			y: -0.5d
-		}
-		{
 			dependencies: ["1472BFF306FEA342"]
 			id: "1B660E1DA8714AC5"
 			size: 1.0d
@@ -112,22 +90,6 @@
 		}
 		{
 			dependencies: [
-				"41EEEE63FF53A037"
-				"280AD7F16F6654B4"
-			]
-			hide_dependency_lines: true
-			id: "0D24BB28465CF80B"
-			size: 1.0d
-			tasks: [{
-				id: "00BEB7BDA2166E8C"
-				item: "gtceu:compressed_clay"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -0.5d
-		}
-		{
-			dependencies: [
 				"67D37BA6B5424768"
 				"61799E4BE93F6A52"
 			]
@@ -141,22 +103,6 @@
 			}]
 			x: -12.0d
 			y: -10.5d
-		}
-		{
-			dependencies: [
-				"629BDB317D0A8DD3"
-				"41D300F6E11B1EA1"
-				"22D524C023C9EF6E"
-			]
-			id: "19A0099F62CB5FF1"
-			size: 1.0d
-			tasks: [{
-				id: "7857081A11752D48"
-				item: "gtceu:kiln"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -648,45 +594,6 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["22D524C023C9EF6E"]
-			id: "7278842A97B2E64A"
-			size: 1.0d
-			tasks: [{
-				id: "4D6C7C79E40F95A3"
-				item: {
-					Count: 1
-					id: "exnihilosequentia:iron_crook"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["22D524C023C9EF6E"]
-			description: ["With this you can scavenge for Flint MUCH easier"]
-			hide_dependent_lines: true
-			id: "24AB0C2B43C66BD3"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7830D9C3BA4CA396"
-				item: {
-					Count: 1
-					id: "kubejs:scavenging_rod"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -14.0d
-			y: -4.5d
-		}
-		{
 			dependencies: [
 				"456934A9D2781CAD"
 				"153EBFA7C41BE761"
@@ -732,11 +639,6 @@
 		}
 		{
 			dependencies: ["0B6C67757BB838D3"]
-			description: [
-				"When the primitive pump is placed in different biomes, the amount of water it produces varies"
-				""
-				"It makes the most water when in wet biomes, so try finding a lake or sea nearby."
-			]
 			id: "1AD7CB6C61196D5C"
 			size: 1.0d
 			tasks: [{
@@ -881,32 +783,6 @@
 			title: "You Can Finally Touch Grass"
 			x: 0.0d
 			y: -10.5d
-		}
-		{
-			dependencies: ["3DCE9199510A9223"]
-			dependency_requirement: "one_completed"
-			id: "4F89E871129D842B"
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "2A451602F9C9B9AE"
-				item: {
-					Count: 1
-					id: "gtceu:iron_mortar"
-					tag: {
-						Damage: 0
-						DisallowContainerItem: 0b
-						GT.Behaviours: { }
-						GT.Tool: {
-							MaxDamage: 255
-						}
-						HideFlags: 2
-					}
-				}
-				type: "item"
-			}]
-			x: -10.0d
-			y: -12.5d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1137,18 +1013,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["280AD7F16F6654B4"]
-			id: "22D524C023C9EF6E"
-			size: 1.0d
-			tasks: [{
-				id: "36F492D1D1C13384"
-				item: "gtceu:iron_screw"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -4.5d
-		}
-		{
 			dependencies: [
 				"19A0099F62CB5FF1"
 				"1585BE531365AF58"
@@ -1207,44 +1071,6 @@
 			}]
 			x: 4.0d
 			y: -6.5d
-		}
-		{
-			dependencies: [
-				"08B170E72119FDD4"
-				"1EE07BE5F12EBCDB"
-			]
-			dependency_requirement: "one_completed"
-			id: "41EEEE63FF53A037"
-			size: 1.0d
-			tasks: [{
-				id: "413FE2574EC05D26"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
-			x: -14.0d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"1810B4921EB6640E"
-				"55D72686B7A434CD"
-			]
-			description: ["Soaking Dust with a Water Bowl might do something...."]
-			id: "08B170E72119FDD4"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				icon: "minecraft:clay"
-				id: "08FC85C10B6D55A6"
-				observe_type: 0
-				timer: 0L
-				title: "Look at Clay"
-				to_observe: "minecraft:clay"
-				type: "observation"
-			}]
-			title: "Clay"
-			x: -14.0d
-			y: -0.5d
 		}
 		{
 			dependencies: [

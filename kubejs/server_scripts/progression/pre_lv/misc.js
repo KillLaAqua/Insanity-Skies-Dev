@@ -58,34 +58,26 @@ ServerEvents.recipes((event) => {
     // event.replaceInput({ id: 'farmersdelight:cooking_pot' }, 'minecraft:wooden_shovel', 'gtceu:flisnt_shovel');
 
     event.remove({ id: 'gtceu:shapeless/fireclay_dust' });
-    event.recipes.create
-        .pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust')
-        .id('insanity_skies:pressing/compressed_fireclay');
+    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust').id('insanity_skies:pressing/compressed_fireclay');
     event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball').id('insanity_skies:pressing/compressed_clay');
     event.recipes.create.pressing('kubejs:mud_brick', 'kubejs:packed_mud_ball').id('insanity_skies:pressing/mud_brick');
-    event.recipes.create
-        .pressing('gtceu:compressed_coke_clay', 'gtceu:coke_clay_dust')
-        .id('insanity_skies:pressing/compressed_coke_clay');
+    event.recipes.create.pressing('gtceu:compressed_coke_clay', 'gtceu:coke_clay_dust').id('insanity_skies:pressing/compressed_coke_clay');
 
     ['andesite', 'granite', 'diorite'].forEach((stone) => {
         event.remove({ id: `create:compacting/${stone}_from_flint` });
     });
     event.remove({ id: 'create:compacting/blaze_cake' });
 
-    event.recipes.create
-        .mixing(Fluid.of('thermal:redstone', 1000), [Fluid.of('minecraft:water', 1000), `10x minecraft:redstone`])
-        .heatRequirement('superheated')
-        .id(`insanity_skies:create_mixer/destabilized_redstone`);
+    // event.recipes.create
+    //     .mixing(Fluid.of('thermal:redstone', 1000), [Fluid.of('minecraft:water', 1000), `10x minecraft:redstone`])
+    //     .heatRequirement('superheated')
+    //     .id(`insanity_skies:create_mixer/destabilized_redstone`);
     // event.recipes.create
     //     .filling('xycraft_world:xychorium_gem_red', [
     //         Fluid.of('thermal:redstone', 500),
     //         'xycraft_world:xychorium_gem_light',
     //     ])
     //     .id('insanity_skies:filling/redstone_gem');
-
-    event
-        .shapeless(Item.of('gtceu:wood_screw'), ['#forge:tools/files', 'gtceu:wood_bolt', 'gtceu:wood_bolt'])
-        .id('insanity_skies:shapeless/wood_screw');
 
     // event.recipes.gtceu
     //     .assembler(id('fluid_cell_frame'))
@@ -108,10 +100,12 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shaped/iron_trapdoor');
 
     // event.remove({ id: 'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking' });
-    event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' });
+    // event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' });
     // event.remove('rechiseled:chisel'); // Remove Chisel, replacement recipe later
 
-    replace_shaped('gtceu:treated_wood_rod', ['SP'], {
+    replace_shaped('gtceu:treated_wood_rod', [
+        'SP'
+    ], {
         S: '#forge:tools/saws',
         P: 'gtceu:treated_wood_slab',
     });
@@ -121,19 +115,19 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
     event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
 
-    event.recipes.gtceu
-        .coke_oven(id('coke_from_coal'))
-        .itemInputs('minecraft:coal')
-        .outputFluids('gtceu:creosote 500')
-        .itemOutputs('gtceu:coke_gem')
-        .duration(1200);
+    // event.recipes.gtceu //will be mego coke oven recipes
+    //     .coke_oven(id('coke_from_coal'))
+    //     .itemInputs('minecraft:coal')
+    //     .outputFluids('gtceu:creosote 500')
+    //     .itemOutputs('gtceu:coke_gem')
+    //     .duration(1200);
 
-    event.recipes.gtceu
-        .coke_oven(id('coke_from_coal_block'))
-        .itemInputs('minecraft:coal_block')
-        .outputFluids('gtceu:creosote 4500')
-        .itemOutputs('gtceu:coke_block')
-        .duration(9000);
+    // event.recipes.gtceu
+    //     .coke_oven(id('coke_from_coal_block'))
+    //     .itemInputs('minecraft:coal_block')
+    //     .outputFluids('gtceu:creosote 4500')
+    //     .itemOutputs('gtceu:coke_block')
+    //     .duration(9000);
 
     // ================================ Post Cobble-Gen, Pre-Circuit ================================
 

@@ -7,12 +7,10 @@ ServerEvents.recipes((event) => {
     // Metallurgy Rework via Create
 
     event.remove({ id: /^create:pressing.*_ingot/ });
-    event.remove({ output: /^create_new_age.*wire/ });
 
     const minecraft_metals = ['iron', 'copper', 'gold'];
 
     const plates = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
-	const plates_block = ['iron', 'copper', 'lead'];
 	const rods = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
 	const rings = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel'];
 	const foils = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
@@ -55,20 +53,6 @@ ServerEvents.recipes((event) => {
     plates.forEach((metal) => {
         let mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
         event.recipes.create.compacting(plate(metal), `2x ${mod}:${metal}_ingot`).id(`insanity_skies:compacting/${metal}_plate`);
-    });
-
-    plates_block.forEach((metal) => {
-        let mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
-        event
-            .shaped(`1x gtceu:${metal}_plate`, [
-                ' I ', 
-                'HI ', 
-                ' I '
-            ], {
-                I: `${mod}:${metal}_ingot`,
-                H: '#forge:tools/hammers',
-            })
-            .id(`insanity_skies:shaped/${metal}_plate`);
     });
 
     rods.forEach((metal) => {

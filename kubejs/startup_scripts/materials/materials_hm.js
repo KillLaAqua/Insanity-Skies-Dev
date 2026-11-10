@@ -105,8 +105,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
                 GTToolType.AXE,
                 GTToolType.SWORD,
                 GTToolType.KNIFE,
-                GTToolType.FILE,
-                GTToolType.SCYTHE,
+                GTToolType.SCYTHE
             ]).build()
         );
 

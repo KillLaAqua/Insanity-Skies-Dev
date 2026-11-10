@@ -81,10 +81,10 @@ ServerEvents.recipes((event) => {
     sieve('flint', 0.25, cDrip, 'minecraft:clay_ball', false);
 
     // Dust
-    sieve('string', 0.35, dust, 'gtceu:small_redstone_dust', false);
-    sieve('string', 0.08, dust, 'minecraft:quartz', false);
-    sieve('flint', 0.15, dust, 'minecraft:redstone', false);
-    sieve('flint', 0.12, dust, 'minecraft:quartz', false);
+    sieve('string', 0.05, dust, 'gtceu:quartzite_gem', false);
+    sieve('string', 0.05, dust, 'minecraft:quartz', false);
+    sieve('flint', 0.10, dust, 'gtceu:quartzite_gem', false);
+    sieve('flint', 0.10, dust, 'minecraft:quartz', false);
 
     // Mud (temp)
     sieve('flint', 0.5, mud, 'kubejs:ripened_spores', false);

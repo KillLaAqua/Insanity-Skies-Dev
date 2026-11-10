@@ -311,17 +311,6 @@ ServerEvents.recipes((event) => {
         'gtceu:bronze_normal_fluid_pipe',
         'gtceu:steam_machine_casing',
     ]);
-    SteamMachine('steam_kiln', [
-        'gtceu:steam_machine_casing',
-        'gtceu:bronze_ring',
-        'gtceu:steam_machine_casing',
-        'gtceu:bronze_rod',
-        'gtceu:kiln',
-        'gtceu:bronze_rod',
-        'gtceu:steam_machine_casing',
-        'gtceu:bronze_normal_fluid_pipe',
-        'gtceu:steam_machine_casing',
-    ]);
     SteamMachine('steam_oven', [
         'gtceu:steam_machine_casing',
         'gtceu:small_potin_gear',

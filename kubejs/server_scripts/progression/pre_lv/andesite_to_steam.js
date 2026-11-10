@@ -53,13 +53,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: 'minecraft:charcoal' });
 
-    event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
-        .id('kjs:smelting/charcoal_pellet_manual_only')
-        .id('insanity_skies:smelting/charcoal_pellet');
+    event.smelting(`2x kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
+        .id('insanity_skies:smelting/charcoal_pellet_manual_only');
 
-    event.recipes.create.crushing([
-        '2x kubejs:charcoal_pellet', 
-        Item.of('kubejs:charcoal_pellet').withChance(0.5)],
+    event.recipes.create.crushing(
+        ['3x kubejs:charcoal_pellet', Item.of('kubejs:charcoal_pellet').withChance(0.5)],
         'minecraft:charcoal'
     );
 
@@ -67,9 +65,8 @@ ServerEvents.recipes((event) => {
     event.recipes.create.milling(['minecraft:sand'], 'minecraft:gravel');
     event.recipes.create.milling(['exnihilosequentia:dust'], 'minecraft:sand');
 
-    // event.remove({ id: 'thermal:rubber_3' });
     event.recipes.create
-        .compacting(Fluid.of('gtceu:latex', 20), `10x minecraft:jungle_log`)
+        .compacting(Fluid.of('gtceu:latex', 32), `10x minecraft:jungle_log`)
         .heatRequirement('lowheated')
         .id('insanity_skies:compacting/latex');
 
@@ -111,12 +108,6 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood')
         .id('insanity_skies:cutting/treated_wood_plate');
-    event
-        .shapeless(Item.of('gtceu:iron_rod'), [
-            '#forge:tools/saws',
-            'gtceu:iron_plate',
-        ])
-        .id('insanity_skies:shapeless_iron_rod');
 
     event
         .shaped(Item.of('kubejs:saw_blade'), [
