@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
             'WPF'
         ], {
             M: '#forge:tools/mallets',
-            W: '#forge:tools/wrenches',
+            W: '#gtceu:tools/crafting_wrenches',
             F: '#forge:tools/files',
             H: '#forge:tools/hammers',
             P: 'gtceu:iron_plate',
