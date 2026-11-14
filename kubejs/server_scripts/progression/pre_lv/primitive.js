@@ -357,16 +357,24 @@ ServerEvents.recipes((event) => {
             .id(`insanity_skies:shaped/${log}_1_alt`);
     });
 
-    event.remove({ id: `minecraft:crafting_table` });
+    event.remove({ output: `minecraft:crafting_table` });
+    event.recipes.gtceu.assembler('crafting_table')
+        .itemInputs('#minecraft:logs','kubejs:canvas')
+        .itemOutputs('minecraft:crafting_table')
+        .circuit(0)
+        .duration(100)
+        .EUt(5);
     event
         .shaped(Item.of('minecraft:crafting_table'), [
-            'CS', 
-            'PP',
-            'PP'
+            'KCH', 
+            'SLA'
         ], {
             C: 'kubejs:canvas',
-            P: 'gtceu:wood_plate',
-            S: '#forge:tools/hammers',
+            L: '#minecraft:logs',
+            K: '#forge:tools/knives',
+            H: '#forge:tools/hammers',
+            S: '#forge:tools/saws',
+            A: '#minecraft:axes'
         });
 
     event.remove({ output: 'gtceu:matchbox' });
@@ -412,6 +420,16 @@ ServerEvents.recipes((event) => {
         .id(`insanity_skies:shaped/bowls`);
 
     event
+        .shapeless('4x kubejs:concrete_bowl', ['gtceu:concrete_bucket','minecraft:bowl','minecraft:bowl','minecraft:bowl','minecraft:bowl'])
+        .replaceIngredient('gtceu:concrete_bucket', 'minecraft:bucket')
+        .id('insanity_skies:shapeless/bucket_to_bowls_conrete');
+
+    event
+        .shapeless('4x kubejs:water_bowl', ['minecraft:water_bucket','minecraft:bowl','minecraft:bowl','minecraft:bowl','minecraft:bowl'])
+        .replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+        .id('insanity_skies:shapeless/bucket_to_bowls_water');
+
+    event
         .shapeless(Item.of('kubejs:plant_fibers'), ['#forge:tools/knives', 'kubejs:straw'])
         .id('insanity_skies:shapeless/plant_fibers');
 
@@ -446,13 +464,12 @@ ServerEvents.recipes((event) => {
         { type: '', modItem: 'minecraft', modBlock: 'minecraft' },
         { type: 'coke_oven_', modItem: 'gtceu', modBlock: 'gtceu' },
         { type: 'fire', modItem: 'gtceu', modBlock: 'gtceu' },
-        { type: 'mud_', modItem: 'kubejs', modBlock: 'minecraft' },
     ].forEach((brick) => {
         const { type, modItem, modBlock } = brick;
 
         let item = `${modItem}:${type}brick`;
         let block = `${modBlock}:${type}bricks`;
-        let fluid = type == 'mud_' ? 'minecraft:water' : 'gtceu:concrete';
+        let fluid = 'gtceu:concrete';
         let buckets = [
             { type: `${fluid}_bucket`, variant: 'bucket' }
         ];
@@ -477,7 +494,7 @@ ServerEvents.recipes((event) => {
         event.recipes.gtceu
             .assembler(id(`${block.split(':')[1]}`))
             .itemInputs(`4x ${item}`)
-            .inputFluids(`${fluid} 150`)
+            .inputFluids(`${fluid} 200`)
             .itemOutputs(block)
             .circuit(1)
             .duration(80)
@@ -557,15 +574,14 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shaped/bricks');
 
     event
-        .shaped('minecraft:mud_bricks', [
-            'CC',
-            'BB',
-            'BB'
+        .shaped('2x minecraft:mud_bricks', [
+            'BBB',
+            'BFB',
+            'BBB'
         ], {
-            C: 'kubejs:water_bowl',
+            F: 'gtceu:wood_frame',
             B: 'kubejs:mud_brick'
         })
-        .replaceIngredient('kubejs:water_bowl', 'minecraft:bowl')
         .id('insanity_skies:shaped/mud_bricks');
 
     event
@@ -659,11 +675,12 @@ ServerEvents.recipes((event) => {
 
     event.recipes
         .shaped(Item.of('gtceu:kiln'), [
-            'BBB', 
+            'RBR', 
             'BFB', 
-            'SSS'
+            'BSB'
         ], {
             B: 'minecraft:mud_bricks',
+            R: 'gtceu:wood_frame',
             F: 'minecraft:campfire',
             S: 'minecraft:cobblestone_slab',
         })

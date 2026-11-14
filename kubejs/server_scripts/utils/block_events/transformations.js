@@ -26,22 +26,23 @@
 
 // === Crafting Table Chain ===
 [
-    { hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
-    { hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
-    { hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
-    { hit: 'kubejs:crafting_stage_3', tool: 'kubejs:canvas', get: 'minecraft:crafting_table' },
+    { start: 'minecraft:stripped_jungle_log', tag: 'forge:tools/saws', held: '', end: 'kubejs:crafting_stage_1' },
+    { start: 'kubejs:crafting_stage_1', tag: 'forge:tools/knives', held: '', end: 'kubejs:crafting_stage_2' },
+    { start: 'kubejs:crafting_stage_2', tag: '', held: 'kubejs:canvas', end: 'kubejs:crafting_stage_3' },
+    { start: 'kubejs:crafting_stage_3', tag: '', held: 'minecraft:flint', end: 'minecraft:crafting_table' },
 ].forEach((table) => {
-    const { hit, tool, get } = table;
+    const { start, tag, held, end } = table;
 
-    BlockEvents.rightClicked(hit, (event) => {
+    BlockEvents.rightClicked(start, (event) => {
         const { player, block, level, item } = event;
 
-        if (!item.hasTag(tool) && item.id !== 'kubejs:canvas') return;
+        if (held && item.id !== held) return;
+        if (tag && !item.hasTag(tag)) return;
 
-        if (item.id == 'kubejs:canvas') item.count--;
-        if (item.hasTag(tool)) damage_tool(event);
+        if (held) item.count--;
+        if (tag) damage_tool(event);
 
-        block.set(get);
+        block.set(end);
         level.playSound(null, block.pos, 'minecraft:block.wood.break', 'blocks');
         player.swing();
     });

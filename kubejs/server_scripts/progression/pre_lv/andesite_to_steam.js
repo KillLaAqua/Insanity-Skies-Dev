@@ -110,19 +110,19 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:cutting/treated_wood_plate');
 
     event
-        .shaped(Item.of('kubejs:saw_blade'), [
-            'HPM', 
+        .shaped(Item.of('gtceu:iron_buzz_saw_blade'), [
+            'HPS', 
             'PRP', 
             'WPF'
         ], {
-            M: '#forge:tools/mallets',
+            M: '#forge:tools/saws',
             W: '#gtceu:tools/crafting_wrenches',
             F: '#forge:tools/files',
             H: '#forge:tools/hammers',
             P: 'gtceu:iron_plate',
             R: 'gtceu:iron_ring'
         })
-        .id('insanity_skies:shaped/saw_blade');
+        .id('insanity_skies:shaped/iron_buzz_saw_blade');
 
     event.recipes.create
         .mechanical_crafting('kubejs:servo_temp', [

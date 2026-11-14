@@ -38,7 +38,7 @@
 			}]
 			title: "So.... You have chosen death"
 			x: -23.5d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["11792AD3856CC11A"]
@@ -74,7 +74,7 @@
 			}]
 			title: "Dead Bush [&l&4READ QUEST&r]"
 			x: -22.0d
-			y: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -151,7 +151,7 @@
 				type: "item"
 			}]
 			x: -20.0d
-			y: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -371,19 +371,13 @@
 			dependencies: [
 				"54CFAAE3EA5F56D0"
 				"5A4DF6397D7F2B78"
-				"469CAF0D80978B00"
+				"7CF45E2FF79F0A97"
 			]
 			dependency_requirement: "one_completed"
 			description: [
 				"Interact with a stripped jungle log in the following:"
 				""
-				"Saw"
-				""
-				"Axe"
-				""
-				"Knife"
-				""
-				"Canvas"
+				"Saw, Knife, Canvas, Flint"
 			]
 			id: "13F8BDB87F975319"
 			shape: "octagon"
@@ -545,7 +539,7 @@
 				item: "minecraft:packed_mud"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -12.0d
 			y: -5.0d
 		}
 		{
@@ -558,7 +552,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -572,8 +566,8 @@
 				item: "kubejs:mud_brick"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -5.0d
+			x: -14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0FB21B977F0C0843"]

@@ -966,8 +966,8 @@
 			id: "61799E4BE93F6A52"
 			size: 1.0d
 			tasks: [{
-				id: "4D1B2E9BD07FC510"
-				item: "kubejs:saw_blade"
+				id: "7A93CF2277CC55C3"
+				item: "gtceu:iron_buzz_saw_blade"
 				type: "item"
 			}]
 			x: -12.0d

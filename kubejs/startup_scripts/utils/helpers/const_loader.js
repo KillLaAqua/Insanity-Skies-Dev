@@ -45,7 +45,7 @@ const $GTMachineModelProperties = Java.loadClass('com.gregtechceu.gtceu.api.mach
 
 const $CleanroomType = Java.loadClass('com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType');
 //usable to add "cleanroom types", example:
-const absoluteStabilization = new $CleanroomType('stabilized', 'gtceu.absolute_stabilization');
+// const absoluteStabilization = new $CleanroomType('stabilized', 'gtceu.absolute_stabilization');
 
 const $CleaningMaintenanceHatchPartMachine = Java.loadClass(
     'com.gregtechceu.gtceu.common.machine.multiblock.part.CleaningMaintenanceHatchPartMachine'

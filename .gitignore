@@ -32,13 +32,11 @@ defaultconfigs/*
 # Config Unignore - File
 !config/jei/blacklist.json
 !config/badmobs-common.toml
-!config/create_new_age-*
 !config/create-*
 !config/createlowheated-*
 !config/cucumber-tags.json
 !config/exnihilosequentia-common.toml
 !config/gtceu.yaml
-!config/sgjourney-*
 !defaultconfigs/create-*
 
 # Subdirectory Rehide

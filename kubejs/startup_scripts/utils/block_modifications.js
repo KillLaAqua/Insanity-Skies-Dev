@@ -21,8 +21,8 @@ BlockEvents.modification((event) => {
         block.lightEmission = 15;
     });
 
-    event.modify(/xtonesreworked:*/, (block) => {
-        block.destroySpeed = 0.5;
+    event.modify('minecraft:reinforced_deepslate', (block) => {
+        block.destroySpeed = 100;
     });
 
 });

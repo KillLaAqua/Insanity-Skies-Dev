@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
         ], {
             M: '#forge:tools/mallets',
             W: '#gtceu:tools/crafting_wrenches',
-            S: 'kubejs:saw_blade',
+            S: 'gtceu:iron_buzz_saw_blade',
             C: 'create:andesite_casing',
             A: 'create:andesite_alloy',
         })
@@ -318,19 +318,6 @@ ServerEvents.recipes((event) => {
         })
         .id('insanity_skies:shaped/brass_tunnel');
 
-    let drill = 'gtceu:double_iron_plate';
-    event.recipes.create
-        .sequenced_assembly([Item.of('kubejs:drill_head').withChance(1)], drill, [
-            event.recipes.createDeploying(drill, [drill, 'create:andesite_alloy']),
-            event.recipes.createDeploying(drill, [drill, 'gtceu:cast_iron_plate']),
-            event.recipes.createPressing(drill, drill),
-            event.recipes.createDeploying(drill, [drill, 'gtceu:wrought_iron_plate']),
-            event.recipes.createCutting(drill, drill),
-        ])
-        .transitionalItem(drill)
-        .loops(2)
-        .id('insanity_skies:sequenced_assembly/drill_head');
-
     event
         .shaped(Item.of('create:mechanical_drill'), [
             'MDH', 
@@ -341,7 +328,7 @@ ServerEvents.recipes((event) => {
             H: '#forge:tools/hammers',
             S: 'create:shaft',
             C: 'create:andesite_casing',
-            D: 'kubejs:drill_head',
+            D: 'gtceu:iron_drill_head',
             A: 'create:andesite_alloy',
         })
         .id('insanity_skies:shaped/mechanical_drill');

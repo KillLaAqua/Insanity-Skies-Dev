@@ -40,5 +40,11 @@ LootJS.modifiers((event) => {
                 tree == 'jungle' && LootEntry.of('minecraft:cocoa_beans').when((c) => c.randomChance(0.02))
             );
     });
-    
+
+    event
+        .addBlockLootModifier('minecraft:reinforced_deepslate')
+        .removeLoot(Ingredient.all)
+        .addLoot('minecraft:reinforced_deepslate')
+        .limitCount(1);
+
 });

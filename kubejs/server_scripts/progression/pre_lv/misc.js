@@ -152,22 +152,9 @@ ServerEvents.recipes((event) => {
 
     event.smelting('minecraft:slime_ball', 'kubejs:ripened_spores').id('insanity_skies:smelting/slime_ball');
 
-    event.remove({ output: 'modularrouters:modular_router' });
     event.replaceInput({ output: 'functionalstorage:configuration_tool' }, 'minecraft:emerald', '#forge:dyes/lime');
     event.remove({ id: 'gtceu:shaped/casing_steel_solid' });
     event.remove({ id: 'gtceu:assembler/casing_steel_solid' });
-
-    event.recipes.create
-        .mechanical_crafting('2x modularrouters:modular_router', [
-            'PDP', 
-            'DED', 
-            'PDP'
-        ], {
-            P: 'gtceu:steel_plate',
-            D: 'gtceu:double_iron_plate',
-            E: 'kubejs:ulv_emitter',
-        })
-        .id('insanity_skies:mechanical_crafting/modular_router');
 
     event.recipes.gtceu
         .assembler(id('solid_machine_casing'))

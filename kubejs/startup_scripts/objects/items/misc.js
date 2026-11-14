@@ -10,13 +10,9 @@ StartupEvents.registry('item', (event) => {
 
     event.create('charcoal_pellet').burnTime(720).texture(`kubejs:item/hm/pre-lv/charcoal_pellet`);
 
-    event.create('concrete_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/concrete_bowl`);
+    event.create('concrete_bowl').maxStackSize(4).texture(`kubejs:item/hm/pre-lv/concrete_bowl`);
 
-    event.create('water_bowl').unstackable().texture(`kubejs:item/hm/pre-lv/water_bowl`);
-
-    event.create('drill_head').texture(`kubejs:item/hm/pre-lv/drill_head`);
-
-    event.create('saw_blade').texture(`kubejs:item/hm/pre-lv/saw_blade`);
+    event.create('water_bowl').maxStackSize(4).texture(`kubejs:item/hm/pre-lv/water_bowl`);
 
     event.create('canvas').texture(`kubejs:item/hm/pre-lv/canvas`);
 

@@ -1,7 +1,12 @@
 {
-	"parent": "minecraft:block/cube_column",
+	"parent": "minecraft:block/cube",
 	"textures": {
-		"end": "kubejs:block/hardmode/unformed_table_2_end",
-		"side": "kubejs:block/hardmode/unformed_table_2_side"
+		"particle": "minecraft:block/stripped_jungle_log_top",
+		"down": "kubejs:block/hardmode/crafting_bottom",
+		"up": "kubejs:block/hardmode/crafting_2_top",
+		"north": "kubejs:block/hardmode/crafting_1_side",
+		"east": "kubejs:block/hardmode/crafting_1_side",
+		"south": "kubejs:block/hardmode/crafting_1_side",
+		"west": "kubejs:block/hardmode/crafting_1_side"
 	}
 }

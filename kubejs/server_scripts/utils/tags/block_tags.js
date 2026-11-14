@@ -1,13 +1,10 @@
 ServerEvents.tags('block', (event) => {
 
-    // event.add('minecraft:mineable/pickaxe', /xtonesreworked:glaxx_block_.*/);
-
     const targets = [
         /^laserio:.*/,
         /^create:.*/,
         /^pipez:.*/,
         /^kubejs:.*/,
-        // /^thermal:.*/,
         /^modularrouters:.*/,
         /^trashcans:.*/,
     ];

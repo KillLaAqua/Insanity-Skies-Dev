@@ -641,22 +641,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"19A0099F62CB5FF1"
-				"684FAA520167CC51"
-			]
-			hide_dependency_lines: true
-			id: "4619505A5DF24551"
-			size: 1.0d
-			tasks: [{
-				id: "6FB190BEBCEBD2EC"
-				item: "gtceu:steam_kiln"
-				type: "item"
-			}]
-			x: -13.5d
-			y: -3.0d
-		}
-		{
 			id: "3554A7293C94B319"
 			size: 1.0d
 			tasks: [{
