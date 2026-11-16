@@ -18,6 +18,20 @@ StartupEvents.registry('item', (event) => {
 
     event.create('igneous_construct').texture(`kubejs:item/hm/pre-lv/igneous_construct`);
 
+    event.create('kinetic_contraption').texture(`kubejs:item/hm/pre-lv/kinetic_contraption`);
+
+    event.create('fluid_contraption').texture(`kubejs:item/hm/pre-lv/fluid_contraption`);
+
+    event.create('igneous_contraption').texture(`kubejs:item/hm/pre-lv/igneous_contraption`);
+
+    event.create('pneumatic_contraption').texture(`kubejs:item/hm/pre-lv/pneumatic_contraption`);
+
+    event.create('hydraulic_contraption').texture(`kubejs:item/hm/pre-lv/hydraulic_contraption`);
+
+    event.create('logistic_contraption').texture(`kubejs:item/hm/pre-lv/logistic_contraption`);
+
+    event.create('integrated_contraption').texture(`kubejs:item/hm/pre-lv/integrated_contraption`);
+
     // === Incomplete parts ===
     [
         'long_rod','double_plate','gear','small_gear',

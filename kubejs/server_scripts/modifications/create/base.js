@@ -158,33 +158,30 @@ ServerEvents.recipes((event) => {
         })
         .id('insanity_skies:shaped/andesite_casing');
 
-    event
-        .shaped(Item.of('create:copper_casing'), [
-            'PMP', 
-            'RFR', 
-            'PHP'
-        ], {
-            P: 'gtceu:pig_iron_plate',
-            M: '#forge:tools/mallets',
-            R: 'create:fluid_pipe',
-            F: 'gtceu:pig_iron_frame',
-            H: '#forge:tools/hammers',
-        })
-        .id('insanity_skies:shaped/copper_casing');
+    let and_case = 'create:andesite_casing';
+    event.recipes.create
+        .sequenced_assembly([`create:copper_casing`], and_case, [
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:copper_tiny_fluid_pipe`]),
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:rubber_plate`]),
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:copper_tiny_fluid_pipe`]),
+            event.recipes.createPressing(treated_frame, treated_frame),
+        ])
+        .transitionalItem(treated_frame)
+        .loops(1)
+        .id('insanity_skies:sequenced_assembly/copper_casing');
 
-    event
-        .shaped(Item.of('create:brass_casing'), [
-            'PMP', 
-            'AFA', 
-            'PHP'
-        ], {
-            P: 'gtceu:treated_wood_plate',
-            M: '#forge:tools/mallets',
-            A: 'gtceu:brass_plate',
-            F: 'gtceu:treated_wood_frame',
-            H: '#forge:tools/hammers',
-        })
-        .id('insanity_skies:shaped/brass_casing');
+    let treated_frame = 'gtceu:treated_wood_frame';
+    event.recipes.create
+        .sequenced_assembly([`create:brass_casing`], treated_frame, [
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:treated_wood_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:brass_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:treated_wood_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:brass_screw`]),
+            event.recipes.createPressing(treated_frame, treated_frame),
+        ])
+        .transitionalItem(treated_frame)
+        .loops(2)
+        .id('insanity_skies:sequenced_assembly/brass_casing');
 
     event
         .shaped(Item.of('create:piston_extension_pole', 3), [
@@ -530,7 +527,7 @@ ServerEvents.recipes((event) => {
             'ZPZ', 
             'MAS'
         ], {
-            P: 'gtceu:pig_iron_rotor',
+            P: 'gtceu:iron_rotor',
             A: 'create:andesite_alloy',
             R: '#forge:tools/screwdrivers',
             M: '#forge:tools/mallets',
@@ -810,30 +807,6 @@ ServerEvents.recipes((event) => {
             A: 'create:andesite_alloy',
         })
         .id('insanity_skies:shaped/speedometer');
-
-    const BetterCasings = (type, primary, secondary) => {
-        event.recipes.create
-            .mechanical_crafting(Item.of(`create:${type}_casing`, 2), [
-                'PSP', 
-                'SFS', 
-                'PSP'
-            ], {
-                P: `gtceu:${primary}_plate`,
-                F: `gtceu:${primary}_frame`,
-                S: secondary,
-            })
-            .id(`insanity_skies:mechanical_crafter/${type}_casing`);
-
-        event.recipes.gtceu
-            .assembler(id(`${type}_casing`))
-            .itemInputs(`1x gtceu:${primary}_frame`, `4x gtceu:${primary}_plate`, `4x ${secondary}`)
-            .itemOutputs(`2x create:${type}_casing`)
-            .EUt(2)
-            .duration(50);
-    };
-    BetterCasings('andesite', 'wood', 'create:andesite_alloy');
-    BetterCasings('copper', 'pig_iron', 'create:fluid_pipe');
-    BetterCasings('brass', 'treated_wood', 'gtceu:brass_plate');
 
     event
         .shaped(Item.of('create:wrench'), [

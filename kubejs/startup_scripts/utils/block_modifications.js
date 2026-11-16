@@ -17,12 +17,9 @@ BlockEvents.modification((event) => {
     no_punch('exnihilosequentia:jungle_crucible')
 
     // === MISC Changes ===
-    event.modify('gtceu:nether_star_block', (block) => {
-        block.lightEmission = 15;
-    });
 
     event.modify('minecraft:reinforced_deepslate', (block) => {
-        block.destroySpeed = 100;
+        block.destroySpeed = 120;
     });
 
 });

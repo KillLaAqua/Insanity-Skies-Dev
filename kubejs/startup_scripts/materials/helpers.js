@@ -6,90 +6,83 @@ const FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.ma
 const BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
 const FluidPipeProperties = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties');
 
-global.iconSets = {
-    dull: GTMaterialIconSet.DULL,
-    metallic: GTMaterialIconSet.METALLIC,
-    magnetic: GTMaterialIconSet.MAGNETIC,
-    shiny: GTMaterialIconSet.SHINY,
-    bright: GTMaterialIconSet.BRIGHT,
-    diamond: GTMaterialIconSet.DIAMOND,
-    emerald: GTMaterialIconSet.EMERALD,
-    gem_horizontal: GTMaterialIconSet.GEM_HORIZONTAL,
-    gem_vertical: GTMaterialIconSet.GEM_VERTICAL,
-    ruby: GTMaterialIconSet.RUBY,
-    opal: GTMaterialIconSet.OPAL,
-    glass: GTMaterialIconSet.GLASS,
-    netherstar: GTMaterialIconSet.NETHERSTAR,
-    fine: GTMaterialIconSet.FINE,
-    sand: GTMaterialIconSet.SAND,
-    wood: GTMaterialIconSet.WOOD,
-    rough: GTMaterialIconSet.ROUGH,
-    flint: GTMaterialIconSet.FLINT,
-    lignite: GTMaterialIconSet.LIGNITE,
-    quartz: GTMaterialIconSet.QUARTZ,
-    certus: GTMaterialIconSet.CERTUS,
-    lapis: GTMaterialIconSet.LAPIS,
-    fluid: GTMaterialIconSet.FLUID,
-    radioactive: GTMaterialIconSet.RADIOACTIVE,
-};
+// Icon Sets
+const DULL = GTMaterialIconSet.DULL;
+const METALLIC = GTMaterialIconSet.METALLIC;
+const MAGNETIC = GTMaterialIconSet.MAGNETIC;
+const SHINY = GTMaterialIconSet.SHINY;
+const BRIGHT = GTMaterialIconSet.BRIGHT;
+const DIAMOND = GTMaterialIconSet.DIAMOND;
+const EMERALD = GTMaterialIconSet.EMERALD;
+const GEM_HORIZONTAL = GTMaterialIconSet.GEM_HORIZONTAL;
+const GEM_VERTICAL = GTMaterialIconSet.GEM_VERTICAL;
+const RUBY = GTMaterialIconSet.RUBY;
+const OPAL = GTMaterialIconSet.OPAL;
+const GLASS = GTMaterialIconSet.GLASS;
+const NETHERSTAR = GTMaterialIconSet.NETHERSTAR;
+const FINE = GTMaterialIconSet.FINE;
+const SAND = GTMaterialIconSet.SAND;
+const WOOD = GTMaterialIconSet.WOOD;
+const ROUGH = GTMaterialIconSet.ROUGH;
+const FLINT = GTMaterialIconSet.FLINT;
+const LIGNITE = GTMaterialIconSet.LIGNITE;
+const QUARTZ = GTMaterialIconSet.QUARTZ;
+const CERTUS = GTMaterialIconSet.CERTUS;
+const LAPIS = GTMaterialIconSet.LAPIS;
+const FLUID = GTMaterialIconSet.FLUID;
+const RADIOACTIVE = GTMaterialIconSet.RADIOACTIVE;
 
-global.flags = {
-    // Generic flags
-    no_unify: GTMaterialFlags.NO_UNIFICATION,
-    electrolyze: GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING,
-    centrifuge: GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING,
-    no_decomp: GTMaterialFlags.DISABLE_DECOMPOSITION,
-    explosive: GTMaterialFlags.EXPLOSIVE,
-    flammable: GTMaterialFlags.FLAMMABLE,
-    sticky: GTMaterialFlags.STICKY,
-    phosphorescent: GTMaterialFlags.PHOSPHORESCENT,
-
-    // Generation Flags
-    plates: GTMaterialFlags.GENERATE_PLATE,
-    dense_plate: GTMaterialFlags.GENERATE_DENSE,
-    rod: GTMaterialFlags.GENERATE_ROD,
-    bolt_and_screw: GTMaterialFlags.GENERATE_BOLT_SCREW,
-    frame: GTMaterialFlags.GENERATE_FRAME,
-    gear: GTMaterialFlags.GENERATE_GEAR,
-    long_rod: GTMaterialFlags.GENERATE_LONG_ROD,
-    block: GTMaterialFlags.FORCE_GENERATE_BLOCK,
-
-    // Ingot Flags
-    foil: GTMaterialFlags.GENERATE_FOIL,
-    ring: GTMaterialFlags.GENERATE_RING,
-    spring: GTMaterialFlags.GENERATE_SPRING,
-    small_spring: GTMaterialFlags.GENERATE_SPRING_SMALL,
-    small_gear: GTMaterialFlags.GENERATE_SMALL_GEAR,
-    fine_wire: GTMaterialFlags.GENERATE_FINE_WIRE,
-    rotor: GTMaterialFlags.GENERATE_ROTOR,
-    round: GTMaterialFlags.GENERATE_ROUND,
-    magnetic: GTMaterialFlags.IS_MAGNETIC,
-
-    // Gem Flags
-    crystallizable: GTMaterialFlags.CRYSTALLIZABLE,
-    lens: GTMaterialFlags.GENERATE_LENS,
-
-    // Fluid Flags
-    solder_mat: GTMaterialFlags.SOLDER_MATERIAL,
-    solder_mat_bad: GTMaterialFlags.SOLDER_MATERIAL_BAD,
-    solder_mat_good: GTMaterialFlags.SOLDER_MATERIAL_GOOD,
-
-    // Ore Flags
-    more_sifter: GTMaterialFlags.HIGH_SIFTER_OUTPUT,
-
-    // Misc
-    no_block_craft: GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES,
-    no_plate_compressor_craft: GTMaterialFlags.EXCLUDE_PLATE_COMPRESSOR_RECIPE,
-    no_hand_craft: GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-    mortar_grind: GTMaterialFlags.MORTAR_GRINDABLE,
-    no_working: GTMaterialFlags.NO_WORKING,
-    no_smashing: GTMaterialFlags.NO_SMASHING,
-    no_smelt: GTMaterialFlags.NO_SMELTING,
-    blast_furnace_double: GTMaterialFlags.BLAST_FURNACE_CALCITE_DOUBLE,
-    blast_furnace_triple: GTMaterialFlags.BLAST_FURNACE_CALCITE_TRIPLE,
-    no_abs_recipe: GTMaterialFlags.DISABLE_ALLOY_BLAST,
-    not_alloy: GTMaterialFlags.DISABLE_ALLOY_PROPERTY,
-};
+// Flags
+// Generic flags
+const no_unify = GTMaterialFlags.NO_UNIFICATION;
+const electrolyze = GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING;
+const centrifuge = GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING;
+const no_decomp = GTMaterialFlags.DISABLE_DECOMPOSITION;
+const explosive = GTMaterialFlags.EXPLOSIVE;
+const flammable = GTMaterialFlags.FLAMMABLE;
+const sticky = GTMaterialFlags.STICKY;
+const phosphorescent = GTMaterialFlags.PHOSPHORESCENT;
+// Generation Flags
+// Dust Flags
+const plates = GTMaterialFlags.GENERATE_PLATE;
+const dense_plate = GTMaterialFlags.GENERATE_DENSE;
+const rod = GTMaterialFlags.GENERATE_ROD;
+const bolt_and_screw = GTMaterialFlags.GENERATE_BOLT_SCREW;
+const frame = GTMaterialFlags.GENERATE_FRAME;
+const gear = GTMaterialFlags.GENERATE_GEAR;
+const long_rod = GTMaterialFlags.GENERATE_LONG_ROD;
+const block = GTMaterialFlags.FORCE_GENERATE_BLOCK;
+// Ingot Flags
+const foil = GTMaterialFlags.GENERATE_FOIL;
+const ring = GTMaterialFlags.GENERATE_RING;
+const spring = GTMaterialFlags.GENERATE_SPRING;
+const small_spring = GTMaterialFlags.GENERATE_SPRING_SMALL;
+const small_gear = GTMaterialFlags.GENERATE_SMALL_GEAR;
+const fine_wire = GTMaterialFlags.GENERATE_FINE_WIRE;
+const rotor = GTMaterialFlags.GENERATE_ROTOR;
+const round = GTMaterialFlags.GENERATE_ROUND;
+const magnetic = GTMaterialFlags.IS_MAGNETIC;
+// Gem Flags
+const crystallizable = GTMaterialFlags.CRYSTALLIZABLE;
+const lens = GTMaterialFlags.GENERATE_LENS;
+// Fluid Flags
+const solder_mat = GTMaterialFlags.SOLDER_MATERIAL;
+const solder_mat_bad = GTMaterialFlags.SOLDER_MATERIAL_BAD;
+const solder_mat_good = GTMaterialFlags.SOLDER_MATERIAL_GOOD;
+// Ore Flags
+const more_sifter = GTMaterialFlags.HIGH_SIFTER_OUTPUT;
+// Misc
+const no_block_craft = GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES;
+const no_plate_compressor_craft = GTMaterialFlags.EXCLUDE_PLATE_COMPRESSOR_RECIPE;
+const no_hand_craft = GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES;
+const mortar_grind = GTMaterialFlags.MORTAR_GRINDABLE;
+const no_working = GTMaterialFlags.NO_WORKING;
+const no_smashing = GTMaterialFlags.NO_SMASHING;
+const no_smelt = GTMaterialFlags.NO_SMELTING;
+const blast_furnace_double = GTMaterialFlags.BLAST_FURNACE_CALCITE_DOUBLE;
+const blast_furnace_triple = GTMaterialFlags.BLAST_FURNACE_CALCITE_TRIPLE;
+const no_abs_recipe = GTMaterialFlags.DISABLE_ALLOY_BLAST;
+const not_alloy = GTMaterialFlags.DISABLE_ALLOY_PROPERTY;
 
 global.v = {
     ulv: GTValues.V[GTValues.ULV],

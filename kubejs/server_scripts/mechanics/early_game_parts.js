@@ -10,16 +10,16 @@ ServerEvents.recipes((event) => {
 
     const minecraft_metals = ['iron', 'copper', 'gold'];
 
-    const plates = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
-	const rods = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
-	const rings = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel'];
-	const foils = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const screws_and_bolts = ['iron', 'copper', 'gold','lead', 'tin', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'potin', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
-	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
-	const small_gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
-	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel', 'cast_iron','tin_alloy'];
+    const plates = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const rods = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const rings = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel'];
+	const foils = ['iron', 'copper', 'gold','lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const screws_and_bolts = ['iron', 'copper', 'gold','lead', 'tin', 'bronze', 'brass', 'tin_alloy', 'potin', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy', 'damascus_steel'];
+	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const gears = ['iron', 'lead', 'bronze', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
+	const small_gears = ['iron', 'lead', 'bronze', 'wrought_iron', 'cast_iron', 'steel', 'potin', 'damascus_steel'];
+	const rotors = ['iron', 'copper', 'lead', 'bronze', 'steel', 'cast_iron','tin_alloy'];
 	const springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
 	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
 	const wires = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];

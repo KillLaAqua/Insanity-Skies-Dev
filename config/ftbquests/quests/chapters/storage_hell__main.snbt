@@ -384,29 +384,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"278AB32EECE9FA5F"
-				"0E860293F503DA2E"
-			]
-			hide_until_deps_complete: true
-			id: "21AF718D707D245A"
-			subtitle: "You believe you can fly"
-			tasks: [{
-				id: "45CAA2AAE8CFD4DD"
-				item: {
-					Count: 1
-					id: "jetboots:jetboots"
-					tag: {
-						energy: 0
-						max_energy: 1000000
-					}
-				}
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["48EC507E7CE94E14"]
 			id: "372933951AB7BE00"
 			subtitle: "Even MORE unrealistic, and about the same level of useful"

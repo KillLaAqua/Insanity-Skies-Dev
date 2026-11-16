@@ -174,6 +174,13 @@ ServerEvents.recipes((event) => {
             .duration(400);
     });
 
+    event.recipes.gtceu
+        .macerator(id('hardened_stone_decomposition'))
+        .itemInputs('minecraft:reinforced_deepslate')
+        .itemOutputs('16x minecraft:cobblestone')
+        .duration(400)
+        .EUt(10);
+
     // [0, 1, 2, 3, 4].forEach((tier) => {
     //     let PumpTier = tier == 0 ? 'ulv' : tier == 1 ? 'lv' : tier == 2 ? 'mv' : tier == 3 ? 'hv' : 'ev';
     //     event.recipes.gtceu

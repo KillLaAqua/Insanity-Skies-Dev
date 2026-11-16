@@ -1,94 +1,94 @@
 ServerEvents.recipes((event) => {
     const id = global.id;
 
-    event.remove({ output: /^gtceu:.*firebox_casing/ });
-    event.remove({ output: /^gtceu:.*gearbox/ });
-    event.remove({ output: /^gtceu:.*pipe_casing/ });
-    event.remove({ output: /^gtceu:.*engine_intake_casing/ });
-    event.remove({ output: /start_core:enriched_naquadah.*/ });
+    // event.remove({ output: /^gtceu:.*firebox_casing/ });
+    // event.remove({ output: /^gtceu:.*gearbox/ });
+    // event.remove({ output: /^gtceu:.*pipe_casing/ });
+    // event.remove({ output: /^gtceu:.*engine_intake_casing/ });
+    // event.remove({ output: /start_core:enriched_naquadah.*/ });
 
-    const SpecialCasing = (material, tier, f, p, g, e) => {
-        let type = material == 'tungsten_steel' ? 'tungstensteel' : material;
-        if (f == true) {
-            let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
-            event.recipes.gtceu
-                .assembler(id(`${type}_firebox_casing_hm`))
-                .itemInputs(`6x gtceu:${material}_plate`, `6x gtceu:${material}_rod`, `gtceu:${material}_frame`)
-                .circuit(2)
-                .itemOutputs(`2x ${mod}:${type}_firebox_casing`)
-                .duration(100)
-                .EUt(2 * Math.pow(4, tier));
-        }
-        if (p == true) {
-            let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
-            let outputType = type == 'polytetrafluoroethylene' ? 'ptfe' : type;
-            event.recipes.gtceu
-                .assembler(id(`${type}_pipe_casing_hm`))
-                .itemInputs(
-                    `6x gtceu:${material}_plate`,
-                    `6x gtceu:${material}_small_fluid_pipe`,
-                    `gtceu:${material}_frame`
-                )
-                .circuit(3)
-                .itemOutputs(`2x ${mod}:${outputType}_pipe_casing`)
-                .duration(100)
-                .EUt(2 * Math.pow(4, tier));
-        }
-        if (g == true) {
-            let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
-            event.recipes.gtceu
-                .assembler(id(`${type}_gearbox_hm`))
-                .itemInputs(
-                    `6x gtceu:${material}_plate`,
-                    `2x gtceu:${material}_gear`,
-                    `4x gtceu:small_${material}_gear`,
-                    `gtceu:${material}_frame`
-                )
-                .circuit(4)
-                .itemOutputs(`2x ${mod}:${type}_gearbox`)
-                .duration(100)
-                .EUt(2 * Math.pow(4, tier));
-        }
-        if (e == true) {
-            let casingType =
-                type == 'titanium' ? 'gtceu:stable' : type == 'tungstensteel' ? 'gtceu:robust' : `kubejs:${type}`;
-            let engineType = type == 'titanium' ? 'gtceu:' : `kubejs:${type}_`;
-            event.recipes.gtceu
-                .assembler(id(`${engineType.split(':')[1]}engine_intake_casing_hm`))
-                .itemInputs(
-                    `4x gtceu:${material}_rotor`,
-                    `6x gtceu:${material}_normal_fluid_pipe`,
-                    `${casingType}_machine_casing`
-                )
-                .circuit(7)
-                .itemOutputs(`2x ${engineType}engine_intake_casing`)
-                .duration(100)
-                .EUt(2 * Math.pow(4, tier));
-        }
-    };
-    SpecialCasing('bronze', 0, true, true, true, false);
-    SpecialCasing('steel', 1, true, true, true, false);
-    SpecialCasing('stainless_steel', 3, false, false, true, false);
-    SpecialCasing('polytetrafluoroethylene', 3, false, true, false, false);
-    SpecialCasing('titanium', 4, true, true, true, true);
-    SpecialCasing('tungsten_steel', 5, true, true, true, false); // made sperate engine load since keeps breaking
-    SpecialCasing('enriched_naquadah', 7, true, true, true, true);
+    // const SpecialCasing = (material, tier, f, p, g, e) => {
+    //     let type = material == 'tungsten_steel' ? 'tungstensteel' : material;
+    //     if (f == true) {
+    //         let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
+    //         event.recipes.gtceu
+    //             .assembler(id(`${type}_firebox_casing_hm`))
+    //             .itemInputs(`6x gtceu:${material}_plate`, `6x gtceu:${material}_rod`, `gtceu:${material}_frame`)
+    //             .circuit(2)
+    //             .itemOutputs(`2x ${mod}:${type}_firebox_casing`)
+    //             .duration(100)
+    //             .EUt(2 * Math.pow(4, tier));
+    //     }
+    //     if (p == true) {
+    //         let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
+    //         let outputType = type == 'polytetrafluoroethylene' ? 'ptfe' : type;
+    //         event.recipes.gtceu
+    //             .assembler(id(`${type}_pipe_casing_hm`))
+    //             .itemInputs(
+    //                 `6x gtceu:${material}_plate`,
+    //                 `6x gtceu:${material}_small_fluid_pipe`,
+    //                 `gtceu:${material}_frame`
+    //             )
+    //             .circuit(3)
+    //             .itemOutputs(`2x ${mod}:${outputType}_pipe_casing`)
+    //             .duration(100)
+    //             .EUt(2 * Math.pow(4, tier));
+    //     }
+    //     if (g == true) {
+    //         let mod = type == 'enriched_naquadah' ? 'kubejs' : 'gtceu';
+    //         event.recipes.gtceu
+    //             .assembler(id(`${type}_gearbox_hm`))
+    //             .itemInputs(
+    //                 `6x gtceu:${material}_plate`,
+    //                 `2x gtceu:${material}_gear`,
+    //                 `4x gtceu:small_${material}_gear`,
+    //                 `gtceu:${material}_frame`
+    //             )
+    //             .circuit(4)
+    //             .itemOutputs(`2x ${mod}:${type}_gearbox`)
+    //             .duration(100)
+    //             .EUt(2 * Math.pow(4, tier));
+    //     }
+    //     if (e == true) {
+    //         let casingType =
+    //             type == 'titanium' ? 'gtceu:stable' : type == 'tungstensteel' ? 'gtceu:robust' : `kubejs:${type}`;
+    //         let engineType = type == 'titanium' ? 'gtceu:' : `kubejs:${type}_`;
+    //         event.recipes.gtceu
+    //             .assembler(id(`${engineType.split(':')[1]}engine_intake_casing_hm`))
+    //             .itemInputs(
+    //                 `4x gtceu:${material}_rotor`,
+    //                 `6x gtceu:${material}_normal_fluid_pipe`,
+    //                 `${casingType}_machine_casing`
+    //             )
+    //             .circuit(7)
+    //             .itemOutputs(`2x ${engineType}engine_intake_casing`)
+    //             .duration(100)
+    //             .EUt(2 * Math.pow(4, tier));
+    //     }
+    // };
+    // SpecialCasing('bronze', 0, true, true, true, false);
+    // SpecialCasing('steel', 1, true, true, true, false);
+    // SpecialCasing('stainless_steel', 3, false, false, true, false);
+    // SpecialCasing('polytetrafluoroethylene', 3, false, true, false, false);
+    // SpecialCasing('titanium', 4, true, true, true, true);
+    // SpecialCasing('tungsten_steel', 5, true, true, true, false); // made sperate engine load since keeps breaking
+    // SpecialCasing('enriched_naquadah', 7, true, true, true, true);
 
-    //Tungsten Steel Engine Load
-    event.recipes.gtceu
-        .assembler(id(`extreme_engine_intake_casing_hm`))
-        .itemInputs(
-            `4x gtceu:tungsten_steel_rotor`,
-            `6x gtceu:tungsten_steel_normal_fluid_pipe`,
-            `gtceu:robust_machine_casing`
-        )
-        .inputFluids(`gtceu:tungsten_steel 144`)
-        .circuit(7)
-        .itemOutputs(`2x gtceu:extreme_engine_intake_casing`)
-        .duration(100)
-        .EUt(2 * Math.pow(4, 5));
+    // //Tungsten Steel Engine Load
+    // event.recipes.gtceu
+    //     .assembler(id(`extreme_engine_intake_casing_hm`))
+    //     .itemInputs(
+    //         `4x gtceu:tungsten_steel_rotor`,
+    //         `6x gtceu:tungsten_steel_normal_fluid_pipe`,
+    //         `gtceu:robust_machine_casing`
+    //     )
+    //     .inputFluids(`gtceu:tungsten_steel 144`)
+    //     .circuit(7)
+    //     .itemOutputs(`2x gtceu:extreme_engine_intake_casing`)
+    //     .duration(100)
+    //     .EUt(2 * Math.pow(4, 5));
 
-    // Storages
+    // // Storages
 
     event.remove({ id: /gtceu:shaped\/.*_drum/ });
     event.remove({ id: /gtceu:assembler\/.*_drum/ });
@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
         event.recipes.gtceu
             .assembler(id(`${material}_crate_hm`))
             .itemInputs(
-                `4x gtceu:long_${material2nd}_rod`,
+                `4x gtceu:long_${material}_rod`,
                 `4x gtceu:${material2nd}_screw`,
                 `6x gtceu:${material}_plate`
             )
@@ -110,25 +110,14 @@ ServerEvents.recipes((event) => {
             .circuit(5)
             .EUt(2 * Math.pow(4, tier));
     };
-    event.recipes.create
-        .mechanical_crafting(Item.of(`gtceu:wood_crate`), [
-            'PRSRP', 
-            'PSWSP', 
-            'PRSRP'
-        ], {
-            S: 'gtceu:iron_screw',
-            P: 'gtceu:wood_plate',
-            W: '#forge:tools/saws',
-            R: 'gtceu:long_iron_rod',
-        });
 
     CrateType('wood', 0);
     CrateType('bronze', 1);
     CrateType('steel', 2);
-    CrateType('aluminium', 3);
-    CrateType('stainless_steel', 4);
-    CrateType('titanium', 5);
-    CrateType('tungsten_steel', 6);
+    // CrateType('aluminium', 3);
+    // CrateType('stainless_steel', 4);
+    // CrateType('titanium', 5);
+    // CrateType('tungsten_steel', 6);
 
     const DrumType = (material, tier, Mod) => {
         let materialRod = material == 'wood' ? 'iron' : material;
@@ -148,11 +137,11 @@ ServerEvents.recipes((event) => {
     DrumType('wood', 0, 'gtceu');
     DrumType('bronze', 1, 'gtceu');
     DrumType('steel', 2, 'gtceu');
-    DrumType('gold', 2, 'gtceu');
-    DrumType('aluminium', 3, 'gtceu');
-    DrumType('stainless_steel', 4, 'gtceu');
-    DrumType('titanium', 5, 'gtceu');
-    DrumType('tungsten_steel', 6, 'gtceu');
+    // DrumType('gold', 2, 'gtceu');
+    // DrumType('aluminium', 3, 'gtceu');
+    // DrumType('stainless_steel', 4, 'gtceu');
+    // DrumType('titanium', 5, 'gtceu');
+    // DrumType('tungsten_steel', 6, 'gtceu');
     // DrumType('enriched_naquadah', 7, 'start_core');
     // DrumType('neutronium', 8, 'start_core');
 
@@ -216,49 +205,52 @@ ServerEvents.recipes((event) => {
     // HermeticCasings('uv','darmstadtium','enriched_naquadah',8);
     // HermeticCasings('uhv','neutronium','neutronium',9);
 
-    // Standard Casings
+    event.recipes.create
+        .mechanical_crafting(Item.of(`gtceu:wood_crate`), [
+            'SPRPS', 
+            'RP PR', 
+            'SPRPS'
+        ], {
+            S: 'gtceu:iron_screw',
+            P: 'gtceu:wood_plate',
+            R: 'gtceu:long_wood_rod'
+        });
 
-    event.recipes.gtceu
-        .assembler(id('treatedwood_casing'))
-        .itemInputs('gtceu:treated_wood_frame', '6x gtceu:treated_wood_plate', '4x gtceu:brass_screw')
-        .inputFluids('gtceu:rubber 144')
-        .itemOutputs('2x kubejs:treatedwood_casing')
-        .duration(100)
-        .EUt(30);
+    // Standard Casings
 
     // Doubled Casings
 
     // Complex Casings
 
     // Cleanrooms Casings
-    event.remove({ output: 'gtceu:plascrete' });
-    event.remove({ output: 'gtceu:cleanroom_glass' });
-    const CleanroomCasing = (type, inputs) => {
-        event.recipes.gtceu
-            .assembler(id(type))
-            .itemInputs('gtceu:steel_frame', inputs, '12x gtceu:polytetrafluoroethylene_foil')
-            .inputFluids('gtceu:construction_foam 2000')
-            .circuit(5)
-            .itemOutputs(`2x gtceu:${type}`)
-            .duration(200)
-            .EUt(120);
-    };
-    CleanroomCasing('plascrete', '6x gtceu:stone_plate');
-    CleanroomCasing('cleanroom_glass', '6x gtceu:glass_plate');
+    // event.remove({ output: 'gtceu:plascrete' });
+    // event.remove({ output: 'gtceu:cleanroom_glass' });
+    // const CleanroomCasing = (type, inputs) => {
+    //     event.recipes.gtceu
+    //         .assembler(id(type))
+    //         .itemInputs('gtceu:steel_frame', inputs, '12x gtceu:polytetrafluoroethylene_foil')
+    //         .inputFluids('gtceu:construction_foam 2000')
+    //         .circuit(5)
+    //         .itemOutputs(`2x gtceu:${type}`)
+    //         .duration(200)
+    //         .EUt(120);
+    // };
+    // CleanroomCasing('plascrete', '6x gtceu:stone_plate');
+    // CleanroomCasing('cleanroom_glass', '6x gtceu:glass_plate');
 
-    event.recipes.gtceu
-        .assembler(id('filter_casing'))
-        .itemInputs(
-            '2x gtceu:plascrete',
-            '2x gtceu:mv_electric_motor',
-            'gtceu:steel_rotor',
-            '12x gtceu:steel_rod',
-            '2x gtceu:copper_single_cable'
-        )
-        .inputFluids('gtceu:soldering_alloy 216')
-        .itemOutputs('2x gtceu:filter_casing')
-        .duration(400)
-        .EUt(480);
+    // event.recipes.gtceu
+    //     .assembler(id('filter_casing'))
+    //     .itemInputs(
+    //         '2x gtceu:plascrete',
+    //         '2x gtceu:mv_electric_motor',
+    //         'gtceu:steel_rotor',
+    //         '12x gtceu:steel_rod',
+    //         '2x gtceu:copper_single_cable'
+    //     )
+    //     .inputFluids('gtceu:soldering_alloy 216')
+    //     .itemOutputs('2x gtceu:filter_casing')
+    //     .duration(400)
+    //     .EUt(480);
 
     // 'sterile_filter'
 
