@@ -1,0 +1,33 @@
+GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+
+    event
+        .create('mega_kiln', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('dummy')
+		.appearanceBlock(() => Block.getBlock('minecraft:mud_bricks'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('    B B B    ', '    B   B    ', '     BBB     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .aisle('   BCBBBCB   ', '    C D C    ', '    CCCCC    ', '     CCC     ', '      C      ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .aisle('  CCCEEECCC  ', '  CCCEFECCC  ', '   CC   CC   ', '   CC   CC   ', '    CC CC    ', '     CCC     ', '      C      ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .aisle(' BCCCCCCCCCB ', '  CCBBGBBCC  ', '  CC B B CC  ', '  CC B B CC  ', '   CCB BCC   ', '   CCB BCC   ', '    CC CC    ', '     CCC     ', '      C      ', '      C      ', '             ', '             ', '             ', '             ') 
+            .aisle('BCCCCCCCCCCCB', 'BCCBGGGGGBCCB', ' CC       CC ', '  C       C  ', '  CC     CC  ', '   C     C   ', '   CC   CC   ', '    C   C    ', '    CC CC    ', '     CCC     ', '     CCC     ', '     BCB     ', '     BBB     ', '      B      ') 
+            .aisle(' BECCCCCCCEB ', '  EBGBGBGBE  ', 'BC B     B CB', ' C B     B C ', '  CB     BC  ', '  CB     BC  ', '   C     C   ', '   C     C   ', '    C   C    ', '    C   C    ', '    C   C    ', '    B   B    ', '    B   B    ', '             ') 
+            .aisle('BBECCCCCCCEBB', 'B EGGGGGGGE B', 'BC         CB', ' C         C ', ' C         C ', '  C       C  ', '  C       C  ', '   C     C   ', '   C     C   ', '   CC   CC   ', '    C   C    ', '    C   C    ', '    B   B    ', '    B   B    ') 
+            .aisle(' BECCCCCCCEB ', '  EBGBGBGBE  ', 'BC B     B CB', ' C B     B C ', '  CB     BC  ', '  CB     BC  ', '   C     C   ', '   C     C   ', '    C   C    ', '    C   C    ', '    C   C    ', '    B   B    ', '    B   B    ', '             ') 
+            .aisle('BCCCCCCCCCCCB', 'BCCBGGGGGBCCB', ' CC       CC ', '  C       C  ', '  CC     CC  ', '   C     C   ', '   CC   CC   ', '    C   C    ', '    CC CC    ', '     CCC     ', '     CCC     ', '     BCB     ', '     BBB     ', '      B      ') 
+            .aisle('  CCCCCCCCCB ', '  CCBBGBBCC  ', '  CC B B CC  ', '  CC B B CC  ', '   CCB BCC   ', '   CCB BCC   ', '    CC CC    ', '     CCC     ', '      C      ', '      C      ', '             ', '             ', '             ', '             ') 
+            .aisle('  CCCEEECCC  ', '  CCCEEECCC  ', '   CC   CC   ', '   CC   CC   ', '    CC CC    ', '     CCC     ', '      C      ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .aisle('   BCBBBCB   ', '    C   C    ', '    CCCCC    ', '     C@C     ', '      C      ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .aisle('    B B B    ', '    B B B    ', '     BBB     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 
+            .where(' ', Predicates.any())
+            .where('B', Predicates.blocks('gtceu:wrought_iron_frame'))
+            .where('C', Predicates.blocks('minecraft:mud_bricks'))
+            .where('D', Predicates.blocks('create:andesite_encased_shaft'))
+            .where('E', Predicates.blocks('kubejs:primitive_heat_escape_casing'))
+            .where('F', Predicates.blocks('gtceu:bronze_gearbox'))
+            .where('G', Predicates.blocks('gtceu:bronze_pipe_casing'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))        
+            .build()
+        )
+        .workableCasingModel('minecraft:block/stone', 'gtceu:block/multiblock/primitive_blast_furnace');
+});

@@ -337,7 +337,7 @@ ServerEvents.recipes((event) => {
         .shapeless(Item.of('3x kubejs:flint_shard'), ['minecraft:flint', '#forge:tools/hammers'])
         .id('insanity_skies:shapeless/flint_shard');
 
-    event.create.recipes
+    event.recipes.create
         .mechanical_crafting('gtceu:ulv_auto_scavenger', [
             'TDT', 
             'GFG', 

@@ -1,0 +1,32 @@
+GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+
+    event
+        .create('mega_coker', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('dummy')
+		.appearanceBlock(() => Block.getBlock('gtceu:coke_oven_bricks'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('  BCBBBCB  ', '  BC D CB  ', '   BCCCB   ', '    CCC    ', '     C     ', '     C     ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ') 
+            .aisle(' BCCEEECCB ', '  CCEFECC  ', '  CCCCCCC  ', '   C   C   ', '   CC CC   ', '   CC CC   ', '    CCC    ', '    CCC    ', '     C     ', '     C     ', '           ', '           ', '           ', '           ') 
+            .aisle('BCCCCCCCCCB', 'BCCCGHGCCCB', ' CCCCCCCCC ', '  C     C  ', '  C     C  ', '   C   C   ', '   C G C   ', '    C C    ', '    C C    ', '    C C    ', '    CCC    ', '     C     ', '           ', '           ') 
+            .aisle('CCCCCCCCCCC', 'CCC EHE CCC', 'BCCGGCGGCCB', ' C G   G C ', ' C G   G C ', ' CCG   GCC ', '  CGGGGGC  ', '   C G C   ', '   C G C   ', '   C G C   ', '    CGC    ', '    CGC    ', '    CCC    ', '     C     ') 
+            .aisle('BECCCCCCCEB', ' EGEGHGEGE ', 'CCCGCCCGCCC', 'C         C', ' C       C ', ' C       C ', ' C G   G C ', ' CC     CC ', '  C     C  ', '  C     C  ', '  CC   CC  ', '   C   C   ', '   CG GC   ', '    CCC    ') 
+            .aisle('BECCCCCCCEB', ' EHHHHHHHE ', 'CCCCCHCCCCC', 'C    H    C', 'C         C', 'C         C', ' CGG   GGC ', ' C G   G C ', ' C G   G C ', ' C G   G C ', '  CG   GC  ', '  CG   GC  ', '   C   C   ', '   CCCCC   ') 
+            .aisle('BECCCCCCCEB', ' EGEGHGEGE ', 'CCCGCCCGCCC', 'C         C', ' C       C ', ' C       C ', ' C G   G C ', ' CC     CC ', '  C     C  ', '  C     C  ', '  CC   CC  ', '   C   C   ', '   CG GC   ', '    CCC    ') 
+            .aisle('CCCCCCCCCCC', 'CCC EHE CCC', 'BCCGGCGGCCB', ' C G   G C ', ' C G   G C ', ' CCG   GCC ', '  CGGGGGC  ', '   C G C   ', '   C G C   ', '   C G C   ', '    CGC    ', '    CGC    ', '    CCC    ', '     C     ') 
+            .aisle('BCCCCCCCCCB', 'BCCCGHGCCCB', ' CCCCCCCCC ', '  C     C  ', '  C     C  ', '   C   C   ', '   C G C   ', '    C C    ', '    C C    ', '    C C    ', '    CCC    ', '     C     ', '           ', '           ') 
+            .aisle(' BCCEEECCB ', '  CCEEECC  ', '  CCCCCCC  ', '   C   C   ', '   CC CC   ', '   CC CC   ', '    CCC    ', '    CCC    ', '     C     ', '     C     ', '           ', '           ', '           ', '           ') 
+            .aisle('  BCBBBCB  ', '  BC   CB  ', '   BCCCB   ', '    C@C    ', '     C     ', '     C     ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ') 
+            .where(' ', Predicates.any())
+            .where('B', Predicates.blocks('gtceu:steel_frame'))
+            .where('C', Predicates.blocks('gtceu:coke_oven_bricks'))
+            .where('D', Predicates.blocks('create:andesite_encased_shaft'))
+            .where('E', Predicates.blocks('kubejs:primitive_heat_escape_casing'))
+            .where('F', Predicates.blocks('gtceu:steel_gearbox'))
+            .where('G', Predicates.blocks('gtceu:wrought_iron_frame'))
+            .where('H', Predicates.blocks('gtceu:steel_pipe_casing'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))      
+            .build()
+        )
+        .workableCasingModel('minecraft:block/stone', 'gtceu:block/multiblock/primitive_blast_furnace');
+});
