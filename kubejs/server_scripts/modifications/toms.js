@@ -32,14 +32,14 @@ ServerEvents.recipes((event) => {
         ], {
             T: '#minecraft:wooden_trapdoors',
             H: 'minecraft:hopper',
-            L: 'create:electron_tube',
+            L: 'create:precision_mechanism',
             C: 'toms_storage:ts.trim',
         })
         .id('insanity_skies:shaped/inventory_proxy');
 
     event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, 'minecraft:comparator', 'toms_storage:ts.inventory_proxy');
-    event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, 'minecraft:glowstone', 'kubejs:servo_temp');
+    event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, 'minecraft:glowstone', 'create:precision_mechanism');
     event.replaceInput({ output: 'toms_storage:ts.storage_terminal' }, '#forge:chests/wooden', 'create:precision_mechanism');
-    event.replaceInput({ output: 'toms_storage:ts.wireless_terminal' }, 'minecraft:glowstone', 'kubejs:servo_temp');
+    event.replaceInput({ output: 'toms_storage:ts.wireless_terminal' }, 'minecraft:glowstone', 'create:precision_mechanism');
 
 });

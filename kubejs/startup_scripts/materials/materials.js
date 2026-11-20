@@ -294,6 +294,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         // === Early Game ===
     event.create('latex').liquid().color(0xe3e1cc);
 
+    [
+        'andesite','basalt','blackstone','deepslate','diorite','granite','tuff'
+    ].forEach(stone => {
+        event.create(`${stone}_slurry_t1`).liquid().color(0xffffff);
+    });
+
     compIngot('pig_iron','1x iron',0x8e8385,DULL,[],[no_decomp, no_smelt]);
 
     event
@@ -315,6 +321,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('coke_clay').dust().color(0xd7d2aa).secondaryColor(0xa09c78);
 
     compIngot('crude_cast_iron', '1x pig_iron', 0x3d413f, DULL, [], [no_decomp, no_smelt]);
+
+    compIngotLiquidSecColor('leaded_bronze', ['16x copper', '3x tin', '1x lead'], 0xc99c5d, 0x3a2a3f, METALLIC, [], [
+        not_alloy,
+        long_rod,
+        plates,
+        rod,
+        frame,
+        bolt_and_screw,
+        no_decomp, 
+        no_smelt
+    ]);
 
     event
         .create('crude_wrought_iron')

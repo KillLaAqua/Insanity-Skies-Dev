@@ -131,8 +131,8 @@ ServerEvents.recipes((event) => {
 
     // ================================ Post Cobble-Gen, Pre-Circuit ================================
 
-    event.recipes.create
-        .mechanical_crafting('gtceu:latex_plantation', [
+    event
+        .shaped('gtceu:latex_plantation', [
             'RSR', 
             'PGP', 
             'BTB'
@@ -142,9 +142,9 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:iron_plate',
             G: '#forge:glass',
             B: 'minecraft:bricks',
-            T: 'kubejs:servo_temp',
+            T: 'create:precision_mechanism',
         })
-        .id('insanity_skies:mechanical_crafting/latex_plantation');
+        .id('insanity_skies:shaped/latex_plantation');
 
     event.recipes.create
         .deploying('4x kubejs:packed_mud_ball', ['minecraft:packed_mud', 'minecraft:bowl'])

@@ -341,7 +341,7 @@ ServerEvents.recipes((event) => {
         'create:basin',
         'gtceu:bronze_huge_fluid_pipe',
         'gtceu:industrial_steam_casing',
-        'kubejs:servo_temp',
+        'kubejs:pneumatic_mechanism',
         'gtceu:industrial_steam_casing',
     ]);
     // SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','kubejs:servo_temp','gtceu:industrial_steam_casing']);

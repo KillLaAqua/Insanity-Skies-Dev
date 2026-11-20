@@ -19,45 +19,45 @@ ServerEvents.recipes((event) => {
     //     })
     //     .id('insanity_skies:energising/magnetic_iron_rod');
 
-    event.remove({ output: 'gtceu:vacuum_tube' });
-    event.recipes.create
-        .mechanical_crafting(Item.of(`gtceu:vacuum_tube`, 2), [
-            'BEVEB', 
-            'PWRWP', 
-            'BEVEB'
-        ], {
-            B: 'gtceu:copper_bolt',
-            E: 'create:electron_tube',
-            V: 'gtceu:glass_tube',
-            W: 'gtceu:copper_double_wire',
-            P: 'gtceu:double_wrought_iron_plate',
-            R: 'kubejs:servo_temp',
-        })
-        .id('insanity_skies:mechanical_crafting/vacuum_tube');
+    // event.remove({ output: 'gtceu:vacuum_tube' });
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of(`gtceu:vacuum_tube`, 2), [
+    //         'BEVEB', 
+    //         'PWRWP', 
+    //         'BEVEB'
+    //     ], {
+    //         B: 'gtceu:copper_bolt',
+    //         E: 'create:electron_tube',
+    //         V: 'gtceu:glass_tube',
+    //         W: 'gtceu:copper_double_wire',
+    //         P: 'gtceu:double_wrought_iron_plate',
+    //         R: 'kubejs:servo_temp',
+    //     })
+    //     .id('insanity_skies:mechanical_crafting/vacuum_tube');
 
-    event.recipes.create
-        .mechanical_crafting(Item.of('kubejs:servo_temp', 2), [
-            'TPT', 
-            ' F ', 
-            'TPT'
-        ], {
-            P: 'gtceu:steel_plate',
-            T: 'create:electron_tube',
-            F: 'gtceu:fine_red_alloy_wire',
-        })
-        .id('insanity_skies:mechanical_crafting/redstone_servo_better');
+    // event.recipes.create
+    //     .mechanical_crafting(Item.of('kubejs:servo_temp', 2), [
+    //         'TPT', 
+    //         ' F ', 
+    //         'TPT'
+    //     ], {
+    //         P: 'gtceu:steel_plate',
+    //         T: 'create:electron_tube',
+    //         F: 'gtceu:fine_red_alloy_wire',
+    //     })
+    //     .id('insanity_skies:mechanical_crafting/redstone_servo_better');
 
-    let inter = 'gtceu:glass_tube';
-    event.recipes.create
-        .sequenced_assembly([Item.of(`create:electron_tube`, 2)], inter, [
-            event.recipes.createDeploying(inter, [inter, 'create:polished_rose_quartz']),
-            event.recipes.createDeploying(inter, [inter, `gtceu:copper_bolt`]),
-            event.recipes.createDeploying(inter, [inter, `gtceu:iron_ring`]),
-            event.recipes.createPressing(inter, inter),
-        ])
-        .transitionalItem(inter)
-        .loops(1)
-        .id('insanity_skies:sequenced_assembly/electron_tube');
+    // let inter = 'gtceu:glass_tube';
+    // event.recipes.create
+    //     .sequenced_assembly([Item.of(`create:electron_tube`, 2)], inter, [
+    //         event.recipes.createDeploying(inter, [inter, 'create:polished_rose_quartz']),
+    //         event.recipes.createDeploying(inter, [inter, `gtceu:copper_bolt`]),
+    //         event.recipes.createDeploying(inter, [inter, `gtceu:iron_ring`]),
+    //         event.recipes.createPressing(inter, inter),
+    //     ])
+    //     .transitionalItem(inter)
+    //     .loops(1)
+    //     .id('insanity_skies:sequenced_assembly/electron_tube');
 
     ['cinder_block', 'polished_cinder_block', 'cinder_bricks'].forEach((t) => {
         event.remove({ id: `dustrial_decor:${t}` });

@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
     
     const matmod = (mat, flag) => {GTMaterials.get(mat).addFlags(flag)};
 
-    matmod('iron', [foil, fine_wire]);
+    matmod('iron', [foil, frame]);
     matmod('brass', [ring, foil, frame]);
     matmod('tin_alloy', [ring, foil, rotor]);
     matmod('potin', [foil, ring, small_gear]);
@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
     matmod('blue_alloy', [fine_wire, foil]);
     matmod('silver', gear);
     matmod('gold', gear);
-    matmod('copper', gear);
+    matmod('copper', [gear, frame]);
     // matmod('naquadah', dense_plate);
     // matmod('enriched_naquadah', [dense_plate, rotor, gear, small_gear, frame, long_rod]);
     // matmod('naquadria', dense_plate);
@@ -80,8 +80,8 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
 
 // Formula Modifications (Does not reflect in autogen)
 GTCEuStartupEvents.materialModification((event) => {
-    GTMaterials.get('yttrium_carbonate').setFormula('Y2(CO3)3');
-    GTMaterials.get('platinum_salt').setFormula('(NH3)4PtCl6');
-    GTMaterials.get('palladium_salt').setFormula('(NH3)5PdCl4');
-    GTMaterials.get('iridium_rich_residue').setFormula('Ir?Oₓ');
+    // GTMaterials.get('yttrium_carbonate').setFormula('Y2(CO3)3');
+    // GTMaterials.get('platinum_salt').setFormula('(NH3)4PtCl6');
+    // GTMaterials.get('palladium_salt').setFormula('(NH3)5PdCl4');
+    // GTMaterials.get('iridium_rich_residue').setFormula('Ir?Oₓ');
 });

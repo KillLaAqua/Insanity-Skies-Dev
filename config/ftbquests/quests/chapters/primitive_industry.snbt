@@ -7,12 +7,7 @@
 	icon: "gtceu:steel_brick_casing"
 	id: "185530D679B70F64"
 	order_index: 2
-	quest_links: [{
-		id: "0C093E07773C2AF0"
-		linked_quest: "50F2743FA699173A"
-		x: -11.5d
-		y: -5.0d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["50F2743FA699173A"]
@@ -1134,6 +1129,7 @@
 			dependencies: [
 				"5344AAAA782FE971"
 				"684FAA520167CC51"
+				"3981680ED3257E25"
 			]
 			id: "50F2743FA699173A"
 			shape: "gear"
@@ -1145,6 +1141,116 @@
 			}]
 			x: -11.5d
 			y: -6.5d
+		}
+		{
+			dependencies: [
+				"70AF86B4A0D6A158"
+				"5819AF3E6CCDB826"
+				"6994BA308DC55ED2"
+			]
+			id: "7AEEC6EBE84BF5AB"
+			size: 1.0d
+			tasks: [{
+				id: "476014C24579BD62"
+				item: "gtceu:pig_iron_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7AEEC6EBE84BF5AB"
+				"774543EADD91A140"
+			]
+			id: "6F1BB9A99918F256"
+			size: 1.0d
+			tasks: [{
+				id: "6A6D009819A19AA6"
+				item: "gtceu:pig_iron_ingot"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3981680ED3257E25"]
+			id: "548D1554537B14F0"
+			tasks: [{
+				id: "417D925DF3CE135C"
+				item: "kubejs:pneumatic_contraption"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			id: "13E13EF9C548450F"
+			tasks: [{
+				id: "26A8719CE7C4042E"
+				item: "kubejs:hydraulic_contraption"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			description: [""]
+			id: "0B6C67757BB838D3"
+			size: 1.0d
+			tasks: [{
+				id: "599632CFA17120D6"
+				item: "kubejs:logistic_contraption"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4002DDFC6025B01D"]
+			hide_dependency_lines: true
+			id: "7A78D44724FA26EF"
+			size: 1.0d
+			tasks: [{
+				id: "146136D6C1020B2C"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6994BA308DC55ED2"
+				"2938B6A5159F3BE8"
+			]
+			id: "28E0F28EA85F8847"
+			size: 1.0d
+			tasks: [{
+				id: "4FC1480196E70E2E"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Polishing"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			id: "3981680ED3257E25"
+			tasks: [{
+				id: "0F0E98D3C3F6E272"
+				item: "gtceu:leaded_bronze_ingot"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -8.0d
 		}
 	]
 	title: "Primitive Industry - WIP"
