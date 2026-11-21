@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
         .create('stone_barrel')
         .category('primitive')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 2, 0)
+        .setMaxIOSize(1, 1, 2, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH);
 });

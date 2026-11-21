@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "kubejs:block/casings/nyanium/firebox_casing_ctm"
-    },
-    "animation": {
-        "interpolate": true,
-        "frametime": 3
-    }
-}

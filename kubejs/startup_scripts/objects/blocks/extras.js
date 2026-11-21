@@ -5,26 +5,23 @@ StartupEvents.registry('block', (event) => {
         .hardness(2)
         .resistance(2)
         .soundType('wood')
+        .tagBlock('mineable/axe')
+        .tagBlock('minecraft:needs_stone_tool')
         .transparent(true)
         .defaultTranslucent()
         .requiresTool(true)
         .noValidSpawns(true)
-        .tagBlock('mineable/axe')
-        .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/misc/meshblock');
 
     event
-        .create('void_saturation_sponge')
-        .hardness(1)
-        .resistance(1)
-        .soundType('froglight')
-        .textureAll('kubejs:block/misc/void_saturation_sponge');
-
-    event
-        .create('why_are_you_worrying') //removed before theta release
-        .displayName('I Said to !Not Worry About It')
-        .hardness(1)
-        .resistance(1)
+        .create('primitive_heat_escape_casing', 'gtceu:active')
+        .hardness(5)
+        .resistance(10)
         .soundType('metal')
-        .textureAll('kubejs:item/stargate/gate_items/misc/worry');
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(true)
+        .noValidSpawns(true)
+        .bloom('kubejs:block/misc/primitive_heat_escape');
+
 });

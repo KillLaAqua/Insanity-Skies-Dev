@@ -2,14 +2,14 @@
 
 ItemEvents.tooltip((event) => {
     // const addedByStarT = global.addedByStarT;
-    const tiers = ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'];
-    const addedByStarTSingles = ['electric_blaster', 'electric_smoker', 'me_assembler'];
+    // const tiers = ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'];
+    // const addedByStarTSingles = ['electric_blaster', 'electric_smoker', 'me_assembler'];
 
-    tiers.forEach((tier) => {
-        addedByStarTSingles.forEach((name) => {
-            event.add(`gtceu:${tier}_${name}`, Text.translate(`block.kubejs.added_by_StarT.tooltip`));
-        });
-    });
+    // tiers.forEach((tier) => {
+    //     addedByStarTSingles.forEach((name) => {
+    //         event.add(`gtceu:${tier}_${name}`, Text.translate(`block.kubejs.added_by_StarT.tooltip`));
+    //     });
+    // });
 
     // let prefix;
 

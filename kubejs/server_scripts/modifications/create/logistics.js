@@ -59,10 +59,10 @@ ServerEvents.recipes((event) => {
             'AFC', 
             'RBP'
         ], {
-            N: 'gtceu:pig_iron_ring',
+            N: 'gtceu:iron_ring',
             L: 'create:andesite_funnel',
             A: 'gtceu:ulv_robot_arm',
-            F: 'gtceu:pig_iron_frame',
+            F: 'gtceu:iron_frame',
             C: 'gtceu:ulv_conveyor_module',
             R: 'minecraft:redstone',
             B: 'create:bound_cardboard_block',
@@ -76,10 +76,10 @@ ServerEvents.recipes((event) => {
             'CFA', 
             'PBR'
         ], {
-            N: 'gtceu:pig_iron_ring',
+            N: 'gtceu:iron_ring',
             L: 'create:andesite_funnel',
             A: 'gtceu:ulv_robot_arm',
-            F: 'gtceu:pig_iron_frame',
+            F: 'gtceu:iron_frame',
             C: 'gtceu:ulv_conveyor_module',
             R: 'minecraft:redstone',
             B: 'create:bound_cardboard_block',

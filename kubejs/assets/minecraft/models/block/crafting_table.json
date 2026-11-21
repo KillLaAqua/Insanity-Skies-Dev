@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "minecraft:block/crafting_table_top",
+    "bottom": "minecraft:block/stripped_jungle_log_top",
+    "side": "minecraft:block/crafting_table_side",
+    "front": "minecraft:block/crafting_table_front"
+  }
+}

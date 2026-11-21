@@ -1,7 +1,32 @@
 ServerEvents.recipes((event) => {
     const id = global.id;
 
-        // Create Recipes
+    // Create Recipes
+    event.recipes
+        .shaped('kubejs:kinetic_contraption', [
+            'ARA', 
+            'SCS', 
+            'ARA'
+        ], {
+            C: 'create:cogwheel',
+            A: 'create:andesite_alloy',
+            S: 'gtceu:small_iron_spring',
+            R: 'gtceu:small_iron_gear'
+        })
+        .id('insanity_skies:shaped/kinetic_contraption');
+
+    event.recipes
+        .shaped('kubejs:fluid_contraption', [
+            'RFF', 
+            'FIF', 
+            'FFR'
+        ], {
+            F: 'gtceu:copper_foil',
+            R: 'gtceu:rubber_ring',
+            I: 'gtceu:copper_tiny_fluid_pipe'
+        })
+        .id('insanity_skies:shaped/fluid_contraption');
+
     event.recipes
         .shaped(Item.of('create:item_vault'), [
             'SFS', 
@@ -35,7 +60,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes
         .shaped(Item.of('create:spout'), [
-            'PPP', 
+            'PMP', 
             'GCG', 
             'RIR'
         ], {
@@ -44,10 +69,11 @@ ServerEvents.recipes((event) => {
             P: 'gtceu:copper_plate',
             R: 'gtceu:rubber_ring',
             I: 'gtceu:copper_normal_fluid_pipe',
+            M: 'kubejs:fluid_contraption'
         })
         .id('insanity_skies:shaped/spout');
 
-    event.shapeless('2x create:shaft', ['#forge:tools/files', '3x create:andesite_alloy']).id('insanity_skies:shapeless/shaft');
+    event.shapeless('2x create:shaft', ['#forge:tools/files', '1x create:andesite_alloy', '#forge:tools/saws']).id('insanity_skies:shapeless/shaft');
 
     event.recipes
         .shaped(Item.of('create:encased_chain_drive', 2), [
@@ -133,7 +159,7 @@ ServerEvents.recipes((event) => {
         .mechanical_crafting('create:steam_engine', [
             'GSG', 
             ' A ', 
-            'PAP', 
+            'PMP', 
             'PCP'
         ], {
             G: 'gtceu:gold_ring',
@@ -141,6 +167,7 @@ ServerEvents.recipes((event) => {
             A: 'create:andesite_alloy',
             P: 'gtceu:copper_plate',
             C: 'create:copper_casing',
+            M: 'kubejs:fluid_contraption'
         })
         .id('insanity_skies:shaped/steam_engine');
 
@@ -158,33 +185,31 @@ ServerEvents.recipes((event) => {
         })
         .id('insanity_skies:shaped/andesite_casing');
 
-    event
-        .shaped(Item.of('create:copper_casing'), [
-            'PMP', 
-            'RFR', 
-            'PHP'
-        ], {
-            P: 'gtceu:pig_iron_plate',
-            M: '#forge:tools/mallets',
-            R: 'create:fluid_pipe',
-            F: 'gtceu:pig_iron_frame',
-            H: '#forge:tools/hammers',
-        })
-        .id('insanity_skies:shaped/copper_casing');
+    let and_case = 'gtceu:copper_frame';
+    event.recipes.create
+        .sequenced_assembly([`create:copper_casing`], and_case, [
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:copper_foil`]),
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:copper_tiny_fluid_pipe`]),
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:rubber_plate`]),
+            event.recipes.createDeploying(and_case, [and_case, `gtceu:copper_tiny_fluid_pipe`]),
+            event.recipes.createPressing(and_case, and_case),
+        ])
+        .transitionalItem(and_case)
+        .loops(1)
+        .id('insanity_skies:sequenced_assembly/copper_casing');
 
-    event
-        .shaped(Item.of('create:brass_casing'), [
-            'PMP', 
-            'AFA', 
-            'PHP'
-        ], {
-            P: 'gtceu:treated_wood_plate',
-            M: '#forge:tools/mallets',
-            A: 'gtceu:brass_plate',
-            F: 'gtceu:treated_wood_frame',
-            H: '#forge:tools/hammers',
-        })
-        .id('insanity_skies:shaped/brass_casing');
+    let treated_frame = 'gtceu:treated_wood_frame';
+    event.recipes.create
+        .sequenced_assembly([`create:brass_casing`], treated_frame, [
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:treated_wood_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:brass_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:treated_wood_plate`]),
+            event.recipes.createDeploying(treated_frame, [treated_frame, `gtceu:brass_screw`]),
+            event.recipes.createPressing(treated_frame, treated_frame),
+        ])
+        .transitionalItem(treated_frame)
+        .loops(2)
+        .id('insanity_skies:sequenced_assembly/brass_casing');
 
     event
         .shaped(Item.of('create:piston_extension_pole', 3), [
@@ -227,13 +252,28 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shaped/mechanical_press');
 
     event
-        .shaped(Item.of('create:mechanical_saw'), [
+        .shaped('gtceu:iron_buzz_saw_blade', [
+            'FPS', 
+            'PRP',
+            'HPW'
+        ], {
+            H: '#forge:tools/hammers',
+            W: '#gtceu:tools/crafting_wrenches',
+            S: '#forge:tools/saws',
+            F: '#forge:tools/files',
+            P: 'gtceu:iron_plate',
+            R: 'gtceu:iron_ring'
+        })
+        .id('insanity_skies:shaped/iron_buzz_saw_blade');
+
+    event
+        .shaped('create:mechanical_saw', [
             'MSW', 
             'ACA'
         ], {
             M: '#forge:tools/mallets',
             W: '#gtceu:tools/crafting_wrenches',
-            S: 'kubejs:saw_blade',
+            S: 'gtceu:iron_buzz_saw_blade',
             C: 'create:andesite_casing',
             A: 'create:andesite_alloy',
         })
@@ -287,7 +327,7 @@ ServerEvents.recipes((event) => {
         ], {
             P: 'gtceu:brass_foil',
             R: 'gtceu:brass_rod',
-            E: 'create:electron_tube',
+            E: 'create:precision_mechanism',
             B: 'gtceu:rubber_plate',
         })
         .id('insanity_skies:shaped/brass_funnel');
@@ -313,36 +353,24 @@ ServerEvents.recipes((event) => {
         ], {
             F: 'create:brass_funnel',
             C: 'create:brass_casing',
-            T: 'create:electron_tube',
+            T: 'create:precision_mechanism',
             M: '#forge:tools/mallets',
         })
         .id('insanity_skies:shaped/brass_tunnel');
 
-    let drill = 'gtceu:double_iron_plate';
-    event.recipes.create
-        .sequenced_assembly([Item.of('kubejs:drill_head').withChance(1)], drill, [
-            event.recipes.createDeploying(drill, [drill, 'create:andesite_alloy']),
-            event.recipes.createDeploying(drill, [drill, 'gtceu:cast_iron_plate']),
-            event.recipes.createPressing(drill, drill),
-            event.recipes.createDeploying(drill, [drill, 'gtceu:wrought_iron_plate']),
-            event.recipes.createCutting(drill, drill),
-        ])
-        .transitionalItem(drill)
-        .loops(2)
-        .id('insanity_skies:sequenced_assembly/drill_head');
-
     event
         .shaped(Item.of('create:mechanical_drill'), [
             'MDH', 
-            'ACA', 
+            'KCK', 
             'ASA'
         ], {
             M: '#forge:tools/mallets',
             H: '#forge:tools/hammers',
             S: 'create:shaft',
             C: 'create:andesite_casing',
-            D: 'kubejs:drill_head',
+            D: 'gtceu:iron_drill_head',
             A: 'create:andesite_alloy',
+            K: 'kubejs:kinetic_contraption'
         })
         .id('insanity_skies:shaped/mechanical_drill');
 
@@ -361,11 +389,11 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped(Item.of('create:deployer'), [
-            'EPE', 
+            'KPK', 
             'SCS', 
             'AHA'
         ], {
-            E: 'create:electron_tube',
+            K: 'kubejs:kinetic_contraption',
             P: 'create:piston_extension_pole',
             S: 'create:shaft',
             A: 'create:andesite_alloy',
@@ -483,6 +511,10 @@ ServerEvents.recipes((event) => {
         })
         .id('insanity_skies:shaped/cogwheel');
 
+    event.recipes.create
+        .deploying(Item.of('create:cogwheel',2), ['gtceu:wood_gear', 'create:shaft'])
+        .id('insanity_skies:deploying/cogwheel');
+
     event
         .shaped(Item.of('create:large_cogwheel', 2), [
             ' SM', 
@@ -498,17 +530,17 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped(Item.of('create:mechanical_mixer'), [
-            'MLW', 
-            'GCG', 
-            'AHA'
+            ' L ', 
+            'GCK', 
+            'MHW'
         ], {
             L: 'create:piston_extension_pole',
             M: '#forge:tools/mallets',
             W: '#gtceu:tools/crafting_wrenches',
             G: 'create:cogwheel',
             C: 'create:andesite_casing',
-            A: 'create:andesite_alloy',
             H: 'create:whisk',
+            K: 'kubejs:kinetic_contraption'
         })
         .id('insanity_skies:shaped/mechanical_mixer');
 
@@ -516,11 +548,10 @@ ServerEvents.recipes((event) => {
         .shaped(Item.of('create:basin'), [
             'A A', 
             'ACA', 
-            'PAP'
+            'AAA'
         ], {
             A: 'create:andesite_alloy',
-            C: 'minecraft:cauldron',
-            P: 'gtceu:lead_plate',
+            C: 'minecraft:cauldron'
         })
         .id('insanity_skies:shaped/basin');
 
@@ -532,8 +563,8 @@ ServerEvents.recipes((event) => {
             'PAP'
         ], {
             A: 'create:andesite_alloy',
-            R: 'gtceu:lead_rod',
-            P: 'gtceu:lead_plate',
+            R: 'gtceu:iron_rod',
+            P: 'gtceu:iron_plate',
         })
         .id('insanity_skies:shaped/basic_burner');
 
@@ -543,7 +574,7 @@ ServerEvents.recipes((event) => {
             'ZPZ', 
             'MAS'
         ], {
-            P: 'gtceu:pig_iron_rotor',
+            P: 'gtceu:iron_rotor',
             A: 'create:andesite_alloy',
             R: '#forge:tools/screwdrivers',
             M: '#forge:tools/mallets',
@@ -554,15 +585,15 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped(Item.of('create:encased_fan'), [
-            'RPR', 
+            'RKR', 
             'SCF', 
-            'RPR'
+            'RKR'
         ], {
-            P: 'gtceu:wood_plate',
-            R: 'gtceu:zinc_rod',
+            R: 'gtceu:iron_screw',
             F: 'create:propeller',
             S: 'create:shaft',
             C: 'create:andesite_casing',
+            K: 'kubejs:kinetic_contraption'
         })
         .id('insanity_skies:shaped/encased_fan');
 
@@ -666,7 +697,7 @@ ServerEvents.recipes((event) => {
             'APA'
         ], {
             A: 'create:andesite_alloy',
-            S: '#forge:string',
+            S: 'kubejs:canvas',
             P: 'gtceu:iron_plate',
         })
         .id('insanity_skies:shaped/nozzle');
@@ -777,7 +808,7 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:mechanical_crafting/super_glue');
 
     event
-        .shaped(Item.of('3x create:belt_connector'), [
+        .shaped('6x create:belt_connector', [
             'RRR', 
             'HSW'
         ], {
@@ -789,7 +820,7 @@ ServerEvents.recipes((event) => {
         .id('insanity_skies:shaped/belt_connector');
 
     event.recipes.create
-        .mechanical_crafting(Item.of('3x create:belt_connector'), [
+        .mechanical_crafting(Item.of('6x create:belt_connector'), [
             'RRR'
         ], {
             R: 'gtceu:rubber_plate',
@@ -823,30 +854,6 @@ ServerEvents.recipes((event) => {
             A: 'create:andesite_alloy',
         })
         .id('insanity_skies:shaped/speedometer');
-
-    const BetterCasings = (type, primary, secondary) => {
-        event.recipes.create
-            .mechanical_crafting(Item.of(`create:${type}_casing`, 2), [
-                'PSP', 
-                'SFS', 
-                'PSP'
-            ], {
-                P: `gtceu:${primary}_plate`,
-                F: `gtceu:${primary}_frame`,
-                S: secondary,
-            })
-            .id(`insanity_skies:mechanical_crafter/${type}_casing`);
-
-        event.recipes.gtceu
-            .assembler(id(`${type}_casing`))
-            .itemInputs(`1x gtceu:${primary}_frame`, `4x gtceu:${primary}_plate`, `4x ${secondary}`)
-            .itemOutputs(`2x create:${type}_casing`)
-            .EUt(2)
-            .duration(50);
-    };
-    BetterCasings('andesite', 'wood', 'create:andesite_alloy');
-    BetterCasings('copper', 'pig_iron', 'create:fluid_pipe');
-    BetterCasings('brass', 'treated_wood', 'gtceu:brass_plate');
 
     event
         .shaped(Item.of('create:wrench'), [

@@ -1,0 +1,33 @@
+GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+
+    event
+        .create('circuit_assembler', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('dummy')
+		.appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle(' BBBBB ', ' BBCBB ', ' DBBBD ', '   B   ', '       ') 
+            .aisle('DBBBBBD', ' BEFEB ', ' B   B ', ' BB BB ', '  BBB  ') 
+            .aisle('DBBBBBD', 'DBGFGBD', 'BB   BB', 'DB   BD', ' BHBHB ') 
+            .aisle('DBBBBBD', 'BFFFFFB', 'B     B', 'B     B', ' HHBHH ') 
+            .aisle('BBBBBBB', 'BGDFDGB', 'B D D B', 'H D D H', ' HBBBH ') 
+            .aisle('BBBBBBB', 'BIIEIIB', 'H     H', 'H     H', ' HBHBH ') 
+            .aisle('BBBBBBB', 'BGDFDGB', 'B D D B', 'H D D H', ' HBBBH ') 
+            .aisle('DBBBBBD', 'BFFFFFB', 'B     B', 'B     B', ' HHBHH ') 
+            .aisle('DBBBBBD', 'DBGFGBD', 'BB   BB', 'DB   BD', ' BHBHB ') 
+            .aisle('DBBBBBD', ' BEFEB ', ' B   B ', ' BB BB ', '  BBB  ') 
+            .aisle(' BBBBB ', ' BB@BB ', ' DBBBD ', '   B   ', '       ') 
+            .where('B', Predicates.blocks('gtceu:solid_machine_casing'))
+            .where(' ', Predicates.any())
+            .where('C', Predicates.blocks('create:andesite_encased_shaft'))
+            .where('D', Predicates.blocks('gtceu:steel_frame'))
+            .where('E', Predicates.blocks('create:depot'))
+            .where('F', Predicates.blocks('gtceu:steel_gearbox'))
+            .where('G', Predicates.blocks('create:mechanical_arm'))
+            .where('H', Predicates.blocks('gtceu:tempered_glass'))
+            .where('I', Predicates.blocks('gtceu:steel_pipe_casing'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .build()
+        )
+        .workableCasingModel('minecraft:block/stone', 'gtceu:block/multiblock/primitive_blast_furnace');
+});

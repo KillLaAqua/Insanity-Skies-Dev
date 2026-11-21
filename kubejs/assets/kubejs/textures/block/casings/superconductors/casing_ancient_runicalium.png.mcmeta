@@ -1,9 +1,0 @@
-{
-  "ldlib": {
-    "connection": "kubejs:block/casings/superconductors/casing_ancient_runicalium_ctm"
-  },
-  "animation": {
-    "interpolate": true,
-    "frametime": 4
-  }
-}

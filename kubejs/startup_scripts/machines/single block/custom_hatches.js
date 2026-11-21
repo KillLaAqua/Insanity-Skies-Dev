@@ -13,16 +13,16 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
                 ); // cannot be done with current model system
         });
 
-    event
-        .create('stabilization_module', 'custom')
-        .machine((holder, tier) => new $CleaningMaintenanceHatchPartMachine(holder, CleanroomType.getByName('stabilized')))
-        .tiers(GTValues.UHV)
-        .definition((tier, builder) => {
-            builder
-                .langValue('§bAbsolute Stabilization §rModule')
-                .rotationState(RotationState.ALL)
-                .abilities(PartAbility.MAINTENANCE)
-                .modelPropertyBool($GTMachineModelProperties.IS_FORMED, false)
-                .workableTieredHullModel('kubejs:block/machines/stabilization_core');
-        });
+    // event
+    //     .create('stabilization_module', 'custom')
+    //     .machine((holder, tier) => new $CleaningMaintenanceHatchPartMachine(holder, CleanroomType.getByName('stabilized')))
+    //     .tiers(GTValues.UHV)
+    //     .definition((tier, builder) => {
+    //         builder
+    //             .langValue('§bAbsolute Stabilization §rModule')
+    //             .rotationState(RotationState.ALL)
+    //             .abilities(PartAbility.MAINTENANCE)
+    //             .modelPropertyBool($GTMachineModelProperties.IS_FORMED, false)
+    //             .workableTieredHullModel('kubejs:block/machines/stabilization_core');
+    //     });
 });

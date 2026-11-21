@@ -3,8 +3,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steam_casting_array', 'multiblock')
 		.rotationState(RotationState.ALL)
 		.recipeType('fluid_solidifier')
-		.machine((holder) => new $StartSteamMulti(holder))
-        .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
+        .machine((holder) => new $SteamMulti(holder, 4)) //to fix scaler as a config in multi in addition to fluid compat
+        .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .appearanceBlock(GCYMBlocks.CASING_INDUSTRIAL_STEAM)
 		.pattern(definition => FactoryBlockPattern.start()
             .aisle('AAAAA', 'AAAAA', 'AAAAA', '#B#B#') 

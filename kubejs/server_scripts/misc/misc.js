@@ -134,18 +134,13 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:epoxy' }); // Temp for Eta
 
     event
-        .shaped(Item.of('gtceu:cobalt_brass_buzz_saw_blade'), [
-            'HPM', 
-            'PPP', 
-            'WPF'
+        .shaped('gtceu:wood_dust', [
+            'PM'
         ], {
-            M: '#forge:tools/mallets',
-            W: '#gtceu:tools/crafting_wrenches',
-            F: '#forge:tools/files',
-            H: '#forge:tools/hammers',
-            P: 'gtceu:cobalt_brass_plate',
+            M: '#forge:tools/mortars',
+            P: '#minecraft:planks'
         })
-        .id('insanity_skies:shaped/cobalt_brass_buzz_saw_blade');
+        .id('insanity_skies:shaped/wood_dust');
 
     event.remove({ id: /gtceu:shaped\/shape.*/ });
     event.remove({ id: /gtceu:forming_press\/copy_shape.*/ });

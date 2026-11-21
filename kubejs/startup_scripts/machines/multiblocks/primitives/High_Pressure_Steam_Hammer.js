@@ -4,9 +4,9 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
         .create('high_pressure_steam_hammer', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('forge_hammer')
-        .machine((holder) => new $StartSteamMulti(holder))
+        .machine((holder) => new $SteamMulti(holder, 4)) //to fix scaler as a config in multi in addition to fluid compat
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
-        .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
+        .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .pattern((definition) =>
             FactoryBlockPattern.start()
                 .aisle('AAA', 'AAA', 'AAA')

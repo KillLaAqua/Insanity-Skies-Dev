@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "kubejs:block/casings/stargate_casings/core_casing_side"
-  }
-}

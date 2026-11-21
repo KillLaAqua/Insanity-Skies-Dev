@@ -263,7 +263,7 @@
 				andesite_encased_shaft = 0.0
 				mechanical_press = 8.0
 				large_cogwheel = 0.0
-				mechanical_drill = 4.0
+				mechanical_drill = 8.0
 				andesite_encased_large_cogwheel = 0.0
 				stressometer = 0.0
 				shaft = 0.0
@@ -299,12 +299,12 @@
 			#Configure how much stress a source can accommodate for.
 			[kinetics.stressValues.v2.capacity]
 				copper_valve_handle = 8.0
-				hand_crank = 8.0
-				steam_engine = 1024.0
+				hand_crank = 4.0
+				steam_engine = 512.0
 				creative_motor = 16384.0
-				large_water_wheel = 128.0
-				water_wheel = 32.0
-				windmill_bearing = 512.0
+				large_water_wheel = 64.0
+				water_wheel = 16.0
+				windmill_bearing = 128.0
 
 #.
 #Create's liquid manipulation tools

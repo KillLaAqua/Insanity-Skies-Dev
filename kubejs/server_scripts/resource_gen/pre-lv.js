@@ -86,10 +86,10 @@ ServerEvents.recipes((event) => {
 
     const primitive_processing = [
         { primary: 'hematite', secondary: 'magnetite', tertiary: 'nickel' },
-        { primary: 'chalcopyrite', secondary: 'pyrite', tertiary: 'gold' },
-        { primary: 'sphalerite', secondary: 'copper', tertiary: 'gallium' },
+        { primary: 'chalcopyrite', secondary: 'pyrite', tertiary: 'lead' },
+        { primary: 'sphalerite', secondary: 'zinc', tertiary: 'gallium' },
         { primary: 'cassiterite', secondary: 'tin', tertiary: 'bismuth' },
-        { primary: 'galena', secondary: 'sulfur', tertiary: 'silver' },
+        { primary: 'chalcocite', secondary: 'sulfur', tertiary: 'silver' },
         { primary: 'magnetite', secondary: 'gold', tertiary: 'iron' },
         { primary: 'pyrite', secondary: 'sulfur', tertiary: 'antimony' },
     ];
@@ -173,6 +173,13 @@ ServerEvents.recipes((event) => {
             .outputFluids(`gtceu:latex ${25 + 25 * latex.circ}`)
             .duration(400);
     });
+
+    event.recipes.gtceu
+        .macerator(id('hardened_stone_decomposition'))
+        .itemInputs('minecraft:reinforced_deepslate')
+        .itemOutputs('16x minecraft:cobblestone')
+        .duration(400)
+        .EUt(10);
 
     // [0, 1, 2, 3, 4].forEach((tier) => {
     //     let PumpTier = tier == 0 ? 'ulv' : tier == 1 ? 'lv' : tier == 2 ? 'mv' : tier == 3 ? 'hv' : 'ev';

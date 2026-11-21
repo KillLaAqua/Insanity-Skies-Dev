@@ -1,0 +1,33 @@
+GTCEuStartupEvents.registry('gtceu:machine', (event) => {
+
+    event
+        .create('steam_assembler', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('dummy')
+		.appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('       BBB       ', '       CDC       ', '       ECE       ', '                 ') 
+            .aisle('     BBBBBBB     ', '     CFCGCFC     ', '     ECCCCCE     ', '        E        ') 
+            .aisle('BBBBBBBBBBBBBBBBB', 'CFFFCHIJGJIHCFFFC', 'CEEECCC E CCCEEEC', '      CCCCC      ') 
+            .aisle('BBBBBBBBBBBBBBBBB', 'KGGGGGGGLGGGGGGGM', 'CCCCCIH   HICCCCC', '   EECCFFFCCEE   ') 
+            .aisle('BBBBBBBBBBBBBBBBB', 'CFFFCHIJGJIHCFFFC', 'CEEECCC E CCCEEEC', '      CCCCC      ') 
+            .aisle('     BBBBBBB     ', '     CFCGCFC     ', '     ECCCCCE     ', '        E        ') 
+            .aisle('       BBB       ', '       C@C       ', '       ECE       ', '                 ') 
+            .where(' ', Predicates.any())
+            .where('B', Predicates.blocks('gtceu:steel_machine_casing'))
+            .where('C', Predicates.blocks('kubejs:high_steam_machine_casing'))
+            .where('D', Predicates.blocks('create:andesite_encased_shaft'))
+            .where('E', Predicates.blocks('gtceu:cast_iron_frame'))
+            .where('F', Predicates.blocks('gtceu:tempered_glass'))
+            .where('G', Predicates.blocks('gtceu:bronze_gearbox'))
+            .where('H', Predicates.blocks('gtceu:bronze_pipe_casing'))
+            .where('I', Predicates.blocks('gtceu:wrought_iron_frame'))
+            .where('J', Predicates.blocks('create:mechanical_arm'))
+            .where('K', Predicates.blocks('gtceu:steam_input_bus'))
+            .where('L', Predicates.blocks('create:depot'))
+            .where('M', Predicates.blocks('gtceu:steam_output_bus'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .build()
+        )
+        .workableCasingModel('minecraft:block/stone', 'gtceu:block/multiblock/primitive_blast_furnace');
+});

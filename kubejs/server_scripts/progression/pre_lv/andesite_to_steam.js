@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
     const id = global.id;
 
-    event.recipes.create
-        .mechanical_crafting('gtceu:primitive_pump', [
+    event
+        .shaped('gtceu:primitive_pump', [
             'TNT', 
             'SVR', 
             'CLC'
@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             L: 'gtceu:wood_large_fluid_pipe',
             C: 'minecraft:cobblestone_slab',
             S: 'gtceu:iron_screw',
-            V: 'kubejs:servo_temp',
+            V: 'kubejs:fluid_contraption',
         })
         .id('insanity_skies:mechanical_crafting/primitive_pump');
 
@@ -53,13 +53,11 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: 'minecraft:charcoal' });
 
-    event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
-        .id('kjs:smelting/charcoal_pellet_manual_only')
-        .id('insanity_skies:smelting/charcoal_pellet');
+    event.smelting(`2x kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
+        .id('insanity_skies:smelting/charcoal_pellet_manual_only');
 
-    event.recipes.create.crushing([
-        '2x kubejs:charcoal_pellet', 
-        Item.of('kubejs:charcoal_pellet').withChance(0.5)],
+    event.recipes.create.crushing(
+        ['3x kubejs:charcoal_pellet', Item.of('kubejs:charcoal_pellet').withChance(0.5)],
         'minecraft:charcoal'
     );
 
@@ -67,9 +65,8 @@ ServerEvents.recipes((event) => {
     event.recipes.create.milling(['minecraft:sand'], 'minecraft:gravel');
     event.recipes.create.milling(['exnihilosequentia:dust'], 'minecraft:sand');
 
-    // event.remove({ id: 'thermal:rubber_3' });
     event.recipes.create
-        .compacting(Fluid.of('gtceu:latex', 20), `10x minecraft:jungle_log`)
+        .compacting(Fluid.of('gtceu:latex', 32), `10x minecraft:jungle_log`)
         .heatRequirement('lowheated')
         .id('insanity_skies:compacting/latex');
 
@@ -111,39 +108,33 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood')
         .id('insanity_skies:cutting/treated_wood_plate');
-    event
-        .shapeless(Item.of('gtceu:iron_rod'), [
-            '#forge:tools/saws',
-            'gtceu:iron_plate',
-        ])
-        .id('insanity_skies:shapeless_iron_rod');
 
     event
-        .shaped(Item.of('kubejs:saw_blade'), [
-            'HPM', 
+        .shaped(Item.of('gtceu:iron_buzz_saw_blade'), [
+            'HPS', 
             'PRP', 
             'WPF'
         ], {
-            M: '#forge:tools/mallets',
+            M: '#forge:tools/saws',
             W: '#gtceu:tools/crafting_wrenches',
             F: '#forge:tools/files',
             H: '#forge:tools/hammers',
             P: 'gtceu:iron_plate',
             R: 'gtceu:iron_ring'
         })
-        .id('insanity_skies:shaped/saw_blade');
+        .id('insanity_skies:shaped/iron_buzz_saw_blade');
 
-    event.recipes.create
-        .mechanical_crafting('kubejs:servo_temp', [
-            'TPT', 
-            ' F ', 
-            'TPT'
-        ], {
-            P: 'gtceu:iron_plate',
-            T: 'create:electron_tube',
-            F: 'gtceu:fine_copper_wire',
-        })
-        .id('insanity_skies:mechanical_crafting/redstone_servo');
+    // event.recipes.create
+    //     .mechanical_crafting('kubejs:servo_temp', [
+    //         'TPT', 
+    //         ' F ', 
+    //         'TPT'
+    //     ], {
+    //         P: 'gtceu:iron_plate',
+    //         T: 'create:electron_tube',
+    //         F: 'gtceu:fine_copper_wire',
+    //     })
+    //     .id('insanity_skies:mechanical_crafting/redstone_servo');
 
     event.recipes.create
         .mechanical_crafting('gtceu:ulv_stone_barrel', [
@@ -156,7 +147,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:iron_rotor',
             S: 'minecraft:stone',
             P: 'gtceu:nickel_plate',
-            T: 'kubejs:servo_temp',
+            T: 'create:precision_mechanism',
             C: 'minecraft:cauldron',
             N: 'gtceu:iron_plate',
         })
@@ -169,7 +160,7 @@ ServerEvents.recipes((event) => {
             'BFB'
         ], {
             R: 'gtceu:brass_rod',
-            S: 'kubejs:servo_temp',
+            S: 'create:precision_mechanism',
             P: 'gtceu:brass_plate',
             B: 'gtceu:firebricks',
             F: 'minecraft:furnace',
@@ -234,7 +225,7 @@ ServerEvents.recipes((event) => {
             R: 'gtceu:iron_rotor',
             L: '#forge:stripped_logs',
             P: 'gtceu:treated_wood_plate',
-            T: 'kubejs:servo_temp',
+            T: 'create:precision_mechanism',
             C: 'minecraft:cauldron',
             N: 'gtceu:wood_plate',
         })
@@ -346,8 +337,8 @@ ServerEvents.recipes((event) => {
         .shapeless(Item.of('3x kubejs:flint_shard'), ['minecraft:flint', '#forge:tools/hammers'])
         .id('insanity_skies:shapeless/flint_shard');
 
-    event
-        .shaped('gtceu:ulv_auto_scavenger', [
+    event.recipes.create
+        .mechanical_crafting('gtceu:ulv_auto_scavenger', [
             'TDT', 
             'GFG', 
             'TPT'
@@ -370,7 +361,7 @@ ServerEvents.recipes((event) => {
             G: 'minecraft:glass',
             R: 'gtceu:iron_gear',
             I: 'gtceu:iron_plate',
-            S: 'kubejs:servo_temp',
+            S: 'create:precision_mechanism',
         })
         .id('insanity_skies:mechanical_crafting/ulv_advanced_composter');
 
