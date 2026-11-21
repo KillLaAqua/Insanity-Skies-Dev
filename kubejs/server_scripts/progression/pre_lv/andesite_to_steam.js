@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             L: 'gtceu:wood_large_fluid_pipe',
             C: 'minecraft:cobblestone_slab',
             S: 'gtceu:iron_screw',
-            V: 'kubejs:servo_temp',
+            V: 'kubejs:fluid_contraption',
         })
         .id('insanity_skies:mechanical_crafting/primitive_pump');
 
